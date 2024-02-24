@@ -53,3 +53,19 @@ _h.h
 
 # macOS
 .DS
+/.vs
+/.vs/Progra2-2024
+/.vs/Progra2-2024/DesignTimeBuild
+/.vs/Progra2-2024/DesignTimeBuild/.dtbcache.v2
+/.vs/Progra2-2024/FileContentIndex
+/.vs/Progra2-2024/FileContentIndex/2600ce9a-960b-4833-90b1-5217516b8f41.vsidx
+/.vs/Progra2-2024/FileContentIndex/5c5a26f9-3311-4600-b20e-75a49bc95c63.vsidx
+/.vs/Progra2-2024/FileContentIndex/ca393326-b917-4e59-8fa0-6f33cb59f8fd.vsidx
+/.vs/Progra2-2024/v17
+/.vs/Progra2-2024/v17/.futdcache.v2
+/.vs/Progra2-2024/v17/.wsuo
+/.vs/Progra2-2024/v17/TestStore/0
+/.vs/Progra2-2024/v17/TestStore/0/000.testlog
+/.vs/Progra2-2024/v17/TestStore/0/testlog.manifest
+/.vs/slnx.sqlite
+/.vs/VSWorkspaceState.json
