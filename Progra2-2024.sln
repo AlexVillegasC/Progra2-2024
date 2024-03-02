@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Labs", "Labs\Labs.csproj", "{E0D0090F-1188-484B-AE5C-1AEF8B94D879}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lab1", "Labs\Lab1.csproj", "{E0D0090F-1188-484B-AE5C-1AEF8B94D879}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CLI.Sandbox", "CLI.Sandbox\CLI.Sandbox.csproj", "{1B1B6BE1-12EE-4064-AE10-0F1F4977A1D0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CLI.Sandbox", "CLI.Sandbox\CLI.Sandbox.csproj", "{1B1B6BE1-12EE-4064-AE10-0F1F4977A1D0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
