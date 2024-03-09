@@ -1,6 +1,7 @@
 ﻿
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> a28cecb (Batalla Pokemon)
 using System;
@@ -13,11 +14,14 @@ using System.Threading.Tasks;
 >>>>>>> 8ae0910 (Lab1 batalla pokemon)
 =======
 >>>>>>> a28cecb (Batalla Pokemon)
+=======
+>>>>>>> 8ae0910 (Lab1 batalla pokemon)
 
 namespace Lab1.Melina_Cabalceta_504530616
 {
     public class Pokemon
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
        public int Ataque { get; set; } 
@@ -59,6 +63,17 @@ namespace Lab1.Melina_Cabalceta_504530616
             Vida = vida;
             Nombre = nombre;
 >>>>>>> a28cecb (Batalla Pokemon)
+=======
+       public int Vida { get; set; } = 100;
+
+        public int Ataque { get; set; }
+
+        public string Nombre {  get; set; }
+        public Pokemon(int vida, int ataque, string nombre)
+        {
+            this.Vida = vida;
+            this.Ataque = ataque;
+>>>>>>> 8ae0910 (Lab1 batalla pokemon)
         }
     }
   
