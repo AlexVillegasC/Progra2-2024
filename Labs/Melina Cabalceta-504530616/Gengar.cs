@@ -1,7 +1,10 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 7e22007 (Lab1 combate pokemon M)
+=======
+>>>>>>> f7031e9 (Lab1 batalla pokemon)
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,6 +20,7 @@ namespace Lab1.Melina_Cabalceta_504530616
         
 =======
 ﻿
+<<<<<<< HEAD
 =======
 >>>>>>> 7e22007 (Lab1 combate pokemon M)
 namespace Lab1.Melina_Cabalceta_504530616
@@ -32,5 +36,19 @@ namespace Lab1.Melina_Cabalceta_504530616
 =======
         
 >>>>>>> a45588b (Batalla Pokemon)
+=======
+namespace Lab1.Melina_Cabalceta_504530616
+{
+    public class Gengar : Pokemon // Gengar hereda de Pokemon 
+    {
+        public Gengar(int Ataque)
+        {
+            this.Ataque = Ataque;
+            this.nombre = "Gengar";
+            
+        }
+
+>>>>>>> 8ae0910 (Lab1 batalla pokemon)
+>>>>>>> f7031e9 (Lab1 batalla pokemon)
     }
 }

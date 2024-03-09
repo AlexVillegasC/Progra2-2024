@@ -5,6 +5,9 @@ namespace Lab1.Melina_Cabalceta_504530616
 {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f7031e9 (Lab1 batalla pokemon)
     public static class Batalla
     {
         public static string Pelear(Pokemon pok1, Pokemon pok2, bool ventajaAleatoria)
@@ -76,6 +79,7 @@ namespace Lab1.Melina_Cabalceta_504530616
     }*/
 =======
     public class Batalla
+<<<<<<< HEAD
 =======
     public static class Batalla
 >>>>>>> a45588b (Batalla Pokemon)
@@ -157,4 +161,22 @@ namespace Lab1.Melina_Cabalceta_504530616
         }
     }*/
 >>>>>>> a45588b (Batalla Pokemon)
+=======
+    {
+        public string Pelear(Pokemon pikachu, Pokemon gengar)
+        {
+
+            // Definir el turno
+            // 1. Mientras uno de los 2 Pokemon siga con vida, cambiar de turno
+            // 1.1. Si es turno del Poki1, entonces la vida d Poki2.vida = Poki2.vida 
+            // 1.2.
+
+
+            return "Ganador";
+        }
+    }
+
+    
+>>>>>>> 8ae0910 (Lab1 batalla pokemon)
+>>>>>>> f7031e9 (Lab1 batalla pokemon)
 }
