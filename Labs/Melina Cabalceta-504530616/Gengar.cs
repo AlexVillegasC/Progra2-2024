@@ -4,6 +4,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 384582b (Lab1 combate pokemon M)
 =======
@@ -76,5 +77,19 @@ namespace Lab1.Melina_Cabalceta_504530616
 =======
         
 >>>>>>> a28cecb (Batalla Pokemon)
+=======
+﻿
+namespace Lab1.Melina_Cabalceta_504530616
+{
+    public class Gengar : Pokemon // Gengar hereda de Pokemon 
+    {
+        public Gengar(int Ataque)
+        {
+            this.Ataque = Ataque;
+            this.nombre = "Gengar";
+            
+        }
+
+>>>>>>> 8ae0910 (Lab1 batalla pokemon)
     }
 }
