@@ -165,18 +165,43 @@ namespace Lab1.Melina_Cabalceta_504530616
     {
         public string Pelear(Pokemon pikachu, Pokemon gengar)
         {
+            bool turnopikachu = true; // true si es el turno de pikachu, false si es el turno de gengar
 
-            // Definir el turno
-            // 1. Mientras uno de los 2 Pokemon siga con vida, cambiar de turno
-            // 1.1. Si es turno del Poki1, entonces la vida d Poki2.vida = Poki2.vida 
-            // 1.2.
+            while (pikachu.Vida > 0 && gengar.Vida > 0)
+            {
+                if (turnopikachu)
+                {
+                    gengar.Vida -= pikachu.Ataque;
+                }
+                else
+                {
+                    pikachu.Vida -= gengar.Ataque;
+                }
+
+                turnopikachu = !turnopikachu; // Cambiar de turno
+            }
+
+            if (pikachu.Vida <= 0)
+            {
+                return gengar.Nombre;
+            }
+            else
+            {
+                return pikachu.Nombre;
+            }
 
 
             return "Ganador";
         }
-    }
 
+<<<<<<< HEAD
     
 >>>>>>> 8ae0910 (Lab1 batalla pokemon)
+<<<<<<< HEAD
 >>>>>>> f7031e9 (Lab1 batalla pokemon)
+=======
+=======
+    }
+>>>>>>> 384582b (Lab1 combate pokemon M)
+>>>>>>> db0cc1c (Lab1 combate pokemon M)
 }
