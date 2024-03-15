@@ -1,7 +1,7 @@
 ﻿using System.Diagnostics;
 
 namespace Lab1.AlexVillegas;
-
+//HOLA
 public class Pokemon
 {
     public int Ataque { get; set; }
