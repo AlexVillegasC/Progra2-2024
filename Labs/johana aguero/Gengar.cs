@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Lab1.AlexVillegas;
+namespace Lab1.JohanaAguero;
 
 public class Gengar : Pokemon
 {

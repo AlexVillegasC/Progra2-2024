@@ -1,7 +1,6 @@
 ﻿using System.Globalization;
 
-namespace Lab1.AlexVillegas;
-
+namespace Lab1.JohanaAguero;
 public static class Batalla
 {
 
@@ -41,4 +40,4 @@ public static class Batalla
 
         return "Ganadro";
     }
-}6
+}

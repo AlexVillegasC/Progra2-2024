@@ -1,4 +1,4 @@
-﻿namespace Lab1.AlexVillegas;
+﻿namespace Lab1.JohanaAguero;
 
 public class Pikachu : Pokemon
 {
