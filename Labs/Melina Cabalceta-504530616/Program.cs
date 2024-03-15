@@ -16,7 +16,7 @@ namespace Lab1.Melina_Cabalceta_504530616
             Pokemon pikachu = new Pikachu(45);
             Pokemon gengar = new Gengar(44);
 
-            Batalla.Iniciar(pikachu, gengar);
+            Batalla.Pelear(pikachu, gengar);
         }
 
     }
