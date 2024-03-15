@@ -84,11 +84,24 @@ namespace Lab1.Melina_Cabalceta_504530616
 =======
     public class Pikachu : Pokemon //Pikachu hereda de Pokemon 
     {
-        public Pikachu (int Ataque)
+        /// <summary>
+        /// Mi clase Pikachu
+        /// </summary>
+        /// <param name="ataque">Representa un ataque</param>
+        /// <param name="vida"></param>
+        /// <param name="nombre"></param>
+
+        public Pikachu(int ataque, int vida, string nombre) : base(ataque, vida, nombre)
         {
+<<<<<<< HEAD
             this.Ataque = Ataque;
             this.nombre = "Pikachu";
 >>>>>>> 8ae0910 (Lab1 batalla pokemon)
+=======
+            this.Ataque = ataque;
+            this.Vida = vida;
+            this.nombre = nombre;
+>>>>>>> 384582b (Lab1 combate pokemon M)
         }
     }
 }
