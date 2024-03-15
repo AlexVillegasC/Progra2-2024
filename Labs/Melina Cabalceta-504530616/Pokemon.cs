@@ -24,6 +24,7 @@ namespace Lab1.Melina_Cabalceta_504530616
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
        public int Ataque { get; set; } 
 
         public int Vida { get; set; }
@@ -65,15 +66,30 @@ namespace Lab1.Melina_Cabalceta_504530616
 >>>>>>> a28cecb (Batalla Pokemon)
 =======
        public int Vida { get; set; } = 100;
+=======
+       public int Ataque { get; set; } 
+>>>>>>> 384582b (Lab1 combate pokemon M)
 
-        public int Ataque { get; set; }
+        public int Vida { get; set; } = 100;
+        public string Nombre { get; set; }
 
-        public string Nombre {  get; set; }
-        public Pokemon(int vida, int ataque, string nombre)
+
+        /// <summary>
+        /// Mi clase Pokemon
+        /// </summary>
+        /// <param name="ataque">Esto representa un ataque</param>
+        /// <param name="vida"></param>
+        /// <param name="Nombre"></param>
+
+        public Pokemon(int ataque, int vida, string nombre)
         {
-            this.Vida = vida;
             this.Ataque = ataque;
+<<<<<<< HEAD
 >>>>>>> 8ae0910 (Lab1 batalla pokemon)
+=======
+            this.Vida = vida;
+            this.Nombre = nombre;
+>>>>>>> 384582b (Lab1 combate pokemon M)
         }
     }
   
