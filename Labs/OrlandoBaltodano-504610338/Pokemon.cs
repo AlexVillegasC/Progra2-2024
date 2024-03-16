@@ -7,8 +7,4 @@ public class Pokemon
     public int Ataque { get; set; } 
     public string Nombre { get; set; } = string.Empty;
 
-
-
-
-
 }
