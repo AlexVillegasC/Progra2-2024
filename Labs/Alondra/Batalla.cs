@@ -31,4 +31,4 @@ public class Batalla()
              return pokemon1.Nombre;
         }
      }
-}
+}  
