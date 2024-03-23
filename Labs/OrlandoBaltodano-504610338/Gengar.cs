@@ -8,4 +8,5 @@ public class Gengar : Pokemon
         this.Ataque = attack;
         this.Nombre = "Gengar";
     }
+
 }

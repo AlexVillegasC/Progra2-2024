@@ -2,11 +2,11 @@
 
 public class Pokemon
 {
-    private int Vida { get; set; }
+    public int Vida { get; set; }
 
-    private int Ataque { get; set; }
-    
-    private string Nombre { get; set; }
+    public int Ataque { get; set; }
+
+    public string Nombre { get; set; }
 
     public Pokemon (int ataque, int vida, string nombre) 
     {
