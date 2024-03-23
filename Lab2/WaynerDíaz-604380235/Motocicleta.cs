@@ -8,6 +8,7 @@ namespace Lab2.WaynerDíaz
     public class Motocicleta : WaynerDiaz.Vehiculo
     {
         public bool TieneSidecar { get; set; }
+        //
 
         public Motocicleta(string marca, string modelo, int año, bool tieneSidecar)
             : base(marca, modelo, año)
