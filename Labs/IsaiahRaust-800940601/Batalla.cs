@@ -1,55 +1,54 @@
-﻿namespace Lab1.IsaiahRaust;
+﻿using System.Globalization;
 
-public class Batalla
+namespace Lab1.IsaiahRaust;
+public static class Batalla
 {
-    public string Pelear(Pokemon pok1, Pokemon pok2)
+
+    public static int ganador;
+
+    public static string Pelear(Pokemon pok1, Pokemon pok2, bool aplicarReglasPorDebilidad)
     {
+        return string.Empty;
+    }
 
+    public static string Pelear(Pokemon pok1, Pokemon pok2)
+    {
+        bool turnPok1 = true;
 
-        // Definir turno
-        // 1 Cambiar de turno mientras uno de los pokemon siga con vida
-        // 1.1 Si es turno del pok1, entonces la vida de pok2.vida = pok2.vida - pok1.ataque
-        // 1.2 Si es turno del pok2, entonces la vida de pok1.vida = pok1.vida - pok2.ataque
-
-        // 2 Si la vida de pok1 es <0 0, entonces ganador es pok2
-        // 3 Else ganador es pok1
-        // 4 Retornar nombre del pokemon
-
-        bool turnoPok1 = true;
-
-        while (pok1.Vida > 0 && pok2.Vida > 0) 
-        { 
-            if (turnoPok1) 
+        while (pok1.Vida > 0 && pok2.Vida > 0)
+        {
+            if (turnPok1)
             {
                 pok2.Vida -= pok1.Ataque;
-                
             }
             else
             {
-
                 pok1.Vida -= pok2.Ataque;
             }
 
-
-            turnoPok1 = !turnoPok1;
-        
+            turnPok1 = !turnPok1;
         }
 
         if (pok1.Vida <= 0)
         {
-
             return pok2.Nombre;
-
         }
         else
         {
-
             return pok1.Nombre;
-
         }
 
-        return "Ganador!";
-
+        return "Ganador";
     }
 
+    public static void Main(string[] args)
+    {
+        Pikachu pikachu = new Pikachu(50, 100, "Pikachu");
+        Gengar gengar = new Gengar(55, 100, "Gengar");
+
+        string ganador = Pelear(pikachu, gengar); 
+        Console.WriteLine("El ganador es: " + ganador);
+        Console.ReadLine();
+    }
 }
+

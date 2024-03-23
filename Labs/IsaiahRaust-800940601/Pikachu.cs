@@ -13,6 +13,9 @@ public class Pikachu : Pokemon
     /// <param name="nombre"></param>
     public Pikachu(int ataque, int vida, string nombre) : base(ataque, vida, nombre)
     {
+        this.Ataque = ataque;
+        this.Vida = vida;
+        this.Nombre = nombre;
 
     }
 }

@@ -24,6 +24,7 @@ public class Pokemon
 
         this.Vida = vida;
         this.Ataque = ataque;
+        this.Nombre = nombre;
 
     }
 
