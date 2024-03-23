@@ -17,7 +17,11 @@
         }
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> b9cffe2 (lab2 pokemon)
 =======
 }
 >>>>>>> b9cffe2 (lab2 pokemon)
