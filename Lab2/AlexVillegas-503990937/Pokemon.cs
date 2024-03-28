@@ -7,7 +7,7 @@ public abstract class Pokemon
     public string Nombre { get; set; }
 
     /// <summary>
-    /// Mi clase Pokemon
+    /// Mi clase Pokemon.
     /// </summary>
     /// <param name="ataque">Esto representa un ataque</param>
     /// <param name="vida"></param>

@@ -6,6 +6,9 @@ public class Charizard : Pokemon
     {
     }
 
+    /// <summary>
+    /// Atacar.
+    /// </summary>
     public override void Atacar()
     {
         Console.WriteLine("Lanzallamas!");
