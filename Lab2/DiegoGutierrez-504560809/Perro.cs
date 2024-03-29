@@ -6,12 +6,10 @@
         {
 
         }
-
         public override void Accion()
         {
             Console.WriteLine("Estoy ladrando");
         }
-
         public override void QueSoy()
         {
             Console.WriteLine("Soy un perro");

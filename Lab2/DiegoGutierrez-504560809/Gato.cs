@@ -8,7 +8,6 @@
         {
             Console.WriteLine("Estoy maullando");
         }
-
         public override void QueSoy()
         {
             Console.WriteLine("Soy un Gato!");
