@@ -17,9 +17,12 @@
             this.habitat = _habitat;
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> c28cea0 ([Lab2]Diego Gutierrez)
+=======
+>>>>>>> be1cce2 ([Lab2]Diego Gutierrez)
         public abstract void Accion();
 
         public virtual void QueSoy()

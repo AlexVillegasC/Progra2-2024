@@ -12,16 +12,22 @@
         {
 
         }
+<<<<<<< HEAD
 
 >>>>>>> c28cea0 ([Lab2]Diego Gutierrez)
+=======
+>>>>>>> be1cce2 ([Lab2]Diego Gutierrez)
         public override void Accion()
         {
             Console.WriteLine("Estoy ladrando");
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> c28cea0 ([Lab2]Diego Gutierrez)
+=======
+>>>>>>> be1cce2 ([Lab2]Diego Gutierrez)
         public override void QueSoy()
         {
             Console.WriteLine("Soy un perro");
