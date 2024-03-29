@@ -8,6 +8,10 @@
         {
             Console.WriteLine("Estoy maullando");
         }
+<<<<<<< HEAD
+=======
+
+>>>>>>> c28cea0 ([Lab2]Diego Gutierrez)
         public override void QueSoy()
         {
             Console.WriteLine("Soy un Gato!");
