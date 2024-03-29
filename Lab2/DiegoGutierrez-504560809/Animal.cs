@@ -12,7 +12,6 @@
             this.Peso = _peso;
             this.habitat = _habitat;
         }
-
         public abstract void Accion();
 
         public virtual void QueSoy()
