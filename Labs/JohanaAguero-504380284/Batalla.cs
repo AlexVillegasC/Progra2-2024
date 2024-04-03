@@ -1,4 +1,15 @@
+<<<<<<< HEAD
 ﻿namespace Lab1.JohanaAguero_504380284
+=======
+﻿using Lab1.AlexVillegas;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Lab1.JohanaAguero_504380284
+>>>>>>> b5047c9 (Lab1)
 {
     public static class Batalla
     {
