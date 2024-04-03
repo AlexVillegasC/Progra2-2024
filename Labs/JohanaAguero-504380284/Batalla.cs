@@ -1,4 +1,4 @@
-﻿namespace Lab1.JohanaAguero_504380284
+namespace Lab1.JohanaAguero_504380284
 {
     public static class Batalla
     {
