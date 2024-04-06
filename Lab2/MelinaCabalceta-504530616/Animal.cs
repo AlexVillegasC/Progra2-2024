@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace Lab2.MelinaCabalceta_504530616
 {
@@ -10,15 +7,16 @@ namespace Lab2.MelinaCabalceta_504530616
     {
         
         
-    public string Nombre { get; set; }
-    public string Color { get; set; }
+        public string Nombre { get; set; }
+        public string Color { get; set; }
+    
 
 
     //Constructor
     public Animal(string nombre, string color)
     {
-         this.Nombre = nombre;
-         this.Color = color;
+            this.Nombre = nombre;
+            this.Color = color;
     }
 
 
@@ -30,10 +28,22 @@ namespace Lab2.MelinaCabalceta_504530616
 
       public void MostrarTipo(string tipo)
       {
-                Console.WriteLine($"Este animal, {Nombre}, es un {tipo}.");
+                Console.WriteLine($"Este animal, {Nombre}, es un {tipo} de color {Color}.");
       }
      
+        //Metodo estatico como punto de entrada alternativo
+        public static void Main(string[] args)
+        {
+            
+            Perro perro = new Perro("Blacky", "Negro");
+            Gato gato = new Gato("Gus", "Blanco");
 
+            perro.MostrarTipo("canino");
+            gato.MostrarTipo("felino");
+
+            perro.HacerSonido();
+            gato.HacerSonido();
+        }
 
     }
 }
