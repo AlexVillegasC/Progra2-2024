@@ -5,7 +5,7 @@ namespace Lab2.MelinaCabalceta_504530616
 {
     public class Perro : Animal
     {
-    // Constructor
+    
       public Perro(string nombre, string color) : base(nombre, color)
       {   
       }
