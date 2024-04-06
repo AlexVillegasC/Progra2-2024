@@ -1,4 +1,4 @@
-﻿namespace Lab2.JhonnRojas_703090697
+namespace Lab2.JhonnRojas_703090697
 {
     public class Medio_de_Transporte
     {
