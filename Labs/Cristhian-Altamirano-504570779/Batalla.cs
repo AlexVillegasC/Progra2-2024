@@ -1,4 +1,11 @@
+<<<<<<< HEAD
 ﻿namespace Lab1.Cristhian_Altamirano
+=======
+﻿using Lab1.AlexVillegas;
+using Lab1.Cristhian_Altamirano;
+
+namespace Lab1.Cristhian_Altamirano
+>>>>>>> 11e395b (test)
 {
     public class Batalla
     {
@@ -71,7 +78,11 @@
 
             }
 
+<<<<<<< HEAD
             int turno = 1;
+=======
+                int turno = 1;
+>>>>>>> 11e395b (test)
 
             do
             {
