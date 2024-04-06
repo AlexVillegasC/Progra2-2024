@@ -1,6 +1,6 @@
 ﻿namespace Lab3.AlexVillegas;
 
-public class Charizard
+public class Charizard : ITipoVolador, ITipoFuego
 {    
     public int Vida { get; set; }
     public string Nombre { get; set; }
@@ -11,7 +11,18 @@ public class Charizard
         this.Nombre = Nombre;
     }
 
-    //AtaqueFuego();
+    public void AtaqueVolador()
+    {
+        throw new NotImplementedException();
+    }
 
-    //AtaqueVolador();    
+    public void AtaqueDragon()
+    {
+        throw new NotImplementedException();
+    }
+
+    public void AtaqueFuego()
+    {
+        throw new NotImplementedException();
+    }
 }
