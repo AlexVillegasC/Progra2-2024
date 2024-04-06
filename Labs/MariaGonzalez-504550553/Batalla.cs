@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Lab1.WaynerDiaz_604380235
+﻿namespace Lab1.MariaGonzalez
 {
     public static class Batalla
     {
@@ -37,9 +31,9 @@ namespace Lab1.WaynerDiaz_604380235
             {
                 return pok2.Nombre;
             }
-
+            
             return pok1.Nombre;
-
         }
     }
 }
+
