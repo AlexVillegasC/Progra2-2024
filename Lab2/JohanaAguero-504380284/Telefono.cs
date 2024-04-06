@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Lab2.JohanaAguero_504380284
+namespace Lab2.JohanaAguero_504380284;
 
 // Primera clase derivada
 public class Telefono : DispositivoElectronico

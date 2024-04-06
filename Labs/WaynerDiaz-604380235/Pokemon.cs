@@ -25,6 +25,7 @@ namespace Lab1.WaynerDiaz_604380235
         {
             this.Vida = vida;
             this.Ataque = ataque;
+            this.Nombre = Nombre;
         }
     }
 
