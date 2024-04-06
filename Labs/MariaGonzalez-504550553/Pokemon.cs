@@ -1,7 +1,5 @@
-﻿using System.Diagnostics;
-
-namespace Lab1.AlexVillegas;
-
+﻿namespace Lab1.MariaGonzalez
+{ 
 public class Pokemon
 {
     public int Ataque { get; set; }
@@ -9,7 +7,7 @@ public class Pokemon
     public int Vida { get; set; }
     public string Nombre { get; set; }
 
- 
+
 
     /// <summary>
     /// Mi clase Pokemon
@@ -17,10 +15,13 @@ public class Pokemon
     /// <param name="ataque">Esto representa un ataque</param>
     /// <param name="vida"></param>
     /// <param name="Nombre"></param>
-    public Pokemon(int ataque, int vida, string Nombre) 
-    { 
+    public Pokemon(int ataque, int vida, string Nombre)
+    {
         this.Vida = vida;
         this.Ataque = ataque;
         this.Nombre = Nombre;
     }
 }
+
+}
+

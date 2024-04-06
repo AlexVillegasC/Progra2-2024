@@ -7,5 +7,6 @@ public class Pikachu : Pokemon
     {
         this.Ataque = attack;
         this.Nombre = "Pikachu";
+
     }
 }
