@@ -1,20 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿
 namespace Lab1.EstebanBonilla_118700462;
-internal class Pikachu
+
+public class Pikachu : Pokemon
 {
-    public class pikachu : Pokemon
+    public Pikachu(int vida, int ataque, string Nombre) : base(vida, ataque, Nombre)
     {
-        public pikachu(int vida, int ataque, string Nombre) : base(vida, ataque, Nombre)
-        {
-            this.ataque = ataque;
-
-        }
-
+        this.ataque = ataque;
 
     }
 }
+
