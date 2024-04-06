@@ -6,18 +6,12 @@ using System.Threading.Tasks;
 
 namespace Lab1.EstebanBonilla_118700462;
 
-internal class Charizard
+
+public class Charizard : Pokemon
 {
-    public class charizard : Pokemon
+    public Charizard(int vida, int ataque, string Nombre) : base(vida, ataque, Nombre)
     {
-        public charizard(int vida, int ataque, string Nombre) : base(vida, ataque, Nombre)
-        {
-            this.ataque = ataque;
-
-        }
-
+        this.ataque = ataque;
 
     }
-
-
 }

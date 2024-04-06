@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Lab1.WaynerDiaz_604380235
-{ 
+{
     public static class Batalla
     {
 
@@ -37,13 +37,9 @@ namespace Lab1.WaynerDiaz_604380235
             {
                 return pok2.Nombre;
             }
-            else
-            {
-                return pok1.Nombre;
-            }
 
+            return pok1.Nombre;
 
-            return "Ganadro";
         }
     }
 }

@@ -1,6 +1,5 @@
 ﻿using Lab1.Alondra;
 
-int turno = 1;
 
 public class Batalla()
 {
@@ -9,6 +8,8 @@ public class Batalla()
     
         while (pokemon1.Vida > 0 && pokemon2.Vida > 0)
          {
+             int turno = 1;
+
              if (turno == 1)
              {
                  pokemon1.Vida = pokemon1.Vida - pokemon2.Ataque;
