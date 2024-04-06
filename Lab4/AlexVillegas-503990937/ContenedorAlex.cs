@@ -1,6 +1,6 @@
 ﻿namespace Lab4.AlexVillegas_503990937;
 
-public class ContenedorAlex<T>
+public class ContenedorAlexV<T>
 {
     private List<T> elementos = new List<T>(); // Lista para almacenar elementos de cualquier tipo
 
