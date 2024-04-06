@@ -19,6 +19,6 @@ public class Pokemon
     {
         this.Vida = Vida;
         this.Ataque = Ataque;
-        Nombre = Nombre;
+        this.Nombre = Nombre;
     }
 }

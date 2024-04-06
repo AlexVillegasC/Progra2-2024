@@ -1,18 +1,16 @@
-﻿
+﻿namespace Lab1.DianaCerdas_504600379;
 
-namespace Lab1.DianaCerdas_504600379;
-
-public  class Pikachu: Pokemon
+public class Pikachu : Pokemon
 {
-    
-       public Pikachu(int Ataque)
+
+    public Pikachu(int Vida, int Ataque, string Nombre) : base(Vida, Ataque, Nombre)
     {
         {
-            this.ataque = Ataque;
-            this.nombre = "Pikachu";
+            this.Ataque = Ataque;
+            this.Nombre = "Pikachu";
+            this.Vida = Vida;
         }
     }
-
-    }
+}
 
 

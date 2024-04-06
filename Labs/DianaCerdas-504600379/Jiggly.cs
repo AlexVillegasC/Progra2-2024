@@ -1,12 +1,15 @@
 ﻿
 
+using static System.Runtime.InteropServices.JavaScript.JSType;
+
 namespace Lab1.DianaCerdas_504600379;
 
 public class Jiggly : Pokemon
 {
-    public Jiggly( int Ataque)
+    public Jiggly( int Vida, int Ataque, string Nombre) : base(Vida, Ataque, Nombre)
     {
-        this.ataque = Ataque;
-        this.nombre = "jiggly";
+        this.Ataque = Ataque;
+        this.Nombre = "jiggly";
+        this.Vida = Vida;
     }
 }
