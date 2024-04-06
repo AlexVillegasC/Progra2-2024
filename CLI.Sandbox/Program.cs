@@ -1,5 +1,8 @@
 ﻿
+using Lab4.AlexVillegas_503990937;
+using Lab4.AlexVillegas_503990937.Productos;
 
-
-// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+ContenedorAlex<Muebles> miContenedor = new ContenedorAlex<Muebles>();
+Muebles muebles = new();
+miContenedor.Agregar(muebles);
+miContenedor.MostrarElementos();
