@@ -84,6 +84,7 @@ namespace Lab1.Cristhian_Altamirano
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             int turno = 1;
 =======
                 int turno = 1;
@@ -91,6 +92,9 @@ namespace Lab1.Cristhian_Altamirano
 =======
             int turno = 1;
 >>>>>>> 2550663 (Merge with latest Dev changes)
+=======
+                int turno = 1;
+>>>>>>> 11e395b (test)
 
             do
             {
