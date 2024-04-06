@@ -41,4 +41,4 @@ public static class Batalla
 
         return "Ganadro";
     }
-}6
+}
