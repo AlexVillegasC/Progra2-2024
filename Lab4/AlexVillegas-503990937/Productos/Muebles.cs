@@ -2,4 +2,10 @@
 
 public class Muebles
 {
+    public string Nombre { get; set; }
+
+    public Muebles(string nombre)
+    {
+        this.Nombre = nombre;
+    }
 }
