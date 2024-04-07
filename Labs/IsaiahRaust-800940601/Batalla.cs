@@ -33,12 +33,9 @@ public static class Batalla
         {
             return pok2.Nombre;
         }
-        else
-        {
-            return pok1.Nombre;
-        }
 
-        return "Ganador";
+        return pok1.Nombre;
+
     }
 
     public static void Main(string[] args)
@@ -46,7 +43,7 @@ public static class Batalla
         Pikachu pikachu = new Pikachu(50, 100, "Pikachu");
         Gengar gengar = new Gengar(55, 100, "Gengar");
 
-        string ganador = Pelear(pikachu, gengar); 
+        string ganador = Pelear(pikachu, gengar);
         Console.WriteLine("El ganador es: " + ganador);
         Console.ReadLine();
     }
