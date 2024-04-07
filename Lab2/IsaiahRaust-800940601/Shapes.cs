@@ -1,6 +1,18 @@
+<<<<<<< HEAD
 ﻿namespace Lab2.IsaiahRaust
 {
     //Clase abstracta de la cual se heredan los metodos.
+=======
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Lab2.IsaiahRaust
+{
+    //Clase abstracta de la cual se heredan los metodos 
+>>>>>>> 1ea55c1 (Entrega Lab2)
     public abstract class Shapes
     {
 
