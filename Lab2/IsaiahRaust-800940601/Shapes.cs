@@ -1,4 +1,4 @@
-﻿namespace Lab2.IsaiahRaust
+namespace Lab2.IsaiahRaust
 {
     //Clase abstracta de la cual se heredan los metodos.
     public abstract class Shapes
