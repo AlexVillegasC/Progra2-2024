@@ -10,7 +10,7 @@
         }
 
 
-        //Uso de los metodos heredados, adaptado para cada figura
+        //Uso de los metodos heredados, adaptado para cada figura.
         public override double CalculateArea()
         {
             return Math.PI * radius * radius;
