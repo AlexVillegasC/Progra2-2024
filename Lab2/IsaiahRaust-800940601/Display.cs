@@ -2,6 +2,8 @@
 {
     class Display
     {
+
+        //Main oara deplegar los resultados (Nota se que no se ocupa por que aqui se usa el sandbox)
         static void Main(string[] args)
         {
             Shapes square = new Square(5);
