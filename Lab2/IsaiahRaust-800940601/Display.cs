@@ -3,10 +3,15 @@
     class Display
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
 
         //Main oara deplegar los resultados (Nota se que no se ocupa por que aqui se usa el sandbox)
 =======
 >>>>>>> 1ea55c1 (Entrega Lab2)
+=======
+
+        //Main oara deplegar los resultados (Nota se que no se ocupa por que aqui se usa el sandbox)
+>>>>>>> 93d09d0 (Lab2)
         static void Main(string[] args)
         {
             Shapes square = new Square(5);
