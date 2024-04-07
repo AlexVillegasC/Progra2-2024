@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Lab2.IsaiahRaust
 {
-    //Clase abstracta de la cual se heredan los metodos 
+    //Clase abstracta de la cual se heredan los metodos.
     public abstract class Shapes
     {
 

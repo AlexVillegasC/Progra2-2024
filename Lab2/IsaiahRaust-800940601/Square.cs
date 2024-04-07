@@ -11,7 +11,7 @@
         }
 
 
-        //Uso de los metodos heredados, adaptado para cada figura
+        //Uso de los metodos heredados, adaptado para cada figura.
         public override double CalculateArea()
         {
             return sideLength * sideLength;
