@@ -1,4 +1,4 @@
-﻿namespace Lab2.JasonReyes;
+namespace Lab2.JasonReyes;
 
 public class Motocicleta : Vehiculo
 {
