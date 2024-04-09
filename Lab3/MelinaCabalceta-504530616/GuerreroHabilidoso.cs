@@ -1,7 +1,10 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ﻿namespace Lab3.MelinaCabalceta_504530616
 =======
+=======
+>>>>>>> b386617 (Lab3 Interface)
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,10 +12,13 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Lab3.MelinaCabalceta_504530616
+<<<<<<< HEAD
 >>>>>>> b386617 (Lab3 Interface)
 =======
 ﻿namespace Lab3.MelinaCabalceta_504530616
 >>>>>>> 2550663 (Merge with latest Dev changes)
+=======
+>>>>>>> b386617 (Lab3 Interface)
 {
     public class GuerreroHabilidoso : Guerrero, IArmaCuerpoACuerpo, IArmaADistancia
     {
@@ -29,6 +35,7 @@ namespace Lab3.MelinaCabalceta_504530616
         {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             Console.WriteLine($"{Nombre} ataca con su arco");
 =======
             Console.WriteLine($"{Nombre} ataca con su arco" );
@@ -36,6 +43,9 @@ namespace Lab3.MelinaCabalceta_504530616
 =======
             Console.WriteLine($"{Nombre} ataca con su arco");
 >>>>>>> 2550663 (Merge with latest Dev changes)
+=======
+            Console.WriteLine($"{Nombre} ataca con su arco" );
+>>>>>>> b386617 (Lab3 Interface)
         }
 
         static void Main(string[] args)
