@@ -4,3 +4,6 @@ public interface Arma
 {
     void Disparar();
 }
+
+
+
