@@ -1,4 +1,4 @@
-﻿//
+//
 namespace Lab3.DanielNunez_119040930
 {
     public class Telefono : TelefonoConBateria, TelefonoConConexionInalabrica
