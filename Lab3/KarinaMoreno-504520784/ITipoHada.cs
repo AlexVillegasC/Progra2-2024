@@ -2,5 +2,6 @@
 {
     public interface ITipoHada
     {
+        void AtaqueHada();
     }
 }
