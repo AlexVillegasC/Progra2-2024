@@ -1,6 +1,7 @@
 ﻿namespace Lab3.KarinaMoreno
 {
-    internal interface ITipoMagico
+    public interface ITipoMagico
     {
+        void AtaqueMagico();
     }
 }
