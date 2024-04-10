@@ -1,12 +1,16 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ﻿//
 =======
+=======
+>>>>>>> 7d566ca (Testing)
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 >>>>>>> 7d566ca (Testing)
@@ -16,6 +20,9 @@ using System.Threading.Tasks;
 =======
 ﻿//
 >>>>>>> 2550663 (Merge with latest Dev changes)
+=======
+
+>>>>>>> 7d566ca (Testing)
 namespace Lab3.DanielNunez_119040930
 {
     public interface TelefonoConConexionInalabrica
