@@ -19,6 +19,7 @@ public class ContenedorKarina<T>
     }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> bd440c0 (lab3 Karina - Limpiando cambios de Lab3)
 }
@@ -38,3 +39,6 @@ public class ContenedorKarina<T>
 =======
 //HomeDecor.mostrarObjetos();
 >>>>>>> bd440c0 (lab3 Karina - Limpiando cambios de Lab3)
+=======
+}
+>>>>>>> 273e860 (lab 3 y 4)
