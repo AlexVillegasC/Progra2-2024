@@ -19,10 +19,14 @@ public class Clefairy : ITipoHada, ITipoMagico
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     public void AtaqueHada()
 =======
     public void AtaqueTierno()
 >>>>>>> 273e860 (lab 3 y 4)
+=======
+    public void AtaqueHada()
+>>>>>>> 0b4914f (interface changes)
     {
         throw new NotImplementedException();
     }
