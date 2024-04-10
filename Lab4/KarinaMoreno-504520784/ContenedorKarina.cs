@@ -17,6 +17,7 @@ public class ContenedorKarina<T>
             Console.WriteLine($"{objeto}");
         }
     }
+<<<<<<< HEAD
 }
 
 // CODIGO para el ejecutar en el Program.cs
@@ -27,3 +28,6 @@ public class ContenedorKarina<T>
 //Plushies cinnamoroll = new Plushies("cinnamoroll");
 //HomeDecor.agregar(cinnamoroll);
 //HomeDecor.mostrarObjetos();
+=======
+}
+>>>>>>> 273e860 (lab 3 y 4)

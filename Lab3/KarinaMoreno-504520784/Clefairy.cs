@@ -18,7 +18,11 @@ public class Clefairy : ITipoHada, ITipoMagico
         throw new NotImplementedException();
     }
 
+<<<<<<< HEAD
     public void AtaqueHada()
+=======
+    public void AtaqueTierno()
+>>>>>>> 273e860 (lab 3 y 4)
     {
         throw new NotImplementedException();
     }
