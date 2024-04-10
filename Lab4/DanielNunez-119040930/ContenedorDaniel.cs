@@ -1,4 +1,4 @@
-﻿namespace Lab4.DanielNunez_119040930
+namespace Lab4.DanielNunez_119040930
 {
     public class ContenedorDaniel<T>
     {
