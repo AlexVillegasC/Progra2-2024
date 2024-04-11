@@ -19,6 +19,7 @@
         }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
  
@@ -26,5 +27,8 @@
 =======
 
 >>>>>>> 2550663 (Merge with latest Dev changes)
+=======
+ 
+>>>>>>> 49ff694 (Lab1 Danny Abarca 504000385)
     }
 }
