@@ -17,6 +17,10 @@
             this.Defensa = defensa;
             this.Nombre = Nombre;
         }
+<<<<<<< HEAD
 
+=======
+ 
+>>>>>>> 49ff694 (Lab1 Danny Abarca 504000385)
     }
 }

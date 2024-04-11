@@ -37,12 +37,20 @@
 
                     if (randomNumber == Chikorita.Defensa)
                     {
+<<<<<<< HEAD
                         Console.WriteLine(Chikorita.Nombre + " ha logrado esquivar el ataque, no recibe daño en sus puntos de ataque");
+=======
+                        Console.WriteLine( Chikorita.Nombre + " ha logrado esquivar el ataque, no recibe daño en sus puntos de ataque");
+>>>>>>> 49ff694 (Lab1 Danny Abarca 504000385)
                         Console.ReadKey();
                     }
                     else
                     {
+<<<<<<< HEAD
                         Console.WriteLine(Chikorita.Nombre + " ha recivido una ataque directo de " + Psyduck.Nombre + " y tiene un rebajo de " + Psyduck.Ataque + " en la vida");
+=======
+                        Console.WriteLine(Chikorita.Nombre +" ha recivido una ataque directo de " + Psyduck.Nombre + " y tiene un rebajo de " + Psyduck.Ataque + " en la vida");
+>>>>>>> 49ff694 (Lab1 Danny Abarca 504000385)
                         Console.ReadKey();
 
                         Chikorita.Vida -= Psyduck.Ataque;
@@ -52,7 +60,11 @@
                     }
                 }
 
+<<<<<<< HEAD
                 turnoPok1 = !turnoPok1;
+=======
+                turnoPok1 = !turnoPok1; 
+>>>>>>> 49ff694 (Lab1 Danny Abarca 504000385)
             }
 
             if (Chikorita.Vida <= 0)
