@@ -4,6 +4,7 @@ public interface IKamehameha
 {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     void Kamehameha();
 =======
     void Kamehameha()
@@ -11,4 +12,7 @@ public interface IKamehameha
 =======
     void Kamehameha();
 >>>>>>> 942df9a (Code Cleanup)
+=======
+    void Kamehameha()
+>>>>>>> b8d7344 (Lab3)
 }

@@ -4,6 +4,7 @@ public interface ITeletransportacion
 {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     void Teletransportacion();
 =======
     void Teletransportacion()
@@ -11,4 +12,7 @@ public interface ITeletransportacion
 =======
     void Teletransportacion();
 >>>>>>> 942df9a (Code Cleanup)
+=======
+    void Teletransportacion()
+>>>>>>> b8d7344 (Lab3)
 }
