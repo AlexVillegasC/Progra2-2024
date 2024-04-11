@@ -1,4 +1,4 @@
-namespace Lab3.WaynerDíaz;
+namespace Lab3.WaynerDï¿½az;
 
 public interface IKamehameha
 {
