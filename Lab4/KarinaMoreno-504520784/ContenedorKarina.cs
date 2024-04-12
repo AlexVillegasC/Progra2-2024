@@ -1,4 +1,6 @@
-﻿namespace Lab4.KarinaMoreno_504520784;
+﻿using Lab4.KarinaMoreno_504520784.Decoration;
+
+namespace Lab4.KarinaMoreno_504520784;
 
 public class ContenedorKarina<T>
 {
@@ -18,6 +20,9 @@ public class ContenedorKarina<T>
         }
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bd440c0 (lab3 Karina - Limpiando cambios de Lab3)
 }
 
 // CODIGO para el ejecutar en el Program.cs
@@ -27,7 +32,11 @@ public class ContenedorKarina<T>
 //ContenedorKarina<Plushies> HomeDecor = new Lab4.KarinaMoreno_504520784.ContenedorKarina<Plushies>();
 //Plushies cinnamoroll = new Plushies("cinnamoroll");
 //HomeDecor.agregar(cinnamoroll);
+<<<<<<< HEAD
 //HomeDecor.mostrarObjetos();
 =======
 }
 >>>>>>> 273e860 (lab 3 y 4)
+=======
+//HomeDecor.mostrarObjetos();
+>>>>>>> bd440c0 (lab3 Karina - Limpiando cambios de Lab3)
