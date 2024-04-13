@@ -7,4 +7,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="DannyAlavarado-504000385\Productos\" />
+  </ItemGroup>
+
 </Project>
