@@ -1,6 +1,6 @@
 ﻿namespace Lab1.Alondra;
 
-public class Pokemon 
+public class Pokemon
 {
     public int Vida { get; set; } = 100;
 

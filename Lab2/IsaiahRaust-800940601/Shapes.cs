@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Lab2.IsaiahRaust
+﻿namespace Lab2.IsaiahRaust
 {
     //Clase abstracta de la cual se heredan los metodos.
     public abstract class Shapes
