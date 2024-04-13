@@ -31,13 +31,9 @@
             {
                 return pok2.Nombre;
             }
-            else
-            {
-                return pok1.Nombre;
-            }
 
-
-            return "Ganadro";
+            
+            return pok1.Nombre;
         }
     }
 }
