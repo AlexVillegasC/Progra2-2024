@@ -1,7 +1,7 @@
 ﻿
 namespace Lab2.BaironFallas_118860753;
 
-public class Circulo:FiguraGeometrica
+public class Circulo : FiguraGeometrica
 {
     public float Radio { get; set; }
     public Circulo(string name, float radio) : base(name)

@@ -1,7 +1,7 @@
 ﻿
 namespace Lab2.BaironFallas_118860753;
 
-public class Cuadrado:FiguraGeometrica
+public class Cuadrado : FiguraGeometrica
 {
     public float Lado { get; set; }
     public Cuadrado(string name, float lado) : base(name)
