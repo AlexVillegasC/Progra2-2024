@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ﻿namespace Lab2.JasonReyes;
 =======
 ﻿using System;
@@ -9,6 +10,9 @@ using System.Threading.Tasks;
 
 namespace Lab2.JasonReyes;
 >>>>>>> e793bcd (Lab2 final changes)
+=======
+﻿namespace Lab2.JasonReyes;
+>>>>>>> 2550663 (Merge with latest Dev changes)
 
 public class Motocicleta : Vehiculo
 {

@@ -32,7 +32,12 @@
                 return pok2.Nombre;
             }
 <<<<<<< HEAD
+<<<<<<< HEAD
             
+=======
+
+
+>>>>>>> 2550663 (Merge with latest Dev changes)
 =======
 
 

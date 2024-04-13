@@ -1,6 +1,4 @@
-﻿using Lab4.KarinaMoreno_504520784.Decoration;
-
-namespace Lab4.KarinaMoreno_504520784;
+﻿namespace Lab4.KarinaMoreno_504520784;
 
 public class ContenedorKarina<T>
 {

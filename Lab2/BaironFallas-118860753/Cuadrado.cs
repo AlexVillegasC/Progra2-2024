@@ -2,10 +2,14 @@
 namespace Lab2.BaironFallas_118860753;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 public class Cuadrado : FiguraGeometrica
 =======
 public class Cuadrado:FiguraGeometrica
 >>>>>>> 8f19392 (Lab2-clase abstracta con dos metodos.)
+=======
+public class Cuadrado : FiguraGeometrica
+>>>>>>> 2550663 (Merge with latest Dev changes)
 {
     public float Lado { get; set; }
     public Cuadrado(string name, float lado) : base(name)

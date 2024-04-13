@@ -38,19 +38,27 @@
                     if (randomNumber == Chikorita.Defensa)
                     {
 <<<<<<< HEAD
+<<<<<<< HEAD
                         Console.WriteLine(Chikorita.Nombre + " ha logrado esquivar el ataque, no recibe daño en sus puntos de ataque");
 =======
                         Console.WriteLine( Chikorita.Nombre + " ha logrado esquivar el ataque, no recibe daño en sus puntos de ataque");
 >>>>>>> 49ff694 (Lab1 Danny Abarca 504000385)
+=======
+                        Console.WriteLine(Chikorita.Nombre + " ha logrado esquivar el ataque, no recibe daño en sus puntos de ataque");
+>>>>>>> 2550663 (Merge with latest Dev changes)
                         Console.ReadKey();
                     }
                     else
                     {
 <<<<<<< HEAD
+<<<<<<< HEAD
                         Console.WriteLine(Chikorita.Nombre + " ha recivido una ataque directo de " + Psyduck.Nombre + " y tiene un rebajo de " + Psyduck.Ataque + " en la vida");
 =======
                         Console.WriteLine(Chikorita.Nombre +" ha recivido una ataque directo de " + Psyduck.Nombre + " y tiene un rebajo de " + Psyduck.Ataque + " en la vida");
 >>>>>>> 49ff694 (Lab1 Danny Abarca 504000385)
+=======
+                        Console.WriteLine(Chikorita.Nombre + " ha recivido una ataque directo de " + Psyduck.Nombre + " y tiene un rebajo de " + Psyduck.Ataque + " en la vida");
+>>>>>>> 2550663 (Merge with latest Dev changes)
                         Console.ReadKey();
 
                         Chikorita.Vida -= Psyduck.Ataque;
@@ -61,10 +69,14 @@
                 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
                 turnoPok1 = !turnoPok1;
 =======
                 turnoPok1 = !turnoPok1; 
 >>>>>>> 49ff694 (Lab1 Danny Abarca 504000385)
+=======
+                turnoPok1 = !turnoPok1;
+>>>>>>> 2550663 (Merge with latest Dev changes)
             }
 
             if (Chikorita.Vida <= 0)

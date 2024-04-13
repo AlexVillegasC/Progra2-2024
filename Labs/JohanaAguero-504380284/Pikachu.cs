@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ﻿namespace Lab1.JohanaAguero_504380284
 =======
 ﻿using Lab1.AlexVillegas;
@@ -10,6 +11,9 @@ using System.Threading.Tasks;
 
 namespace Lab1.JohanaAguero_504380284
 >>>>>>> b5047c9 (Lab1)
+=======
+﻿namespace Lab1.JohanaAguero_504380284
+>>>>>>> 2550663 (Merge with latest Dev changes)
 {
     public class Pikachu : Pokemon
     {

@@ -18,9 +18,13 @@
             this.Nombre = Nombre;
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
  
 >>>>>>> 49ff694 (Lab1 Danny Abarca 504000385)
+=======
+
+>>>>>>> 2550663 (Merge with latest Dev changes)
     }
 }
