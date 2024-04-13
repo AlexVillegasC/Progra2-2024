@@ -1,4 +1,4 @@
-﻿namespace Lab1.AlexVillegas;
+﻿namespace Lab1.JohanaAguero_504380284;
 
 public class Pokemon
 {
@@ -22,3 +22,4 @@ public class Pokemon
         this.Nombre = Nombre;
     }
 }
+
