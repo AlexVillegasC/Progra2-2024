@@ -20,4 +20,5 @@ public abstract class Lol
     {
         Console.WriteLine("Bienvenido a la Grieta del invocador");
     }
+
 }
