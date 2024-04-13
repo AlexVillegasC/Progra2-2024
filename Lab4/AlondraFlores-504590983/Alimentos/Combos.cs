@@ -1,4 +1,6 @@
-﻿namespace Lab4.AlondraFlores_504590983.Alimentos;
+﻿using static System.Runtime.InteropServices.JavaScript.JSType;
+
+namespace Lab4.AlondraFlores_504590983.Alimentos;
 
 public class Combos
 {
@@ -7,5 +9,10 @@ public class Combos
     public Combos(string nombre)
     {
         this.NombreCombo= nombre;
+    }
+
+    public override string ToString()
+    {
+        return $"NCombos: {NombreCombo}";
     }
 }

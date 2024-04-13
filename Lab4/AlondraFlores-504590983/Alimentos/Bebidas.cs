@@ -8,5 +8,10 @@ public class Bebidas
     {
         this.Nombre = nombre;
     }
+
+    public override string ToString()
+    {
+        return $"NBebida: {Nombre}";
+    }
 }
 
