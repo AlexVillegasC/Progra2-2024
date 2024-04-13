@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ﻿namespace Lab3.MelinaCabalceta_504530616
 =======
 ﻿using System;
@@ -13,6 +14,9 @@ namespace Lab3.MelinaCabalceta_504530616
 =======
 ﻿namespace Lab3.MelinaCabalceta_504530616
 >>>>>>> 2550663 (Merge with latest Dev changes)
+=======
+﻿namespace Lab3.MelinaCabalceta_504530616
+>>>>>>> origin/development
 {
     public class GuerreroHabilidoso : Guerrero, IArmaCuerpoACuerpo, IArmaADistancia
     {
@@ -29,6 +33,7 @@ namespace Lab3.MelinaCabalceta_504530616
         {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             Console.WriteLine($"{Nombre} ataca con su arco");
 =======
             Console.WriteLine($"{Nombre} ataca con su arco" );
@@ -36,6 +41,9 @@ namespace Lab3.MelinaCabalceta_504530616
 =======
             Console.WriteLine($"{Nombre} ataca con su arco");
 >>>>>>> 2550663 (Merge with latest Dev changes)
+=======
+            Console.WriteLine($"{Nombre} ataca con su arco");
+>>>>>>> origin/development
         }
 
         static void Main(string[] args)

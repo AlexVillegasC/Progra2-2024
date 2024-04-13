@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ﻿namespace Lab4.DanielNunez_119040930
 =======
 ﻿using System;
@@ -13,6 +14,9 @@ namespace Lab4.DanielNunez_119040930
 =======
 ﻿namespace Lab4.DanielNunez_119040930
 >>>>>>> 2550663 (Merge with latest Dev changes)
+=======
+﻿namespace Lab4.DanielNunez_119040930
+>>>>>>> origin/development
 {
     public class ContenedorDaniel<T>
     {

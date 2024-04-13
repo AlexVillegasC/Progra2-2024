@@ -3,6 +3,7 @@ namespace Lab3.OrlandoBaltodano;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 public class Bennet : IHabilidadDefinitiva, IHabilidadElemental
 =======
 public class Bennet : IHabilidadDefinitiva , IHabilidadElemental
@@ -10,10 +11,14 @@ public class Bennet : IHabilidadDefinitiva , IHabilidadElemental
 =======
 public class Bennet : IHabilidadDefinitiva, IHabilidadElemental
 >>>>>>> 2550663 (Merge with latest Dev changes)
+=======
+public class Bennet : IHabilidadDefinitiva, IHabilidadElemental
+>>>>>>> origin/development
 {
     public string Nombre { get; set; }
     public int Vida { get; set; }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     protected Bennet(string nombre, int vida)
@@ -23,6 +28,9 @@ public class Bennet : IHabilidadDefinitiva, IHabilidadElemental
 =======
     protected Bennet(string nombre, int vida)
 >>>>>>> 2550663 (Merge with latest Dev changes)
+=======
+    protected Bennet(string nombre, int vida)
+>>>>>>> origin/development
     {
         this.Nombre = nombre;
         this.Vida = vida;

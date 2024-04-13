@@ -2,6 +2,9 @@
 namespace Lab2.CristhianAltamirano;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> origin/development
 public class Gojo : Jujutsu
 {
     public Gojo(int ataque, int vida, string Nombre, int dominio) : base(ataque, vida, Nombre, dominio)
@@ -17,6 +20,7 @@ public class Gojo : Jujutsu
     }
 }
 
+<<<<<<< HEAD
 =======
     public class Gojo : Jujutsu
 =======
@@ -40,3 +44,5 @@ public class Gojo : Jujutsu
 }
 
 >>>>>>> 2550663 (Merge with latest Dev changes)
+=======
+>>>>>>> origin/development

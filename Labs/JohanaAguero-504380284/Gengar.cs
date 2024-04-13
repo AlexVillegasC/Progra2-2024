@@ -1,5 +1,8 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> origin/development
 ﻿namespace Lab1.JohanaAguero_504380284
 {
     public class Gengar : Pokemon
@@ -13,6 +16,7 @@
     }
 
 }
+<<<<<<< HEAD
 =======
 ﻿using Lab1.AlexVillegas;
 using System;
@@ -41,3 +45,5 @@ namespace Lab1.JohanaAguero_504380284
 
 }
 >>>>>>> 2550663 (Merge with latest Dev changes)
+=======
+>>>>>>> origin/development

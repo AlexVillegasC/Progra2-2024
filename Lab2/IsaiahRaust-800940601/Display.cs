@@ -4,6 +4,7 @@
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
         //Main oara deplegar los resultados (Nota se que no se ocupa por que aqui se usa el sandbox)
 =======
@@ -12,6 +13,10 @@
 
         //Main oara deplegar los resultados (Nota se que no se ocupa por que aqui se usa el sandbox)
 >>>>>>> 93d09d0 (Lab2)
+=======
+
+        //Main oara deplegar los resultados (Nota se que no se ocupa por que aqui se usa el sandbox)
+>>>>>>> origin/development
         static void Main(string[] args)
         {
             Shapes square = new Square(5);

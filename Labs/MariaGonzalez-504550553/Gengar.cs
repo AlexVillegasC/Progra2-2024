@@ -1,4 +1,4 @@
-﻿namespace Lab1.MariaGonzalez;
+namespace Lab1.MariaGonzalez;
 
 public class Gengar : Pokemon
 {
@@ -9,4 +9,3 @@ public class Gengar : Pokemon
         this.Nombre = nombre;
     }
 }
-

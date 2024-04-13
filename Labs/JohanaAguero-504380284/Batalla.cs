@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ﻿namespace Lab1.JohanaAguero_504380284
 =======
 ﻿using Lab1.AlexVillegas;
@@ -14,6 +15,9 @@ namespace Lab1.JohanaAguero_504380284
 =======
 ﻿namespace Lab1.JohanaAguero_504380284
 >>>>>>> 2550663 (Merge with latest Dev changes)
+=======
+﻿namespace Lab1.JohanaAguero_504380284
+>>>>>>> origin/development
 {
     public static class Batalla
     {

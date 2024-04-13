@@ -1,5 +1,8 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> origin/development
 ﻿namespace Lab1.JohanaAguero_504380284;
 
 public class Pokemon
@@ -19,6 +22,9 @@ public class Pokemon
     /// <param name="Nombre"></param>
     public Pokemon(int ataque, int vida, string Nombre)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> origin/development
     {
         this.Vida = vida;
         this.Ataque = ataque;
@@ -26,6 +32,7 @@ public class Pokemon
     }
 }
 
+<<<<<<< HEAD
 =======
 ﻿using System;
 using System.Collections.Generic;
@@ -51,3 +58,5 @@ public class Pokemon
 >>>>>>> b5047c9 (Lab1)
 =======
 >>>>>>> 942df9a (Code Cleanup)
+=======
+>>>>>>> origin/development

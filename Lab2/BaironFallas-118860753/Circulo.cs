@@ -3,6 +3,7 @@ namespace Lab2.BaironFallas_118860753;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 public class Circulo : FiguraGeometrica
 =======
 public class Circulo:FiguraGeometrica
@@ -10,6 +11,9 @@ public class Circulo:FiguraGeometrica
 =======
 public class Circulo : FiguraGeometrica
 >>>>>>> 2550663 (Merge with latest Dev changes)
+=======
+public class Circulo : FiguraGeometrica
+>>>>>>> origin/development
 {
     public float Radio { get; set; }
     public Circulo(string name, float radio) : base(name)

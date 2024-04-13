@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ﻿namespace Lab1.Cristhian_Altamirano
 =======
 ﻿using Lab1.AlexVillegas;
@@ -10,6 +11,9 @@ namespace Lab1.Cristhian_Altamirano
 =======
 ﻿namespace Lab1.Cristhian_Altamirano
 >>>>>>> 2550663 (Merge with latest Dev changes)
+=======
+﻿namespace Lab1.Cristhian_Altamirano
+>>>>>>> origin/development
 {
     public class Batalla
     {
@@ -84,6 +88,7 @@ namespace Lab1.Cristhian_Altamirano
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             int turno = 1;
 =======
                 int turno = 1;
@@ -91,6 +96,9 @@ namespace Lab1.Cristhian_Altamirano
 =======
             int turno = 1;
 >>>>>>> 2550663 (Merge with latest Dev changes)
+=======
+            int turno = 1;
+>>>>>>> origin/development
 
             do
             {
