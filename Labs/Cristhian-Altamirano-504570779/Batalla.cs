@@ -1,6 +1,4 @@
-﻿using Lab1.AlexVillegas;
-
-namespace Lab1.Cristhian_Altamirano
+﻿namespace Lab1.Cristhian_Altamirano
 {
     public class Batalla
     {
@@ -51,15 +49,61 @@ namespace Lab1.Cristhian_Altamirano
             }
         }
     }
-}
 
-public class Pichasos
-{
-    public string Pelear(Pokemon poke1, Pokemon poke2, bool aplicarReglasPorDebilidad)
+    public class Batallas
     {
-        return string.Empty;
-        //
 
+        public static string Pelear(Pokemon gojo, Pokemon sukuna, bool VentajaAleatoria)
+        {
+            throw new NotImplementedException();
+        }
 
+        public static string Pelear(Pokemon gojo, Pokemon sukuna)
+        {
+            // Crear una instancia de la clase Random
+            Random rnd = new Random();
+
+            // Generar un número aleatorio entre 0 y 100
+            int numeroAleatorio = rnd.Next(1, 2); // El segundo parámetro es exclusivo, por lo que generará números entre 1 y 0
+
+            if (numeroAleatorio == 1)
+            {
+
+            }
+
+            int turno = 1;
+
+            do
+            {
+                if (turno == 1)
+                {
+                    Console.WriteLine("Turno de Gojo:");
+                    sukuna.Vida -= gojo.Ataque;
+                    Console.WriteLine("Sukuna pierde " + gojo.Ataque + " puntos de vida.");
+                    Console.WriteLine("Vida de Sukuna: " + sukuna.Vida);
+                    turno = 2;
+                }
+                else
+                {
+                    Console.WriteLine("Turno de Sukuna:");
+                    gojo.Vida -= sukuna.Ataque;
+                    Console.WriteLine("Gojo pierde " + sukuna.Ataque + " puntos de vida.");
+                    Console.WriteLine("Vida de Gojo: " + gojo.Vida);
+                    turno = 1;
+                }
+            } while (gojo.Vida > 0 && sukuna.Vida > 0);
+
+            if (gojo.Vida <= 0)
+            {
+                Console.WriteLine("Sukuna gana la batalla!");
+            }
+            else
+            {
+                Console.WriteLine("Gojo gana la batalla!");
+            }
+
+            return string.Empty;
+        }
     }
 }
+
