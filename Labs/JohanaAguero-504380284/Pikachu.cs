@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ﻿namespace Lab1.JohanaAguero_504380284
 =======
 =======
@@ -20,6 +21,9 @@ namespace Lab1.JohanaAguero_504380284
 >>>>>>> 2550663 (Merge with latest Dev changes)
 =======
 >>>>>>> b5047c9 (Lab1)
+=======
+﻿namespace Lab1.JohanaAguero_504380284
+>>>>>>> 2550663 (Merge with latest Dev changes)
 {
     public class Pikachu : Pokemon
     {

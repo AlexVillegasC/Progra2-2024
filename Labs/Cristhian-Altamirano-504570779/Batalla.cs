@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ﻿namespace Lab1.Cristhian_Altamirano
 =======
 ﻿using Lab1.AlexVillegas;
@@ -7,6 +8,9 @@ using Lab1.Cristhian_Altamirano;
 
 namespace Lab1.Cristhian_Altamirano
 >>>>>>> 11e395b (test)
+=======
+﻿namespace Lab1.Cristhian_Altamirano
+>>>>>>> 2550663 (Merge with latest Dev changes)
 =======
 ﻿namespace Lab1.Cristhian_Altamirano
 >>>>>>> 2550663 (Merge with latest Dev changes)
@@ -85,6 +89,7 @@ namespace Lab1.Cristhian_Altamirano
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             int turno = 1;
 =======
                 int turno = 1;
@@ -95,6 +100,9 @@ namespace Lab1.Cristhian_Altamirano
 =======
                 int turno = 1;
 >>>>>>> 11e395b (test)
+=======
+            int turno = 1;
+>>>>>>> 2550663 (Merge with latest Dev changes)
 
             do
             {

@@ -5,12 +5,15 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 // Usar solo para pruebas!
 =======
 // See https://aka.ms/new-console-template for more information
 Console.WriteLine("Hello, World!");
 >>>>>>> 942df9a (Code Cleanup)
 =======
+=======
+>>>>>>> 2550663 (Merge with latest Dev changes)
 using Lab4.AlexVillegas_503990937;
 using Lab4.AlexVillegas_503990937.Productos;
 
@@ -21,6 +24,7 @@ miContenedorDeWish.Agregar(sillon);
 miContenedorDeWish.Agregar(mesa);
 
 
+<<<<<<< HEAD
 miContenedorDeWish.MostrarElementos();
 >>>>>>> 2550663 (Merge with latest Dev changes)
 =======
@@ -30,3 +34,6 @@ miContenedorDeWish.MostrarElementos();
 // See https://aka.ms/new-console-template for more information
 Console.WriteLine("Hello, World!");
 >>>>>>> 942df9a (Code Cleanup)
+=======
+miContenedorDeWish.MostrarElementos();
+>>>>>>> 2550663 (Merge with latest Dev changes)

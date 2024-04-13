@@ -1,6 +1,10 @@
 namespace Lab4.Frander_504440503;
 
+<<<<<<< HEAD
 public class contenedorFrander<T>
+=======
+class contenedorFrander<T>
+>>>>>>> 2550663 (Merge with latest Dev changes)
 {
 
     private List<T> elementos = new List<T>();

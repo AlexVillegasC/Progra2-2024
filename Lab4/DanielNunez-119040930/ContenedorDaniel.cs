@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ﻿namespace Lab4.DanielNunez_119040930
 =======
 =======
@@ -19,6 +20,9 @@ namespace Lab4.DanielNunez_119040930
 >>>>>>> 2550663 (Merge with latest Dev changes)
 =======
 >>>>>>> f27fe80 (testing)
+=======
+﻿namespace Lab4.DanielNunez_119040930
+>>>>>>> 2550663 (Merge with latest Dev changes)
 {
     public class ContenedorDaniel<T>
     {

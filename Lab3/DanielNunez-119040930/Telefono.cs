@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ﻿//
 =======
 =======
@@ -27,6 +28,9 @@ using System.Threading.Tasks;
 =======
 //
 >>>>>>> 2f8f3d8 (testing)
+=======
+﻿//
+>>>>>>> 2550663 (Merge with latest Dev changes)
 namespace Lab3.DanielNunez_119040930
 {
     public class Telefono : TelefonoConBateria, TelefonoConConexionInalabrica

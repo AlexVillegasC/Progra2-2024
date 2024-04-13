@@ -5,6 +5,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         public Perro(string nombre, int peso, string habitat) : base(nombre, peso, habitat)
         {
 
@@ -24,6 +25,9 @@
 >>>>>>> be1cce2 ([Lab2]Diego Gutierrez)
 =======
         public Perro(string nombre, int peso, string habitat) : base(nombre, peso, habitat) 
+=======
+        public Perro(string nombre, int peso, string habitat) : base(nombre, peso, habitat)
+>>>>>>> 2550663 (Merge with latest Dev changes)
         {
 
         }

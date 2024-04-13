@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ﻿namespace Lab2.JasonReyes;
 =======
 =======
@@ -19,6 +20,9 @@ namespace Lab2.JasonReyes;
 >>>>>>> 2550663 (Merge with latest Dev changes)
 =======
 >>>>>>> e793bcd (Lab2 final changes)
+=======
+﻿namespace Lab2.JasonReyes;
+>>>>>>> 2550663 (Merge with latest Dev changes)
 
 public class Motocicleta : Vehiculo
 {

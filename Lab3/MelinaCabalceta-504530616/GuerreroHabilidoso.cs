@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ﻿namespace Lab3.MelinaCabalceta_504530616
 =======
 =======
@@ -19,6 +20,9 @@ namespace Lab3.MelinaCabalceta_504530616
 >>>>>>> 2550663 (Merge with latest Dev changes)
 =======
 >>>>>>> b386617 (Lab3 Interface)
+=======
+﻿namespace Lab3.MelinaCabalceta_504530616
+>>>>>>> 2550663 (Merge with latest Dev changes)
 {
     public class GuerreroHabilidoso : Guerrero, IArmaCuerpoACuerpo, IArmaADistancia
     {
@@ -36,6 +40,7 @@ namespace Lab3.MelinaCabalceta_504530616
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             Console.WriteLine($"{Nombre} ataca con su arco");
 =======
             Console.WriteLine($"{Nombre} ataca con su arco" );
@@ -46,6 +51,9 @@ namespace Lab3.MelinaCabalceta_504530616
 =======
             Console.WriteLine($"{Nombre} ataca con su arco" );
 >>>>>>> b386617 (Lab3 Interface)
+=======
+            Console.WriteLine($"{Nombre} ataca con su arco");
+>>>>>>> 2550663 (Merge with latest Dev changes)
         }
 
         static void Main(string[] args)

@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ﻿namespace Lab2.IsaiahRaust
 {
     //Clase abstracta de la cual se heredan los metodos.
@@ -15,6 +16,9 @@ using System.Threading.Tasks;
 
 namespace Lab2.IsaiahRaust
 <<<<<<< HEAD
+=======
+﻿namespace Lab2.IsaiahRaust
+>>>>>>> 2550663 (Merge with latest Dev changes)
 =======
 ﻿namespace Lab2.IsaiahRaust
 >>>>>>> 2550663 (Merge with latest Dev changes)
