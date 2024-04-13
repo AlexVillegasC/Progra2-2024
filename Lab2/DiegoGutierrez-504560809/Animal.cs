@@ -6,7 +6,7 @@
         public int Peso { get; set; }
         public string habitat { get; set; }
 
-        protected Animal(string _nombre, int _peso, string _habitat) 
+        protected Animal(string _nombre, int _peso, string _habitat)
         {
             this.Nombre = _nombre;
             this.Peso = _peso;

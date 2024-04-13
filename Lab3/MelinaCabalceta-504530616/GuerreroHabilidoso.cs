@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Lab3.MelinaCabalceta_504530616
+﻿namespace Lab3.MelinaCabalceta_504530616
 {
     public class GuerreroHabilidoso : Guerrero, IArmaCuerpoACuerpo, IArmaADistancia
     {
@@ -19,7 +13,7 @@ namespace Lab3.MelinaCabalceta_504530616
 
         public void DispararArco()
         {
-            Console.WriteLine($"{Nombre} ataca con su arco" );
+            Console.WriteLine($"{Nombre} ataca con su arco");
         }
 
         static void Main(string[] args)

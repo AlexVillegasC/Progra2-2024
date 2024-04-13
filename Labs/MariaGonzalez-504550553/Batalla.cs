@@ -31,7 +31,12 @@
             {
                 return pok2.Nombre;
             }
+<<<<<<< HEAD
             
+=======
+
+
+>>>>>>> 2550663 (Merge with latest Dev changes)
             return pok1.Nombre;
         }
     }
