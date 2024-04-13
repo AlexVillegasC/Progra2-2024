@@ -19,3 +19,4 @@ namespace Lab2.StarlingQuiros_118640201
         }
     }
 }
+/////
