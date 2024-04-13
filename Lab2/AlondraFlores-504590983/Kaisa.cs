@@ -4,7 +4,6 @@ public class Kaisa : Lol
 {
     public Kaisa(int daño, int vida, string champ) : base(daño, vida, champ)
     {
-
     }
 
     public override void Atacar()
