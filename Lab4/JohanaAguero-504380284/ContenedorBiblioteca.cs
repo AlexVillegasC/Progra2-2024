@@ -15,7 +15,7 @@ public class ContenedorBiblioteca
     {
         visitantes.Add(persona);
     }
-
+     
     public void MostrarLibros()
     {
         Console.WriteLine("Libros en la biblioteca:");
