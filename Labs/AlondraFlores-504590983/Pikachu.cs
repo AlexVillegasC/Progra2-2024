@@ -1,8 +1,8 @@
-﻿namespace Lab1.Alondra; 
+﻿namespace Lab1.Alondra;
 
-public class Pikachu : Pokemon 
+public class Pikachu : Pokemon
 {
-   public Pikachu(int Ataque)
+    public Pikachu(int Ataque)
     {
         this.Ataque = Ataque;
         this.Nombre = "Pikachu";

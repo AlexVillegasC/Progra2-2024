@@ -8,7 +8,7 @@ public class Pokemon
 
     public string Nombre { get; set; }
 
-    public Pokemon (int ataque, int vida, string nombre) 
+    public Pokemon(int ataque, int vida, string nombre)
     {
         this.Ataque = ataque;
         this.Vida = vida;
