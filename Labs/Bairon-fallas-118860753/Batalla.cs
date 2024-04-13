@@ -44,3 +44,8 @@ namespace Lab1.Bairon_fallas
  * 
  * 
  * */
+
+
+//using Lab2.BaironFallas_118860753;
+
+//Circulo circulo = new Circulo("circulo", 90);
