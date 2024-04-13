@@ -12,6 +12,7 @@ public class Gojo : Jujutsu
         Console.WriteLine("Rojo");
         Console.WriteLine("Ritual de vacio.... Purpura.");
         Console.WriteLine("Nah, i'd win!");
+        Console.WriteLine("Gane");
     }
 }
 
