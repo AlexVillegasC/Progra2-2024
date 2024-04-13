@@ -4,6 +4,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 // Usar solo para pruebas!
 =======
 // See https://aka.ms/new-console-template for more information
@@ -25,3 +26,7 @@ miContenedorDeWish.MostrarElementos();
 =======
 // Usar solo para pruebas!
 >>>>>>> 208a3de (Lab5 - Setup)
+=======
+// See https://aka.ms/new-console-template for more information
+Console.WriteLine("Hello, World!");
+>>>>>>> 942df9a (Code Cleanup)
