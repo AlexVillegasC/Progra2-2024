@@ -20,4 +20,5 @@ public class Militar : Arma, Granada
     {
         Console.WriteLine("El militar ha lanzado una granada");
     }
+
 }

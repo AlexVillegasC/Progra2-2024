@@ -10,5 +10,6 @@ public class Yasuo : Lol
     {
         Console.WriteLine("Tirar Segunda Habilidad");
     }
+
 }
 
