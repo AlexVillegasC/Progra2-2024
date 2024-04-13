@@ -4,7 +4,7 @@
     {
         public Greninja(string nombre, int vida, int ataque) : base(nombre, vida, ataque)
         { 
-       
+       //
         }
     }
 }
