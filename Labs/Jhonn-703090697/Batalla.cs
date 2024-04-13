@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Lab1.Jhonn_703090697
+﻿namespace Lab1.Jhonn_703090697
 {
     public class Batalla
     {
@@ -15,7 +9,7 @@ namespace Lab1.Jhonn_703090697
 
             while (pikachu.vida > 0 && greninja.vida > 0)
             {
-                if (Pikachu_turno != 0 )
+                if (Pikachu_turno != 0)
                 {
                     greninja.vida -= pikachu.ataque;
                     Console.WriteLine("La vida de Greninja es de: " + greninja.vida);
@@ -26,9 +20,9 @@ namespace Lab1.Jhonn_703090697
                     Console.WriteLine("La vida de Pikachu es de: " + pikachu.vida);
                 }
 
-                Pikachu_turno = 1 - Pikachu_turno; 
+                Pikachu_turno = 1 - Pikachu_turno;
 
-              
+
                 if (greninja.vida <= 0)
                 {
                     ganador = pikachu.Nombre;
@@ -41,7 +35,7 @@ namespace Lab1.Jhonn_703090697
                 }
             }
 
-            return ganador; 
+            return ganador;
         }
     }
 }
