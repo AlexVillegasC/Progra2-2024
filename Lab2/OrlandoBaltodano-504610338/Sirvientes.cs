@@ -10,13 +10,14 @@ public abstract class Sirvientes
     protected Sirvientes(string name, int hp, int atack)
     {
 
-       this.Name = name;
-       this. HP = hp;
-       this. Atack = atack;
+        this.Name = name;
+        this.HP = hp;
+        this.Atack = atack;
     }
     public abstract void Atacar();
-    
-    public virtual void Ultimate() {
+
+    public virtual void Ultimate()
+    {
 
         Console.WriteLine("Noble Phantasm");
     }

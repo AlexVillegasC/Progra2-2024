@@ -1,11 +1,18 @@
-﻿namespace Lab4.AlexVillegas_503990937.Productos;
+﻿using System.Xml.Linq;
+
+namespace Lab4.AlexVillegas_503990937.Productos;
 
 public class Muebles
 {
-    public string Nombre { get; set; }
+    public string Name { get; set; }
 
-    public Muebles(string nombre)
+    public Muebles(string name)
     {
-        this.Nombre = nombre;
+        this.Name = name;
+    }
+
+    public override string ToString()
+    {
+        return $"Name: {Name}";
     }
 }
