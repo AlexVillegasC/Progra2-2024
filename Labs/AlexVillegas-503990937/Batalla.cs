@@ -1,6 +1,4 @@
-﻿using System.Globalization;
-
-namespace Lab1.AlexVillegas;
+﻿namespace Lab1.AlexVillegas;
 
 public static class Batalla
 {

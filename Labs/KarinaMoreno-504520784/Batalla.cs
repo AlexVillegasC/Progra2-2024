@@ -8,7 +8,7 @@ public class Batalla
 
         return string.Empty;
     }
-    public string Pelear (Pokemon pokemon1, Pokemon pokemon2)
+    public string Pelear(Pokemon pokemon1, Pokemon pokemon2)
     {
         return "Ganador";
     }
