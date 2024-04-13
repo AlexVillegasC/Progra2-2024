@@ -1,0 +1,11 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Name": "CLI.Sandbox\\CLI.Sandbox.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]
