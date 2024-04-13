@@ -6,6 +6,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 // Usar solo para pruebas!
 =======
 // See https://aka.ms/new-console-template for more information
@@ -37,3 +38,6 @@ Console.WriteLine("Hello, World!");
 =======
 miContenedorDeWish.MostrarElementos();
 >>>>>>> 2550663 (Merge with latest Dev changes)
+=======
+// Usar solo para pruebas!
+>>>>>>> 208a3de (Lab5 - Setup)
