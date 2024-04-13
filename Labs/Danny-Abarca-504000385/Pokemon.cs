@@ -17,6 +17,6 @@
             this.Defensa = defensa;
             this.Nombre = Nombre;
         }
- 
+
     }
 }

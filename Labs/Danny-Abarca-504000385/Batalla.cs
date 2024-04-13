@@ -37,12 +37,12 @@
 
                     if (randomNumber == Chikorita.Defensa)
                     {
-                        Console.WriteLine( Chikorita.Nombre + " ha logrado esquivar el ataque, no recibe daño en sus puntos de ataque");
+                        Console.WriteLine(Chikorita.Nombre + " ha logrado esquivar el ataque, no recibe daño en sus puntos de ataque");
                         Console.ReadKey();
                     }
                     else
                     {
-                        Console.WriteLine(Chikorita.Nombre +" ha recivido una ataque directo de " + Psyduck.Nombre + " y tiene un rebajo de " + Psyduck.Ataque + " en la vida");
+                        Console.WriteLine(Chikorita.Nombre + " ha recivido una ataque directo de " + Psyduck.Nombre + " y tiene un rebajo de " + Psyduck.Ataque + " en la vida");
                         Console.ReadKey();
 
                         Chikorita.Vida -= Psyduck.Ataque;
@@ -52,7 +52,7 @@
                     }
                 }
 
-                turnoPok1 = !turnoPok1; 
+                turnoPok1 = !turnoPok1;
             }
 
             if (Chikorita.Vida <= 0)

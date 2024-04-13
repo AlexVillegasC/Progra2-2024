@@ -1,7 +1,4 @@
-﻿using Lab1.AlexVillegas;
-using Lab1.Cristhian_Altamirano;
-
-namespace Lab1.Cristhian_Altamirano
+﻿namespace Lab1.Cristhian_Altamirano
 {
     public class Batalla
     {
@@ -74,7 +71,7 @@ namespace Lab1.Cristhian_Altamirano
 
             }
 
-                int turno = 1;
+            int turno = 1;
 
             do
             {

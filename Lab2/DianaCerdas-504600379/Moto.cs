@@ -2,7 +2,7 @@
 
 namespace Lab2.DianaCerdas_504600379
 {
-    public abstract  class Moto : Vehiculo
+    public abstract class Moto : Vehiculo
     {
         public override void Conducir()
         {
