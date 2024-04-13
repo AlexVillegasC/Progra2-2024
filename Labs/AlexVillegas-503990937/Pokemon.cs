@@ -15,10 +15,10 @@ public class Pokemon
     /// <param name="ataque">Esto representa un ataque</param>
     /// <param name="vida"></param>
     /// <param name="Nombre"></param>
-    public Pokemon(int ataque, int vida, string Nombre)
+    public Pokemon(int ataque, int vida, string nombre)
     {
         this.Vida = vida;
         this.Ataque = ataque;
-        this.Nombre = Nombre;
+        this.Nombre = nombre;
     }
 }
