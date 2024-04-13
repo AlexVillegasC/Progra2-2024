@@ -1,16 +1,16 @@
 namespace Lab4.Frander_504440503;
 
-class contenedorFrander<T>
+public class contenedorFrander<T>
 {
 
     private List<T> elementos = new List<T>();
 
-
-    public contenedorFrander(T elemento)
+// Método para agregar elementos al contenedor
+    public void Agregar(T elemento)
     {
         elementos.Add(elemento);
-        Console.WriteLine("Persona agregada con exito...");
     }
+
 
     public void MostrarElementos()
     {
