@@ -1,14 +1,10 @@
-﻿using Lab1.Bairon_fallas;
-using System;
-using System.ComponentModel.Design;
-
-namespace Lab1.Bairon_fallas
+﻿namespace Lab1.Bairon_fallas
 {
     public class Batalla
     {
         public void Pelear(Pokemon pikachu, Pokemon gengar)
         {
-            while (pikachu.Vida > 0 && gengar.Vida >0)
+            while (pikachu.Vida > 0 && gengar.Vida > 0)
             {
                 // Turno de pikachu
                 gengar.Vida -= pikachu.Ataque;
@@ -16,7 +12,7 @@ namespace Lab1.Bairon_fallas
                 {
                     Console.WriteLine($"gengar ha sido derrotado!");
                     Console.WriteLine($"pikachu es el ganador!");
-                   
+
                     return;
                 }
                 Console.WriteLine($" pikachu ataca a gengar, Vida de gengar despues del ataque: {gengar.Vida}");
@@ -33,7 +29,7 @@ namespace Lab1.Bairon_fallas
                     return;
                 }
                 Console.WriteLine($" Gengar ataca a pikachu, Vida de pikachu despues del ataque: {pikachu.Vida}");
-                
+
             }
         }
     }

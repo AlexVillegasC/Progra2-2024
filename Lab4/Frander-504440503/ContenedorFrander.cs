@@ -1,7 +1,6 @@
-using System.Runtime.CompilerServices;  
 namespace Lab4.Frander_504440503;
 
-class contenedorFrander <T>
+class contenedorFrander<T>
 {
 
     private List<T> elementos = new List<T>();

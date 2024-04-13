@@ -1,12 +1,12 @@
 ﻿
 namespace Lab3.OrlandoBaltodano;
 
-public class Bennet : IHabilidadDefinitiva , IHabilidadElemental
+public class Bennet : IHabilidadDefinitiva, IHabilidadElemental
 {
     public string Nombre { get; set; }
     public int Vida { get; set; }
 
-    protected Bennet(string nombre,int vida) 
+    protected Bennet(string nombre, int vida)
     {
         this.Nombre = nombre;
         this.Vida = vida;
