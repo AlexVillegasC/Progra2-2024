@@ -13,8 +13,4 @@
     <None Remove="NewFolder1\**" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="IsaiahRaust-800940601\" />
-  </ItemGroup>
-
 </Project>
