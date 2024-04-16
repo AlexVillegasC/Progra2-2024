@@ -17,9 +17,9 @@ public class ContenedorBairon<T>
     public void Imprimir()
     {
         Console.WriteLine("Elementos en el contenedor:");
-        foreach (var x in ListaElementos)
+        foreach (var elemento in ListaElementos)
         {
-            Console.WriteLine(x);
+            Console.WriteLine(elemento);
         }
     }
 }
