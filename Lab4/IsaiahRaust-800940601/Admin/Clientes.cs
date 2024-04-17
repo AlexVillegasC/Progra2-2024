@@ -1,6 +1,17 @@
-﻿namespace Lab4.IsaiahRaust_800940601.Admin
+﻿namespace Lab4.IsaiahRaust.Admin
 {
-    internal class Clientes
+    public class Clientes
     {
+
+        public string Nombre { get; set; }
+
+        public Clientes(string nombre) { Nombre = nombre; }
+
+        public override string ToString()
+        {
+            return $"Nombre: {Nombre}";
+        }
+
     }
+
 }

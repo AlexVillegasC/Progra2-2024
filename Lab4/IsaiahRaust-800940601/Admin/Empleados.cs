@@ -1,12 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Lab4.IsaiahRaust_800940601.Admin
+﻿namespace Lab4.IsaiahRaust.Admin
 {
-    internal class Empleados
+    public class Empleados
     {
+
+        public string Codigo { get; set; }
+
+        public Empleados(string codigo) { Codigo = codigo; }
+
+        public override string ToString()
+        {
+            return $"Codigo de empleado: {Codigo}";
+        }
+
     }
+
 }
