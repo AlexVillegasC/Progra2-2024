@@ -8,4 +8,9 @@ public class Figures
     {
         this.Nombre = nombre;
     }
+
+    public override string ToString()
+    {
+        return $"Name: {Nombre}";
+    }
 }
