@@ -24,7 +24,7 @@
 
         public virtual void Entrada()
         {
-            Console.WriteLine("Bienvenido a Canabi´s Store");
+            Console.WriteLine("<-----Bienvenido a Canabi´s Store------>");
             Console.WriteLine("Aqui podras encontrar todo tipo de articulos a base de canabis y canabis misma");
         }
     }
