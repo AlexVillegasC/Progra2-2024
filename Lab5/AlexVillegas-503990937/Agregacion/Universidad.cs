@@ -1,5 +1,5 @@
 ﻿namespace Lab5.AlexVillegas_503990937.Agregacion;
-]//sssss
+//sssss
 public class Universidad
 {
     public List<Estudiante> Estudiantes { get; set; }
