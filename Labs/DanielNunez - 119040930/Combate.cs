@@ -1,26 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Lab1.DanielNunez___119040930
+﻿namespace Lab1.DanielNunez___119040930
 {
     public class Combate
     {
         public void Pelear(Pikachu pikachu, Charizard charizard)
         {
-            pikachu.Vida = 100; 
-            charizard.vida = 120; 
+            pikachu.Vida = 100;
+            charizard.vida = 120;
 
             bool turno = false;
             do
             {
-                
+
                 if (!turno)
                 {
-                    
-                    charizard.Vida -= pikachu.Ataque;  
+
+                    charizard.Vida -= pikachu.Ataque;
                     Console.WriteLine($"Pikachu ataca a Charizard. Vida de Charizard: {charizard.Vida}");
                     turno = true;
                 }
