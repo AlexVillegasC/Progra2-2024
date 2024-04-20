@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Lab1.BrayanPérez_504510529
 {
     public class Pokemon
-    {
+    { 
         public int Vida { get; set; } = 100;
 
         public int Ataque { get; set; }
