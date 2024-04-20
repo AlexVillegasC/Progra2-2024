@@ -1,4 +1,6 @@
-﻿namespace Lab4.CristhianAltamirano_504570779;
+﻿using Lab4.CristhianAltamirano_504570779.Vehiculoss;
+
+namespace Lab4.CristhianAltamirano_504570779;
 
 public class ContenedorCristhian<T>
 {
@@ -20,7 +22,7 @@ public class ContenedorCristhian<T>
         }
     }
 
-    internal void Agregar(Moto moto)
+    internal void Agregar(Motoss moto)
     {
         throw new NotImplementedException();
     }
@@ -30,8 +32,8 @@ public class ContenedorCristhian<T>
         throw new NotImplementedException();
     }
 
-    public static implicit operator ContenedorCristhian<T>(Vehiculos.ContenedorCristhian<Carro> v)
-    {
-        throw new NotImplementedException();
-    }
+    //public static implicit operator ContenedorCristhian<T>(Vehiculos.ContenedorCristhian<Carro> v)
+    //{
+    //    throw new NotImplementedException();
+    //}
 }
