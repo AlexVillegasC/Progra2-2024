@@ -1,14 +1,13 @@
-﻿namespace Lab4.KarinaMoreno_504520784.Decoration;
+﻿namespace Lab4.DianaCerdas_504600379;
 
-public class Plushies
+public class Autor
 {
     public string Nombre { get; set; }
 
-    public Plushies(string nombre)
+    public Autor(string nombre)
     {
         this.Nombre = nombre;
     }
-
     public override string ToString()
     {
         return $"Name: {Nombre}";
