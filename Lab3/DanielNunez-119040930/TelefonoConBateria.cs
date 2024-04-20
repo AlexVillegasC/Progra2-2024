@@ -2,6 +2,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ﻿//
 =======
 =======
@@ -31,6 +32,9 @@ using System.Threading.Tasks;
 =======
 ﻿//
 >>>>>>> 2550663 (Merge with latest Dev changes)
+=======
+﻿//
+>>>>>>> origin/development
 namespace Lab3.DanielNunez_119040930
 {
     public interface TelefonoConBateria

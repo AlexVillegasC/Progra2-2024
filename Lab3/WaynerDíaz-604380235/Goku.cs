@@ -4,6 +4,7 @@ namespace Lab3.WaynerDíaz;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 public class Goku : IKamehameha, ITeletransportacion
 =======
 public class  Goku : IKamehameha, ITeletransportacion
@@ -17,6 +18,9 @@ public class  Goku : IKamehameha, ITeletransportacion
 =======
 public class Goku : IKamehameha, ITeletransportacion
 >>>>>>> 2550663 (Merge with latest Dev changes)
+=======
+public class Goku : IKamehameha, ITeletransportacion
+>>>>>>> origin/development
 {
     public string Poder { get; set; }
     public string Nombre { get; set; }
@@ -25,6 +29,7 @@ public class Goku : IKamehameha, ITeletransportacion
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     protected Goku(string Poder, string Nombre)
 =======
     protected Goku (string Poder, string Nombre)
@@ -38,6 +43,9 @@ public class Goku : IKamehameha, ITeletransportacion
 =======
     protected Goku(string Poder, string Nombre)
 >>>>>>> 2550663 (Merge with latest Dev changes)
+=======
+    protected Goku(string Poder, string Nombre)
+>>>>>>> origin/development
     {
         this.Poder = Poder;
         this.Nombre = Nombre;

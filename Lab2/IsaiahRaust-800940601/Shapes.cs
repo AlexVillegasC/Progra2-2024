@@ -2,6 +2,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ﻿namespace Lab2.IsaiahRaust
 {
     //Clase abstracta de la cual se heredan los metodos.
@@ -37,6 +38,11 @@ namespace Lab2.IsaiahRaust
 =======
     //Clase abstracta de la cual se heredan los metodos.
 >>>>>>> 93d09d0 (Lab2)
+=======
+﻿namespace Lab2.IsaiahRaust
+{
+    //Clase abstracta de la cual se heredan los metodos.
+>>>>>>> origin/development
     public abstract class Shapes
     {
 

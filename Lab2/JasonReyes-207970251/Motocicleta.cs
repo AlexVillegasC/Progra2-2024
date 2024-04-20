@@ -2,6 +2,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ﻿namespace Lab2.JasonReyes;
 =======
 =======
@@ -23,6 +24,9 @@ namespace Lab2.JasonReyes;
 =======
 ﻿namespace Lab2.JasonReyes;
 >>>>>>> 2550663 (Merge with latest Dev changes)
+=======
+﻿namespace Lab2.JasonReyes;
+>>>>>>> origin/development
 
 public class Motocicleta : Vehiculo
 {

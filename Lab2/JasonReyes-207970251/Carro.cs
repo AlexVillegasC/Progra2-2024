@@ -2,6 +2,9 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> origin/development
 ﻿namespace Lab2.JasonReyes;
 
 public class Carro : Vehiculo
@@ -13,6 +16,7 @@ public class Carro : Vehiculo
     }
 
 
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> e793bcd (Lab2 final changes)
@@ -61,6 +65,8 @@ public class Carro : Vehiculo
 =======
 
 >>>>>>> 2550663 (Merge with latest Dev changes)
+=======
+>>>>>>> origin/development
 
     public override void Arrancar()
     {

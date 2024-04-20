@@ -21,10 +21,13 @@ public class ContenedorKarina<T>
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> bd440c0 (lab3 Karina - Limpiando cambios de Lab3)
 =======
 >>>>>>> bd440c0 (lab3 Karina - Limpiando cambios de Lab3)
+=======
+>>>>>>> origin/development
 }
 
 // CODIGO para el ejecutar en el Program.cs
@@ -36,6 +39,7 @@ public class ContenedorKarina<T>
 //HomeDecor.agregar(cinnamoroll);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 //HomeDecor.mostrarObjetos();
 =======
 }
@@ -49,3 +53,6 @@ public class ContenedorKarina<T>
 =======
 //HomeDecor.mostrarObjetos();
 >>>>>>> bd440c0 (lab3 Karina - Limpiando cambios de Lab3)
+=======
+//HomeDecor.mostrarObjetos();
+>>>>>>> origin/development

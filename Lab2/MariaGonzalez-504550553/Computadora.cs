@@ -9,6 +9,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
         
@@ -22,6 +23,9 @@
 =======
 
 >>>>>>> 2550663 (Merge with latest Dev changes)
+=======
+
+>>>>>>> origin/development
         public Computadora(string modelo, int precio)
         {
             this.modelo = modelo;
@@ -32,6 +36,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
         
@@ -45,6 +50,9 @@
 =======
 
 >>>>>>> 2550663 (Merge with latest Dev changes)
+=======
+
+>>>>>>> origin/development
         public virtual void Encender()
         {
             Console.WriteLine("La computadora está encendiendo...");
@@ -54,6 +62,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
         
@@ -67,6 +76,9 @@
 =======
 
 >>>>>>> 2550663 (Merge with latest Dev changes)
+=======
+
+>>>>>>> origin/development
         public virtual void Apagar()
         {
             Console.WriteLine("La computadora está apagando...");
@@ -76,6 +88,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
         
@@ -89,6 +102,9 @@
 =======
 
 >>>>>>> 2550663 (Merge with latest Dev changes)
+=======
+
+>>>>>>> origin/development
         public override string ToString()
         {
             return $"Modelo: {modelo}, Precio: {precio}";

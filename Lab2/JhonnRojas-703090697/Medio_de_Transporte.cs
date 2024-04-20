@@ -2,6 +2,9 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> origin/development
 ﻿namespace Lab2.JhonnRojas_703090697
 {
     public class Medio_de_Transporte
@@ -33,6 +36,7 @@
 
     }
 }
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 0ceb716 (Abstract class)
@@ -119,6 +123,8 @@ namespace Lab2.JhonnRojas_703090697
 =======
 }
 >>>>>>> 2550663 (Merge with latest Dev changes)
+=======
+>>>>>>> origin/development
 
 
 

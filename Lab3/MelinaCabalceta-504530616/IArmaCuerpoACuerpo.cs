@@ -2,6 +2,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ﻿namespace Lab3.MelinaCabalceta_504530616
 =======
 =======
@@ -23,6 +24,9 @@ namespace Lab3.MelinaCabalceta_504530616
 =======
 ﻿namespace Lab3.MelinaCabalceta_504530616
 >>>>>>> 2550663 (Merge with latest Dev changes)
+=======
+﻿namespace Lab3.MelinaCabalceta_504530616
+>>>>>>> origin/development
 {
     public interface IArmaCuerpoACuerpo
     {

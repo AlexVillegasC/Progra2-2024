@@ -2,6 +2,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ﻿namespace Lab4.DanielNunez_119040930
 =======
 =======
@@ -23,6 +24,9 @@ namespace Lab4.DanielNunez_119040930
 =======
 ﻿namespace Lab4.DanielNunez_119040930
 >>>>>>> 2550663 (Merge with latest Dev changes)
+=======
+﻿namespace Lab4.DanielNunez_119040930
+>>>>>>> origin/development
 {
     public class Piezas
     {
@@ -31,6 +35,7 @@ namespace Lab4.DanielNunez_119040930
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         public Piezas(string nombre)
         {
 =======
@@ -47,6 +52,10 @@ namespace Lab4.DanielNunez_119040930
         public Piezas(string nombre)
         {
 >>>>>>> 2550663 (Merge with latest Dev changes)
+=======
+        public Piezas(string nombre)
+        {
+>>>>>>> origin/development
             Nombre = nombre;
         }
 

@@ -8,4 +8,12 @@ public class Figures
     {
         this.Nombre = nombre;
     }
+<<<<<<< HEAD
+=======
+
+    public override string ToString()
+    {
+        return $"Name: {Nombre}";
+    }
+>>>>>>> origin/development
 }

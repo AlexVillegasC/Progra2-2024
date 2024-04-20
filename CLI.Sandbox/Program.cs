@@ -8,6 +8,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 // Usar solo para pruebas!
 =======
 // See https://aka.ms/new-console-template for more information
@@ -46,3 +47,7 @@ miContenedorDeWish.MostrarElementos();
 // Usar solo para pruebas!
 Console.WriteLine("Hello World!");
 >>>>>>> 300c263 (Code Cleanup)
+=======
+// Usar solo para pruebas!
+Console.WriteLine("Hello World!");
+>>>>>>> origin/development

@@ -4,6 +4,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     public interface ITipoMagico
     {
         void AtaqueMagico();
@@ -25,5 +26,10 @@
     {
         void AtaqueMagico();
 >>>>>>> 0b4914f (interface changes)
+=======
+    public interface ITipoMagico
+    {
+        void AtaqueMagico();
+>>>>>>> origin/development
     }
 }

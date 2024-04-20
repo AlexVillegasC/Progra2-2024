@@ -41,6 +41,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                         Console.WriteLine(Chikorita.Nombre + " ha logrado esquivar el ataque, no recibe daño en sus puntos de ataque");
 =======
                         Console.WriteLine( Chikorita.Nombre + " ha logrado esquivar el ataque, no recibe daño en sus puntos de ataque");
@@ -54,6 +55,9 @@
 =======
                         Console.WriteLine(Chikorita.Nombre + " ha logrado esquivar el ataque, no recibe daño en sus puntos de ataque");
 >>>>>>> 2550663 (Merge with latest Dev changes)
+=======
+                        Console.WriteLine(Chikorita.Nombre + " ha logrado esquivar el ataque, no recibe daño en sus puntos de ataque");
+>>>>>>> origin/development
                         Console.ReadKey();
                     }
                     else
@@ -62,6 +66,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                         Console.WriteLine(Chikorita.Nombre + " ha recivido una ataque directo de " + Psyduck.Nombre + " y tiene un rebajo de " + Psyduck.Ataque + " en la vida");
 =======
                         Console.WriteLine(Chikorita.Nombre +" ha recivido una ataque directo de " + Psyduck.Nombre + " y tiene un rebajo de " + Psyduck.Ataque + " en la vida");
@@ -75,6 +80,9 @@
 =======
                         Console.WriteLine(Chikorita.Nombre + " ha recivido una ataque directo de " + Psyduck.Nombre + " y tiene un rebajo de " + Psyduck.Ataque + " en la vida");
 >>>>>>> 2550663 (Merge with latest Dev changes)
+=======
+                        Console.WriteLine(Chikorita.Nombre + " ha recivido una ataque directo de " + Psyduck.Nombre + " y tiene un rebajo de " + Psyduck.Ataque + " en la vida");
+>>>>>>> origin/development
                         Console.ReadKey();
 
                         Chikorita.Vida -= Psyduck.Ataque;
@@ -88,6 +96,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 turnoPok1 = !turnoPok1;
 =======
                 turnoPok1 = !turnoPok1; 
@@ -101,6 +110,9 @@
 =======
                 turnoPok1 = !turnoPok1;
 >>>>>>> 2550663 (Merge with latest Dev changes)
+=======
+                turnoPok1 = !turnoPok1;
+>>>>>>> origin/development
             }
 
             if (Chikorita.Vida <= 0)

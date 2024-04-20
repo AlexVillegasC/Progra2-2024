@@ -8,6 +8,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
         
@@ -21,6 +22,9 @@
 =======
 
 >>>>>>> 2550663 (Merge with latest Dev changes)
+=======
+
+>>>>>>> origin/development
         public Desktop(string modelo, int precio, string fabricante) : base(modelo, precio)
         {
             this.fabricante = fabricante;
@@ -30,6 +34,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 
@@ -53,6 +58,11 @@
 
 
 >>>>>>> 2550663 (Merge with latest Dev changes)
+=======
+
+
+
+>>>>>>> origin/development
         public override string ToString()
         {
             return $"Modelo: {modelo}, Precio: {precio}, Fabricante: {fabricante}";
