@@ -1,7 +1,7 @@
 ﻿
 
 
-namespace Lab3.StarlingQuiros_118640201
+namespace Lab3.StarlingQuiros_118640201;
 public class Superman : Ultravision, ITeletransportacion
 {
     public string Poder { get; set; }
