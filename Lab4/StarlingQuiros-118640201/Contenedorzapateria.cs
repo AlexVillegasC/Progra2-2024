@@ -1,5 +1,5 @@
 ﻿
-namespace Lab4.StarlingQuiros_118640201
+namespace Lab4.StarlingQuiros_118640201;
 public class ContenedorZapateria
 {
     private List<Zapato> _zapatos;
@@ -34,7 +34,7 @@ public class ContenedorZapateria
     public void MostrarClientes()
     {
         Console.WriteLine("Compradores registrados en la zapatería:");
-        foreach (var cliente in _compradores)
+        foreach (var comprador in _compradores)
         {
             Console.WriteLine($"Nombre: {comprador.Nombre}, Email: {comprador.Email}");
         }
