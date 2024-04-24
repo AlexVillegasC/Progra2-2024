@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="DianaCerdas-504600379\Composicion\" />
+  </ItemGroup>
+
 </Project>
