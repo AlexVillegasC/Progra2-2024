@@ -13,6 +13,7 @@ namespace Lab4.MelinaCabalceta_504530616
         public void Agregar(T elemento)
         {
             elementos.Add(elemento);
+            Console.WriteLine("Se agrego con exito");
         }
 
         public void MostrarElemetos()
@@ -25,7 +26,7 @@ namespace Lab4.MelinaCabalceta_504530616
         }
 
 
-        static void Main(string[] args)
+      /*  static void Main(string[] args)
         {
             ContenedorMelina<Producto> miContenedorDeProductos = new ContenedorMelina<Producto>();
             Producto telefono = new Producto("Telefono", "Iphone");
@@ -38,6 +39,7 @@ namespace Lab4.MelinaCabalceta_504530616
 
 
             miContenedorDeProductos.MostrarElemetos();
-        }
+        }*/
     }
 }
+      
