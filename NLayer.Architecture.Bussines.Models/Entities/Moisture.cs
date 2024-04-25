@@ -1,4 +1,4 @@
-﻿namespace Domain.Models.ReporteClima;
+﻿namespace NLayer.Architecture.Bussines.ReporteClima;
 
 public class Moisture
 {

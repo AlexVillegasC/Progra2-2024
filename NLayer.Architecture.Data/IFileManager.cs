@@ -1,4 +1,4 @@
-﻿namespace DataAccess.Layer;
+﻿namespace NLayer.Architecture.Data;
 
 public interface IFileRepository
 {

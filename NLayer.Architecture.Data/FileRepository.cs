@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace DataAccess.Layer;
+namespace NLayer.Architecture.Data;
 
 public class FileRepository : IFileRepository
 {
