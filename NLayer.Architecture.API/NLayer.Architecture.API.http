@@ -1,0 +1,6 @@
+@NLayer.Architecture.API_HostAddress = http://localhost:5225
+
+GET {{NLayer.Architecture.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
