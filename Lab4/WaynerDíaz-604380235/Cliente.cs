@@ -1,4 +1,4 @@
-﻿namespace Lab4.WaynerDíaz;
+namespace Lab4.WaynerDiaz;
 
 public class Cliente
 {
