@@ -7,4 +7,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Lab2\Lab2.csproj" />
+    <ProjectReference Include="..\Lab5\Lab5.csproj" />
+  </ItemGroup>
+
 </Project>
