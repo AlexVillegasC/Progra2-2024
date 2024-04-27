@@ -2,7 +2,7 @@
 
 public class Procesador
 {
-    public int nucleos { get; set; };
+    public int nucleos { get; set; }
     
     public Procesador()
     {
