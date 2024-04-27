@@ -8,22 +8,16 @@ namespace NLayer.Architecture.API.Controllers;
 [Route("[controller]")]
 public class PronosticoClimaController : ControllerBase
 {
-    private static readonly string[] Summaries = new[]
-    {
-        "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-    };
-
-    private readonly ILogger<PronosticoClimaController> _logger;
     private readonly IReporteClimaService _reporteClimaService;
 
-    public PronosticoClimaController(ILogger<PronosticoClimaController> logger, IReporteClimaService reporteClimaService)
+    public PronosticoClimaController(IReporteClimaService reporteClimaService)
     {
-        _logger = logger;
         _reporteClimaService = reporteClimaService;
     }
-    
+
+    [HttpGet]
     public async Task<ReporteClima> Get()
-    {
-        return await _reporteClimaService.GetPronostico(1);
+    {        
+        return await _reporteClimaService.GetPronostico();
     }
 }

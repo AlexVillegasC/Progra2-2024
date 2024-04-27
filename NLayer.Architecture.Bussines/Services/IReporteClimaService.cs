@@ -3,5 +3,5 @@
 
 public interface IReporteClimaService
 {
-    Task<ReporteClima.ReporteClima> GetPronostico(int type);
+    Task<ReporteClima.ReporteClima> GetPronostico();
 }

@@ -1,26 +1,37 @@
-﻿using NLayer.Architecture.Bussines.ReporteClima;
+﻿using Microsoft.Extensions.Configuration;
+using NLayer.Architecture.Bussines.ReporteClima;
 using NLayer.Architecture.Data;
+using System.ComponentModel.Design;
 
 namespace DataAccess.Layer.FileRepositories;
 
 public class ReporteClimaRepository : FileRepository, IReporteClimaRepository
 {
-    private const string tempetarureVirtualPath = "../NLayer.Architecture.Data/Files/temperature.json";
-    private const string windVirtualPath = "../NLayer.Architecture.Data/Files/wind.json";
-    private const string moistureVirtualPath = "../NLayer.Architecture.Datar/Files/moisture.json";
+    private string _tempetarureVirtualPath = "temperature.json";
+    private string _windVirtualPath = "wind.json";
+    private string _moistureVirtualPath = "moisture.json";
+
+    private string FolderPath { get; set; }
+
+
+    public ReporteClimaRepository(IConfiguration Configuration) 
+    {
+        FolderPath = $"{Configuration["Folders:Clima"]}";
+        _tempetarureVirtualPath = FolderPath + _tempetarureVirtualPath;
+    }  
 
     public async Task<Temperature> GetTemperatures()
     {
-        return await ReadJsonFileAsync<Temperature>(tempetarureVirtualPath);
+        return await ReadJsonFileAsync<Temperature>(_tempetarureVirtualPath);
     }
 
     public async Task<Wind> GetWinds()
     {
-        return await ReadJsonFileAsync<Wind>(windVirtualPath);
+        return await ReadJsonFileAsync<Wind>(_windVirtualPath);
     }
 
     public async Task<Moisture> GetMoisture()
     {
-        return await ReadJsonFileAsync<Moisture>(moistureVirtualPath);
+        return await ReadJsonFileAsync<Moisture>(_moistureVirtualPath);
     }
 }
