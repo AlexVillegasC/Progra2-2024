@@ -4,10 +4,10 @@
 
 //ContenedorOrlando<Vehiculos> miContenedor = new Lab4.OrlandoBaltodano_504610338.ContenedorOrlando<Vehiculos>();
 //ContenedorOrlando<Frutas> otroContenedor = new Lab4.OrlandoBaltodano_504610338.ContenedorOrlando<Frutas>();
-//Vehiculos automovil = new Vehiculos();
-//Vehiculos camiones = new Vehiculos();
-//Frutas Sandia = new Frutas();
-//Frutas fresas = new Frutas();
+//Vehiculos automovil = new Vehiculos("car");
+//Vehiculos camiones = new Vehiculos("Truck");
+//Frutas Sandia = new Frutas("Manzana");
+//Frutas fresas = new Frutas("Sandia");
 //miContenedor.Agregar(automovil);
 //miContenedor.Agregar(camiones);
 
