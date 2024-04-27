@@ -1,4 +1,4 @@
-﻿namespace Lab4.WaynerDíaz;
+﻿namespace Lab4.Waynerdiaz;
 public class ContenedorZapateria
 {
     private List<Zapato> _zapatos;
