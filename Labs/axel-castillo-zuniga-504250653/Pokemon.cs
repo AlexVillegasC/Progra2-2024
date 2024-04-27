@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Lab1.axel_castillo_zuniga_504250653
+﻿namespace Lab1.axel_castillo_zuniga_504250653
 {
     public class Pokemon
     {
@@ -12,6 +6,14 @@ namespace Lab1.axel_castillo_zuniga_504250653
         public int Vida { get; set; } = 100;
         public int Ataque { get; set; }
 
-      
+
+        public Pokemon(string name, int Vida, int Ataque)
+        {
+            this.Vida = Vida;
+            this.Ataque = Ataque;
+            this.Name = name;
+        }
+
+
     }
 }

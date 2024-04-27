@@ -1,8 +1,4 @@
-﻿
-
-using System.Diagnostics;
-
-namespace Lab1.Bairon_fallas;
+﻿namespace Lab1.Bairon_fallas;
 
 public class Pokemon
 {
