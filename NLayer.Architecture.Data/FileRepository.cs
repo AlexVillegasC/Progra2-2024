@@ -1,9 +1,8 @@
-﻿
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 
-namespace DataAccess.Layer;
+namespace NLayer.Architecture.Data;
 
-public class RopaRepository : IFileManager
+public class FileRepository : IFileRepository
 {
     public async Task<T> ReadJsonFileAsync<T>(string filePath)
     {
