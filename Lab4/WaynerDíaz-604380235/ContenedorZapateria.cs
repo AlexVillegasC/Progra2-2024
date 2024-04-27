@@ -1,17 +1,17 @@
 ﻿namespace Lab4.WaynerDíaz;
 public class ContenedorZapateria
 {
-    private List<Zapato> _zapatos;
+    private List<Camisa> _zapatos;
     private List<Cliente> _clientes;
 
     public ContenedorZapateria()
     {
-        _zapatos = new List<Zapato>();
+        _zapatos = new List<Camisa>();
         _clientes = new List<Cliente>();
     }
 
 
-    public void AgregarZapato(Zapato zapato)
+    public void AgregarZapato(Camisa zapato)
     {
         _zapatos.Add(zapato);
     }
