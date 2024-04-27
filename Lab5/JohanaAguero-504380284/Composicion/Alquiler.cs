@@ -1,4 +1,4 @@
-﻿unamespace Lab5.JohanaAguero;
+﻿namespace Lab5.JohanaAguero;
 
 class Alquiler
 {
