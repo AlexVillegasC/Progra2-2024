@@ -15,4 +15,3 @@ public class Casa
         Persona.Add(persona);
     }
 }
-
