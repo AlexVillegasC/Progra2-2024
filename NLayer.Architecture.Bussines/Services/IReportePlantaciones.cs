@@ -2,21 +2,27 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> c2da1d8 (Merge)
 =======
 >>>>>>> 19da8c5 (Avance en las clases ReportePlantaciones)
+=======
+>>>>>>> c938080 (Merge)
 ﻿namespace NLayer.Architecture.Bussines.Services;
 
 public interface IReportePlantaciones
 {
     Task<GestionPlantaciones.GestionPlantaciones> GetReporte();
 =======
+=======
+>>>>>>> e98558f (Merge)
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -36,6 +42,8 @@ public interface IReportePlantaciones
 =======
 =======
 =======
+>>>>>>> c938080 (Merge)
+=======
 ﻿namespace NLayer.Architecture.Bussines.Services;
 >>>>>>> b370f23 (Avance en las clases ReportePlantaciones)
 >>>>>>> 19da8c5 (Avance en las clases ReportePlantaciones)
@@ -53,5 +61,16 @@ public interface IReportePlantaciones
 =======
     Task<GestionPlantaciones.GestionPlantaciones> GetReporte();
 >>>>>>> b370f23 (Avance en las clases ReportePlantaciones)
+<<<<<<< HEAD
 >>>>>>> 19da8c5 (Avance en las clases ReportePlantaciones)
+=======
+=======
+
+namespace NLayer.Architecture.Bussines.Services
+{
+    internal class IReportePlantaciones
+    {
+    }
+>>>>>>> e98558f (Merge)
+>>>>>>> c938080 (Merge)
 }

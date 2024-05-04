@@ -4,6 +4,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> c2da1d8 (Merge)
 ﻿namespace NLayer.Architecture.Bussines.GestionPlantaciones;
@@ -33,10 +34,17 @@ public class GestionPlantaciones
 >>>>>>> 19da8c5 (Avance en las clases ReportePlantaciones)
 using System;
 >>>>>>> 6bf91c0 (Clases y Archivo JSON de Plagas)
+=======
+using System;
+=======
+﻿using System;
+>>>>>>> e98558f (Merge)
+>>>>>>> c938080 (Merge)
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -61,6 +69,8 @@ public class GestionPlantaciones
 >>>>>>> c57478d (final de mi parte)
 =======
 =======
+=======
+>>>>>>> c938080 (Merge)
 =======
 ﻿namespace NLayer.Architecture.Bussines.GestionPlantaciones;
 >>>>>>> b370f23 (Avance en las clases ReportePlantaciones)
@@ -94,4 +104,16 @@ namespace NLayer.Architecture.Bussines.Models.Plantaciones
 
 
 >>>>>>> c9e0984 (final de mi parte)
+<<<<<<< HEAD
 >>>>>>> 09d2633 (final de mi parte)
+=======
+=======
+
+namespace NLayer.Architecture.Bussines.Models.Plantaciones
+{
+    internal class GestionPlantaciones
+    {
+    }
+}
+>>>>>>> e98558f (Merge)
+>>>>>>> c938080 (Merge)
