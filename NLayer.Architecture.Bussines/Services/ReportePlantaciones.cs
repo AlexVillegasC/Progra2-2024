@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿using DataAccess.Layer.FileRepositories;
 using NLayer.Architecture.Bussines.GestionPlantaciones;
 
@@ -19,5 +20,17 @@ public class ReportePlantaciones : IReportePlantaciones
         reporteArbol.Abono = await _plantaciones.GetControlAbono();
         reporteArbol.Arbol = await _plantaciones.GetArbolFrutal();
         return reporteArbol;
+=======
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace NLayer.Architecture.Bussines.Services
+{
+    internal class ReportePlantaciones
+    {
+>>>>>>> e98558f (Merge)
     }
 }

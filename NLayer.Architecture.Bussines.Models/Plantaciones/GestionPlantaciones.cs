@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿namespace NLayer.Architecture.Bussines.GestionPlantaciones;
 
 public class GestionPlantaciones
@@ -14,3 +15,17 @@ public class GestionPlantaciones
 }
 
 
+=======
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace NLayer.Architecture.Bussines.Models.Plantaciones
+{
+    internal class GestionPlantaciones
+    {
+    }
+}
+>>>>>>> e98558f (Merge)
