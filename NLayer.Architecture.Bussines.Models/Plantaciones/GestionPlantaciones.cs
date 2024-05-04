@@ -8,7 +8,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 using System;
+=======
+﻿using System;
+>>>>>>> e98558f (Merge)
 =======
 ﻿using System;
 >>>>>>> e98558f (Merge)
@@ -22,6 +26,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -132,3 +137,12 @@ public class GestionPlantaciones
 
 
 >>>>>>> c9e0984 (final de mi parte)
+=======
+
+namespace NLayer.Architecture.Bussines.Models.Plantaciones
+{
+    internal class GestionPlantaciones
+    {
+    }
+}
+>>>>>>> e98558f (Merge)
