@@ -17,4 +17,22 @@ public class FileRepository : IFileRepository
         using StreamWriter writer = new StreamWriter(filePath);
         await writer.WriteAsync(json);
     }
+
+    public async Task<List<T>> ReadJsonFileListAsync<T>(string filePath)
+    {
+        using StreamReader reader = new StreamReader(filePath);
+        string json = await reader.ReadToEndAsync();
+        return JsonConvert.DeserializeObject<List<T>>(json);
+    }
+
+    public async Task AddElementToJsonFileAsync<T>(string filePath, T value)
+    {
+        List<T> elementos = await ReadJsonFileListAsync<T>(filePath);
+
+        if (elementos != null)
+        {
+            elementos.Add(value);
+            await WriteJsonFileAsync(filePath, elementos);
+        }
+    }
 }

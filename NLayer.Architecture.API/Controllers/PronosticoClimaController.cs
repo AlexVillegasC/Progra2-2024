@@ -20,4 +20,12 @@ public class PronosticoClimaController : ControllerBase
     {        
         return await _reporteClimaService.GetPronostico();
     }
+    
+    [HttpPost]
+    public async Task<IActionResult> AddTemperature(Temperature temperature)
+    {
+        await _reporteClimaService.AddTemperature(temperature);
+        
+        return Ok();
+    }
 }

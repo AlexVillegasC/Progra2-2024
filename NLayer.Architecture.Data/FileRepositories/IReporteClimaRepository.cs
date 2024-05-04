@@ -9,4 +9,6 @@ public interface IReporteClimaRepository
     Task<List<Wind>> GetWinds();
 
     Task<List<Moisture>> GetMoisture();
+
+    Task AddTemperature(Temperature temp);
 }

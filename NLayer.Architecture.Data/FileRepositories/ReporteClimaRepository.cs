@@ -13,17 +13,22 @@ public class ReporteClimaRepository : FileRepository, IReporteClimaRepository
     private string FolderPath { get; set; }
 
 
-    public ReporteClimaRepository(IConfiguration Configuration) 
+    public ReporteClimaRepository(IConfiguration Configuration)
     {
         FolderPath = $"{Configuration["Folders:Clima"]}";
         _tempetarureVirtualPath = FolderPath + _tempetarureVirtualPath;
         _windVirtualPath = FolderPath + _windVirtualPath;
         _moistureVirtualPath = FolderPath + _moistureVirtualPath;
-    }  
+    }
 
     public async Task<List<Temperature>> GetTemperatures()
     {
         return await ReadJsonFileAsync<List<Temperature>>(_tempetarureVirtualPath);
+    }
+
+    public async Task AddTemperature(Temperature temp)
+    {
+        await AddElementToJsonFileAsync<Temperature>(_tempetarureVirtualPath, temp);
     }
 
     public async Task<List<Wind>> GetWinds()
