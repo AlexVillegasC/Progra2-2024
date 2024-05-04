@@ -24,11 +24,3 @@ namespace Lab3.AxelBadilla_504430558
 }
 
 
-
-//ReproductorAudio reproductoraudio = new ReproductorAudio();
-//reproductoraudio.Reproducir();
-//reproductoraudio.Detener();
-
-//ReproductorVideo reproductorvideo = new ReproductorVideo();
-//reproductorvideo.Reproducir();
-//reproductorvideo.Detener();
