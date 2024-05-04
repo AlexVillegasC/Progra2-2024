@@ -1,7 +1,6 @@
 ﻿using Microsoft.Extensions.Configuration;
 using NLayer.Architecture.Bussines.ReporteClima;
 using NLayer.Architecture.Data;
-using System.ComponentModel.Design;
 
 namespace DataAccess.Layer.FileRepositories;
 
@@ -18,20 +17,22 @@ public class ReporteClimaRepository : FileRepository, IReporteClimaRepository
     {
         FolderPath = $"{Configuration["Folders:Clima"]}";
         _tempetarureVirtualPath = FolderPath + _tempetarureVirtualPath;
+        _windVirtualPath = FolderPath + _windVirtualPath;
+        _moistureVirtualPath = FolderPath + _moistureVirtualPath;
     }  
 
-    public async Task<Temperature> GetTemperatures()
+    public async Task<List<Temperature>> GetTemperatures()
     {
-        return await ReadJsonFileAsync<Temperature>(_tempetarureVirtualPath);
+        return await ReadJsonFileAsync<List<Temperature>>(_tempetarureVirtualPath);
     }
 
-    public async Task<Wind> GetWinds()
+    public async Task<List<Wind>> GetWinds()
     {
-        return await ReadJsonFileAsync<Wind>(_windVirtualPath);
+        return await ReadJsonFileAsync<List<Wind>>(_windVirtualPath);
     }
 
-    public async Task<Moisture> GetMoisture()
+    public async Task<List<Moisture>> GetMoisture()
     {
-        return await ReadJsonFileAsync<Moisture>(_moistureVirtualPath);
+        return await ReadJsonFileAsync<List<Moisture>>(_moistureVirtualPath);
     }
 }

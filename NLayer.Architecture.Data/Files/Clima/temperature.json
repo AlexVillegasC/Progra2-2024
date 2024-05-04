@@ -1,5 +1,17 @@
-{
-  "Date": "2023-04-24",
-  "TemperatureC": 20,
-  "Summary": "Sunny"
-}
+[
+  {
+    "Date": "2023-04-24",
+    "TemperatureC": 20,
+    "Summary": "Sunny"
+  },
+  {
+    "Date": "2023-04-24",
+    "TemperatureC": 20,
+    "Summary": "Sunny"
+  },
+  {
+    "Date": "2023-04-24",
+    "TemperatureC": 20,
+    "Summary": "Sunny"
+  }
+]
