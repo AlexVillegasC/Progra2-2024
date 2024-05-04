@@ -25,6 +25,7 @@ namespace Lab3.AxelBadilla_504430558
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 //ReproductorAudio reproductoraudio = new ReproductorAudio();
@@ -35,3 +36,5 @@ namespace Lab3.AxelBadilla_504430558
 //reproductorvideo.Reproducir();
 //reproductorvideo.Detener();
 >>>>>>> 434a816 (lab3 AxelBadilla)
+=======
+>>>>>>> 61a2ede (Lab3 Axel Badilla)
