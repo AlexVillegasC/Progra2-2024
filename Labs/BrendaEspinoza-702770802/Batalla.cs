@@ -29,7 +29,9 @@ public class Batalla
                 }
 
                 turnoPickachu = false;
-            }else{
+            }
+            else
+            {
                 Console.WriteLine($"Turno de {snorlax.Nombre}:\n");
                 Console.WriteLine($"Vida de {snorlax.Nombre}: {pikachu.Vida}");
                 Console.WriteLine($"Vida de {pikachu.Nombre}: {snorlax.Vida}\n");
@@ -52,4 +54,4 @@ public class Batalla
         }
     }
 }
-
+//Hola
