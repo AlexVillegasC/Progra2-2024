@@ -1,6 +1,13 @@
+<<<<<<< HEAD
 ﻿
 
 namespace NLayer.Architecture.Bussines.ReporteInventario;
+=======
+﻿using System;
+
+
+namespace NLayer.Architecture.Bussines.Models.ControlMaquinaria;
+>>>>>>> 7d38d1b (creacion de clase mantenimiento)
 
 public class Mantenimiento
 {
