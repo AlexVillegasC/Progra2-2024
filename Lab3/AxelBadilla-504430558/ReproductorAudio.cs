@@ -31,6 +31,7 @@ namespace Lab3.AxelBadilla_504430558
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 434a816 (lab3 AxelBadilla)
@@ -65,3 +66,5 @@ namespace Lab3.AxelBadilla_504430558
 =======
 //reproductorvideo.Detener();
 >>>>>>> 434a816 (lab3 AxelBadilla)
+=======
+>>>>>>> 61a2ede (Lab3 Axel Badilla)
