@@ -1,6 +1,9 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> c2da1d8 (Merge)
 ﻿namespace NLayer.Architecture.Bussines.GestionPlantaciones;
 
 public class GestionPlantaciones
@@ -27,6 +30,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+<<<<<<< HEAD
 =======
 ﻿namespace NLayer.Architecture.Bussines.Models.Plantaciones;
 >>>>>>> 0f565b5 (Clases y Archivo JSON de Plagas)
@@ -47,3 +51,13 @@ public class GestionPlantaciones
 
 
 >>>>>>> c57478d (final de mi parte)
+=======
+
+namespace NLayer.Architecture.Bussines.Models.Plantaciones
+{
+    internal class GestionPlantaciones
+    {
+    }
+}
+>>>>>>> e98558f (Merge)
+>>>>>>> c2da1d8 (Merge)
