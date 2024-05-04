@@ -1,9 +1,14 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 using System;
+=======
+﻿using System;
+>>>>>>> e98558f (Merge)
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+<<<<<<< HEAD
 =======
 ﻿namespace NLayer.Architecture.Bussines.GestionPlantaciones;
 >>>>>>> b370f23 (Avance en las clases ReportePlantaciones)
@@ -33,3 +38,12 @@ namespace NLayer.Architecture.Bussines.Models.Plantaciones
 
 
 >>>>>>> c9e0984 (final de mi parte)
+=======
+
+namespace NLayer.Architecture.Bussines.Models.Plantaciones
+{
+    internal class GestionPlantaciones
+    {
+    }
+}
+>>>>>>> e98558f (Merge)

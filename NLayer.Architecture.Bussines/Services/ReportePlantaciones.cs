@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ﻿using DataAccess.Layer.FileRepositories;
 using NLayer.Architecture.Bussines.GestionPlantaciones;
 <<<<<<< HEAD
@@ -30,11 +31,14 @@ public class ReportePlantaciones : IReportePlantaciones
 >>>>>>> 6fff2b6 (Proyecto 1 completado)
         return reporteArbol;
 =======
+=======
+>>>>>>> e98558f (Merge)
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+<<<<<<< HEAD
 =======
 ﻿using DataAccess.Layer.FileRepositories;
 >>>>>>> b370f23 (Avance en las clases ReportePlantaciones)
@@ -66,5 +70,12 @@ public class ReportePlantaciones : IReportePlantaciones
 =======
         return reporteArbol;
 >>>>>>> 818cb8c (Proyecto casi finalizado)
+=======
+
+namespace NLayer.Architecture.Bussines.Services
+{
+    internal class ReportePlantaciones
+    {
+>>>>>>> e98558f (Merge)
     }
 }
