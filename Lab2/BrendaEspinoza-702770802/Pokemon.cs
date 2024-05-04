@@ -1,6 +1,6 @@
 namespace Lab1.BrendaEspinoza;
 
-public abstract class Pokemon{
+public abstract class Pokemon{  
     public int Vida { get; set;}
     public int Ataque { get; set;}
     public string Nombre { get; set;}
@@ -21,3 +21,4 @@ public abstract class Pokemon{
 
     public abstract string AtaqueEspecial();
 }
+//hi

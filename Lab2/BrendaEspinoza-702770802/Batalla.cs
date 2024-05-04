@@ -42,7 +42,7 @@ public class Batalla
                 if (!pikachu.EstaVivo())
                 {
 
-                    Console.WriteLine($"{pikachu.Nombre} se desmayó.\n");
+                    Console.WriteLine($"{pikachu.Nombre} se desmayó.\n"); 
                     break;
                 }
 
@@ -52,4 +52,4 @@ public class Batalla
         }
     }
 }
-
+//hola
