@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace NLayer.Architecture.Bussines.Models.Plantaciones;
 
-namespace NLayer.Architecture.Bussines.Models.Plantaciones
+public class GestionPlantaciones
 {
-    internal class GestionPlantaciones
-    {
-    }
+    public string Nombre { get; set; } = "Reporte de Plantaciones";
+
+    public ControlPlagas Plagas { get; set;}
+
+
 }
