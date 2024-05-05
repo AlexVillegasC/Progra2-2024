@@ -13,6 +13,7 @@
 
   <ItemGroup>
     <Folder Include="Files\Clima\" />
+    <Folder Include="Files\Plantaciones\" />
   </ItemGroup>
 
   <ItemGroup>

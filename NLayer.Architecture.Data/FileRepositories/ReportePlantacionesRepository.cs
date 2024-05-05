@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿using Microsoft.Extensions.Configuration;
 using NLayer.Architecture.Bussines.GestionPlantaciones;
 using NLayer.Architecture.Data;
@@ -47,3 +48,17 @@ public class ReportePlantacionesRepository : FileRepository, IReportePlantacione
    
 }
 
+=======
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace NLayer.Architecture.Data.FileRepositories
+{
+    internal class ReportePlantacionesRepository
+    {
+    }
+}
+>>>>>>> 60d7325 (Carpeta y 2 clases nuevas)
