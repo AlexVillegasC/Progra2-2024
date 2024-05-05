@@ -2,11 +2,14 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> f4b2036 (Proyecto casi finalizado)
 =======
 >>>>>>> fcbde3f (Carpeta y 2 clases nuevas)
 =======
+=======
+>>>>>>> 4cbf698 (Carpeta y 2 clases nuevas)
 =======
 >>>>>>> 818cb8c (Proyecto casi finalizado)
 >>>>>>> caa8401 (Proyecto casi finalizado)
@@ -61,11 +64,14 @@ public class ReportePlantacionesRepository : FileRepository, IReportePlantacione
 }
 
 =======
+=======
+>>>>>>> cbb4e73 (Carpeta y 2 clases nuevas)
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -122,6 +128,8 @@ public class ReportePlantacionesRepository : FileRepository, IReportePlantacione
 =======
 =======
 =======
+>>>>>>> 4cbf698 (Carpeta y 2 clases nuevas)
+=======
 >>>>>>> 818cb8c (Proyecto casi finalizado)
 >>>>>>> caa8401 (Proyecto casi finalizado)
 
@@ -176,4 +184,16 @@ public class ReportePlantacionesRepository : FileRepository, IReportePlantacione
 =======
 
 >>>>>>> 818cb8c (Proyecto casi finalizado)
+<<<<<<< HEAD
 >>>>>>> caa8401 (Proyecto casi finalizado)
+=======
+=======
+
+namespace NLayer.Architecture.Data.FileRepositories
+{
+    internal class ReportePlantacionesRepository
+    {
+    }
+}
+>>>>>>> cbb4e73 (Carpeta y 2 clases nuevas)
+>>>>>>> 4cbf698 (Carpeta y 2 clases nuevas)
