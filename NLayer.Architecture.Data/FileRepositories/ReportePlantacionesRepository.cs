@@ -1,7 +1,10 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> f4b2036 (Proyecto casi finalizado)
+=======
+>>>>>>> fcbde3f (Carpeta y 2 clases nuevas)
 ﻿using Microsoft.Extensions.Configuration;
 using NLayer.Architecture.Bussines.GestionPlantaciones;
 using NLayer.Architecture.Data;
@@ -58,6 +61,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+<<<<<<< HEAD
 =======
 >>>>>>> f4b2036 (Proyecto casi finalizado)
 
@@ -109,3 +113,13 @@ public class ReportePlantacionesRepository : FileRepository, IReportePlantacione
 =======
 
 >>>>>>> f4b2036 (Proyecto casi finalizado)
+=======
+
+namespace NLayer.Architecture.Data.FileRepositories
+{
+    internal class ReportePlantacionesRepository
+    {
+    }
+}
+>>>>>>> cbb4e73 (Carpeta y 2 clases nuevas)
+>>>>>>> fcbde3f (Carpeta y 2 clases nuevas)
