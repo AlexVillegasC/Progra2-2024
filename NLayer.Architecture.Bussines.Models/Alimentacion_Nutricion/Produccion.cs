@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace NLayer.Architecture.Bussines.Models.Alimentacion_Nutricion
 {
-    internal class Produccion
+    public class Produccion
     {
     }
 }
