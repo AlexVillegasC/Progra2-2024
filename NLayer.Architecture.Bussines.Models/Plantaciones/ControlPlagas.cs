@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ﻿namespace NLayer.Architecture.Bussines.GestionPlantaciones;
 
 public class ControlPlagas
@@ -23,3 +24,5 @@ public class ControlPlagas
 
     public string FumArbol { get; set; }
 }
+=======
+>>>>>>> 6bf91c0 (Clases y Archivo JSON de Plagas)

@@ -2,6 +2,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> c2da1d8 (Merge)
 ﻿namespace NLayer.Architecture.Bussines.GestionPlantaciones;
@@ -26,6 +27,9 @@ public class GestionPlantaciones
 
 =======
 ﻿using System;
+=======
+using System;
+>>>>>>> 6bf91c0 (Clases y Archivo JSON de Plagas)
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
