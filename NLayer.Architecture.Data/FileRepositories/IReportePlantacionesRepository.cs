@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ﻿using NLayer.Architecture.Bussines.GestionPlantaciones;
 using NLayer.Architecture.Bussines.GestionPlantaciones;
 <<<<<<< HEAD
@@ -19,11 +20,14 @@ public interface IReportePlantacionesRepository
 }
 
 =======
+=======
+>>>>>>> cbb4e73 (Carpeta y 2 clases nuevas)
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+<<<<<<< HEAD
 =======
 ﻿using NLayer.Architecture.Bussines.GestionPlantaciones;
 >>>>>>> 818cb8c (Proyecto casi finalizado)
@@ -48,3 +52,12 @@ public interface IReportePlantacionesRepository
 =======
 
 >>>>>>> 818cb8c (Proyecto casi finalizado)
+=======
+
+namespace NLayer.Architecture.Data.FileRepositories
+{
+    internal class IReportePlantacionesRepository
+    {
+    }
+}
+>>>>>>> cbb4e73 (Carpeta y 2 clases nuevas)
