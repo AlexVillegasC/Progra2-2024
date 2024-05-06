@@ -2,6 +2,7 @@
 {
     public class Alimentos
     {
-        public double Costo_Unidad {  get; set; } 
+        public double Costo_Unidad { get; set; } 
+        public int Nombre { get; set; }
     }
 }
