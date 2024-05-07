@@ -5,10 +5,13 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 011c04a (costos higiene)
 =======
 >>>>>>> 327ae84 (Cambios de CostosAlimenticios)
+=======
+>>>>>>> 3fc5f46 (costos higiene)
 ﻿using NLayer.Architecture.Bussines.Models.TheSillies;
 =======
 ﻿using NLayer.Architecture.Bussines.Models.The_Sillies;
@@ -19,6 +22,7 @@
 ﻿using NLayer.Architecture.Bussines.Models.TheSillies;
 >>>>>>> 0ecaee0 (Cambios de CostosAlimenticios)
 =======
+<<<<<<< HEAD
 ﻿using NLayer.Architecture.Bussines.Models.TheSillies;
 >>>>>>> origin/development
 =======
@@ -34,6 +38,10 @@
 ﻿using NLayer.Architecture.Bussines.Models.TheSillies;
 >>>>>>> 0ecaee0 (Cambios de CostosAlimenticios)
 >>>>>>> 327ae84 (Cambios de CostosAlimenticios)
+=======
+﻿using NLayer.Architecture.Bussines.Models.The_Sillies;
+>>>>>>> 1672b8f (costos higiene)
+>>>>>>> 3fc5f46 (costos higiene)
 
 namespace DataAccess.Layer.FileRepositories;
 
@@ -47,14 +55,18 @@ public interface ICostosHigieneRepository
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 327ae84 (Cambios de CostosAlimenticios)
+=======
+>>>>>>> 3fc5f46 (costos higiene)
     Task<CostosAlimenticios> GetCostosAlimenticios();
 =======
 >>>>>>> 1672b8f (costos higiene)
 =======
     Task<CostosAlimenticios> GetCostosAlimenticios();
 >>>>>>> 0ecaee0 (Cambios de CostosAlimenticios)
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
     Task<CostosAlimenticios> GetCostosAlimenticios();
@@ -71,4 +83,8 @@ public interface ICostosHigieneRepository
 >>>>>>> 011c04a (costos higiene)
 =======
 >>>>>>> 327ae84 (Cambios de CostosAlimenticios)
+=======
+=======
+>>>>>>> 1672b8f (costos higiene)
+>>>>>>> 3fc5f46 (costos higiene)
 }

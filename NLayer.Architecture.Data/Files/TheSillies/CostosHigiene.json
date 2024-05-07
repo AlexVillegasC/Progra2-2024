@@ -6,10 +6,13 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 011c04a (costos higiene)
 =======
 >>>>>>> 73a3a4f (datos json)
+=======
+>>>>>>> 3fc5f46 (costos higiene)
   "name": "Shampoo",
   "price": 200,
   "description": "Limpieza"
@@ -28,15 +31,19 @@
   "description": "Limpieza"
 >>>>>>> cc480e9 (datos json)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   "name": "Shampoo",
   "price": 200,
   "description": "Limpieza"
 >>>>>>> origin/development
 =======
+>>>>>>> 3fc5f46 (costos higiene)
+=======
   "name": "sssss",
   "price": 200,
   "description": "salud"
+<<<<<<< HEAD
 >>>>>>> b5fa883 (costos higiene)
 =======
   "name": "Shampoo",
@@ -47,4 +54,7 @@
 >>>>>>> 011c04a (costos higiene)
 =======
 >>>>>>> 73a3a4f (datos json)
+=======
+>>>>>>> 1672b8f (costos higiene)
+>>>>>>> 3fc5f46 (costos higiene)
 }
