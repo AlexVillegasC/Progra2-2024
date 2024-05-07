@@ -7,9 +7,11 @@ public class Produccion
 {
     public string Nombre { get; set; } = "Mi reporte de Alimentacion y Nutricion de Ganado ";
 
-    public DateOnly Date => DateOnly.FromDateTime(DateTime.Now);
-
     public Trabajadores Trabajadores { get; set;}
+
+
+
+
 
     public double CostoTotalPorDia { get; set; }
     public double CostoTotalPorMes { get; set; }
@@ -19,4 +21,4 @@ public class Produccion
         CostoTotalPorMes = CostoTotalPorDia * 30;
     }
 }
-}
+
