@@ -1,12 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using DataAccess.Layer.FileRepositories;
 
-namespace NLayer.Architecture.Bussines.Services
+namespace NLayer.Architecture.Bussines.Services;
+
+public class ReportePlantaciones : IReportePlantaciones
 {
-    internal class ReportePlantaciones
+    private readonly IReportePlantaciones _plantaciones;
+
+    public ReportePlantaciones(IReportePlantaciones plantaciones)
     {
+        _plantaciones = plantaciones;
+    }
+
+    public async Task<GestionPlantaciones.GestionPlantaciones> GetReporte()
+    {
+        GestionPlantaciones.GestionPlantaciones reporte = new GestionPlantaciones.GestionPlantaciones();
+        // reporte.Plagas = await _plantaciones
+
+        return reporte;
     }
 }
