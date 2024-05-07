@@ -4,6 +4,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 using System;
 =======
 ﻿using System;
@@ -76,13 +77,15 @@ public class GestionPlantaciones
 =======
 ﻿namespace NLayer.Architecture.Bussines.Models.Plantaciones;
 >>>>>>> 2cae53b (Clases y Archivo JSON de Plagas)
+=======
+﻿namespace NLayer.Architecture.Bussines.GestionPlantaciones;
+>>>>>>> b370f23 (Avance en las clases ReportePlantaciones)
 
 public class GestionPlantaciones
 {
     public string Nombre { get; set; } = "Reporte de Plantaciones";
 
     public ControlPlagas Plagas { get; set;}
-
 
 }
 >>>>>>> e98558f (Merge)
