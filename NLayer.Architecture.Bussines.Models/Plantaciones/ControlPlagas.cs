@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 ﻿namespace NLayer.Architecture.Bussines.GestionPlantaciones;
 
@@ -8,6 +9,9 @@ public class ControlPlagas
     public string  FechaFum { get; set; }
 =======
 ﻿namespace NLayer.Architecture.Bussines.Models.Plantaciones;
+=======
+﻿namespace NLayer.Architecture.Bussines.GestionPlantaciones;
+>>>>>>> b370f23 (Avance en las clases ReportePlantaciones)
 
 public class ControlPlagas
 {
