@@ -8,6 +8,11 @@ namespace DataAccess.Layer.FileRepositories;
  public class ReporteAlimentacionRepository : FileRepository, IReporteAlimentacionRepository
 {
     private string _trabajadoresVirtualPath = "Trabajadores.json"; 
+
+
+
+
+
     private string FolderPath { get; set; }
 
     public ReporteAlimentacionRepository(IConfiguration Configuration)

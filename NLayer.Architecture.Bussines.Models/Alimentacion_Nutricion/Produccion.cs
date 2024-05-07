@@ -11,6 +11,10 @@ public class Produccion
 
     public Trabajadores Trabajadores { get; set;}
 
+
+
+
+
     public double CostoTotalPorDia { get; set; }
     public double CostoTotalPorMes { get; set; }
     public void CalcularCostos(Trabajadores trabajador)
@@ -19,4 +23,4 @@ public class Produccion
         CostoTotalPorMes = CostoTotalPorDia * 30;
     }
 }
-}
+
