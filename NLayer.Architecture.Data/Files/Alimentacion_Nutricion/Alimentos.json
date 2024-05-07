@@ -1,4 +1,10 @@
-{
-  "Costo_Unidad": 1000
-  "Nombre": "Concentrado"
-}
+[
+  {
+    "Costo_Unidad": 1000,
+    "Nombre": "Concentrado"
+  },
+  {
+    "Costo_Unidad": 2000,
+    "Nombre": "Miel"
+  }
+]
