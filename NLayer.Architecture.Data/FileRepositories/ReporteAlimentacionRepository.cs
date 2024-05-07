@@ -7,7 +7,8 @@ namespace DataAccess.Layer.FileRepositories;
 
  public class ReporteAlimentacionRepository : FileRepository, IReporteAlimentacionRepository
 {
-    private string _trabajadoresVirtualPath = "Trabajadores.json"; 
+    private string _trabajadoresVirtualPath = "Trabajadores.json";
+    private string _AnimalesVirtualPath = "Animales.json";
 
 
 
@@ -19,9 +20,17 @@ namespace DataAccess.Layer.FileRepositories;
     {
         FolderPath = $"{Configuration["Folders: Alimentacion_Nutricion"]}";
         _trabajadoresVirtualPath = FolderPath + _trabajadoresVirtualPath;
+        _AnimalesVirtualPath = FolderPath + _AnimalesVirtualPath;
     }
     public async Task<Trabajadores> GetTrabajadores()
     {
         return await ReadJsonFileAsync<Trabajadores>(_trabajadoresVirtualPath);
     }
+
+    public async Task<List<Animales>> GetAnimales()
+    {
+        return await ReadListJsonAsync<Animales>(_AnimalesVirtualPath);
+
+    }
+
 }
