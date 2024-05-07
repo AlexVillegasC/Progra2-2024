@@ -6,6 +6,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 ﻿namespace NLayer.Architecture.Bussines.GestionPlantaciones;
 
@@ -35,6 +36,9 @@ public class ControlPlagas
 =======
 ﻿namespace NLayer.Architecture.Bussines.Models.Plantaciones;
 >>>>>>> 2cae53b (Clases y Archivo JSON de Plagas)
+=======
+﻿namespace NLayer.Architecture.Bussines.GestionPlantaciones;
+>>>>>>> b370f23 (Avance en las clases ReportePlantaciones)
 
 public class ControlPlagas
 {
