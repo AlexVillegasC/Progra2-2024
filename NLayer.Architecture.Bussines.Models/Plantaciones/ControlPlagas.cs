@@ -1,4 +1,4 @@
-﻿namespace NLayer.Architecture.Bussines.Models.Plantaciones;
+﻿namespace NLayer.Architecture.Bussines.GestionPlantaciones;
 
 public class ControlPlagas
 {
