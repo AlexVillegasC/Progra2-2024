@@ -2,6 +2,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   "name": "Shampoo",
   "price": 200,
   "description": "Limpieza"
@@ -20,4 +21,9 @@
   "price": 200,
   "description": "Limpieza"
 >>>>>>> origin/development
+=======
+  "name": "sssss",
+  "price": 200,
+  "description": "salud"
+>>>>>>> b5fa883 (costos higiene)
 }

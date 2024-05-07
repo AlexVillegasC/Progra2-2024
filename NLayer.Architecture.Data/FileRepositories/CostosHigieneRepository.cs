@@ -2,6 +2,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 using NLayer.Architecture.Bussines.Models.TheSillies;
 =======
 using NLayer.Architecture.Bussines.Models.The_Sillies;
@@ -12,6 +13,9 @@ using NLayer.Architecture.Bussines.Models.TheSillies;
 =======
 using NLayer.Architecture.Bussines.Models.TheSillies;
 >>>>>>> origin/development
+=======
+using NLayer.Architecture.Bussines.Models.The_Sillies;
+>>>>>>> b5fa883 (costos higiene)
 using NLayer.Architecture.Data;
 using System.ComponentModel.Design;
 
@@ -23,6 +27,7 @@ public class CostosHigieneRepository : FileRepository, ICostosHigieneRepository
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     private string _AlimenticiosVirtualPath = "CostosAlimenticios.json";
 =======
@@ -35,10 +40,13 @@ public class CostosHigieneRepository : FileRepository, ICostosHigieneRepository
 
     private string _AlimenticiosVirtualPath = "CostosAlimenticios.json";
 >>>>>>> origin/development
+=======
+>>>>>>> b5fa883 (costos higiene)
     private string folderPath {  get; set; }
 
     public CostosHigieneRepository(IConfiguration Configuration)
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -59,12 +67,17 @@ public class CostosHigieneRepository : FileRepository, ICostosHigieneRepository
         _HigieneVirtualPath = folderPath + _HigieneVirtualPath;
         _AlimenticiosVirtualPath = folderPath + _AlimenticiosVirtualPath;
 >>>>>>> origin/development
+=======
+        folderPath = $"{Configuration["Folders:CostosGenerales"]}";
+        _HigieneVirtualPath = folderPath + _HigieneVirtualPath;
+>>>>>>> b5fa883 (costos higiene)
     }
 
     public async Task<CostosHigiene> GetCostosHigiene()
     {
         return await ReadJsonFileAsync<CostosHigiene>(_HigieneVirtualPath);
     }
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -84,4 +97,6 @@ public class CostosHigieneRepository : FileRepository, ICostosHigieneRepository
 >>>>>>> 0ecaee0 (Cambios de CostosAlimenticios)
 =======
 >>>>>>> origin/development
+=======
+>>>>>>> b5fa883 (costos higiene)
 }

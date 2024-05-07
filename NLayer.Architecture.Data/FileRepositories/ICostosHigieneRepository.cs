@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ﻿using NLayer.Architecture.Bussines.Models.TheSillies;
 =======
 ﻿using NLayer.Architecture.Bussines.Models.The_Sillies;
@@ -11,12 +12,16 @@
 =======
 ﻿using NLayer.Architecture.Bussines.Models.TheSillies;
 >>>>>>> origin/development
+=======
+﻿using NLayer.Architecture.Bussines.Models.The_Sillies;
+>>>>>>> b5fa883 (costos higiene)
 
 namespace DataAccess.Layer.FileRepositories;
 
 public interface ICostosHigieneRepository
 {
     Task<CostosHigiene> GetCostosHigiene();
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -29,4 +34,6 @@ public interface ICostosHigieneRepository
 =======
     Task<CostosAlimenticios> GetCostosAlimenticios();
 >>>>>>> origin/development
+=======
+>>>>>>> b5fa883 (costos higiene)
 }
