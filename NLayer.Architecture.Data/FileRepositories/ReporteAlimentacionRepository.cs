@@ -5,14 +5,11 @@ using System.ComponentModel.Design;
 
 namespace DataAccess.Layer.FileRepositories;
 
- public class ReporteAlimentacionRepository : FileRepository, IReporteAlimentacionRepository
+public class ReporteAlimentacionRepository : FileRepository, IReporteAlimentacionRepository
 {
     private string _trabajadoresVirtualPath = "Trabajadores.json";
     private string _AnimalesVirtualPath = "Animales.json";
-
-
-
-
+    private string _AlimentosVirtualPath = "Alimentos.json";
 
     private string FolderPath { get; set; }
 
@@ -21,6 +18,7 @@ namespace DataAccess.Layer.FileRepositories;
         FolderPath = $"{Configuration["Folders: Alimentacion_Nutricion"]}";
         _trabajadoresVirtualPath = FolderPath + _trabajadoresVirtualPath;
         _AnimalesVirtualPath = FolderPath + _AnimalesVirtualPath;
+        _AlimentosVirtualPath = FolderPath + _AlimentosVirtualPath;
     }
     public async Task<Trabajadores> GetTrabajadores()
     {
@@ -33,4 +31,8 @@ namespace DataAccess.Layer.FileRepositories;
 
     }
 
+    public async Task<List<Alimentos>> GetAlimentos()
+    {
+        return await ReadListJsonAsync<Alimentos>(_AlimentosVirtualPath);
+    }
 }
