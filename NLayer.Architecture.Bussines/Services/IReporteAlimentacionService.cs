@@ -1,7 +1,7 @@
 ﻿
 namespace NLayer.Architecture.Bussines.Services;
 
-internal interface IReporteAlimentacionService
+public interface IReporteAlimentacionService
 {
     Task<ReporteAlimentacion.Produccion> GetProduccion();
 }

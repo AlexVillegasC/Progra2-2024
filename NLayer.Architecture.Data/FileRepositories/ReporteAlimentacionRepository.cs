@@ -5,7 +5,7 @@ using System.ComponentModel.Design;
 
 namespace DataAccess.Layer.FileRepositories;
 
-internal class ReporteAlimentacionRepository : FileRepository, IReporteAlimentacionRepository
+ public class ReporteAlimentacionRepository : FileRepository, IReporteAlimentacionRepository
 {
     private string _trabajadoresVirtualPath = "Trabajadores.json"; 
     private string FolderPath { get; set; }

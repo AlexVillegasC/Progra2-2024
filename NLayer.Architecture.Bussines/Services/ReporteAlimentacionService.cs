@@ -2,7 +2,7 @@
 
 namespace NLayer.Architecture.Bussines.Services;
 
-internal class ReporteAlimentacionService
+public class ReporteAlimentacionService
 {
     private readonly IReporteAlimentacionRepository _reporteAliRepo;
 
