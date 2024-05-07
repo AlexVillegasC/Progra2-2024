@@ -12,5 +12,11 @@ namespace NLayer.Architecture.Bussines.Models.Alimentacion_Nutricion
         public int ID { get; set; }
         public string Tipo { get; set; }
         public double Peso { get; set; }
+
+        public static implicit operator List<object>(Animales v)
+        {
+            throw new NotImplementedException();
+
+        }
     }
 }

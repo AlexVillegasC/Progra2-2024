@@ -1,7 +1,16 @@
-{
-  "Nombre" : Malacrianza 
-  "ID" : 1234
-  "Tipo" : Torete
-  "Peso" :  101.8
+[
+  {
+    "Nombre": "Malacrianza",
+    "ID": 1234,
+    "Tipo": "Torete",
+    "Peso": 101.8
 
-}
+  },
+  {
+    "Nombre": "Punta Roja",
+    "ID": 5678,
+    "Tipo": "Torete",
+    "Peso": 103.7
+
+  }
+]

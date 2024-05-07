@@ -9,7 +9,7 @@ public class Produccion
 
     public Trabajadores Trabajadores { get; set;}
 
-
+    public List<Animales> ListaAnimales { get; set; }
 
 
 
@@ -17,7 +17,7 @@ public class Produccion
     public double CostoTotalPorMes { get; set; }
     public void CalcularCostos(Trabajadores trabajador)
     {
-   //     CostoTotalPorDia = ListaAnimales.Sum(a => a.Peso) * ListaAlimentos.Sum(a => a.CostoUnidad) + trabajador.Costo_Planilla / 30;
+        CostoTotalPorDia = ListaAnimales.Sum(a => a.Peso) * ListaAlimentos.Sum(a => a.CostoUnidad) + trabajador.Costo_Planilla / 30;
         CostoTotalPorMes = CostoTotalPorDia * 30;
     }
 }

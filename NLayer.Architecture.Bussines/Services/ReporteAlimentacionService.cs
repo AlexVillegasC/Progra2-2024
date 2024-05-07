@@ -1,5 +1,5 @@
 ﻿using DataAccess.Layer.FileRepositories;
-
+using System.Collections.Generic;
 namespace NLayer.Architecture.Bussines.Services;
 
 public class ReporteAlimentacionService
@@ -14,6 +14,7 @@ public class ReporteAlimentacionService
     {
         ReporteAlimentacion.Produccion miReporte = new ReporteAlimentacion.Produccion();
         miReporte.Trabajadores = await _reporteAliRepo.GetTrabajadores();
+        miReporte.ListaAnimales = await _reporteAliRepo.GetAnimales();
 
         miReporte
 

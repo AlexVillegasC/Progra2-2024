@@ -4,4 +4,5 @@ namespace DataAccess.Layer.FileRepositories;
 public interface IReporteAlimentacionRepository
 {
     Task<Trabajadores> GetTrabajadores();
+    Task<Animales> GetAnimales();
 }
