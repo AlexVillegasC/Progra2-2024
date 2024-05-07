@@ -4,6 +4,9 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 011c04a (costos higiene)
   "name": "Shampoo",
   "price": 200,
   "description": "Limpieza"
@@ -12,6 +15,7 @@
   "price": 200,
   "description": "salud"
 >>>>>>> 1672b8f (costos higiene)
+<<<<<<< HEAD
 =======
   "name": "Shampoo",
   "price": 200,
@@ -32,4 +36,6 @@
   "price": 200,
   "description": "Limpieza"
 >>>>>>> c2daa04 (datos json)
+=======
+>>>>>>> 011c04a (costos higiene)
 }
