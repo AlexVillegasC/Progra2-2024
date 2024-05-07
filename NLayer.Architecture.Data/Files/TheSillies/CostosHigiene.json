@@ -1,5 +1,11 @@
 ﻿{
+<<<<<<< HEAD
   "name": "Shampoo",
   "price": 200,
   "description": "Limpieza"
+=======
+  "name": "sssss",
+  "price": 200,
+  "description": "salud"
+>>>>>>> 1672b8f (costos higiene)
 }
