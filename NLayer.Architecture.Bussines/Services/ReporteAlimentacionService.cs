@@ -15,8 +15,7 @@ public class ReporteAlimentacionService
         ReporteAlimentacion.Produccion miReporte = new ReporteAlimentacion.Produccion();
         miReporte.Trabajadores = await _reporteAliRepo.GetTrabajadores();
         miReporte.ListaAnimales = await _reporteAliRepo.GetAnimales();
-
-        miReporte
+        miReporte.ListaAlimentos = await _reporteAliRepo.GetAlimentos();
 
         return miReporte;
     }
