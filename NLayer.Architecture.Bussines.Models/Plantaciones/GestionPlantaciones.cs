@@ -6,6 +6,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> c2da1d8 (Merge)
 ﻿namespace NLayer.Architecture.Bussines.GestionPlantaciones;
@@ -38,6 +39,8 @@ using System;
 =======
 =======
 >>>>>>> 8e20a23 (Clases y Archivo JSON de Plagas)
+=======
+>>>>>>> b96c861 (Avance en las clases ReportePlantaciones)
 using System;
 =======
 ﻿using System;
@@ -114,13 +117,15 @@ namespace NLayer.Architecture.Bussines.Models.Plantaciones
 =======
 ﻿namespace NLayer.Architecture.Bussines.Models.Plantaciones;
 >>>>>>> 2cae53b (Clases y Archivo JSON de Plagas)
+=======
+﻿namespace NLayer.Architecture.Bussines.GestionPlantaciones;
+>>>>>>> b370f23 (Avance en las clases ReportePlantaciones)
 
 public class GestionPlantaciones
 {
     public string Nombre { get; set; } = "Reporte de Plantaciones";
 
     public ControlPlagas Plagas { get; set;}
-
 
 }
 >>>>>>> e98558f (Merge)

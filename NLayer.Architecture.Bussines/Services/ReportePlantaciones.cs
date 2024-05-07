@@ -3,12 +3,15 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> c2da1d8 (Merge)
 =======
 >>>>>>> 19da8c5 (Avance en las clases ReportePlantaciones)
 =======
 >>>>>>> c938080 (Merge)
+=======
+>>>>>>> b96c861 (Avance en las clases ReportePlantaciones)
 ﻿using DataAccess.Layer.FileRepositories;
 using NLayer.Architecture.Bussines.GestionPlantaciones;
 <<<<<<< HEAD
@@ -144,12 +147,34 @@ public class ReportePlantaciones : IReportePlantaciones
 >>>>>>> caa8401 (Proyecto casi finalizado)
 =======
 =======
+=======
+﻿using DataAccess.Layer.FileRepositories;
+>>>>>>> b370f23 (Avance en las clases ReportePlantaciones)
 
-namespace NLayer.Architecture.Bussines.Services
+namespace NLayer.Architecture.Bussines.Services;
+
+public class ReportePlantaciones : IReportePlantaciones
 {
-    internal class ReportePlantaciones
+    private readonly IReportePlantaciones _plantaciones;
+
+    public ReportePlantaciones(IReportePlantaciones plantaciones)
     {
+<<<<<<< HEAD
 >>>>>>> e98558f (Merge)
+<<<<<<< HEAD
 >>>>>>> c938080 (Merge)
+=======
+=======
+        _plantaciones = plantaciones;
+    }
+
+    public async Task<GestionPlantaciones.GestionPlantaciones> GetReporte()
+    {
+        GestionPlantaciones.GestionPlantaciones reporte = new GestionPlantaciones.GestionPlantaciones();
+        // reporte.Plagas = await _plantaciones
+
+        return reporte;
+>>>>>>> b370f23 (Avance en las clases ReportePlantaciones)
+>>>>>>> b96c861 (Avance en las clases ReportePlantaciones)
     }
 }

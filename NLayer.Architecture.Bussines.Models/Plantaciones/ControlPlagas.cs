@@ -3,6 +3,9 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> b96c861 (Avance en las clases ReportePlantaciones)
 =======
 =======
 >>>>>>> 8e20a23 (Clases y Archivo JSON de Plagas)
@@ -18,6 +21,7 @@ public class ControlPlagas
 ﻿namespace NLayer.Architecture.Bussines.Models.Plantaciones;
 =======
 ﻿namespace NLayer.Architecture.Bussines.GestionPlantaciones;
+<<<<<<< HEAD
 >>>>>>> bc4f92b (Avance en las clases ReportePlantaciones)
 =======
 =======
@@ -27,6 +31,9 @@ public class ControlPlagas
 =======
 ﻿namespace NLayer.Architecture.Bussines.Models.Plantaciones;
 >>>>>>> 8e20a23 (Clases y Archivo JSON de Plagas)
+=======
+>>>>>>> b370f23 (Avance en las clases ReportePlantaciones)
+>>>>>>> b96c861 (Avance en las clases ReportePlantaciones)
 
 public class ControlPlagas
 {
