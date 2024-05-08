@@ -16,6 +16,7 @@ public class ControlPlagas
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 ﻿namespace NLayer.Architecture.Bussines.Models.Plantaciones;
 =======
@@ -59,6 +60,8 @@ public class ControlPlagas
 >>>>>>> c9e0984 (final de mi parte)
 =======
 >>>>>>> 2cae53b (Clases y Archivo JSON de Plagas)
+=======
+>>>>>>> c9e0984 (final de mi parte)
 
     public string EstadoArbol { get; set; }
 

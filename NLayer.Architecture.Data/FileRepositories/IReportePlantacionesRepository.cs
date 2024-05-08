@@ -158,6 +158,10 @@ public interface IReportePlantacionesRepository
     Task<ControlPlagas> GetControlPlagas();
 
     //Sus Partes.... igual que arriba 
+
+    Task<ControlAbono> GetControlAbono();
+
+
 }
 <<<<<<< HEAD
 >>>>>>> cbb4e73 (Carpeta y 2 clases nuevas)
