@@ -17,6 +17,9 @@ public class ControlPlagas
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> debd9b1 (final de mi parte)
 =======
 ﻿namespace NLayer.Architecture.Bussines.Models.Plantaciones;
 =======
@@ -49,7 +52,12 @@ public class ControlPlagas
 >>>>>>> 09d2633 (final de mi parte)
 =======
 >>>>>>> 2cae53b (Clases y Archivo JSON de Plagas)
+<<<<<<< HEAD
 >>>>>>> 8e20a23 (Clases y Archivo JSON de Plagas)
+=======
+=======
+>>>>>>> c9e0984 (final de mi parte)
+>>>>>>> debd9b1 (final de mi parte)
 
     public string EstadoArbol { get; set; }
 
