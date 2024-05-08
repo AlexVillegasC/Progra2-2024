@@ -5,6 +5,7 @@
 public class ControlPlagas
 {
     public string  FechaFum { get; set; }
+<<<<<<< HEAD
 =======
 ﻿namespace NLayer.Architecture.Bussines.Models.Plantaciones;
 =======
@@ -15,6 +16,8 @@ public class ControlPlagas
 {
     public int FechaFum { get; set; }
 >>>>>>> 0f565b5 (Clases y Archivo JSON de Plagas)
+=======
+>>>>>>> c57478d (final de mi parte)
 
     public string EstadoArbol { get; set; }
 
