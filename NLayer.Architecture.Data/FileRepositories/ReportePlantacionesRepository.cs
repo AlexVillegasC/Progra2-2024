@@ -9,8 +9,10 @@ public class ReportePlantacionesReposiroty : FileRepository, IReportePlantacione
 {
     private string _PlagasVirtualPath = "controlplagas.json";
     //Ponen sus partes igual
+    private string _AbonoVirtualPath = "ControlAbono.json";
 
     private string FolderPath { get; set; }
+   
 
     public ReportePlantacionesReposiroty(IConfiguration configuration)
     {
@@ -18,18 +20,27 @@ public class ReportePlantacionesReposiroty : FileRepository, IReportePlantacione
 
         _PlagasVirtualPath = FolderPath + _PlagasVirtualPath;
         //Escriben lo mismo aqui con sus partes
+        _AbonoVirtualPath = FolderPath + _AbonoVirtualPath;
+
 
     }
+
+    
 
     public async Task<ControlPlagas> GetControlPlagas()
     {
         return await ReadJsonFileAsync<ControlPlagas>(_PlagasVirtualPath);
     }
+    
+    public async Task<ControlAbono> GetControlAbono() //mostrar los datos 
+    {
+        return await ReadJsonFileAsync<ControlAbono>(_AbonoVirtualPath);
+    }
 
     //Creen la misma clase igual que la de arriba 
 
 
-
+    
 
 
 
