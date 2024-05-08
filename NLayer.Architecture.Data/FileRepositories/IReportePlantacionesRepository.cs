@@ -3,6 +3,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ﻿using NLayer.Architecture.Bussines.GestionPlantaciones;
 using NLayer.Architecture.Bussines.GestionPlantaciones;
 <<<<<<< HEAD
@@ -84,11 +85,20 @@ public interface IReportePlantacionesRepository
 
 >>>>>>> 818cb8c (Proyecto casi finalizado)
 =======
+=======
+﻿using NLayer.Architecture.Bussines.GestionPlantaciones;
+>>>>>>> 818cb8c (Proyecto casi finalizado)
 
-namespace NLayer.Architecture.Data.FileRepositories
+namespace DataAccess.Layer.FileRepositories;
+
+public interface IReportePlantacionesRepository
 {
-    internal class IReportePlantacionesRepository
-    {
-    }
+    Task<ControlPlagas> GetControlPlagas();
+
+    //Sus Partes.... igual que arriba 
 }
+<<<<<<< HEAD
 >>>>>>> cbb4e73 (Carpeta y 2 clases nuevas)
+=======
+
+>>>>>>> 818cb8c (Proyecto casi finalizado)
