@@ -20,7 +20,10 @@ public class ReportePlantaciones : IReportePlantaciones
         GestionPlantaciones.GestionPlantaciones reporteArbol = new GestionPlantaciones.GestionPlantaciones();
         reporteArbol.Plagas = await _plantaciones.GetControlPlagas();
         reporteArbol.Abono = await _plantaciones.GetControlAbono();
+<<<<<<< HEAD
         reporteArbol.Arbol = await _plantaciones.GetArbolFrutal();
+=======
+>>>>>>> c9e0984 (final de mi parte)
         return reporteArbol;
 =======
 ﻿using System;

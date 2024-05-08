@@ -19,6 +19,15 @@ namespace NLayer.Architecture.Bussines.Models.Plantaciones
 
     public ControlPlagas Plagas { get; set;}
 
+<<<<<<< HEAD
 >>>>>>> b370f23 (Avance en las clases ReportePlantaciones)
 }
 >>>>>>> e98558f (Merge)
+=======
+
+    public ControlAbono Abono { get; set; }
+
+}
+
+
+>>>>>>> c9e0984 (final de mi parte)
