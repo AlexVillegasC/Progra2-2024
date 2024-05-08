@@ -30,6 +30,7 @@ builder.Services.AddTransient<IReporteClimaRepository, ReporteClimaRepository>()
 <<<<<<< HEAD
 builder.Services.AddTransient<IReporteRegistroGanadoRepository, ReporteRegistroGanadoRepository>();
 
+<<<<<<< HEAD
 builder.Services.AddTransient<IReporteAlimentacionService, ReporteAlimentacionService>();
 builder.Services.AddTransient<IReporteAlimentacionRepository, ReporteAlimentacionRepository>();
 builder.Services.AddTransient<IReporteRegistroGanadoService, ReporteRegistroGanadoService>();
@@ -73,6 +74,11 @@ builder.Services.AddTransient<IReporteInventarioRepository, ReporteInventarioRep
 builder.Services.AddTransient<ICostosHigieneRepository, CostosHigieneRepository>();
 builder.Services.AddTransient<ICostosHigieneServices, HigieneServices>();
 >>>>>>> 0ecaee0 (Cambios de CostosAlimenticios)
+=======
+builder.Services.AddTransient<IReportePlantaciones, ReportePlantaciones>();
+builder.Services.AddTransient<IReportePlantacionesRepository,ReportePlantacionesRepository>();
+
+>>>>>>> 01278ca (cositas)
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
