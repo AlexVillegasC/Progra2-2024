@@ -1,21 +1,22 @@
 ﻿using DataAccess.Layer.FileRepositories;
+using NLayer.Architecture.Bussines.GestionPlantaciones;
 
 namespace NLayer.Architecture.Bussines.Services;
 
 public class ReportePlantaciones : IReportePlantaciones
 {
-    private readonly IReportePlantaciones _plantaciones;
+    private readonly IReportePlantacionesRepository _plantaciones;
 
-    public ReportePlantaciones(IReportePlantaciones plantaciones)
+    public ReportePlantaciones(IReportePlantacionesRepository plantaciones)
     {
         _plantaciones = plantaciones;
     }
 
     public async Task<GestionPlantaciones.GestionPlantaciones> GetReporte()
     {
-        GestionPlantaciones.GestionPlantaciones reporte = new GestionPlantaciones.GestionPlantaciones();
-        // reporte.Plagas = await _plantaciones
+        GestionPlantaciones.GestionPlantaciones reporteArbol = new GestionPlantaciones.GestionPlantaciones();
+        reporteArbol.Plagas = await _plantaciones.GetControlPlagas();
 
-        return reporte;
+        return reporteArbol;
     }
 }
