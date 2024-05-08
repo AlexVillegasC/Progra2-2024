@@ -3,12 +3,15 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> fcbde3f (Carpeta y 2 clases nuevas)
 =======
 >>>>>>> caa8401 (Proyecto casi finalizado)
 =======
 >>>>>>> 4cbf698 (Carpeta y 2 clases nuevas)
+=======
+>>>>>>> ab728b9 (Proyecto casi finalizado)
 ﻿using NLayer.Architecture.Bussines.GestionPlantaciones;
 using NLayer.Architecture.Bussines.GestionPlantaciones;
 <<<<<<< HEAD
@@ -101,12 +104,24 @@ public interface IReportePlantacionesRepository
 >>>>>>> caa8401 (Proyecto casi finalizado)
 =======
 =======
+=======
+﻿using NLayer.Architecture.Bussines.GestionPlantaciones;
+>>>>>>> 818cb8c (Proyecto casi finalizado)
 
-namespace NLayer.Architecture.Data.FileRepositories
+namespace DataAccess.Layer.FileRepositories;
+
+public interface IReportePlantacionesRepository
 {
-    internal class IReportePlantacionesRepository
-    {
-    }
+    Task<ControlPlagas> GetControlPlagas();
+
+    //Sus Partes.... igual que arriba 
 }
+<<<<<<< HEAD
 >>>>>>> cbb4e73 (Carpeta y 2 clases nuevas)
+<<<<<<< HEAD
 >>>>>>> 4cbf698 (Carpeta y 2 clases nuevas)
+=======
+=======
+
+>>>>>>> 818cb8c (Proyecto casi finalizado)
+>>>>>>> ab728b9 (Proyecto casi finalizado)
