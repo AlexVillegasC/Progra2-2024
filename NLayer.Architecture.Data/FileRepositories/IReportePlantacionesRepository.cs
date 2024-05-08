@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ﻿using NLayer.Architecture.Bussines.GestionPlantaciones;
 using NLayer.Architecture.Bussines.GestionPlantaciones;
 
@@ -22,11 +23,20 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+=======
+﻿using NLayer.Architecture.Bussines.GestionPlantaciones;
+>>>>>>> f4b2036 (Proyecto casi finalizado)
 
-namespace NLayer.Architecture.Data.FileRepositories
+namespace DataAccess.Layer.FileRepositories;
+
+public interface IReportePlantacionesRepository
 {
-    internal class IReportePlantacionesRepository
-    {
-    }
+    Task<ControlPlagas> GetControlPlagas();
+
+    //Sus Partes.... igual que arriba 
 }
+<<<<<<< HEAD
 >>>>>>> 60d7325 (Carpeta y 2 clases nuevas)
+=======
+
+>>>>>>> f4b2036 (Proyecto casi finalizado)
