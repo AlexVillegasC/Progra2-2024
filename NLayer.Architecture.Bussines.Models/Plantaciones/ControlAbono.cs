@@ -3,12 +3,15 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 09d2633 (final de mi parte)
 =======
 >>>>>>> 44d73a5 (cositas)
 =======
 >>>>>>> debd9b1 (final de mi parte)
+=======
+>>>>>>> 52c54a4 (cositas)
 ﻿namespace NLayer.Architecture.Bussines.GestionPlantaciones;
 
 public class ControlAbono
@@ -38,11 +41,18 @@ namespace NLayer.Architecture.Bussines.GestionPlantaciones;
 
 namespace NLayer.Architecture.Bussines.GestionPlantaciones;
 >>>>>>> c9e0984 (final de mi parte)
+<<<<<<< HEAD
 >>>>>>> debd9b1 (final de mi parte)
+=======
+=======
+﻿namespace NLayer.Architecture.Bussines.GestionPlantaciones;
+>>>>>>> 01278ca (cositas)
+>>>>>>> 52c54a4 (cositas)
 
 public class ControlAbono
 {
     public int FechaApli { get; set; }
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -57,6 +67,8 @@ public class ControlAbono
 =======
 =======
 >>>>>>> debd9b1 (final de mi parte)
+=======
+>>>>>>> 52c54a4 (cositas)
 >>>>>>> c9e0984 (final de mi parte)
 =======
 
@@ -66,7 +78,13 @@ public class ControlAbono
 =======
 =======
 >>>>>>> c9e0984 (final de mi parte)
+<<<<<<< HEAD
 >>>>>>> debd9b1 (final de mi parte)
+=======
+=======
+
+>>>>>>> 01278ca (cositas)
+>>>>>>> 52c54a4 (cositas)
     public int Cantidad { get; set; }
 
     public string Tipo { get; set; }
