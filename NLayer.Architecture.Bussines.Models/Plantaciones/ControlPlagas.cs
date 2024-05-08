@@ -8,6 +8,7 @@ public class ControlPlagas
 {
     public string  FechaFum { get; set; }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 ﻿namespace NLayer.Architecture.Bussines.Models.Plantaciones;
 =======
@@ -27,6 +28,8 @@ public class ControlPlagas
 >>>>>>> c57478d (final de mi parte)
 =======
 >>>>>>> 19da8c5 (Avance en las clases ReportePlantaciones)
+=======
+>>>>>>> 09d2633 (final de mi parte)
 
     public string EstadoArbol { get; set; }
 
