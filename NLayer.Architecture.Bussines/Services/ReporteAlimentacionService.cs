@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 namespace NLayer.Architecture.Bussines.Services;
 
-public class ReporteAlimentacionService
+public class ReporteAlimentacionService : IReporteAlimentacionService
 {
     private readonly IReporteAlimentacionRepository _reporteAliRepo;
 
