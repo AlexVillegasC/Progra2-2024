@@ -25,12 +25,15 @@ public class ReportePlantaciones : IReportePlantaciones
         reporteArbol.Abono = await _plantaciones.GetControlAbono();
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         reporteArbol.Arbol = await _plantaciones.GetArbolFrutal();
 =======
 >>>>>>> c9e0984 (final de mi parte)
 =======
         reporteArbol.Arbol = await _plantaciones.GetArbolFrutal();
 >>>>>>> 6fff2b6 (Proyecto 1 completado)
+=======
+>>>>>>> c9e0984 (final de mi parte)
         return reporteArbol;
 =======
 =======

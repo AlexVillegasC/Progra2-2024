@@ -54,5 +54,13 @@ public class GestionPlantaciones
 
     public ControlPlagas Plagas { get; set;}
 
+
+    public ControlAbono Abono { get; set; }
+
 }
+<<<<<<< HEAD
 >>>>>>> e98558f (Merge)
+=======
+
+
+>>>>>>> c9e0984 (final de mi parte)
