@@ -2,7 +2,7 @@
 
 public class ControlAbono
 {
-    public int FechaApli { get; set; }
+    public string FechaApli { get; set; }
 
     public int Cantidad { get; set; }
 
