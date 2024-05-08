@@ -245,9 +245,9 @@ namespace DataAccess.Layer.FileRepositories;
 
 public class ReportePlantacionesRepository : FileRepository, IReportePlantacionesRepository
 {
-    private string _PlagasVirtualPath = "controlplagas.json";
+    private string _PlagasVirtualPath = @"C:\Users\alond\source\repos\Progra2-2024\NLayer.Architecture.Data\Files\Plantaciones\controlplagas.json";
     //Ponen sus partes igual
-    private string _AbonoVirtualPath = "ControlAbono.json";
+    private string _AbonoVirtualPath = @"C:\Users\alond\source\repos\Progra2-2024\NLayer.Architecture.Data\Files\Plantaciones\ControlAbono.json";
 
     private string FolderPath { get; set; }
 
