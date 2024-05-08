@@ -7,9 +7,9 @@ namespace DataAccess.Layer.FileRepositories;
 
 public class ReporteAlimentacionRepository : FileRepository, IReporteAlimentacionRepository
 {
-    private string _trabajadoresVirtualPath = @"C:\Users\obalt\source\repos\Progra2-2024\NLayer.Architecture.Data\Files\Alimentacion_Nutricion\Trabajadores.json";
-    private string _AnimalesVirtualPath = @"C:\Users\obalt\source\repos\Progra2-2024\NLayer.Architecture.Data\Files\Alimentacion_Nutricion\Animales.json";
-    private string _AlimentosVirtualPath = @"C:\Users\obalt\source\repos\Progra2-2024\NLayer.Architecture.Data\Files\Alimentacion_Nutricion\Alimentos.json";
+    private string _trabajadoresVirtualPath = "Trabajadores.json";
+    private string _AnimalesVirtualPath = "Animales.json";
+    private string _AlimentosVirtualPath = "Alimentos.json";
 
     private string FolderPath { get; set; }
 
