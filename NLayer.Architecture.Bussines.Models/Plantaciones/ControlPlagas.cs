@@ -1,8 +1,8 @@
-﻿namespace NLayer.Architecture.Bussines.Models.Plantaciones;
+﻿namespace NLayer.Architecture.Bussines.GestionPlantaciones;
 
 public class ControlPlagas
 {
-    public int FechaFum { get; set; }
+    public string  FechaFum { get; set; }
 
     public string EstadoArbol { get; set; }
 

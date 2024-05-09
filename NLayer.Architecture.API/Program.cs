@@ -18,6 +18,9 @@ builder.Services.AddTransient<IReporteClimaService, ReporteClimaService>();
 builder.Services.AddTransient<IFileRepository, FileRepository>();
 builder.Services.AddTransient<IReporteClimaRepository, ReporteClimaRepository>();
 
+builder.Services.AddTransient<IReportePlantaciones, ReportePlantaciones>();
+builder.Services.AddTransient<IReportePlantacionesRepository,ReportePlantacionesRepository>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

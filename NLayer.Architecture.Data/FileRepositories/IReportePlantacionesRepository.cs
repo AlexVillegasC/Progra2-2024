@@ -1,12 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using NLayer.Architecture.Bussines.GestionPlantaciones;
 
-namespace NLayer.Architecture.Data.FileRepositories
+namespace DataAccess.Layer.FileRepositories;
+
+public interface IReportePlantacionesRepository
 {
-    internal class IReportePlantacionesRepository
-    {
-    }
+    Task<ControlPlagas> GetControlPlagas();
+
+    //Sus Partes.... igual que arriba 
+
+    Task<ControlAbono> GetControlAbono();
+
+
 }
+
