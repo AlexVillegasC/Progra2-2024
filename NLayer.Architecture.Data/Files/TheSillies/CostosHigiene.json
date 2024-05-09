@@ -10,6 +10,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 011c04a (costos higiene)
 =======
@@ -22,6 +23,8 @@
 >>>>>>> f932598 (Squashed commit of the following:)
 =======
 >>>>>>> 809dc53 (costos higiene)
+=======
+>>>>>>> e79dab5 (datos json)
   "name": "Shampoo",
   "price": 200,
   "description": "Limpieza"
@@ -88,5 +91,13 @@
   "price": 200,
   "description": "salud"
 >>>>>>> 1672b8f (costos higiene)
+<<<<<<< HEAD
 >>>>>>> 809dc53 (costos higiene)
+=======
+=======
+  "name": "Shampoo",
+  "price": 200,
+  "description": "Limpieza"
+>>>>>>> cc480e9 (datos json)
+>>>>>>> e79dab5 (datos json)
 }
