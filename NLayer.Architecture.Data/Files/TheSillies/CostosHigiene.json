@@ -5,8 +5,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 011c04a (costos higiene)
+=======
+>>>>>>> 73a3a4f (datos json)
   "name": "Shampoo",
   "price": 200,
   "description": "Limpieza"
@@ -16,11 +19,15 @@
   "description": "salud"
 >>>>>>> 1672b8f (costos higiene)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 73a3a4f (datos json)
 =======
   "name": "Shampoo",
   "price": 200,
   "description": "Limpieza"
 >>>>>>> cc480e9 (datos json)
+<<<<<<< HEAD
 =======
   "name": "Shampoo",
   "price": 200,
@@ -38,4 +45,6 @@
 >>>>>>> c2daa04 (datos json)
 =======
 >>>>>>> 011c04a (costos higiene)
+=======
+>>>>>>> 73a3a4f (datos json)
 }
