@@ -1,4 +1,4 @@
-﻿using NLayer.Architecture.Bussines.Models.The_Sillies;
+﻿using NLayer.Architecture.Bussines.Models.TheSillies;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,5 +9,6 @@ namespace NLayer.Architecture.Bussines.TheSillies;
 
 public class CostosGenerales
 {
-    public CostosHigiene CostosHigiene { get; set;} 
+    public CostosHigiene CostosHigiene { get; set;}
+    public CostosAlimenticios CostosAlimenticios { get; set;}
 }
