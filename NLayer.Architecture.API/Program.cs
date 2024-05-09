@@ -34,6 +34,7 @@ builder.Services.AddTransient<IReporteClimaService, ReporteClimaService>();
 builder.Services.AddTransient<IFileRepository, FileRepository>();
 builder.Services.AddTransient<IReporteClimaRepository, ReporteClimaRepository>();
 <<<<<<< HEAD
+<<<<<<< HEAD
 builder.Services.AddTransient<IReporteRegistroGanadoRepository, ReporteRegistroGanadoRepository>();
 
 <<<<<<< HEAD
@@ -97,6 +98,10 @@ builder.Services.AddTransient<IReporteInventarioRepository, ReporteInventarioRep
 >>>>>>> c6f87cd (se agregaron los servicios al program  y la ruta de los archivos json)
 =======
 >>>>>>> 495f6f5 (Commenting for Education porpose)
+=======
+builder.Services.AddTransient<ICostosHigieneRepository, CostosHigieneRepository>();
+builder.Services.AddTransient<ICostosHigieneServices, HigieneServices>();
+>>>>>>> 0ecaee0 (Cambios de CostosAlimenticios)
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
