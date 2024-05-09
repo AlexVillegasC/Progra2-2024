@@ -18,12 +18,6 @@ public class ReporteAlimentacionNutricionController : ControllerBase
     [HttpGet]
     public async Task<Produccion> Get()
     {
-        // Aquí es donde se obtiene la producción del servicio
-        var produccion = await _reporteAlimentacionService.GetProduccion();
-
-        // Aquí es donde se calculan los costos (parte agregada)
-        produccion.CalcularCostos();
-
-        return produccion;
+        return await _reporteAlimentacionService.GetProduccion();
     }
 }

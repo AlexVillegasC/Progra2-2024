@@ -16,6 +16,7 @@ public class ReporteAlimentacionService : IReporteAlimentacionService
         miReporte.Trabajadores = await _reporteAliRepo.GetTrabajadores();
         miReporte.ListaAnimales = await _reporteAliRepo.GetAnimales();
         miReporte.ListaAlimentos = await _reporteAliRepo.GetAlimentos();
+        miReporte.CalcularCostos();
 
         return miReporte;
     }
