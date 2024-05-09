@@ -17,7 +17,8 @@ builder.Services.AddSwaggerGen(c =>
 builder.Services.AddTransient<IReporteClimaService, ReporteClimaService>();
 builder.Services.AddTransient<IFileRepository, FileRepository>();
 builder.Services.AddTransient<IReporteClimaRepository, ReporteClimaRepository>();
-
+builder.Services.AddTransient<ICostosHigieneRepository, CostosHigieneRepository>();
+builder.Services.AddTransient<ICostosHigieneServices, HigieneServices>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
