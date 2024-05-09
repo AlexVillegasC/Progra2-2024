@@ -3,6 +3,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   "name": "Shampoo",
   "price": 200,
   "description": "Limpieza"
@@ -26,4 +27,9 @@
   "price": 200,
   "description": "salud"
 >>>>>>> b5fa883 (costos higiene)
+=======
+  "name": "Shampoo",
+  "price": 200,
+  "description": "Limpieza"
+>>>>>>> c2daa04 (datos json)
 }
