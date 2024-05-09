@@ -69,11 +69,14 @@ builder.Services.AddTransient<IReporteClimaRepository, ReporteClimaRepository>()
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 builder.Services.AddTransient<IReporteRegistroGanadoRepository, ReporteRegistroGanadoRepository>();
 =======
 >>>>>>> cb3d41d (Cambios de CostosAlimenticios)
 =======
 >>>>>>> 327ae84 (Cambios de CostosAlimenticios)
+=======
+>>>>>>> 6e78fa3 (Cambios de CostosAlimenticios)
 
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -206,17 +209,23 @@ builder.Services.AddTransient<IReporteInventarioRepository, ReporteInventarioRep
 
 >>>>>>> 495f6f5 (Commenting for Education porpose)
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 2308f5c (Commenting for Education porpose)
 =======
+=======
+>>>>>>> 6e78fa3 (Cambios de CostosAlimenticios)
 =======
 builder.Services.AddTransient<ICostosHigieneRepository, CostosHigieneRepository>();
 builder.Services.AddTransient<ICostosHigieneServices, HigieneServices>();
 >>>>>>> 0ecaee0 (Cambios de CostosAlimenticios)
+<<<<<<< HEAD
 >>>>>>> 327ae84 (Cambios de CostosAlimenticios)
 =======
 
 >>>>>>> 495f6f5 (Commenting for Education porpose)
 >>>>>>> d3ba865 (Commenting for Education porpose)
+=======
+>>>>>>> 6e78fa3 (Cambios de CostosAlimenticios)
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

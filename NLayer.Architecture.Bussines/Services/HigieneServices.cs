@@ -10,12 +10,15 @@ namespace NLayer.Architecture.Bussines.Services;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 011c04a (costos higiene)
 =======
 >>>>>>> 327ae84 (Cambios de CostosAlimenticios)
 =======
 >>>>>>> 3fc5f46 (costos higiene)
+=======
+>>>>>>> 6e78fa3 (Cambios de CostosAlimenticios)
 public class HigieneServices : ICostosHigieneServices
 =======
 public class HigieneServices
@@ -45,7 +48,13 @@ public class HigieneServices : ICostosHigieneServices
 =======
 public class HigieneServices
 >>>>>>> 1672b8f (costos higiene)
+<<<<<<< HEAD
 >>>>>>> 3fc5f46 (costos higiene)
+=======
+=======
+public class HigieneServices : ICostosHigieneServices
+>>>>>>> 0ecaee0 (Cambios de CostosAlimenticios)
+>>>>>>> 6e78fa3 (Cambios de CostosAlimenticios)
 {
     private readonly ICostosHigieneRepository _costosHigieneRepository;
 
@@ -66,10 +75,13 @@ public class HigieneServices
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 327ae84 (Cambios de CostosAlimenticios)
 =======
 >>>>>>> 3fc5f46 (costos higiene)
+=======
+>>>>>>> 6e78fa3 (Cambios de CostosAlimenticios)
         reporteHigiene.CostosAlimenticios = await _costosHigieneRepository.GetCostosAlimenticios();
 =======
 >>>>>>> 1672b8f (costos higiene)
@@ -90,6 +102,7 @@ public class HigieneServices
         reporteHigiene.CostosAlimenticios = await _costosHigieneRepository.GetCostosAlimenticios();
 =======
 >>>>>>> 1672b8f (costos higiene)
+<<<<<<< HEAD
 >>>>>>> 011c04a (costos higiene)
 =======
 >>>>>>> 327ae84 (Cambios de CostosAlimenticios)
@@ -97,6 +110,11 @@ public class HigieneServices
 =======
 >>>>>>> 1672b8f (costos higiene)
 >>>>>>> 3fc5f46 (costos higiene)
+=======
+=======
+        reporteHigiene.CostosAlimenticios = await _costosHigieneRepository.GetCostosAlimenticios();
+>>>>>>> 0ecaee0 (Cambios de CostosAlimenticios)
+>>>>>>> 6e78fa3 (Cambios de CostosAlimenticios)
 
         return reporteHigiene;
     }
