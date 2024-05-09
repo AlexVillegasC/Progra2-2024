@@ -26,6 +26,7 @@ builder.Services.AddSwaggerGen(c =>
 builder.Services.AddTransient<IReporteClimaService, ReporteClimaService>();
 builder.Services.AddTransient<IFileRepository, FileRepository>();
 builder.Services.AddTransient<IReporteClimaRepository, ReporteClimaRepository>();
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 builder.Services.AddTransient<IReporteInventarioService, ReporteInventarioService>();
@@ -49,6 +50,10 @@ builder.Services.AddTransient<IReportePlantacionesRepository,ReportePlantaciones
 // state must not be shared between requests or operations.
 >>>>>>> 495f6f5 (Commenting for Education porpose)
 
+=======
+builder.Services.AddTransient<ICostosHigieneRepository, CostosHigieneRepository>();
+builder.Services.AddTransient<ICostosHigieneServices, HigieneServices>();
+>>>>>>> 0ecaee0 (Cambios de CostosAlimenticios)
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
