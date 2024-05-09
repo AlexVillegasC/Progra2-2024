@@ -27,6 +27,7 @@ builder.Services.AddSwaggerGen(c =>
 builder.Services.AddTransient<IReporteClimaService, ReporteClimaService>();
 builder.Services.AddTransient<IFileRepository, FileRepository>();
 builder.Services.AddTransient<IReporteClimaRepository, ReporteClimaRepository>();
+<<<<<<< HEAD
 builder.Services.AddTransient<IReporteRegistroGanadoRepository, ReporteRegistroGanadoRepository>();
 
 builder.Services.AddTransient<IReporteAlimentacionService, ReporteAlimentacionService>();
@@ -68,6 +69,10 @@ builder.Services.AddTransient<IReporteInventarioRepository, ReporteInventarioRep
 // Useful when the services have no state or hold only minimal state that is not shared.
 // state must not be shared between requests or operations.
 
+=======
+builder.Services.AddTransient<ICostosHigieneRepository, CostosHigieneRepository>();
+builder.Services.AddTransient<ICostosHigieneServices, HigieneServices>();
+>>>>>>> 0ecaee0 (Cambios de CostosAlimenticios)
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

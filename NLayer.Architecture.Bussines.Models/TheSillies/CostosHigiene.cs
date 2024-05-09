@@ -1,4 +1,4 @@
-﻿namespace NLayer.Architecture.Bussines.Models.The_Sillies;
+﻿namespace NLayer.Architecture.Bussines.Models.TheSillies;
 
 public class CostosHigiene
 {

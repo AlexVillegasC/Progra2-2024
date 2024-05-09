@@ -2,7 +2,7 @@
 
 namespace NLayer.Architecture.Bussines.Services;
 
-public class HigieneServices
+public class HigieneServices : ICostosHigieneServices
 {
     private readonly ICostosHigieneRepository _costosHigieneRepository;
 
@@ -15,6 +15,7 @@ public class HigieneServices
     {
         TheSillies.CostosGenerales reporteHigiene = new TheSillies.CostosGenerales();
         reporteHigiene.CostosHigiene = await _costosHigieneRepository.GetCostosHigiene();
+        reporteHigiene.CostosAlimenticios = await _costosHigieneRepository.GetCostosAlimenticios();
 
         return reporteHigiene;
     }
