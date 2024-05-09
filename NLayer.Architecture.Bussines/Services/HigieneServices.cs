@@ -13,6 +13,7 @@ namespace NLayer.Architecture.Bussines.Services;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 011c04a (costos higiene)
 =======
@@ -25,6 +26,8 @@ namespace NLayer.Architecture.Bussines.Services;
 >>>>>>> f932598 (Squashed commit of the following:)
 =======
 >>>>>>> 809dc53 (costos higiene)
+=======
+>>>>>>> a68434a (Cambios de CostosAlimenticios)
 public class HigieneServices : ICostosHigieneServices
 =======
 public class HigieneServices
@@ -55,6 +58,7 @@ public class HigieneServices : ICostosHigieneServices
 public class HigieneServices
 >>>>>>> 1672b8f (costos higiene)
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 3fc5f46 (costos higiene)
 =======
 =======
@@ -73,6 +77,11 @@ public class HigieneServices : ICostosHigieneServices
 public class HigieneServices
 >>>>>>> 1672b8f (costos higiene)
 >>>>>>> 809dc53 (costos higiene)
+=======
+=======
+public class HigieneServices : ICostosHigieneServices
+>>>>>>> 0ecaee0 (Cambios de CostosAlimenticios)
+>>>>>>> a68434a (Cambios de CostosAlimenticios)
 {
     private readonly ICostosHigieneRepository _costosHigieneRepository;
 
@@ -96,6 +105,7 @@ public class HigieneServices
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 327ae84 (Cambios de CostosAlimenticios)
 =======
@@ -106,6 +116,8 @@ public class HigieneServices
 >>>>>>> f932598 (Squashed commit of the following:)
 =======
 >>>>>>> 809dc53 (costos higiene)
+=======
+>>>>>>> a68434a (Cambios de CostosAlimenticios)
         reporteHigiene.CostosAlimenticios = await _costosHigieneRepository.GetCostosAlimenticios();
 =======
 >>>>>>> 1672b8f (costos higiene)
@@ -128,6 +140,7 @@ public class HigieneServices
 =======
 >>>>>>> 1672b8f (costos higiene)
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 011c04a (costos higiene)
 =======
 >>>>>>> 327ae84 (Cambios de CostosAlimenticios)
@@ -149,6 +162,11 @@ public class HigieneServices
 =======
 >>>>>>> 1672b8f (costos higiene)
 >>>>>>> 809dc53 (costos higiene)
+=======
+=======
+        reporteHigiene.CostosAlimenticios = await _costosHigieneRepository.GetCostosAlimenticios();
+>>>>>>> 0ecaee0 (Cambios de CostosAlimenticios)
+>>>>>>> a68434a (Cambios de CostosAlimenticios)
 
         return reporteHigiene;
     }

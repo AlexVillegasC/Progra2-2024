@@ -9,6 +9,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 011c04a (costos higiene)
 =======
@@ -21,6 +22,8 @@
 >>>>>>> f932598 (Squashed commit of the following:)
 =======
 >>>>>>> 809dc53 (costos higiene)
+=======
+>>>>>>> a68434a (Cambios de CostosAlimenticios)
 ﻿using NLayer.Architecture.Bussines.Models.TheSillies;
 =======
 ﻿using NLayer.Architecture.Bussines.Models.The_Sillies;
@@ -51,6 +54,7 @@
 ﻿using NLayer.Architecture.Bussines.Models.The_Sillies;
 >>>>>>> 1672b8f (costos higiene)
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 3fc5f46 (costos higiene)
 =======
 =======
@@ -69,6 +73,11 @@
 ﻿using NLayer.Architecture.Bussines.Models.The_Sillies;
 >>>>>>> 1672b8f (costos higiene)
 >>>>>>> 809dc53 (costos higiene)
+=======
+=======
+﻿using NLayer.Architecture.Bussines.Models.TheSillies;
+>>>>>>> 0ecaee0 (Cambios de CostosAlimenticios)
+>>>>>>> a68434a (Cambios de CostosAlimenticios)
 
 namespace DataAccess.Layer.FileRepositories;
 
@@ -86,6 +95,7 @@ public interface ICostosHigieneRepository
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 327ae84 (Cambios de CostosAlimenticios)
 =======
@@ -96,6 +106,8 @@ public interface ICostosHigieneRepository
 >>>>>>> f932598 (Squashed commit of the following:)
 =======
 >>>>>>> 809dc53 (costos higiene)
+=======
+>>>>>>> a68434a (Cambios de CostosAlimenticios)
     Task<CostosAlimenticios> GetCostosAlimenticios();
 =======
 >>>>>>> 1672b8f (costos higiene)
@@ -118,6 +130,7 @@ public interface ICostosHigieneRepository
 =======
 >>>>>>> 1672b8f (costos higiene)
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 011c04a (costos higiene)
 =======
 >>>>>>> 327ae84 (Cambios de CostosAlimenticios)
@@ -139,4 +152,9 @@ public interface ICostosHigieneRepository
 =======
 >>>>>>> 1672b8f (costos higiene)
 >>>>>>> 809dc53 (costos higiene)
+=======
+=======
+    Task<CostosAlimenticios> GetCostosAlimenticios();
+>>>>>>> 0ecaee0 (Cambios de CostosAlimenticios)
+>>>>>>> a68434a (Cambios de CostosAlimenticios)
 }
