@@ -14,10 +14,13 @@ public interface IReporteClimaService
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 07c077a (Advilleg - Post Temperatures)
 =======
 >>>>>>> 460e175 (Clase 13)
+=======
+>>>>>>> a88d30b (Advilleg - Post Temperatures)
     Task<bool> UpdateTemperature(IEnumerable<Temperature> temperature);
     Task<bool> DeleteTemperature();
 =======
@@ -30,6 +33,7 @@ public interface IReporteClimaService
     Task<bool> UpdateTemperature(IEnumerable<Temperature> temperature);
     Task<bool> DeleteTemperature();
 >>>>>>> 6b13ada (Clase 13)
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
     Task<bool> UpdateTemperature(IEnumerable<Temperature> temperature);
@@ -45,4 +49,8 @@ public interface IReporteClimaService
 >>>>>>> 07c077a (Advilleg - Post Temperatures)
 =======
 >>>>>>> 460e175 (Clase 13)
+=======
+=======
+>>>>>>> d6270bd (Advilleg - Post Temperatures)
+>>>>>>> a88d30b (Advilleg - Post Temperatures)
 }

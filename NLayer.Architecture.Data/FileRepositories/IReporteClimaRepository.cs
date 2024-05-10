@@ -14,6 +14,9 @@ public interface IReporteClimaRepository
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> a88d30b (Advilleg - Post Temperatures)
 =======
 >>>>>>> 6b13ada (Clase 13)
 =======
@@ -41,6 +44,7 @@ public interface IReporteClimaRepository
 
 >>>>>>> d6270bd (Advilleg - Post Temperatures)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> origin/development
 =======
@@ -49,5 +53,11 @@ public interface IReporteClimaRepository
 >>>>>>> 081ea19 (Advilleg - Post Temperatures)
 =======
 >>>>>>> 07c077a (Advilleg - Post Temperatures)
+=======
+=======
+    Task<List<Wind>> GetWinds();
+
+>>>>>>> d6270bd (Advilleg - Post Temperatures)
+>>>>>>> a88d30b (Advilleg - Post Temperatures)
     Task<List<Moisture>> GetMoisture();
 }
