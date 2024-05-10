@@ -9,6 +9,7 @@ public interface IReporteClimaRepository
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 6b13ada (Clase 13)
     Task<bool> UpdateTemperature(IEnumerable<Temperature> temperature);
@@ -17,6 +18,10 @@ public interface IReporteClimaRepository
 
     Task<List<Wind>> GetWinds();
 
+=======
+    Task<List<Wind>> GetWinds();
+
+>>>>>>> d6270bd (Advilleg - Post Temperatures)
 =======
     Task<List<Wind>> GetWinds();
 
