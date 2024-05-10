@@ -18,20 +18,38 @@ public class ReporteClimaRepository : FileRepository, IReporteClimaRepository
     {
         FolderPath = $"{Configuration["Folders:Clima"]}";
         _tempetarureVirtualPath = FolderPath + _tempetarureVirtualPath;
+        _windVirtualPath = FolderPath + _windVirtualPath;
+        _moistureVirtualPath = FolderPath + _moistureVirtualPath;
     }  
 
-    public async Task<Temperature> GetTemperatures()
+    public async Task<List<Temperature>> GetTemperatures()
     {
-        return await ReadJsonFileAsync<Temperature>(_tempetarureVirtualPath);
+        return await ReadJsonFileAsync<List<Temperature>>(_tempetarureVirtualPath);
     }
 
-    public async Task<Wind> GetWinds()
+    public async Task AddTemperatures(Temperature temperature)
     {
-        return await ReadJsonFileAsync<Wind>(_windVirtualPath);
+        //  1. Leer elementos del JSon
+        List<Temperature> elementos = await ReadJsonFileAsync<List<Temperature>>(_tempetarureVirtualPath);
+        
+        // 2.  Agregar nuevo elemento
+        if(elementos != null) 
+        {   
+            elementos.Add(temperature);
+            // 3. Escribir el nuevo Json
+            await WriteJsonFileAsync(_tempetarureVirtualPath, elementos);
+        }
     }
 
-    public async Task<Moisture> GetMoisture()
+
+
+    public async Task<List<Wind>> GetWinds()
     {
-        return await ReadJsonFileAsync<Moisture>(_moistureVirtualPath);
+        return await ReadJsonFileAsync<List<Wind>>(_windVirtualPath);
+    }
+
+    public async Task<List<Moisture>> GetMoisture()
+    {
+        return await ReadJsonFileAsync<List<Moisture>>(_moistureVirtualPath);
     }
 }

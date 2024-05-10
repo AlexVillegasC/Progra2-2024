@@ -6,9 +6,9 @@ public class ReporteClima
 
     public DateOnly Date => DateOnly.FromDateTime(DateTime.Now);
 
-    public Wind Viento { get; set; }
+    public List<Wind> Viento { get; set; }
 
-    public Temperature Temperatura { get; set; }
+    public List<Temperature> Temperatura { get; set; }
 
-    public Moisture Humedad { get; set; }
+    public List<Moisture> Humedad { get; set; }
 }
