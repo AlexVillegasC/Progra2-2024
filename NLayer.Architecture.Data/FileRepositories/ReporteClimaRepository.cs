@@ -20,6 +20,7 @@ public class ReporteClimaRepository : FileRepository, IReporteClimaRepository
         _tempetarureVirtualPath = FolderPath + _tempetarureVirtualPath;
         _windVirtualPath = FolderPath + _windVirtualPath;
         _moistureVirtualPath = FolderPath + _moistureVirtualPath;
+<<<<<<< HEAD
     }
 
     public async Task<List<Temperature>> GetTemperatures()
@@ -77,6 +78,33 @@ public class ReporteClimaRepository : FileRepository, IReporteClimaRepository
 
     public async Task<List<Wind>> GetWinds()
     {
+=======
+    }  
+
+    public async Task<List<Temperature>> GetTemperatures()
+    {
+        return await ReadJsonFileAsync<List<Temperature>>(_tempetarureVirtualPath);
+    }
+
+    public async Task AddTemperatures(Temperature temperature)
+    {
+        //  1. Leer elementos del JSon
+        List<Temperature> elementos = await ReadJsonFileAsync<List<Temperature>>(_tempetarureVirtualPath);
+        
+        // 2.  Agregar nuevo elemento
+        if(elementos != null) 
+        {   
+            elementos.Add(temperature);
+            // 3. Escribir el nuevo Json
+            await WriteJsonFileAsync(_tempetarureVirtualPath, elementos);
+        }
+    }
+
+
+
+    public async Task<List<Wind>> GetWinds()
+    {
+>>>>>>> d6270bd (Advilleg - Post Temperatures)
         return await ReadJsonFileAsync<List<Wind>>(_windVirtualPath);
     }
 
