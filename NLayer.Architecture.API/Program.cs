@@ -18,8 +18,11 @@ builder.Services.AddSwaggerGen(c =>
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+=======
+>>>>>>> 495f6f5 (Commenting for Education porpose)
 =======
 >>>>>>> 495f6f5 (Commenting for Education porpose)
 =======
@@ -30,6 +33,9 @@ builder.Services.AddSwaggerGen(c =>
 // 3 Main Objects Lifetime configuration.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 495f6f5 (Commenting for Education porpose)
+=======
 >>>>>>> 495f6f5 (Commenting for Education porpose)
 =======
 >>>>>>> 495f6f5 (Commenting for Education porpose)
@@ -42,6 +48,7 @@ builder.Services.AddTransient<IReporteClimaRepository, ReporteClimaRepository>()
 <<<<<<< HEAD
 <<<<<<< HEAD
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -69,6 +76,11 @@ builder.Services.AddTransient<ICostosHigieneServices, HigieneServices>();
 // The same instance is used by all components requiring that service.
 
 >>>>>>> origin/development
+=======
+// Add Singleton
+// The same instance is used by all components requiring that service.
+
+>>>>>>> 495f6f5 (Commenting for Education porpose)
 // Add Scoped
 // Ideal for services that need to maintain consistent data within a request.
 // consistent read and write operations. DbContext
@@ -76,6 +88,7 @@ builder.Services.AddTransient<ICostosHigieneServices, HigieneServices>();
 // Add Transient
 // Useful when the services have no state or hold only minimal state that is not shared.
 // state must not be shared between requests or operations.
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -102,6 +115,9 @@ builder.Services.AddTransient<ICostosHigieneServices, HigieneServices>();
 =======
 
 >>>>>>> origin/development
+=======
+
+>>>>>>> 495f6f5 (Commenting for Education porpose)
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
