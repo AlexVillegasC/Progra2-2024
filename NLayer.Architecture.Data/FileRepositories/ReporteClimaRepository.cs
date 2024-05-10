@@ -30,6 +30,7 @@ public class ReporteClimaRepository : FileRepository, IReporteClimaRepository
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 4f0ec2d (Clase 13)
 =======
@@ -42,6 +43,8 @@ public class ReporteClimaRepository : FileRepository, IReporteClimaRepository
 =======
 >>>>>>> f932598 (Squashed commit of the following:)
 =======
+>>>>>>> 5d63356 (Advilleg - Post Temperatures)
+=======
 >>>>>>> 6b13ada (Clase 13)
 >>>>>>> 739f4a7 (Clase 13)
     }
@@ -247,6 +250,8 @@ public class ReporteClimaRepository : FileRepository, IReporteClimaRepository
 =======
 =======
 >>>>>>> d6270bd (Advilleg - Post Temperatures)
+=======
+>>>>>>> d6270bd (Advilleg - Post Temperatures)
     }  
 =======
     }
@@ -262,15 +267,21 @@ public class ReporteClimaRepository : FileRepository, IReporteClimaRepository
         //  1. Leer elementos del JSon
         List<Temperature> elementos = await ReadJsonFileAsync<List<Temperature>>(_tempetarureVirtualPath);
 <<<<<<< HEAD
+<<<<<<< HEAD
 
         // 2.  Agregar nuevo elemento
         if (elementos != null)
         {
 =======
+=======
+>>>>>>> d6270bd (Advilleg - Post Temperatures)
         
         // 2.  Agregar nuevo elemento
         if(elementos != null) 
         {   
+<<<<<<< HEAD
+>>>>>>> d6270bd (Advilleg - Post Temperatures)
+=======
 >>>>>>> d6270bd (Advilleg - Post Temperatures)
             elementos.Add(temperature);
             // 3. Escribir el nuevo Json
@@ -278,6 +289,7 @@ public class ReporteClimaRepository : FileRepository, IReporteClimaRepository
         }
     }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
     public async Task<bool> UpdateTemperature(IEnumerable<Temperature> temperature)
     {
@@ -387,7 +399,16 @@ public class ReporteClimaRepository : FileRepository, IReporteClimaRepository
 =======
 =======
 >>>>>>> origin/development
+<<<<<<< HEAD
 >>>>>>> f932598 (Squashed commit of the following:)
+=======
+=======
+
+
+    public async Task<List<Wind>> GetWinds()
+    {
+>>>>>>> d6270bd (Advilleg - Post Temperatures)
+>>>>>>> 5d63356 (Advilleg - Post Temperatures)
         return await ReadJsonFileAsync<List<Wind>>(_windVirtualPath);
     }
 

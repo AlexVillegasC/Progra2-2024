@@ -17,6 +17,7 @@ public interface IReporteClimaService
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 07c077a (Advilleg - Post Temperatures)
 =======
@@ -27,6 +28,8 @@ public interface IReporteClimaService
 >>>>>>> 739f4a7 (Clase 13)
 =======
 >>>>>>> f932598 (Squashed commit of the following:)
+=======
+>>>>>>> 5d63356 (Advilleg - Post Temperatures)
     Task<bool> UpdateTemperature(IEnumerable<Temperature> temperature);
     Task<bool> DeleteTemperature();
 =======
@@ -46,6 +49,7 @@ public interface IReporteClimaService
     Task<bool> DeleteTemperature();
 >>>>>>> origin/development
 =======
+<<<<<<< HEAD
 >>>>>>> 081ea19 (Advilleg - Post Temperatures)
 =======
     Task<bool> UpdateTemperature(IEnumerable<Temperature> temperature);
@@ -73,4 +77,7 @@ public interface IReporteClimaService
     Task<bool> DeleteTemperature();
 >>>>>>> origin/development
 >>>>>>> f932598 (Squashed commit of the following:)
+=======
+>>>>>>> d6270bd (Advilleg - Post Temperatures)
+>>>>>>> 5d63356 (Advilleg - Post Temperatures)
 }

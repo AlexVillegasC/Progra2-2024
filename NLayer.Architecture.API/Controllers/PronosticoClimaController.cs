@@ -31,6 +31,7 @@ public class PronosticoClimaController : ControllerBase
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 07c077a (Advilleg - Post Temperatures)
 =======
@@ -41,6 +42,8 @@ public class PronosticoClimaController : ControllerBase
 >>>>>>> 739f4a7 (Clase 13)
 =======
 >>>>>>> f932598 (Squashed commit of the following:)
+=======
+>>>>>>> 5d63356 (Advilleg - Post Temperatures)
     [HttpPost("AddTemperature", Name = "AddTemperature")]
     public async Task AddTemperature(Temperature temp)
 =======
@@ -64,6 +67,7 @@ public class PronosticoClimaController : ControllerBase
 =======
     [HttpPost]
     public async Task addTemperature(Temperature temp)
+<<<<<<< HEAD
 >>>>>>> 081ea19 (Advilleg - Post Temperatures)
 =======
     [HttpPost("AddTemperature", Name = "AddTemperature")]
@@ -93,6 +97,9 @@ public class PronosticoClimaController : ControllerBase
     public async Task AddTemperature(Temperature temp)
 >>>>>>> origin/development
 >>>>>>> f932598 (Squashed commit of the following:)
+=======
+>>>>>>> d6270bd (Advilleg - Post Temperatures)
+>>>>>>> 5d63356 (Advilleg - Post Temperatures)
     {
         // 1. Agrega Temperatura
         await _reporteClimaService.AddTemperature(temp);
@@ -109,9 +116,12 @@ public class PronosticoClimaController : ControllerBase
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> a88d30b (Advilleg - Post Temperatures)
 =======
+=======
+>>>>>>> 5d63356 (Advilleg - Post Temperatures)
 =======
 >>>>>>> 6b13ada (Clase 13)
 >>>>>>> 739f4a7 (Clase 13)
@@ -168,6 +178,7 @@ public class PronosticoClimaController : ControllerBase
 =======
 >>>>>>> origin/development
 =======
+<<<<<<< HEAD
 >>>>>>> 081ea19 (Advilleg - Post Temperatures)
 =======
 >>>>>>> 4f0ec2d (Clase 13)
@@ -191,4 +202,7 @@ public class PronosticoClimaController : ControllerBase
 =======
 >>>>>>> origin/development
 >>>>>>> f932598 (Squashed commit of the following:)
+=======
+>>>>>>> d6270bd (Advilleg - Post Temperatures)
+>>>>>>> 5d63356 (Advilleg - Post Temperatures)
 }

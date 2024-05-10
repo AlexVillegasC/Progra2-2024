@@ -8,12 +8,15 @@ public interface IFileRepository
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 081ea19 (Advilleg - Post Temperatures)
 =======
 >>>>>>> 07c077a (Advilleg - Post Temperatures)
 =======
 >>>>>>> a88d30b (Advilleg - Post Temperatures)
+=======
+>>>>>>> 5d63356 (Advilleg - Post Temperatures)
     Task<List<T>> ReadListJsonAsync<T>(string filePath);
 =======
     Task<List<T>> ReadJsonFileListAsync<T>(string filePath);
@@ -30,10 +33,16 @@ public interface IFileRepository
 =======
     Task<List<T>> ReadJsonFileListAsync<T>(string filePath);
 >>>>>>> d6270bd (Advilleg - Post Temperatures)
+<<<<<<< HEAD
 >>>>>>> 07c077a (Advilleg - Post Temperatures)
 =======
     Task<List<T>> ReadJsonFileListAsync<T>(string filePath);
 >>>>>>> d6270bd (Advilleg - Post Temperatures)
 >>>>>>> a88d30b (Advilleg - Post Temperatures)
+=======
+=======
+    Task<List<T>> ReadJsonFileListAsync<T>(string filePath);
+>>>>>>> d6270bd (Advilleg - Post Temperatures)
+>>>>>>> 5d63356 (Advilleg - Post Temperatures)
     Task WriteJsonFileAsync<T>(string filePath, T data);
 }
