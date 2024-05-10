@@ -21,10 +21,13 @@ builder.Services.AddSwaggerGen(c =>
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 2308f5c (Commenting for Education porpose)
 =======
 >>>>>>> d3ba865 (Commenting for Education porpose)
+=======
+>>>>>>> 6b45e76 (Commenting for Education porpose)
 
 =======
 =======
@@ -40,7 +43,12 @@ builder.Services.AddSwaggerGen(c =>
 =======
 =======
 >>>>>>> 495f6f5 (Commenting for Education porpose)
+<<<<<<< HEAD
 >>>>>>> d3ba865 (Commenting for Education porpose)
+=======
+=======
+>>>>>>> 495f6f5 (Commenting for Education porpose)
+>>>>>>> 6b45e76 (Commenting for Education porpose)
 // Dependency Injection Configurations - DI container
 // Services are created each time they are requested from the service container.
 
@@ -49,6 +57,12 @@ builder.Services.AddSwaggerGen(c =>
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 495f6f5 (Commenting for Education porpose)
+=======
+>>>>>>> 495f6f5 (Commenting for Education porpose)
+>>>>>>> 6b45e76 (Commenting for Education porpose)
 =======
 >>>>>>> 495f6f5 (Commenting for Education porpose)
 =======
@@ -87,6 +101,7 @@ builder.Services.AddTransient<IReporteRegistroGanadoRepository, ReporteRegistroG
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 006a680 (Commenting for Education porpose)
@@ -94,6 +109,8 @@ builder.Services.AddTransient<IReporteRegistroGanadoRepository, ReporteRegistroG
 >>>>>>> 2308f5c (Commenting for Education porpose)
 =======
 >>>>>>> d3ba865 (Commenting for Education porpose)
+=======
+>>>>>>> 6b45e76 (Commenting for Education porpose)
 builder.Services.AddTransient<IReporteInventarioService, ReporteInventarioService>();
 builder.Services.AddTransient<IReporteInventarioRepository, ReporteInventarioRepository>();
 
@@ -120,6 +137,11 @@ builder.Services.AddTransient<ICostosHigieneServices, HigieneServices>();
 // The same instance is used by all components requiring that service.
 
 >>>>>>> origin/development
+=======
+// Add Singleton
+// The same instance is used by all components requiring that service.
+
+>>>>>>> 495f6f5 (Commenting for Education porpose)
 // Add Scoped
 // Ideal for services that need to maintain consistent data within a request.
 // consistent read and write operations. DbContext
@@ -127,6 +149,7 @@ builder.Services.AddTransient<ICostosHigieneServices, HigieneServices>();
 // Add Transient
 // Useful when the services have no state or hold only minimal state that is not shared.
 // state must not be shared between requests or operations.
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -240,7 +263,13 @@ builder.Services.AddTransient<ICostosHigieneServices, HigieneServices>();
 =======
 
 >>>>>>> origin/development
+<<<<<<< HEAD
 >>>>>>> f932598 (Squashed commit of the following:)
+=======
+=======
+
+>>>>>>> 495f6f5 (Commenting for Education porpose)
+>>>>>>> 6b45e76 (Commenting for Education porpose)
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
