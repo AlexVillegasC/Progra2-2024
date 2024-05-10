@@ -16,18 +16,25 @@ builder.Services.AddSwaggerGen(c =>
 });
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+=======
+>>>>>>> 495f6f5 (Commenting for Education porpose)
 // Dependency Injection Configurations - DI container
 // Services are created each time they are requested from the service container.
 
 // 3 Main Objects Lifetime configuration.
+<<<<<<< HEAD
+>>>>>>> 495f6f5 (Commenting for Education porpose)
+=======
 >>>>>>> 495f6f5 (Commenting for Education porpose)
 builder.Services.AddTransient<IReporteClimaService, ReporteClimaService>();
 builder.Services.AddTransient<IFileRepository, FileRepository>();
 builder.Services.AddTransient<IReporteClimaRepository, ReporteClimaRepository>();
 <<<<<<< HEAD
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 builder.Services.AddTransient<IReporteInventarioService, ReporteInventarioService>();
 builder.Services.AddTransient<IReporteInventarioRepository, ReporteInventarioRepository>();
@@ -38,6 +45,8 @@ builder.Services.AddTransient<IReporteAlimentacionRepository, ReporteAlimentacio
 builder.Services.AddTransient<IReportePlantaciones, ReportePlantaciones>();
 builder.Services.AddTransient<IReportePlantacionesRepository,ReportePlantacionesRepository>();
 =======
+=======
+>>>>>>> 495f6f5 (Commenting for Education porpose)
 // Add Singleton
 // The same instance is used by all components requiring that service.
 
@@ -48,12 +57,16 @@ builder.Services.AddTransient<IReportePlantacionesRepository,ReportePlantaciones
 // Add Transient
 // Useful when the services have no state or hold only minimal state that is not shared.
 // state must not be shared between requests or operations.
+<<<<<<< HEAD
 >>>>>>> 495f6f5 (Commenting for Education porpose)
 
 =======
 builder.Services.AddTransient<ICostosHigieneRepository, CostosHigieneRepository>();
 builder.Services.AddTransient<ICostosHigieneServices, HigieneServices>();
 >>>>>>> 0ecaee0 (Cambios de CostosAlimenticios)
+=======
+
+>>>>>>> 495f6f5 (Commenting for Education porpose)
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
