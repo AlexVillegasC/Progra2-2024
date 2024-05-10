@@ -17,12 +17,18 @@ builder.Services.AddSwaggerGen(c =>
 });
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+=======
+>>>>>>> 495f6f5 (Commenting for Education porpose)
 // Dependency Injection Configurations - DI container
 // Services are created each time they are requested from the service container.
 
 // 3 Main Objects Lifetime configuration.
+<<<<<<< HEAD
+>>>>>>> 495f6f5 (Commenting for Education porpose)
+=======
 >>>>>>> 495f6f5 (Commenting for Education porpose)
 builder.Services.AddTransient<IReporteClimaService, ReporteClimaService>();
 builder.Services.AddTransient<IFileRepository, FileRepository>();
@@ -30,6 +36,7 @@ builder.Services.AddTransient<IReporteClimaRepository, ReporteClimaRepository>()
 <<<<<<< HEAD
 builder.Services.AddTransient<IReporteRegistroGanadoRepository, ReporteRegistroGanadoRepository>();
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 builder.Services.AddTransient<IReporteAlimentacionService, ReporteAlimentacionService>();
@@ -60,6 +67,8 @@ builder.Services.AddTransient<IReportePlantacionesRepository,ReportePlantaciones
 builder.Services.AddTransient<IReporteInventarioService, ReporteInventarioService>();
 builder.Services.AddTransient<IReporteInventarioRepository, ReporteInventarioRepository>();
 
+=======
+>>>>>>> 495f6f5 (Commenting for Education porpose)
 // Add Singleton
 // The same instance is used by all components requiring that service.
 
@@ -71,6 +80,7 @@ builder.Services.AddTransient<IReporteInventarioRepository, ReporteInventarioRep
 // Useful when the services have no state or hold only minimal state that is not shared.
 // state must not be shared between requests or operations.
 
+<<<<<<< HEAD
 =======
 builder.Services.AddTransient<ICostosHigieneRepository, CostosHigieneRepository>();
 builder.Services.AddTransient<ICostosHigieneServices, HigieneServices>();
@@ -85,6 +95,8 @@ builder.Services.AddTransient<IReporteInventarioService, ReporteInventarioServic
 builder.Services.AddTransient<IReporteInventarioRepository, ReporteInventarioRepository>();
 
 >>>>>>> c6f87cd (se agregaron los servicios al program  y la ruta de los archivos json)
+=======
+>>>>>>> 495f6f5 (Commenting for Education porpose)
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -98,6 +110,13 @@ if (app.Environment.IsDevelopment())
 // .NET Routing
 // Redirects the HTTP trafict to HTTPS
 // Checks Request authorization.
+<<<<<<< HEAD
+=======
+
+app.UseHttpsRedirection(); 
+app.UseAuthorization(); 
+app.MapControllers(); 
+>>>>>>> 495f6f5 (Commenting for Education porpose)
 
 app.UseHttpsRedirection(); 
 app.UseAuthorization(); 
