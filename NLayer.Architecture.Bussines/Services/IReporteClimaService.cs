@@ -12,6 +12,7 @@ public interface IReporteClimaService
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     Task<bool> UpdateTemperature(IEnumerable<Temperature> temperature);
     Task<bool> DeleteTemperature();
 =======
@@ -30,4 +31,6 @@ public interface IReporteClimaService
     Task<bool> UpdateTemperature(IEnumerable<Temperature> temperature);
     Task<bool> DeleteTemperature();
 >>>>>>> origin/development
+=======
+>>>>>>> d6270bd (Advilleg - Post Temperatures)
 }

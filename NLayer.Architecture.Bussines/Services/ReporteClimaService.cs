@@ -32,6 +32,7 @@ public class ReporteClimaService : IReporteClimaService
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 6b13ada (Clase 13)
 =======
@@ -61,3 +62,6 @@ public class ReporteClimaService : IReporteClimaService
 >>>>>>> d6270bd (Advilleg - Post Temperatures)
 =======
 >>>>>>> 6b13ada (Clase 13)
+=======
+ }
+>>>>>>> d6270bd (Advilleg - Post Temperatures)
