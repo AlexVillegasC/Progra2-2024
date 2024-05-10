@@ -18,17 +18,25 @@ builder.Services.AddSwaggerGen(c =>
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 =======
 >>>>>>> 495f6f5 (Commenting for Education porpose)
+=======
+
+=======
+>>>>>>> 006a680 (Commenting for Education porpose)
 // Dependency Injection Configurations - DI container
 // Services are created each time they are requested from the service container.
 
 // 3 Main Objects Lifetime configuration.
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 495f6f5 (Commenting for Education porpose)
 =======
+=======
+>>>>>>> 006a680 (Commenting for Education porpose)
 >>>>>>> 495f6f5 (Commenting for Education porpose)
 builder.Services.AddTransient<IReporteClimaService, ReporteClimaService>();
 builder.Services.AddTransient<IFileRepository, FileRepository>();
@@ -43,7 +51,10 @@ builder.Services.AddTransient<IReporteRegistroGanadoRepository, ReporteRegistroG
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 006a680 (Commenting for Education porpose)
 builder.Services.AddTransient<IReporteInventarioService, ReporteInventarioService>();
 builder.Services.AddTransient<IReporteInventarioRepository, ReporteInventarioRepository>();
 
@@ -54,6 +65,18 @@ builder.Services.AddTransient<IReporteRegistroGanadoService, ReporteRegistroGana
 
 builder.Services.AddTransient<IReportePlantaciones, ReportePlantaciones>();
 builder.Services.AddTransient<IReportePlantacionesRepository,ReportePlantacionesRepository>();
+=======
+// Add Singleton
+// The same instance is used by all components requiring that service.
+
+// Add Scoped
+// Ideal for services that need to maintain consistent data within a request.
+// consistent read and write operations. DbContext
+
+// Add Transient
+// Useful when the services have no state or hold only minimal state that is not shared.
+// state must not be shared between requests or operations.
+>>>>>>> 495f6f5 (Commenting for Education porpose)
 
 <<<<<<< HEAD
 builder.Services.AddTransient<IReporteInventarioService, ReporteInventarioService>();
@@ -143,6 +166,7 @@ if (app.Environment.IsDevelopment())
 // Checks Request authorization.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 app.UseHttpsRedirection(); 
@@ -155,6 +179,8 @@ app.UseAuthorization();
 app.MapControllers(); 
 =======
 >>>>>>> origin/development
+=======
+>>>>>>> 006a680 (Commenting for Education porpose)
 
 app.UseHttpsRedirection(); 
 app.UseAuthorization(); 
