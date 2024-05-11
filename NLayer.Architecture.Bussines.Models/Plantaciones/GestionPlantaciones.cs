@@ -88,6 +88,8 @@ namespace NLayer.Architecture.Bussines.Models.Plantaciones
 
     public ControlAbono Abono { get; set; }
 
+    public ArbolFrutal Arbol { get; set; }
+
 }
 
 

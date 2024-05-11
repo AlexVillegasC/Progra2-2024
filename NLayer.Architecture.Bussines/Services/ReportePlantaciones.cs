@@ -29,6 +29,7 @@ public class ReportePlantaciones : IReportePlantaciones
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         reporteArbol.Arbol = await _plantaciones.GetArbolFrutal();
 =======
 >>>>>>> c57478d (final de mi parte)
@@ -40,6 +41,14 @@ public class ReportePlantaciones : IReportePlantaciones
 =======
 >>>>>>> c9e0984 (final de mi parte)
 >>>>>>> 09d2633 (final de mi parte)
+=======
+        reporteArbol.Arbol = await _plantaciones.GetArbolFrutal();
+=======
+>>>>>>> c9e0984 (final de mi parte)
+=======
+        reporteArbol.Arbol = await _plantaciones.GetArbolFrutal();
+>>>>>>> 6fff2b6 (Proyecto 1 completado)
+>>>>>>> 29e6ff7 (Proyecto 1 completado)
         return reporteArbol;
 =======
 ﻿using System;
