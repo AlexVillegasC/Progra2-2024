@@ -17,6 +17,7 @@ public class ReportePlantaciones : IReportePlantaciones
         GestionPlantaciones.GestionPlantaciones reporteArbol = new GestionPlantaciones.GestionPlantaciones();
         reporteArbol.Plagas = await _plantaciones.GetControlPlagas();
         reporteArbol.Abono = await _plantaciones.GetControlAbono();
+        reporteArbol.Arbol = await _plantaciones.GetArbolFrutal();
         return reporteArbol;
     }
 }

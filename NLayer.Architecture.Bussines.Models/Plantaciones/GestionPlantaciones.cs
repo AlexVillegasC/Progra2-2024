@@ -9,6 +9,8 @@ public class GestionPlantaciones
 
     public ControlAbono Abono { get; set; }
 
+    public ArbolFrutal Arbol { get; set; }
+
 }
 
 
