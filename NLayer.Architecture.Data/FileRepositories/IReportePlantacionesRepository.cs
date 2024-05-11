@@ -8,6 +8,7 @@
 using NLayer.Architecture.Bussines.GestionPlantaciones;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 namespace DataAccess.Layer.FileRepositories;
 
@@ -88,6 +89,8 @@ public interface IReportePlantacionesRepository
 =======
 ﻿using NLayer.Architecture.Bussines.GestionPlantaciones;
 >>>>>>> 818cb8c (Proyecto casi finalizado)
+=======
+>>>>>>> 6fff2b6 (Proyecto 1 completado)
 
 namespace DataAccess.Layer.FileRepositories;
 
@@ -100,6 +103,7 @@ public interface IReportePlantacionesRepository
     Task<ControlAbono> GetControlAbono();
 
 
+    Task<ArbolFrutal> GetArbolFrutal();
 }
 <<<<<<< HEAD
 >>>>>>> cbb4e73 (Carpeta y 2 clases nuevas)
