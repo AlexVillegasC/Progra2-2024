@@ -130,6 +130,8 @@ public class GestionPlantaciones
 
     public ControlAbono Abono { get; set; }
 
+    public ArbolFrutal Arbol { get; set; }
+
 }
 <<<<<<< HEAD
 >>>>>>> e98558f (Merge)
