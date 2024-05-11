@@ -13,6 +13,9 @@ public class GestionPlantaciones
     public ControlAbono Abono { get; set; }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> c7cd049 (Proyecto 1 completado)
     public ArbolFrutal Arbol { get; set; }
 
 }
