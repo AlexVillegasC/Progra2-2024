@@ -4,16 +4,23 @@ using NLayer.Architecture.Bussines.ReporteInventario;
 
 
 
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 =======
 
+<<<<<<< HEAD
 >>>>>>> 6e723fd (Creacion de los servicios de maquinaria)
+=======
+=======
+>>>>>>> b9342b3 (Creacion de los servicios de maquinaria)
+>>>>>>> 148fca9 (Creacion de los servicios de maquinaria)
 namespace DataAccess.Layer.FileRepositories;
 public class ReporteInventarioRepository : FileRepository, IReporteInventarioRepository
 {
     //esta la ruta para acceder a los archivos json
     private string MaquinariaVirtualPath = "Maquinaria.json";
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     private string HerramientasVirtualPath = "Herramientas.json";
@@ -22,6 +29,11 @@ public class ReporteInventarioRepository : FileRepository, IReporteInventarioRep
 =======
     private string HerramientasVirtualPath = "Herramientas.json";
 >>>>>>> 2366e09 (Herramientas)
+=======
+    private string HerramientasVirtualPath = "Herramientas.json";
+=======
+>>>>>>> b9342b3 (Creacion de los servicios de maquinaria)
+>>>>>>> 148fca9 (Creacion de los servicios de maquinaria)
 
 >>>>>>> 6e723fd (Creacion de los servicios de maquinaria)
 
@@ -35,6 +47,9 @@ public class ReporteInventarioRepository : FileRepository, IReporteInventarioRep
         MaquinariaVirtualPath = FolderPath + MaquinariaVirtualPath;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 148fca9 (Creacion de los servicios de maquinaria)
         HerramientasVirtualPath = FolderPath + HerramientasVirtualPath;
         MantenimientoVirtualPath = FolderPath + MantenimientoVirtualPath;
     }
@@ -44,6 +59,7 @@ public class ReporteInventarioRepository : FileRepository, IReporteInventarioRep
 
 
 =======
+<<<<<<< HEAD
 =======
         HerramientasVirtualPath = FolderPath + HerramientasVirtualPath;
 >>>>>>> 2366e09 (Herramientas)
@@ -57,14 +73,22 @@ public class ReporteInventarioRepository : FileRepository, IReporteInventarioRep
 
 
 >>>>>>> 2366e09 (Herramientas)
+=======
+    }
+    //metodo para leer el archivo json y los delvuelve como un onjeto
+>>>>>>> b9342b3 (Creacion de los servicios de maquinaria)
+>>>>>>> 148fca9 (Creacion de los servicios de maquinaria)
     public async Task<Maquinaria> GetMaquinaria()
     {
         return await ReadJsonFileAsync<Maquinaria>(MaquinariaVirtualPath);
     }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 2366e09 (Herramientas)
+=======
+>>>>>>> 148fca9 (Creacion de los servicios de maquinaria)
 
     public async Task<Herramientas> GetHerramientas()
     {
@@ -86,12 +110,19 @@ public class ReporteInventarioRepository : FileRepository, IReporteInventarioRep
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 148fca9 (Creacion de los servicios de maquinaria)
 =======
 }
 
 
+<<<<<<< HEAD
 >>>>>>> 6e723fd (Creacion de los servicios de maquinaria)
 =======
 >>>>>>> d0c9cc2 (Creacion de los servicios, interfaces,json de la clase mantenimiento)
+=======
+>>>>>>> b9342b3 (Creacion de los servicios de maquinaria)
+>>>>>>> 148fca9 (Creacion de los servicios de maquinaria)
 /*FolderPath = $"{Configuration["Folders:Clima"]}";: En esta línea, se está utilizando la configuración proporcionada
  * para acceder a la ruta de la carpeta donde se almacenan los archivos */
