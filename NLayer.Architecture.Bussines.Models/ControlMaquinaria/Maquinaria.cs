@@ -1,10 +1,9 @@
-﻿using System;
-
-
-namespace NLayer.Architecture.Bussines.Models.ControlMaquinaria;
+﻿
+namespace NLayer.Architecture.Bussines.ReporteInventario;
 
 public class Maquinaria
 {
+    public string Nombre { get; set; }
     public string Marca { get; set; }
     public float Precio { get; set; }
     public int Potencia { get; set; }
