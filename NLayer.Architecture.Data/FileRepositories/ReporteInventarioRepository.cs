@@ -4,6 +4,7 @@ using NLayer.Architecture.Bussines.ReporteInventario;
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 <<<<<<< HEAD
@@ -41,6 +42,9 @@ using NLayer.Architecture.Bussines.ReporteInventario;
 >>>>>>> b9342b3 (Creacion de los servicios de maquinaria)
 =======
 >>>>>>> 4b4602e (Creacion de los servicios, interfaces,json de la clase mantenimiento)
+=======
+
+>>>>>>> b9342b3 (Creacion de los servicios de maquinaria)
 namespace DataAccess.Layer.FileRepositories;
 public class ReporteInventarioRepository : FileRepository, IReporteInventarioRepository
 {
@@ -58,6 +62,7 @@ public class ReporteInventarioRepository : FileRepository, IReporteInventarioRep
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     private string HerramientasVirtualPath = "Herramientas.json";
 =======
 >>>>>>> b9342b3 (Creacion de los servicios de maquinaria)
@@ -95,6 +100,9 @@ public class ReporteInventarioRepository : FileRepository, IReporteInventarioRep
 =======
     private string MantenimientoVirtualPath = "Mantenimiento.json";
 >>>>>>> 4b4602e (Creacion de los servicios, interfaces,json de la clase mantenimiento)
+=======
+
+>>>>>>> b9342b3 (Creacion de los servicios de maquinaria)
 
     // es una propiedad privada que almacena la ruta de la carpeta donde se encuentran los archivos JSON que contienen los datos
     private string FolderPath { get; set; }
@@ -116,6 +124,7 @@ public class ReporteInventarioRepository : FileRepository, IReporteInventarioRep
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         HerramientasVirtualPath = FolderPath + HerramientasVirtualPath;
 =======
         MantenimientoVirtualPath = FolderPath + MantenimientoVirtualPath;
@@ -191,10 +200,15 @@ public class ReporteInventarioRepository : FileRepository, IReporteInventarioRep
 
 
 >>>>>>> d564e34 (Herramientas)
+=======
+    }
+    //metodo para leer el archivo json y los delvuelve como un onjeto
+>>>>>>> b9342b3 (Creacion de los servicios de maquinaria)
     public async Task<Maquinaria> GetMaquinaria()
     {
         return await ReadJsonFileAsync<Maquinaria>(MaquinariaVirtualPath);
     }
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -290,5 +304,10 @@ public class ReporteInventarioRepository : FileRepository, IReporteInventarioRep
 >>>>>>> b9342b3 (Creacion de los servicios de maquinaria)
 =======
 >>>>>>> 4b4602e (Creacion de los servicios, interfaces,json de la clase mantenimiento)
+=======
+}
+
+
+>>>>>>> b9342b3 (Creacion de los servicios de maquinaria)
 /*FolderPath = $"{Configuration["Folders:Clima"]}";: En esta línea, se está utilizando la configuración proporcionada
  * para acceder a la ruta de la carpeta donde se almacenan los archivos */
