@@ -2,10 +2,13 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 064f3be (test)
 =======
 >>>>>>> 0d03d42 (Herramientas)
+=======
+>>>>>>> 9af4275 (test)
 ﻿namespace NLayer.Architecture.Bussines.ReporteInventario;
 
 
@@ -25,11 +28,14 @@ public class Herramientas
 
 } 
 =======
+=======
+>>>>>>> 2c4ee6f (test)
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -62,6 +68,8 @@ public class Herramientas
 =======
 =======
 =======
+>>>>>>> 9af4275 (test)
+=======
 ﻿namespace NLayer.Architecture.Bussines.ReporteInventario;
 >>>>>>> d564e34 (Herramientas)
 >>>>>>> 0d03d42 (Herramientas)
@@ -92,4 +100,23 @@ public class Herramientas
 
 } 
 >>>>>>> d564e34 (Herramientas)
+<<<<<<< HEAD
 >>>>>>> 0d03d42 (Herramientas)
+=======
+=======
+
+namespace NLayer.Architecture.Bussines.Models.ControlMaquinaria
+{
+    public class Herramientas
+    {
+        public string Marca {  get; set; }
+
+        public float Precio { get; set; }
+
+        public string Material { get; set; }
+
+        public string Funcionalidad {  get; set; } 
+    }
+}
+>>>>>>> 2c4ee6f (test)
+>>>>>>> 9af4275 (test)
