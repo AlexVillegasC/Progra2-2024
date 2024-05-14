@@ -91,6 +91,7 @@ namespace NLayer.Architecture.Bussines.Services;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> ba1bfd7 (Jhonpy)
 =======
@@ -126,6 +127,10 @@ namespace NLayer.Architecture.Bussines.Services;
 =======
     
 >>>>>>> ba1bfd7 (Jhonpy)
+=======
+
+  //  public async Task<ReporteInventario.ReporteInventario> GetInventario1()
+>>>>>>> 2c4ee6f (test)
 
     
 
@@ -133,6 +138,7 @@ namespace NLayer.Architecture.Bussines.Services;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 2c4ee6f (test)
 =======
         return miInventario;
@@ -156,6 +162,8 @@ namespace NLayer.Architecture.Bussines.Services;
         return miInventario;
     }
 >>>>>>> b9342b3 (Creacion de los servicios de maquinaria)
+=======
+>>>>>>> 2c4ee6f (test)
 }
    
 
