@@ -26,6 +26,12 @@ namespace NLayer.Architecture.Bussines.Services;
         miInventario.Maquinaria = await _inventarioRepo.GetMaquinaria();
         return miInventario;
     }
+
+  //  public async Task<ReporteInventario.ReporteInventario> GetInventario1()
+
+    
+
+    
 }
    
 
