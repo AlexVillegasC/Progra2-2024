@@ -4,6 +4,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ﻿namespace NLayer.Architecture.Bussines.ReporteInventario;
 
 
@@ -23,6 +24,8 @@ public class Herramientas
 
 } 
 =======
+=======
+>>>>>>> 2c4ee6f (test)
 =======
 >>>>>>> 2c4ee6f (test)
 =======
@@ -34,6 +37,7 @@ using System.Text;
 using System.Threading.Tasks;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 ﻿namespace NLayer.Architecture.Bussines.ReporteInventario;
 >>>>>>> d564e34 (Herramientas)
@@ -117,3 +121,19 @@ public class Herramientas
 
 } 
 >>>>>>> d564e34 (Herramientas)
+=======
+
+namespace NLayer.Architecture.Bussines.Models.ControlMaquinaria
+{
+    public class Herramientas
+    {
+        public string Marca {  get; set; }
+
+        public float Precio { get; set; }
+
+        public string Material { get; set; }
+
+        public string Funcionalidad {  get; set; } 
+    }
+}
+>>>>>>> 2c4ee6f (test)
