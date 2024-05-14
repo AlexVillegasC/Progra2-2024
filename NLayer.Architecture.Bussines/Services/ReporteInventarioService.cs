@@ -73,8 +73,20 @@ namespace NLayer.Architecture.Bussines.Services;
 >>>>>>> 8e85ca0 (test)
 =======
     }
+<<<<<<< HEAD
 >>>>>>> b9342b3 (Creacion de los servicios de maquinaria)
+<<<<<<< HEAD
 >>>>>>> 148fca9 (Creacion de los servicios de maquinaria)
+=======
+=======
+
+  //  public async Task<ReporteInventario.ReporteInventario> GetInventario1()
+
+    
+
+    
+>>>>>>> 2c4ee6f (test)
+>>>>>>> 064f3be (test)
 }
    
 
