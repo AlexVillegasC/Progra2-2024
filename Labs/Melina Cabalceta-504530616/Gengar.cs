@@ -49,17 +49,20 @@ namespace Lab1.Melina_Cabalceta_504530616
 >>>>>>> db0cc1c (Lab1 combate pokemon M)
 namespace Lab1.Melina_Cabalceta_504530616
 {
-    public class Gengar : Pokemon // Gengar hereda de Pokemon 
+    public class Gengar : Pokemon  
     {
         public Gengar(int ataque, int vida, string nombre) : base(ataque, vida, nombre)
-        {
-            this.Ataque = ataque;
-            this.Vida = vida;
-            this.Nombre = nombre;
-            
+        { 
         }
+<<<<<<< HEAD
 
 >>>>>>> 8ae0910 (Lab1 batalla pokemon)
+<<<<<<< HEAD
 >>>>>>> f7031e9 (Lab1 batalla pokemon)
+=======
+=======
+        
+>>>>>>> a28cecb (Batalla Pokemon)
+>>>>>>> 75c5302 (Batalla Pokemon)
     }
 }

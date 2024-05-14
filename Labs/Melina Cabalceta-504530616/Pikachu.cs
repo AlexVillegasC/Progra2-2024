@@ -5,8 +5,11 @@ namespace Lab1.Melina_Cabalceta_504530616
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> f7031e9 (Lab1 batalla pokemon)
+=======
+>>>>>>> 75c5302 (Batalla Pokemon)
     public class Pikachu : Pokemon  
     {
         
@@ -15,6 +18,7 @@ namespace Lab1.Melina_Cabalceta_504530616
         {
 =======
     public class Pikachu : Pokemon //Pikachu hereda de Pokemon 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
     public class Pikachu : Pokemon  
@@ -37,16 +41,17 @@ namespace Lab1.Melina_Cabalceta_504530616
 =======
 >>>>>>> a45588b (Batalla Pokemon)
 =======
+=======
+=======
+    public class Pikachu : Pokemon  
+>>>>>>> a28cecb (Batalla Pokemon)
+>>>>>>> 75c5302 (Batalla Pokemon)
     {
-        /// <summary>
-        /// Mi clase Pikachu
-        /// </summary>
-        /// <param name="ataque">Representa un ataque</param>
-        /// <param name="vida"></param>
-        /// <param name="nombre"></param>
+        
 
         public Pikachu(int ataque, int vida, string nombre) : base(ataque, vida, nombre)
         {
+<<<<<<< HEAD
 <<<<<<< HEAD
             this.Ataque = Ataque;
             this.nombre = "Pikachu";
@@ -59,7 +64,12 @@ namespace Lab1.Melina_Cabalceta_504530616
             this.Vida = vida;
             this.nombre = nombre;
 >>>>>>> 384582b (Lab1 combate pokemon M)
+<<<<<<< HEAD
 >>>>>>> db0cc1c (Lab1 combate pokemon M)
+=======
+=======
+>>>>>>> a28cecb (Batalla Pokemon)
+>>>>>>> 75c5302 (Batalla Pokemon)
         }
     }
 }
