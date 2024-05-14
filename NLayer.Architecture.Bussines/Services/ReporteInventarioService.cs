@@ -58,17 +58,25 @@ namespace NLayer.Architecture.Bussines.Services;
 >>>>>>> 4b4602e (Creacion de los servicios, interfaces,json de la clase mantenimiento)
         return miInventario;
     }
+<<<<<<< HEAD
 =======
 >>>>>>> ba1bfd7 (Jhonpy)
+=======
+
+  //  public async Task<ReporteInventario.ReporteInventario> GetInventario1()
+>>>>>>> 2c4ee6f (test)
 
     
 
     
+<<<<<<< HEAD
 >>>>>>> 2c4ee6f (test)
 =======
         return miInventario;
     }
 >>>>>>> b9342b3 (Creacion de los servicios de maquinaria)
+=======
+>>>>>>> 2c4ee6f (test)
 }
    
 
