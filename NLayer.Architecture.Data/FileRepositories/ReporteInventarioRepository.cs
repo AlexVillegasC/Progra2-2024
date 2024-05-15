@@ -1,6 +1,8 @@
 ﻿using NLayer.Architecture.Data;
 using Microsoft.Extensions.Configuration;
 using NLayer.Architecture.Bussines.ReporteInventario;
+using NLayer.Architecture.Bussines.Models.ControlMaquinaria;
+
 
 
 <<<<<<< HEAD
@@ -51,9 +53,13 @@ public class ReporteInventarioRepository : FileRepository, IReporteInventarioRep
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     private string HerramientasVirtualPath = "Herramientas.json";
 =======
 >>>>>>> b9342b3 (Creacion de los servicios de maquinaria)
+=======
+    private string HerramientasVirtualPath = "Herramientas.json";
+>>>>>>> d564e34 (Herramientas)
 =======
     private string HerramientasVirtualPath = "Herramientas.json";
 >>>>>>> d564e34 (Herramientas)
@@ -101,6 +107,7 @@ public class ReporteInventarioRepository : FileRepository, IReporteInventarioRep
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         HerramientasVirtualPath = FolderPath + HerramientasVirtualPath;
 =======
         MantenimientoVirtualPath = FolderPath + MantenimientoVirtualPath;
@@ -160,9 +167,19 @@ public class ReporteInventarioRepository : FileRepository, IReporteInventarioRep
 
 >>>>>>> d564e34 (Herramientas)
 =======
+=======
+        HerramientasVirtualPath = FolderPath + HerramientasVirtualPath;
+>>>>>>> d564e34 (Herramientas)
     }
+
     //metodo para leer el archivo json y los delvuelve como un onjeto
+<<<<<<< HEAD
 >>>>>>> b9342b3 (Creacion de los servicios de maquinaria)
+=======
+
+
+
+>>>>>>> d564e34 (Herramientas)
     public async Task<Maquinaria> GetMaquinaria()
     {
         return await ReadJsonFileAsync<Maquinaria>(MaquinariaVirtualPath);
@@ -177,6 +194,9 @@ public class ReporteInventarioRepository : FileRepository, IReporteInventarioRep
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d564e34 (Herramientas)
 =======
 >>>>>>> d564e34 (Herramientas)
 =======
@@ -190,6 +210,7 @@ public class ReporteInventarioRepository : FileRepository, IReporteInventarioRep
     }
 
     
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -213,6 +234,8 @@ public class ReporteInventarioRepository : FileRepository, IReporteInventarioRep
 >>>>>>> d564e34 (Herramientas)
 =======
 >>>>>>> 4b4602e (Creacion de los servicios, interfaces,json de la clase mantenimiento)
+=======
+>>>>>>> d564e34 (Herramientas)
 }
 
 
