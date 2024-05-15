@@ -6,22 +6,15 @@ using System.Threading.Tasks;
 
 namespace Lab5.MelinaCabalceta_504530616.Composición
 {
-    public class Hotel
+    public class Motor
     {
-        public Habitaciones habitacion { get; set; }
+        public string tipoMotor { get; set; }
 
-    public Hotel()
-    {
-        habitacion = new Habitaciones();
+        public Motor()
+        {
+            tipoMotor = "Cuatro tiempos";
+        }
+
+
     }
 }
-       
-
-    
-
-}
-
-
-    
-
-
