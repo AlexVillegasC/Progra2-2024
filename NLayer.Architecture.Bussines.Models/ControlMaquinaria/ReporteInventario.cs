@@ -4,8 +4,12 @@ public class ReporteInventario
 {
     public Maquinaria Maquinaria { get; set; }
 <<<<<<< HEAD
+<<<<<<< HEAD
     public Herramientas Herramientas { get; set; }
 =======
 >>>>>>> b9342b3 (Creacion de los servicios de maquinaria)
+=======
+    public Herramientas Herramientas { get; set; }
+>>>>>>> d564e34 (Herramientas)
 }
 //using es la direccion de una carpeta.

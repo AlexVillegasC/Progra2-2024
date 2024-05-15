@@ -1,6 +1,8 @@
 ﻿using NLayer.Architecture.Data;
 using Microsoft.Extensions.Configuration;
 using NLayer.Architecture.Bussines.ReporteInventario;
+using NLayer.Architecture.Bussines.Models.ControlMaquinaria;
+
 
 
 
@@ -15,9 +17,13 @@ public class ReporteInventarioRepository : FileRepository, IReporteInventarioRep
     //esta la ruta para acceder a los archivos json
     private string MaquinariaVirtualPath = "Maquinaria.json";
 <<<<<<< HEAD
+<<<<<<< HEAD
     private string HerramientasVirtualPath = "Herramientas.json";
 =======
 >>>>>>> b9342b3 (Creacion de los servicios de maquinaria)
+=======
+    private string HerramientasVirtualPath = "Herramientas.json";
+>>>>>>> d564e34 (Herramientas)
 
 
     // es una propiedad privada que almacena la ruta de la carpeta donde se encuentran los archivos JSON que contienen los datos
@@ -29,6 +35,7 @@ public class ReporteInventarioRepository : FileRepository, IReporteInventarioRep
         FolderPath = $"{configuration["Folders:MaquinariaAgricola"]}";
         MaquinariaVirtualPath = FolderPath + MaquinariaVirtualPath;
 <<<<<<< HEAD
+<<<<<<< HEAD
         HerramientasVirtualPath = FolderPath + HerramientasVirtualPath;
     }
 
@@ -37,14 +44,27 @@ public class ReporteInventarioRepository : FileRepository, IReporteInventarioRep
 
 
 =======
+=======
+        HerramientasVirtualPath = FolderPath + HerramientasVirtualPath;
+>>>>>>> d564e34 (Herramientas)
     }
+
     //metodo para leer el archivo json y los delvuelve como un onjeto
+<<<<<<< HEAD
 >>>>>>> b9342b3 (Creacion de los servicios de maquinaria)
+=======
+
+
+
+>>>>>>> d564e34 (Herramientas)
     public async Task<Maquinaria> GetMaquinaria()
     {
         return await ReadJsonFileAsync<Maquinaria>(MaquinariaVirtualPath);
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d564e34 (Herramientas)
 
     public async Task<Herramientas> GetHerramientas()
     {
