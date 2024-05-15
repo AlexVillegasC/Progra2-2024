@@ -1,6 +1,8 @@
 ﻿using NLayer.Architecture.Data;
 using Microsoft.Extensions.Configuration;
 using NLayer.Architecture.Bussines.ReporteInventario;
+using NLayer.Architecture.Bussines.Models.ControlMaquinaria;
+
 
 
 <<<<<<< HEAD
@@ -13,9 +15,13 @@ public class ReporteInventarioRepository : FileRepository, IReporteInventarioRep
     //esta la ruta para acceder a los archivos json
     private string MaquinariaVirtualPath = "Maquinaria.json";
 <<<<<<< HEAD
+<<<<<<< HEAD
     private string HerramientasVirtualPath = "Herramientas.json";
     private string MantenimientoVirtualPath = "Mantenimiento.json";
 =======
+=======
+    private string HerramientasVirtualPath = "Herramientas.json";
+>>>>>>> 2366e09 (Herramientas)
 
 >>>>>>> 6e723fd (Creacion de los servicios de maquinaria)
 
@@ -28,6 +34,7 @@ public class ReporteInventarioRepository : FileRepository, IReporteInventarioRep
         FolderPath = $"{configuration["Folders:MaquinariaAgricola"]}";
         MaquinariaVirtualPath = FolderPath + MaquinariaVirtualPath;
 <<<<<<< HEAD
+<<<<<<< HEAD
         HerramientasVirtualPath = FolderPath + HerramientasVirtualPath;
         MantenimientoVirtualPath = FolderPath + MantenimientoVirtualPath;
     }
@@ -37,14 +44,27 @@ public class ReporteInventarioRepository : FileRepository, IReporteInventarioRep
 
 
 =======
+=======
+        HerramientasVirtualPath = FolderPath + HerramientasVirtualPath;
+>>>>>>> 2366e09 (Herramientas)
     }
+
     //metodo para leer el archivo json y los delvuelve como un onjeto
+<<<<<<< HEAD
 >>>>>>> 6e723fd (Creacion de los servicios de maquinaria)
+=======
+
+
+
+>>>>>>> 2366e09 (Herramientas)
     public async Task<Maquinaria> GetMaquinaria()
     {
         return await ReadJsonFileAsync<Maquinaria>(MaquinariaVirtualPath);
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 2366e09 (Herramientas)
 
     public async Task<Herramientas> GetHerramientas()
     {
@@ -52,11 +72,14 @@ public class ReporteInventarioRepository : FileRepository, IReporteInventarioRep
     }
 
     
+<<<<<<< HEAD
 
     public  async Task<Mantenimiento> GetMantenimiento()
     {
         return await ReadJsonFileAsync<Mantenimiento>(MantenimientoVirtualPath);
     }
+=======
+>>>>>>> 2366e09 (Herramientas)
 }
 
 

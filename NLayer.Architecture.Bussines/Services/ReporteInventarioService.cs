@@ -39,12 +39,19 @@ namespace NLayer.Architecture.Bussines.Services;
     
 =======
         return miInventario;
+       
+        
     }
 <<<<<<< HEAD
 >>>>>>> 6e723fd (Creacion de los servicios de maquinaria)
 =======
 
-  //  public async Task<ReporteInventario.ReporteInventario> GetInventario1()
+    public async Task<ReporteInventario.ReporteInventario> GetInventario1()
+    {
+        ReporteInventario.ReporteInventario miInventario = new ReporteInventario.ReporteInventario();
+        miInventario.Herramientas = await _inventarioRepo.GetHerramientas();
+        return miInventario;
+    }
 
     
 
