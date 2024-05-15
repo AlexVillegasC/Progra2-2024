@@ -6,8 +6,13 @@ using System.Threading.Tasks;
 
 namespace Lab5.MelinaCabalceta_504530616.Composición
 {
-    public class Habitaciones
+    public class Ruedas
     {
-        public int numeroHabitacion {  get; set; }
+        public int Cantidad { get; set; }
+
+        public Ruedas()
+        {
+            Cantidad = 4;
+        }
     }
 }
