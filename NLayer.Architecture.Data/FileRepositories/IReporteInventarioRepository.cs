@@ -9,6 +9,7 @@ public interface IReporteInventarioRepository
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     Task<Herramientas> GetHerramientas();
 
@@ -20,9 +21,18 @@ public interface IReporteInventarioRepository
     Task<Herramientas> GetHerramientas();
 >>>>>>> 2366e09 (Herramientas)
 =======
+=======
+>>>>>>> 0d03d42 (Herramientas)
 
     Task<Herramientas> GetHerramientas();
 =======
 >>>>>>> b9342b3 (Creacion de los servicios de maquinaria)
+<<<<<<< HEAD
 >>>>>>> 148fca9 (Creacion de los servicios de maquinaria)
+=======
+=======
+
+    Task<Herramientas> GetHerramientas();
+>>>>>>> d564e34 (Herramientas)
+>>>>>>> 0d03d42 (Herramientas)
 }

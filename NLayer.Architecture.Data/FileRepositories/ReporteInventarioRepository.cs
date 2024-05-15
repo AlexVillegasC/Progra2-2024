@@ -1,6 +1,8 @@
 ﻿using NLayer.Architecture.Data;
 using Microsoft.Extensions.Configuration;
 using NLayer.Architecture.Bussines.ReporteInventario;
+using NLayer.Architecture.Bussines.Models.ControlMaquinaria;
+
 
 
 
@@ -23,6 +25,7 @@ public class ReporteInventarioRepository : FileRepository, IReporteInventarioRep
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     private string HerramientasVirtualPath = "Herramientas.json";
     private string MantenimientoVirtualPath = "Mantenimiento.json";
 =======
@@ -34,6 +37,14 @@ public class ReporteInventarioRepository : FileRepository, IReporteInventarioRep
 =======
 >>>>>>> b9342b3 (Creacion de los servicios de maquinaria)
 >>>>>>> 148fca9 (Creacion de los servicios de maquinaria)
+=======
+    private string HerramientasVirtualPath = "Herramientas.json";
+=======
+>>>>>>> b9342b3 (Creacion de los servicios de maquinaria)
+=======
+    private string HerramientasVirtualPath = "Herramientas.json";
+>>>>>>> d564e34 (Herramientas)
+>>>>>>> 0d03d42 (Herramientas)
 
 >>>>>>> 6e723fd (Creacion de los servicios de maquinaria)
 
@@ -48,8 +59,11 @@ public class ReporteInventarioRepository : FileRepository, IReporteInventarioRep
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 148fca9 (Creacion de los servicios de maquinaria)
+=======
+>>>>>>> 0d03d42 (Herramientas)
         HerramientasVirtualPath = FolderPath + HerramientasVirtualPath;
         MantenimientoVirtualPath = FolderPath + MantenimientoVirtualPath;
     }
@@ -59,6 +73,7 @@ public class ReporteInventarioRepository : FileRepository, IReporteInventarioRep
 
 
 =======
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
         HerramientasVirtualPath = FolderPath + HerramientasVirtualPath;
@@ -74,10 +89,25 @@ public class ReporteInventarioRepository : FileRepository, IReporteInventarioRep
 
 >>>>>>> 2366e09 (Herramientas)
 =======
+=======
+=======
+        HerramientasVirtualPath = FolderPath + HerramientasVirtualPath;
+>>>>>>> d564e34 (Herramientas)
+>>>>>>> 0d03d42 (Herramientas)
     }
+
     //metodo para leer el archivo json y los delvuelve como un onjeto
+<<<<<<< HEAD
 >>>>>>> b9342b3 (Creacion de los servicios de maquinaria)
+<<<<<<< HEAD
 >>>>>>> 148fca9 (Creacion de los servicios de maquinaria)
+=======
+=======
+
+
+
+>>>>>>> d564e34 (Herramientas)
+>>>>>>> 0d03d42 (Herramientas)
     public async Task<Maquinaria> GetMaquinaria()
     {
         return await ReadJsonFileAsync<Maquinaria>(MaquinariaVirtualPath);
@@ -85,10 +115,15 @@ public class ReporteInventarioRepository : FileRepository, IReporteInventarioRep
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 2366e09 (Herramientas)
 =======
 >>>>>>> 148fca9 (Creacion de los servicios de maquinaria)
+=======
+=======
+>>>>>>> d564e34 (Herramientas)
+>>>>>>> 0d03d42 (Herramientas)
 
     public async Task<Herramientas> GetHerramientas()
     {
