@@ -1,6 +1,8 @@
 ﻿using NLayer.Architecture.Data;
 using Microsoft.Extensions.Configuration;
 using NLayer.Architecture.Bussines.ReporteInventario;
+using NLayer.Architecture.Bussines.Models.ControlMaquinaria;
+
 
 
 <<<<<<< HEAD
@@ -41,6 +43,7 @@ public class ReporteInventarioRepository : FileRepository, IReporteInventarioRep
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     private string HerramientasVirtualPath = "Herramientas.json";
     private string MantenimientoVirtualPath = "Mantenimiento.json";
 =======
@@ -57,13 +60,21 @@ public class ReporteInventarioRepository : FileRepository, IReporteInventarioRep
 >>>>>>> b2a43cd (Creacion de los servicios, interfaces,json de la clase mantenimiento)
 =======
 >>>>>>> 5569c02 (Creacion de los servicios de maquinaria)
+=======
+>>>>>>> b82310d (Herramientas)
     private string HerramientasVirtualPath = "Herramientas.json";
 =======
 >>>>>>> b9342b3 (Creacion de los servicios de maquinaria)
 =======
     private string HerramientasVirtualPath = "Herramientas.json";
 >>>>>>> d564e34 (Herramientas)
+<<<<<<< HEAD
 >>>>>>> 0d03d42 (Herramientas)
+=======
+=======
+    private string HerramientasVirtualPath = "Herramientas.json";
+>>>>>>> d564e34 (Herramientas)
+>>>>>>> b82310d (Herramientas)
 
 <<<<<<< HEAD
 >>>>>>> 6e723fd (Creacion de los servicios de maquinaria)
@@ -93,6 +104,7 @@ public class ReporteInventarioRepository : FileRepository, IReporteInventarioRep
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 148fca9 (Creacion de los servicios de maquinaria)
 =======
@@ -102,6 +114,8 @@ public class ReporteInventarioRepository : FileRepository, IReporteInventarioRep
 =======
 =======
 >>>>>>> 5569c02 (Creacion de los servicios de maquinaria)
+=======
+>>>>>>> b82310d (Herramientas)
         HerramientasVirtualPath = FolderPath + HerramientasVirtualPath;
 =======
         MantenimientoVirtualPath = FolderPath + MantenimientoVirtualPath;
@@ -152,14 +166,28 @@ public class ReporteInventarioRepository : FileRepository, IReporteInventarioRep
 >>>>>>> 0d03d42 (Herramientas)
 =======
 =======
+=======
+        HerramientasVirtualPath = FolderPath + HerramientasVirtualPath;
+>>>>>>> d564e34 (Herramientas)
     }
+
     //metodo para leer el archivo json y los delvuelve como un onjeto
+<<<<<<< HEAD
 >>>>>>> b9342b3 (Creacion de los servicios de maquinaria)
+<<<<<<< HEAD
 >>>>>>> 5569c02 (Creacion de los servicios de maquinaria)
+=======
+=======
+
+
+
+>>>>>>> d564e34 (Herramientas)
+>>>>>>> b82310d (Herramientas)
     public async Task<Maquinaria> GetMaquinaria()
     {
         return await ReadJsonFileAsync<Maquinaria>(MaquinariaVirtualPath);
     }
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -176,6 +204,10 @@ public class ReporteInventarioRepository : FileRepository, IReporteInventarioRep
 =======
 >>>>>>> 5569c02 (Creacion de los servicios de maquinaria)
 =======
+=======
+>>>>>>> d564e34 (Herramientas)
+>>>>>>> b82310d (Herramientas)
+=======
 >>>>>>> d564e34 (Herramientas)
 >>>>>>> 0d03d42 (Herramientas)
 
@@ -187,6 +219,9 @@ public class ReporteInventarioRepository : FileRepository, IReporteInventarioRep
     
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> b82310d (Herramientas)
 =======
 =======
 >>>>>>> b2a43cd (Creacion de los servicios, interfaces,json de la clase mantenimiento)
@@ -200,7 +235,12 @@ public class ReporteInventarioRepository : FileRepository, IReporteInventarioRep
 >>>>>>> 2366e09 (Herramientas)
 =======
 >>>>>>> 4b4602e (Creacion de los servicios, interfaces,json de la clase mantenimiento)
+<<<<<<< HEAD
 >>>>>>> b2a43cd (Creacion de los servicios, interfaces,json de la clase mantenimiento)
+=======
+=======
+>>>>>>> d564e34 (Herramientas)
+>>>>>>> b82310d (Herramientas)
 }
 
 

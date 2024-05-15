@@ -48,6 +48,7 @@ namespace NLayer.Architecture.Bussines.Services;
         
     }
 
+<<<<<<< HEAD
     
 <<<<<<< HEAD
 
@@ -91,10 +92,13 @@ namespace NLayer.Architecture.Bussines.Services;
 =======
 =======
 
+=======
+>>>>>>> d564e34 (Herramientas)
     public async Task<ReporteInventario.ReporteInventario> GetInventario1()
     {
         ReporteInventario.ReporteInventario miInventario = new ReporteInventario.ReporteInventario();
         miInventario.Herramientas = await _inventarioRepo.GetHerramientas();
+<<<<<<< HEAD
 =======
         miInventario.Mantenimiento = await _inventarioRepo.GetMantenimiento();
 >>>>>>> 4b4602e (Creacion de los servicios, interfaces,json de la clase mantenimiento)
@@ -107,6 +111,10 @@ namespace NLayer.Architecture.Bussines.Services;
 
   //  public async Task<ReporteInventario.ReporteInventario> GetInventario1()
 >>>>>>> 2c4ee6f (test)
+=======
+        return miInventario;
+    }
+>>>>>>> d564e34 (Herramientas)
 
     
 
