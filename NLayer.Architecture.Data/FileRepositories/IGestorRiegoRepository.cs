@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace NLayer.Architecture.Data.FileRepositories
 {
-    public interface IGestorRiego
+    public interface IGestorRiegoRepository
     {
         Task<Cultivo> GetCultivo();
         Task<Temperature> GetTemperatures();

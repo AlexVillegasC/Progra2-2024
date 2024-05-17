@@ -10,7 +10,7 @@ using NLayer.Architecture.Bussines.ReporteClima;
 
 namespace NLayer.Architecture.Data.FileRepositories
 {
-    public class GestorRiego : FileRepository, IGestorRiego
+    public class GestorRiegoRepository : FileRepository, IGestorRiegoRepository
     {
 
         private string _cultivoVirtualPath = "cultivo.json";
@@ -20,7 +20,7 @@ namespace NLayer.Architecture.Data.FileRepositories
         private string _foldersPath { get; set; }
 
 
-        public GestorRiego(IConfiguration configuration)
+        public GestorRiegoRepository(IConfiguration configuration)
         {
             _foldersPath = $"{configuration["Folders:GestorRiego"]}";
             _cultivoVirtualPath = _foldersPath + _cultivoVirtualPath;
