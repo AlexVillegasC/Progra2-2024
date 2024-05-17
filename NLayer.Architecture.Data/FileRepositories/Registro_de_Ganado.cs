@@ -8,6 +8,7 @@ namespace NLayer.Architecture.Data.FileRepositories
 {
     internal class Registro_de_Ganado
     {
-        //Prueba 
+         //Prueba 
+         // prueba
     }
 }
