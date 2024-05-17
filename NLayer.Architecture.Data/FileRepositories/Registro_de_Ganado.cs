@@ -10,5 +10,3 @@ namespace NLayer.Architecture.Data.FileRepositories
     {
     }
 }
-
-//  
