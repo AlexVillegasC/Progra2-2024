@@ -12,10 +12,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Files\Clima\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\NLayer.Architecture.Bussines.Models\NLayer.Architecture.Bussines.Models.csproj" />
   </ItemGroup>
 
