@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace NLayer.Architecture.Bussines.Models.Cultivo;
 
-public class GestorRiego
+public class IGestorRiegoRepository
 {
     public Temperatura _Temperatura { get; set; }
     public HumedadSuelo _HumedadSuelo { get; set; }

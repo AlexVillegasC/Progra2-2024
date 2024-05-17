@@ -1,7 +1,7 @@
 ﻿namespace NLayer.Architecture.Bussines.Services;
 
 
-public interface IGestionRiegoService
+public interface IGestorRiegoService
 {
     Task<GestionRiego.GestionRiego> GetEstadoRiego();
 }

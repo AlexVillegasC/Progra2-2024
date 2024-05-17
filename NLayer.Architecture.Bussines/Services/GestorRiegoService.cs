@@ -1,15 +1,16 @@
 ﻿using DataAccess.Layer.FileRepositories;
-using NLayer.Architecture.Bussines.GestionRiego;
+using NLayer.Architecture.Bussines.Models.Cultivo;
 using NLayer.Architecture.Data.FileRepositories;
+using IGestorRiegoRepository = NLayer.Architecture.Data.FileRepositories.IGestorRiegoRepository;
 
 namespace NLayer.Architecture.Bussines.Services;
 
-public class GestionRiegoService : IGestionRiegoService
+public class GestorRiegoService : IGestorRiegoService
 {
     /// </summary>
-    private readonly IGestorRiego _estadoRiegoRepo;
+    private readonly IGestorRiegoRepository _estadoRiegoRepo;
 
-    public GestionRiegoService(IGestorRiego estadoRiegoRepo)
+    public GestorRiegoService(IGestorRiegoRepository estadoRiegoRepo)
     {
         _estadoRiegoRepo = estadoRiegoRepo;
     }

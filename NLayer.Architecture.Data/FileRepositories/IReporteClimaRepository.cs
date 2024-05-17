@@ -2,7 +2,7 @@
 
 namespace DataAccess.Layer.FileRepositories;
 
-public interface IGestionRiegoRepository
+public interface IReporteClimaRepository
 {
     Task<Temperature> GetTemperatures();
 

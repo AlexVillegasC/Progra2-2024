@@ -5,7 +5,7 @@ using System.ComponentModel.Design;
 
 namespace DataAccess.Layer.FileRepositories;
 
-public class ReporteClimaRepository : FileRepository, IGestionRiegoRepository
+public class ReporteClimaRepository : FileRepository, IReporteClimaRepository
 {
     private string _tempetarureVirtualPath = "temperature.json";
     private string _windVirtualPath = "wind.json";
