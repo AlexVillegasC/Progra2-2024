@@ -9,6 +9,7 @@ namespace NLayer.Architecture.Bussines.Models.RegistroGanado
 {
     public class RegistroGanado
     {
+
         public string ID { get; set; }
         public DateTime Date{ get; set; }
 
@@ -16,5 +17,7 @@ namespace NLayer.Architecture.Bussines.Models.RegistroGanado
         public float Peso { get; set; }
 
         public string Raza { get; set; }
+
+        
     }
 }
