@@ -7,3 +7,4 @@ public class Recurso
     public int cantidad { get; set; }
     public DateTime fechaCaducidad { get; set; }
 }
+//que lo que
