@@ -7,25 +7,8 @@ using System.Threading.Tasks;
 
 namespace NLayer.Architecture.Data.FileRepositories
 {
-    public class GestorRiego:FileRepository, IGestorRiego
+    public class GestorRiego
     {
-        private string _cultivoVirtualPath = "cultivo.json";
-
-        private string _foldersPath {  get; set; }
-
-
-        public GestorRiego(IConfiguration configuration)
-        {
-            _foldersPath = $"{configuration["Folders:GestorRiego"]}";
-            _cultivoVirtualPath=_foldersPath+_cultivoVirtualPath;
-
-        }
-
-        public async Task<Cultivo> GetCultivo()
-        {
-            return await ReadJsonFileAsync < Cultivo>(_cultivoVirtualPath);
-        
-        
-        }
+       
     }
 }
