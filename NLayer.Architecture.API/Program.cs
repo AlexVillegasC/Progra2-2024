@@ -14,9 +14,9 @@ builder.Services.AddSwaggerGen(c =>
     c.SwaggerDoc("v1", new OpenApiInfo { Title = "UNA.FARM.API", Version = "v1" });
 });
 
-builder.Services.AddTransient<IReporteClimaService, ReporteClimaService>();
+builder.Services.AddTransient<IGestionRiegoService, ReporteClimaService>();
 builder.Services.AddTransient<IFileRepository, FileRepository>();
-builder.Services.AddTransient<IReporteClimaRepository, ReporteClimaRepository>();
+builder.Services.AddTransient<IGestionRiegoRepository, ReporteClimaRepository>();
 
 var app = builder.Build();
 

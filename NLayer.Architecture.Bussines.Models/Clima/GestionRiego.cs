@@ -1,6 +1,6 @@
-﻿namespace NLayer.Architecture.Bussines.ReporteClima;
+﻿namespace NLayer.Architecture.Bussines.GestionRiego;
 
-public class ReporteClima
+public class GestionRiego
 {
     public string Nombre { get; set; } = "Mi Reporte del Clima";
 

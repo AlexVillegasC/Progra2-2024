@@ -1,8 +1,8 @@
-﻿using NLayer.Architecture.Bussines.ReporteClima;
+﻿using NLayer.Architecture.Bussines.GestionRiego;
 
 namespace DataAccess.Layer.FileRepositories;
 
-public interface IReporteClimaRepository
+public interface IGestionRiegoRepository
 {
     Task<Temperature> GetTemperatures();
 

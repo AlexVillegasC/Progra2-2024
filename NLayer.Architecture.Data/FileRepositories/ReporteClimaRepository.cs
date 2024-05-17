@@ -1,11 +1,11 @@
 ﻿using Microsoft.Extensions.Configuration;
-using NLayer.Architecture.Bussines.ReporteClima;
+using NLayer.Architecture.Bussines.GestionRiego;
 using NLayer.Architecture.Data;
 using System.ComponentModel.Design;
 
 namespace DataAccess.Layer.FileRepositories;
 
-public class ReporteClimaRepository : FileRepository, IReporteClimaRepository
+public class ReporteClimaRepository : FileRepository, IGestionRiegoRepository
 {
     private string _tempetarureVirtualPath = "temperature.json";
     private string _windVirtualPath = "wind.json";

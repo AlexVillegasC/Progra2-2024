@@ -1,5 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
-using NLayer.Architecture.Bussines.ReporteClima;
+using NLayer.Architecture.Bussines.GestionRiego;
 using NLayer.Architecture.Bussines.Services;
 
 namespace NLayer.Architecture.API.Controllers;
@@ -8,15 +8,15 @@ namespace NLayer.Architecture.API.Controllers;
 [Route("[controller]")]
 public class PronosticoClimaController : ControllerBase
 {
-    private readonly IReporteClimaService _reporteClimaService;
+    private readonly IGestionRiegoService _reporteClimaService;
 
-    public PronosticoClimaController(IReporteClimaService reporteClimaService)
+    public PronosticoClimaController(IGestionRiegoService reporteClimaService)
     {
         _reporteClimaService = reporteClimaService;
     }
 
     [HttpGet]
-    public async Task<ReporteClima> Get()
+    public async Task<GestionRiego> Get()
     {        
         return await _reporteClimaService.GetPronostico();
     }
