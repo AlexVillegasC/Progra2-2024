@@ -4,10 +4,10 @@ namespace NLayer.Architecture.Bussines.Models.RegistroGanado
     public class Registro_de_Vacunas
     {
         public string Id { get; set; }
-        public string Name { get; set; }
-        public int Age { get; set; }        
-        public string Race { get; set; }
-        public bool Weigth { get; set; }
+        public DateTime Date { get; set; }
+        public string Vaccine { get; set; }
+        public float Dose { get; set; }       
+        public string Veterinarian { get; set; }
 
     }
 }

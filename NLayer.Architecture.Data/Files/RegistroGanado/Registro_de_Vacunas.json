@@ -1,6 +1,7 @@
 {
   "Id": "001",
-  "Name": "Chirriche",
-  "Age": "2 años",
-  "Weigth": "300 kilos"
+  "Date": "2024-05-14",
+  "Vaccine": "Vitaminas B2",
+  "Dose": "10,5",
+  "Veterinarian": "Brandon Corrales"
 }
