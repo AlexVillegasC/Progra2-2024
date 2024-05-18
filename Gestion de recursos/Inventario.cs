@@ -1,8 +1,5 @@
 ﻿using System;
 
-using System;
-using System.Collections.Generic;
-
 public class Inventario
 {
     private List<Recurso> recursos = new List<Recurso>();
