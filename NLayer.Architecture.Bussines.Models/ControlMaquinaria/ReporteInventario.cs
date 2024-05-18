@@ -10,6 +10,7 @@ public class ReporteInventario
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     public Mantenimiento Mantenimiento { get; set; }
 
@@ -31,6 +32,8 @@ public class ReporteInventario
 >>>>>>> 5569c02 (Creacion de los servicios de maquinaria)
 =======
 >>>>>>> b82310d (Herramientas)
+=======
+>>>>>>> 9395cd6 (Creacion de los servicios, interfaces,json de la clase mantenimiento)
     public Herramientas Herramientas { get; set; }
 =======
 >>>>>>> b9342b3 (Creacion de los servicios de maquinaria)
@@ -55,6 +58,13 @@ public class ReporteInventario
 =======
     public Herramientas Herramientas { get; set; }
 >>>>>>> d564e34 (Herramientas)
+<<<<<<< HEAD
 >>>>>>> b82310d (Herramientas)
+=======
+=======
+
+    public Mantenimiento Mantenimiento { get; set; }
+>>>>>>> 4b4602e (Creacion de los servicios, interfaces,json de la clase mantenimiento)
+>>>>>>> 9395cd6 (Creacion de los servicios, interfaces,json de la clase mantenimiento)
 }
 //using es la direccion de una carpeta.
