@@ -9,6 +9,8 @@ namespace NLayer.Architecture.Bussines.Models.GestionCultivo
     public class GestionCultivo
     {
         public CoeficienteCultivo CoeficienteCultivo { get; set; }
+
+        public CultivoDatos CultivoDatos { get; set; }
         public double Eto { get; set; }
     }
 
