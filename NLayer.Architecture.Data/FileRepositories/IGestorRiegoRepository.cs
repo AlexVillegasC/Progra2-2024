@@ -1,20 +1,18 @@
-﻿using NLayer.Architecture.Bussines.Models.Cultivo;
-using NLayer.Architecture.Bussines.ReporteClima;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using NLayer.Architecture.Bussines.GestorRiego;
+//using NLayer.Architecture.Bussines.ReporteClima;
 
-namespace NLayer.Architecture.Data.FileRepositories
+
+namespace DataAccess.Layer.FileRepositories
+
+
 {
     public interface IGestorRiegoRepository
     {
 
-        Task<Temperature> GetTemperatures();
+        Task<Temperatura> GetTemperatures();
 
         Task<Cultivo> GetCultivo();
 
-        Task<Moisture> GetMoisture();
+        Task<HumedadSuelo> GetMoisture();
     }
 }
