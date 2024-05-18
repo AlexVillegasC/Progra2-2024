@@ -1,7 +1,7 @@
 ﻿using NLayer.Architecture.Data;
 using Microsoft.Extensions.Configuration;
 using NLayer.Architecture.Bussines.ReporteInventario;
-using NLayer.Architecture.Bussines.Models.ControlMaquinaria;
+
 
 namespace DataAccess.Layer.FileRepositories;
 public class ReporteInventarioRepository : FileRepository, IReporteInventarioRepository
