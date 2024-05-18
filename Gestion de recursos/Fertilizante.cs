@@ -1,5 +1,13 @@
+using System;
+
 public class Fertilizante : Recurso
 {
-    public string tipo { get; set; }
-    public int cantidad { get; set; }
+
+    public Fertilizante()
+    {
+    public String tipo;
+
+    public Integer cantidad;
+}
+
 }

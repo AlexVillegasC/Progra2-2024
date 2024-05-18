@@ -1,5 +1,14 @@
+
+using System;
+
 public class Pesticida : Recurso
 {
-    public string tipo { get; set; }
-    public int cantidad { get; set; }
+
+    public Pesticida()
+    {
+     public String tipo;
+
+    public Integer cantidad;
+}
+
 }

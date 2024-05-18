@@ -1,5 +1,13 @@
+using System;
+
 public class Semilla : Recurso
 {
-    public string tipo { get; set; }
-    public int cantidad { get; set; }
+
+    public Semilla()
+    {
+    public String tipo;
+
+    public Integer cantidad;
+}
+
 }
