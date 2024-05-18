@@ -1,0 +1,65 @@
+[
+  {
+    "volumeTotal": 6700.0,
+    "volumenActual": 5548.0,
+    "largo": 40.0,
+    "ancho": 40.0,
+    "profundidad": 4.2,
+    "evaporacionEstanque": 1152.0,
+    "areaSuperficial": 1600.0
+  },
+  {
+    "volumeTotal": 7520.0,
+    "volumenActual": 6368.0,
+    "largo": 40.0,
+    "ancho": 40.0,
+    "profundidad": 4.7,
+    "evaporacionEstanque": 1152.0,
+    "areaSuperficial": 1600.0
+  },
+  {
+    "volumeTotal": 6000.0,
+    "volumenActual": 5000.0,
+    "largo": 30.0,
+    "ancho": 40.0,
+    "profundidad": 5.0,
+    "evaporacionEstanque": 1000.0,
+    "areaSuperficial": 1200.0
+  },
+  {
+    "volumeTotal": 7000.0,
+    "volumenActual": 6000.0,
+    "largo": 50.0,
+    "ancho": 30.0,
+    "profundidad": 4.5,
+    "evaporacionEstanque": 1000.0,
+    "areaSuperficial": 1500.0
+  },
+  {
+    "volumeTotal": 5000.0,
+    "volumenActual": 4000.0,
+    "largo": 40.0,
+    "ancho": 30.0,
+    "profundidad": 4.0,
+    "evaporacionEstanque": 1000.0,
+    "areaSuperficial": 1200.0
+  },
+  {
+    "volumeTotal": 6500.0,
+    "volumenActual": 5500.0,
+    "largo": 40.0,
+    "ancho": 35.0,
+    "profundidad": 4.5,
+    "evaporacionEstanque": 1000.0,
+    "areaSuperficial": 1400.0
+  },
+  {
+    "volumeTotal": 9000.0,
+    "volumenActual": 8000.0,
+    "largo": 60.0,
+    "ancho": 50.0,
+    "profundidad": 3.0,
+    "evaporacionEstanque": 1500.0,
+    "areaSuperficial": 3000.0
+  }
+]
