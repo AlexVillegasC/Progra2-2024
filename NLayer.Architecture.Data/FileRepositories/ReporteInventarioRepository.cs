@@ -3,6 +3,7 @@ using Microsoft.Extensions.Configuration;
 using NLayer.Architecture.Bussines.ReporteInventario;
 using NLayer.Architecture.Bussines.Models.ControlMaquinaria;
 
+<<<<<<< HEAD
 
 
 
@@ -16,12 +17,18 @@ using NLayer.Architecture.Bussines.Models.ControlMaquinaria;
 =======
 =======
 >>>>>>> b9342b3 (Creacion de los servicios de maquinaria)
+<<<<<<< HEAD
 >>>>>>> 148fca9 (Creacion de los servicios de maquinaria)
+=======
+=======
+>>>>>>> 4b4602e (Creacion de los servicios, interfaces,json de la clase mantenimiento)
+>>>>>>> b2a43cd (Creacion de los servicios, interfaces,json de la clase mantenimiento)
 namespace DataAccess.Layer.FileRepositories;
 public class ReporteInventarioRepository : FileRepository, IReporteInventarioRepository
 {
     //esta la ruta para acceder a los archivos json
     private string MaquinariaVirtualPath = "Maquinaria.json";
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -38,6 +45,8 @@ public class ReporteInventarioRepository : FileRepository, IReporteInventarioRep
 >>>>>>> b9342b3 (Creacion de los servicios de maquinaria)
 >>>>>>> 148fca9 (Creacion de los servicios de maquinaria)
 =======
+=======
+>>>>>>> b2a43cd (Creacion de los servicios, interfaces,json de la clase mantenimiento)
     private string HerramientasVirtualPath = "Herramientas.json";
 =======
 >>>>>>> b9342b3 (Creacion de los servicios de maquinaria)
@@ -46,7 +55,13 @@ public class ReporteInventarioRepository : FileRepository, IReporteInventarioRep
 >>>>>>> d564e34 (Herramientas)
 >>>>>>> 0d03d42 (Herramientas)
 
+<<<<<<< HEAD
 >>>>>>> 6e723fd (Creacion de los servicios de maquinaria)
+=======
+=======
+    private string MantenimientoVirtualPath = "Mantenimiento.json";
+>>>>>>> 4b4602e (Creacion de los servicios, interfaces,json de la clase mantenimiento)
+>>>>>>> b2a43cd (Creacion de los servicios, interfaces,json de la clase mantenimiento)
 
     // es una propiedad privada que almacena la ruta de la carpeta donde se encuentran los archivos JSON que contienen los datos
     private string FolderPath { get; set; }
@@ -60,12 +75,19 @@ public class ReporteInventarioRepository : FileRepository, IReporteInventarioRep
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 148fca9 (Creacion de los servicios de maquinaria)
 =======
 >>>>>>> 0d03d42 (Herramientas)
         HerramientasVirtualPath = FolderPath + HerramientasVirtualPath;
         MantenimientoVirtualPath = FolderPath + MantenimientoVirtualPath;
+=======
+        HerramientasVirtualPath = FolderPath + HerramientasVirtualPath;
+=======
+        MantenimientoVirtualPath = FolderPath + MantenimientoVirtualPath;
+>>>>>>> 4b4602e (Creacion de los servicios, interfaces,json de la clase mantenimiento)
+>>>>>>> b2a43cd (Creacion de los servicios, interfaces,json de la clase mantenimiento)
     }
 
     //metodo para leer el archivo json y los delvuelve como un onjeto
@@ -116,11 +138,14 @@ public class ReporteInventarioRepository : FileRepository, IReporteInventarioRep
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 2366e09 (Herramientas)
 =======
 >>>>>>> 148fca9 (Creacion de los servicios de maquinaria)
 =======
+=======
+>>>>>>> b2a43cd (Creacion de los servicios, interfaces,json de la clase mantenimiento)
 =======
 >>>>>>> d564e34 (Herramientas)
 >>>>>>> 0d03d42 (Herramientas)
@@ -132,13 +157,21 @@ public class ReporteInventarioRepository : FileRepository, IReporteInventarioRep
 
     
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> b2a43cd (Creacion de los servicios, interfaces,json de la clase mantenimiento)
 
     public  async Task<Mantenimiento> GetMantenimiento()
     {
         return await ReadJsonFileAsync<Mantenimiento>(MantenimientoVirtualPath);
     }
+<<<<<<< HEAD
 =======
 >>>>>>> 2366e09 (Herramientas)
+=======
+>>>>>>> 4b4602e (Creacion de los servicios, interfaces,json de la clase mantenimiento)
+>>>>>>> b2a43cd (Creacion de los servicios, interfaces,json de la clase mantenimiento)
 }
 
 
@@ -146,8 +179,11 @@ public class ReporteInventarioRepository : FileRepository, IReporteInventarioRep
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 148fca9 (Creacion de los servicios de maquinaria)
+=======
+>>>>>>> b2a43cd (Creacion de los servicios, interfaces,json de la clase mantenimiento)
 =======
 }
 
@@ -158,6 +194,11 @@ public class ReporteInventarioRepository : FileRepository, IReporteInventarioRep
 >>>>>>> d0c9cc2 (Creacion de los servicios, interfaces,json de la clase mantenimiento)
 =======
 >>>>>>> b9342b3 (Creacion de los servicios de maquinaria)
+<<<<<<< HEAD
 >>>>>>> 148fca9 (Creacion de los servicios de maquinaria)
+=======
+=======
+>>>>>>> 4b4602e (Creacion de los servicios, interfaces,json de la clase mantenimiento)
+>>>>>>> b2a43cd (Creacion de los servicios, interfaces,json de la clase mantenimiento)
 /*FolderPath = $"{Configuration["Folders:Clima"]}";: En esta línea, se está utilizando la configuración proporcionada
  * para acceder a la ruta de la carpeta donde se almacenan los archivos */

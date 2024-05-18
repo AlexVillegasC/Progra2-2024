@@ -10,6 +10,7 @@ public interface IReporteInventarioRepository
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     Task<Herramientas> GetHerramientas();
 
@@ -23,6 +24,8 @@ public interface IReporteInventarioRepository
 =======
 =======
 >>>>>>> 0d03d42 (Herramientas)
+=======
+>>>>>>> b2a43cd (Creacion de los servicios, interfaces,json de la clase mantenimiento)
 
     Task<Herramientas> GetHerramientas();
 =======
@@ -34,5 +37,12 @@ public interface IReporteInventarioRepository
 
     Task<Herramientas> GetHerramientas();
 >>>>>>> d564e34 (Herramientas)
+<<<<<<< HEAD
 >>>>>>> 0d03d42 (Herramientas)
+=======
+=======
+
+    Task<Mantenimiento> GetMantenimiento();
+>>>>>>> 4b4602e (Creacion de los servicios, interfaces,json de la clase mantenimiento)
+>>>>>>> b2a43cd (Creacion de los servicios, interfaces,json de la clase mantenimiento)
 }

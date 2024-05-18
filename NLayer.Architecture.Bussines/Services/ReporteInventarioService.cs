@@ -27,8 +27,11 @@ namespace NLayer.Architecture.Bussines.Services;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 148fca9 (Creacion de los servicios de maquinaria)
+=======
+>>>>>>> b2a43cd (Creacion de los servicios, interfaces,json de la clase mantenimiento)
         miInventario.Mantenimiento = await _inventarioRepo.GetMantenimiento();
         miInventario.Herramientas = await _inventarioRepo.GetHerramientas();
 <<<<<<< HEAD
@@ -89,6 +92,9 @@ namespace NLayer.Architecture.Bussines.Services;
     {
         ReporteInventario.ReporteInventario miInventario = new ReporteInventario.ReporteInventario();
         miInventario.Herramientas = await _inventarioRepo.GetHerramientas();
+=======
+        miInventario.Mantenimiento = await _inventarioRepo.GetMantenimiento();
+>>>>>>> 4b4602e (Creacion de los servicios, interfaces,json de la clase mantenimiento)
         return miInventario;
     }
 
