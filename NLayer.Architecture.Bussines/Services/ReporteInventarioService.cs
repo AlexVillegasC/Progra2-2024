@@ -28,15 +28,19 @@ namespace NLayer.Architecture.Bussines.Services;
 <<<<<<< HEAD
         miInventario.Mantenimiento = await _inventarioRepo.GetMantenimiento();
         miInventario.Herramientas = await _inventarioRepo.GetHerramientas();
+<<<<<<< HEAD
 =======
         miInventario.Mantenimiento = await _inventarioRepo.GetMantenimiento();
 >>>>>>> d0c9cc2 (Creacion de los servicios, interfaces,json de la clase mantenimiento)
+=======
+>>>>>>> 13ec088 (Jhonpy)
         return miInventario;
        
         
     }
 
     
+<<<<<<< HEAD
 
     
 
@@ -56,6 +60,8 @@ namespace NLayer.Architecture.Bussines.Services;
         miInventario.Herramientas = await _inventarioRepo.GetHerramientas();
         return miInventario;
     }
+=======
+>>>>>>> 13ec088 (Jhonpy)
 
     
 
