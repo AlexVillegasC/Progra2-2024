@@ -39,6 +39,7 @@ namespace NLayer.Architecture.Data.FileRepositories
         public async Task<List<RegistroVeterinario>> GetRegistroVeterinario()
         {
             return await ReadListJsonAsync<RegistroVeterinario>(_RegistroVeterinarioVirtualPath);
+            
         }
     }
 }
