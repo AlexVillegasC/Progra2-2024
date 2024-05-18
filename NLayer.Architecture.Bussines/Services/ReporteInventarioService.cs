@@ -25,17 +25,13 @@ namespace NLayer.Architecture.Bussines.Services;
         // Como este método es asincrónico, se usa 'await' para esperar su finalización.
         miInventario.Maquinaria = await _inventarioRepo.GetMaquinaria();
         miInventario.Mantenimiento = await _inventarioRepo.GetMantenimiento();
+        miInventario.Herramientas = await _inventarioRepo.GetHerramientas();
         return miInventario;
        
         
     }
 
-    public async Task<ReporteInventario.ReporteInventario> GetInventario1()
-    {
-        ReporteInventario.ReporteInventario miInventario = new ReporteInventario.ReporteInventario();
-        miInventario.Herramientas = await _inventarioRepo.GetHerramientas();
-        return miInventario;
-    }
+    
 
     
 
