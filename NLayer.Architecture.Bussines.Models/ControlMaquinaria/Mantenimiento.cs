@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ﻿
 
 namespace NLayer.Architecture.Bussines.ReporteInventario;
@@ -8,6 +9,11 @@ namespace NLayer.Architecture.Bussines.ReporteInventario;
 
 namespace NLayer.Architecture.Bussines.Models.ControlMaquinaria;
 >>>>>>> 7d38d1b (creacion de clase mantenimiento)
+=======
+﻿
+
+namespace NLayer.Architecture.Bussines.ReporteInventario;
+>>>>>>> d0c9cc2 (Creacion de los servicios, interfaces,json de la clase mantenimiento)
 
 public class Mantenimiento
 {

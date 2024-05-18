@@ -25,8 +25,12 @@ namespace NLayer.Architecture.Bussines.Services;
         // Como este método es asincrónico, se usa 'await' para esperar su finalización.
         miInventario.Maquinaria = await _inventarioRepo.GetMaquinaria();
 <<<<<<< HEAD
+<<<<<<< HEAD
         miInventario.Mantenimiento = await _inventarioRepo.GetMantenimiento();
         miInventario.Herramientas = await _inventarioRepo.GetHerramientas();
+=======
+        miInventario.Mantenimiento = await _inventarioRepo.GetMantenimiento();
+>>>>>>> d0c9cc2 (Creacion de los servicios, interfaces,json de la clase mantenimiento)
         return miInventario;
        
         

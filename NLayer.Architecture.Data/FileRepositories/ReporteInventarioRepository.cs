@@ -85,10 +85,13 @@ public class ReporteInventarioRepository : FileRepository, IReporteInventarioRep
 
 
 
+<<<<<<< HEAD
 =======
 }
 
 
 >>>>>>> 6e723fd (Creacion de los servicios de maquinaria)
+=======
+>>>>>>> d0c9cc2 (Creacion de los servicios, interfaces,json de la clase mantenimiento)
 /*FolderPath = $"{Configuration["Folders:Clima"]}";: En esta línea, se está utilizando la configuración proporcionada
  * para acceder a la ruta de la carpeta donde se almacenan los archivos */
