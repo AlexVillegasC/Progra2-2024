@@ -1,7 +1,6 @@
-﻿using System;
+﻿
 
-
-namespace NLayer.Architecture.Bussines.Models.ControlMaquinaria;
+namespace NLayer.Architecture.Bussines.ReporteInventario;
 
 public class Mantenimiento
 {

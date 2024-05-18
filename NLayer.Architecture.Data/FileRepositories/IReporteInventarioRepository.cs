@@ -8,4 +8,6 @@ public interface IReporteInventarioRepository
     Task<Maquinaria> GetMaquinaria();
 
     Task<Herramientas> GetHerramientas();
+
+    Task<Mantenimiento> GetMantenimiento();
 }
