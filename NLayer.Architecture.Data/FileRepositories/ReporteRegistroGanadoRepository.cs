@@ -31,14 +31,19 @@ namespace NLayer.Architecture.Data.FileRepositories
             return await ReadListJsonAsync<Registro_de_Vacunas>(_RegistroVacunasVirtualPath);
         }
 
-        public async Task<List<RegistroGanado>> GetRegistroGanado()
+        public async Task<List<Ganado>> GetRegistroGanado()
         {
-            return await ReadListJsonAsync<RegistroGanado>(_RegistroGanadoVirtualPath);
+            return await ReadListJsonAsync<Ganado>(_RegistroGanadoVirtualPath);
         }
 
         public async Task<List<RegistroVeterinario>> GetRegistroVeterinario()
         {
             return await ReadListJsonAsync<RegistroVeterinario>(_RegistroVeterinarioVirtualPath);
+        }
+
+        Task<List<RegistroVeterinario>> IReporteRegistroGanadoRepository.GetRegistroVacunasVet()
+        {
+            throw new NotImplementedException();
         }
     }
 }
