@@ -1,0 +1,71 @@
+[{
+    "nombre": "Maíz",
+    "etapaDesarrollo": "Germinación",
+    "fechaSiembra": "2023-05-01",
+    "fechaCosecha": "2023-08-15",
+    "cicloVegetativo": 90,
+    "usoConsuntivo": 535.5,
+    "areaCultivada": 10.0,
+    "rendimientoPotencial": 6.5
+  },
+  {
+    "nombre": "Papa",
+    "etapaDesarrollo": "Crecimiento",
+    "fechaSiembra": "2023-03-01",
+    "fechaCosecha": "2023-07-15",
+    "cicloVegetativo": 120,
+    "usoConsuntivo": 630.0,
+    "areaCultivada": 15.0,
+    "rendimientoPotencial": 25.0
+  },
+  {
+    "nombre": "Chile",
+    "etapaDesarrollo": "Crecimiento",
+    "fechaSiembra": "2023-04-01",
+    "fechaCosecha": "2023-08-15",
+    "cicloVegetativo": 135,
+    "usoConsuntivo": 450.0,
+    "areaCultivada": 5.0,
+    "rendimientoPotencial": 18.0
+  },
+  {
+    "nombre": "Sandía",
+    "etapaDesarrollo": "Crecimiento",
+    "fechaSiembra": "2023-05-15",
+    "fechaCosecha": "2023-08-30",
+    "cicloVegetativo": 105,
+    "usoConsuntivo": 600.0,
+    "areaCultivada": 8.0,
+    "rendimientoPotencial": 35.0
+  },
+  {
+    "nombre": "Cebolla",
+    "etapaDesarrollo": "Crecimiento",
+    "fechaSiembra": "2023-03-15",
+    "fechaCosecha": "2023-07-01",
+    "cicloVegetativo": 105,
+    "usoConsuntivo": 400.0,
+    "areaCultivada": 6.0,
+    "rendimientoPotencial": 22.0
+  },
+  {
+    "nombre": "Pepino",
+    "etapaDesarrollo": "Crecimiento",
+    "fechaSiembra": "2023-04-15",
+    "fechaCosecha": "2023-07-30",
+    "cicloVegetativo": 105,
+    "usoConsuntivo": 550.0,
+    "areaCultivada": 7.0,
+    "rendimientoPotencial": 30.0
+  },
+  {
+    "nombre": "Arroz",
+    "etapaDesarrollo": "Crecimiento",
+    "fechaSiembra": "2023-04-01",
+    "fechaCosecha": "2023-08-15",
+    "cicloVegetativo": 165,
+    "usoConsuntivo": 700.0,
+    "areaCultivada": 20.0,
+    "rendimientoPotencial": 5.0
+  }
+]
