@@ -1,0 +1,30 @@
+[
+  {
+    "valorKc": 0.7,
+    "etapaDesarrollo": "Germinación"
+  },
+  {
+    "valorKc": 1.1,
+    "etapaDesarrollo": "Crecimiento"
+  },
+  {
+    "valorKc": 0.9,
+    "etapaDesarrollo": "Crecimiento"
+  },
+  {
+    "valorKc": 0.8,
+    "etapaDesarrollo": "Crecimiento"
+  },
+  {
+    "valorKc": 1.0,
+    "etapaDesarrollo": "Crecimiento"
+  },
+  {
+    "valorKc": 0.9,
+    "etapaDesarrollo": "Crecimiento"
+  },
+  {
+    "valorKc": 1.1,
+    "etapaDesarrollo": "Crecimiento"
+  }
+]
