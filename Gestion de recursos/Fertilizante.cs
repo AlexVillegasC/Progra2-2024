@@ -1,4 +1,4 @@
-public class Fertilizante : Recurso
+public class Fertilizante : Recursos
 {
     public string tipo { get; set; }
     public int cantidad { get; set; }
