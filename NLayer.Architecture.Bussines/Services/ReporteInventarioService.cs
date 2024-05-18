@@ -24,6 +24,7 @@ namespace NLayer.Architecture.Bussines.Services;
         // utilizando el repositorio proporcionado (_inventarioRepo).
         // Como este método es asincrónico, se usa 'await' para esperar su finalización.
         miInventario.Maquinaria = await _inventarioRepo.GetMaquinaria();
+        miInventario.Mantenimiento = await _inventarioRepo.GetMantenimiento();
         return miInventario;
     }
 }
