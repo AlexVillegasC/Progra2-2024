@@ -2,6 +2,7 @@ using DataAccess.Layer.FileRepositories;
 using Microsoft.OpenApi.Models;
 using NLayer.Architecture.Bussines.Services;
 using NLayer.Architecture.Data;
+using NLayer.Architecture.Data.FileRepositories;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -19,12 +20,14 @@ builder.Services.AddSwaggerGen(c =>
 builder.Services.AddTransient<IReporteClimaService, ReporteClimaService>();
 builder.Services.AddTransient<IFileRepository, FileRepository>();
 builder.Services.AddTransient<IReporteClimaRepository, ReporteClimaRepository>();
+builder.Services.AddTransient<IReporteRegistroGanadoRepository, ReporteRegistroGanadoRepository>();
 
 builder.Services.AddTransient<IReporteInventarioService, ReporteInventarioService>();
 builder.Services.AddTransient<IReporteInventarioRepository, ReporteInventarioRepository>();
 
 builder.Services.AddTransient<IReporteAlimentacionService, ReporteAlimentacionService>();
 builder.Services.AddTransient<IReporteAlimentacionRepository, ReporteAlimentacionRepository>();
+builder.Services.AddTransient<IReporteRegistroGanadoService, ReporteRegistroGanadoService>();
 
 builder.Services.AddTransient<IReportePlantaciones, ReportePlantaciones>();
 builder.Services.AddTransient<IReportePlantacionesRepository,ReportePlantacionesRepository>();
