@@ -1,15 +1,11 @@
 ﻿using Microsoft.Extensions.Configuration;
-using NLayer.Architecture.Bussines.Models.Cultivo;
-using NLayer.Architecture.Bussines.ReporteClima;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using DataAccess.Layer.FileRepositories;
+using NLayer.Architecture.Bussines.GestorRiego;
+using NLayer.Architecture.Data;
+
+namespace NLayer.Architecture.Bussines.Services
 
 
-
-namespace NLayer.Architecture.Data.FileRepositories
 {
     public class GestorRiegoRepository : FileRepository, IGestorRiegoRepository
     {
@@ -28,9 +24,9 @@ namespace NLayer.Architecture.Data.FileRepositories
             _moistureVirtualPath = FolderPath + _moistureVirtualPath;
 
         }
-        public async Task<Temperature> GetTemperatures()
+        public async Task<Temperatura> GetTemperatures()
         {
-            return await ReadJsonFileAsync<Temperature>(_tempetarureVirtualPath);
+            return await ReadJsonFileAsync<Temperatura>(_tempetarureVirtualPath);
         }
 
         public async Task<Cultivo> GetCultivo()
@@ -38,9 +34,9 @@ namespace NLayer.Architecture.Data.FileRepositories
             return await ReadJsonFileAsync<Cultivo>(_cultivo);
         }
 
-        public async Task<Moisture> GetMoisture()
+        public async Task<HumedadSuelo> GetMoisture()
         {
-            return await ReadJsonFileAsync<Moisture>(_moistureVirtualPath);
+            return await ReadJsonFileAsync<HumedadSuelo>(_moistureVirtualPath);
         }
 
     }
