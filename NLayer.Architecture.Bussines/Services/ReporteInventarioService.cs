@@ -36,6 +36,7 @@ namespace NLayer.Architecture.Bussines.Services;
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     
 <<<<<<< HEAD
 
@@ -77,6 +78,9 @@ namespace NLayer.Architecture.Bussines.Services;
         return miInventario;
     }
 >>>>>>> d564e34 (Herramientas)
+=======
+    
+>>>>>>> ba1bfd7 (Jhonpy)
 
     
 
