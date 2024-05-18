@@ -5,9 +5,9 @@ using System.Security.AccessControl;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace NLayer.Architecture.Bussines.Models.RegistroGanado
-{
-    public class RegistroGanado
+namespace NLayer.Architecture.Bussines.Models.RegistroGanado;
+
+    public class Ganado
     {
 
         public string ID { get; set; }
@@ -20,4 +20,4 @@ namespace NLayer.Architecture.Bussines.Models.RegistroGanado
 
         
     }
-}
+
