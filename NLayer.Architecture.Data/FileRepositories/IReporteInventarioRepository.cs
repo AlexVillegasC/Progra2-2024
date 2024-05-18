@@ -8,6 +8,7 @@ public interface IReporteInventarioRepository
     Task<Maquinaria> GetMaquinaria();
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     Task<Herramientas> GetHerramientas();
 =======
@@ -16,4 +17,8 @@ public interface IReporteInventarioRepository
 
     Task<Herramientas> GetHerramientas();
 >>>>>>> d564e34 (Herramientas)
+=======
+
+    Task<Mantenimiento> GetMantenimiento();
+>>>>>>> 4b4602e (Creacion de los servicios, interfaces,json de la clase mantenimiento)
 }
