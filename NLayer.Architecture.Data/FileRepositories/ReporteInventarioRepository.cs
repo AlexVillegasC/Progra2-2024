@@ -43,5 +43,7 @@ public class ReporteInventarioRepository : FileRepository, IReporteInventarioRep
 }
 
 
+
+
 /*FolderPath = $"{Configuration["Folders:Clima"]}";: En esta línea, se está utilizando la configuración proporcionada
  * para acceder a la ruta de la carpeta donde se almacenan los archivos */
