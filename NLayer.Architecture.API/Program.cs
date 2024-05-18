@@ -41,6 +41,7 @@ builder.Services.AddTransient<IReporteRegistroGanadoRepository, ReporteRegistroG
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 builder.Services.AddTransient<IReporteAlimentacionService, ReporteAlimentacionService>();
 builder.Services.AddTransient<IReporteAlimentacionRepository, ReporteAlimentacionRepository>();
 builder.Services.AddTransient<IReporteRegistroGanadoService, ReporteRegistroGanadoService>();
@@ -108,6 +109,11 @@ builder.Services.AddTransient<IReportePlantaciones, ReportePlantaciones>();
 builder.Services.AddTransient<IReportePlantacionesRepository,ReportePlantacionesRepository>();
 
 >>>>>>> 01278ca (cositas)
+=======
+builder.Services.AddTransient<IReporteInventarioService, ReporteInventarioService>();
+builder.Services.AddTransient<IReporteInventarioRepository, ReporteInventarioRepository>();
+
+>>>>>>> c6f87cd (se agregaron los servicios al program  y la ruta de los archivos json)
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
