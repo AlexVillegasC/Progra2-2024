@@ -1,0 +1,32 @@
+﻿@model IEnumerable<WeatherHistory>
+@{
+    ViewData["Title"] = "Weather History";
+}
+
+<h1>Weather History</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>City</th>
+            <th>Temperature</th>
+            <th>Description</th>
+            <th>Humidity</th>
+            <th>Wind Speed</th>
+            <th>Date</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.City</td>
+                <td>@item.Temperature °C</td>
+                <td>@item.Description</td>
+                <td>@item.Humidity %</td>
+                <td>@item.WindSpeed m/s</td>
+                <td>@item.Date</td>
+            </tr>
+        }
+    </tbody>
+</table>
