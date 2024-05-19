@@ -15,4 +15,8 @@
     <ProjectReference Include="..\NLayer.Architecture.Bussines.Models\NLayer.Architecture.Bussines.Models.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Files\GestionCultivo\" />
+  </ItemGroup>
+
 </Project>
