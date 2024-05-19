@@ -12,6 +12,9 @@
 
   <ItemGroup>
     <ProjectReference Include="..\NLayer.Architecture.Bussines\NLayer.Architecture.Bussines.csproj" />
+    <ProjectReference Include="..\PronosticoClimatico.Architecture.Bussines.Data\PronosticoClimatico.Architecture.Bussines.Data.csproj" />
+    <ProjectReference Include="..\PronosticoClimatico.Architecture.Bussines.Model\PronosticoClimatico.Architecture.Bussines.Model.csproj" />
+    <ProjectReference Include="..\PronosticoClimatico.Architecture.Bussines\PronosticoClimatico.Architecture.Bussines.csproj" />
   </ItemGroup>
 
 </Project>
