@@ -1,0 +1,44 @@
+﻿@model NLayer.Architecture.Bussines.Models.WeatherModel
+@{
+    ViewData["Title"] = "Weather";
+}
+
+<h1>Weather Information</h1>
+
+<form asp-action="GetWeather" method="post">
+    <input type="text" name="city" placeholder="Enter city name" />
+    <button type="submit">Get Weather</button>
+</form>
+
+@if (Model != null)
+{
+    <div>
+        <h2>@Model.City</h2>
+        <p>Temperature: @Model.Temperature °C</p>
+        <p>Description: @Model.Description</p>
+        <p>Humidity: @Model.Humidity %</p>
+        <p>Wind Speed: @Model.WindSpeed m/s</p>
+    </div>
+}
+
+<h2>Get Weather Averages</h2>
+
+<form asp-action="Averages" method="get">
+    <input type="text" name="city" placeholder="Enter city name" />
+    <br />
+    <label>Period 1 Start:</label>
+    <input type="date" name="startDate1" />
+    <label>End:</label>
+    <input type="date" name="endDate1" />
+    <br />
+    <label>Period 2 Start:</label>
+    <input type="date" name="startDate2" />
+    <label>End:</label>
+    <input type="date" name="endDate2" />
+    <br />
+    <label>Period 3 Start:</label>
+    <input type="date" name="startDate3" />
+    <label>End:</label>
+    <input type="date" name="endDate3" />
+    <br />
+    <button type="submit">Get Averages

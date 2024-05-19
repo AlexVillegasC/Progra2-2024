@@ -1,0 +1,42 @@
+﻿@model MonitoreoClimatico.Architecture.Bussines.Models.WeatherAverages
+@{
+    ViewData["Title"] = "Weather Averages";
+}
+
+<h1>Weather Averages for @ViewData["City"]</h1>
+
+<h2>Period 1</h2>
+@if (Model.Period1Average != null)
+{
+    <p>Temperature: @Model.Period1Average.Temperature °C</p>
+    <p>Humidity: @Model.Period1Average.Humidity %</p>
+    <p>Wind Speed: @Model.Period1Average.WindSpeed m/s</p>
+}
+else
+{
+    <p>No data available for this period.</p>
+}
+
+<h2>Period 2</h2>
+@if (Model.Period2Average != null)
+{
+    <p>Temperature: @Model.Period2Average.Temperature °C</p>
+    <p>Humidity: @Model.Period2Average.Humidity %</p>
+    <p>Wind Speed: @Model.Period2Average.WindSpeed m/s</p>
+}
+else
+{
+    <p>No data available for this period.</p>
+}
+
+<h2>Period 3</h2>
+@if (Model.Period3Average != null)
+{
+    <p>Temperature: @Model.Period3Average.Temperature °C</p>
+    <p>Humidity: @Model.Period3Average.Humidity %</p>
+    <p>Wind Speed: @Model.Period3Average.WindSpeed m/s</p>
+}
+else
+{
+    <p>No data available for this period.</p>
+}
