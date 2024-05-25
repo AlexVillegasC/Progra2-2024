@@ -5,6 +5,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ﻿using NLayer.Architecture.Bussines.Models.TheSillies;
 =======
 ﻿using NLayer.Architecture.Bussines.Models.The_Sillies;
@@ -27,6 +28,9 @@
 =======
 ﻿using NLayer.Architecture.Bussines.Models.TheSillies;
 >>>>>>> 0ecaee0 (Cambios de CostosAlimenticios)
+=======
+﻿using NLayer.Architecture.Bussines.Models.TheSillies;
+>>>>>>> origin/development
 using System;
 using System.Collections.Generic;
 using System.Linq;

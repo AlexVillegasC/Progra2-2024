@@ -28,6 +28,7 @@ public class PronosticoClimaController : ControllerBase
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     [HttpPost("AddTemperature", Name = "AddTemperature")]
     public async Task AddTemperature(Temperature temp)
 =======
@@ -58,6 +59,10 @@ public class PronosticoClimaController : ControllerBase
     [HttpPost("AddTemperature", Name = "AddTemperature")]
     public async Task AddTemperature(Temperature temp)
 >>>>>>> 6b13ada (Clase 13)
+=======
+    [HttpPost("AddTemperature", Name = "AddTemperature")]
+    public async Task AddTemperature(Temperature temp)
+>>>>>>> origin/development
     {
         // 1. Agrega Temperatura
         await _reporteClimaService.AddTemperature(temp);
@@ -71,6 +76,7 @@ public class PronosticoClimaController : ControllerBase
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 6b13ada (Clase 13)
 =======
@@ -79,6 +85,8 @@ public class PronosticoClimaController : ControllerBase
 >>>>>>> origin/development
 =======
 >>>>>>> 6b13ada (Clase 13)
+=======
+>>>>>>> origin/development
 
     [HttpPut("UpdateTemperature", Name = "UpdateTemperature")]
     public async Task<IActionResult> UpdateTemperature(IEnumerable<Temperature> updatedTemperature)
@@ -95,6 +103,7 @@ public class PronosticoClimaController : ControllerBase
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> d6270bd (Advilleg - Post Temperatures)
 =======
@@ -109,4 +118,6 @@ public class PronosticoClimaController : ControllerBase
 >>>>>>> d6270bd (Advilleg - Post Temperatures)
 =======
 >>>>>>> 6b13ada (Clase 13)
+=======
+>>>>>>> origin/development
 }
