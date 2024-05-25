@@ -1,5 +1,6 @@
 ﻿using Microsoft.Extensions.Configuration;
 using NLayer.Architecture.Bussines.Models.Alimentacion_Nutricion;
+using NLayer.Architecture.Bussines.ReporteClima;
 using NLayer.Architecture.Data;
 using System.ComponentModel.Design;
 
@@ -34,5 +35,19 @@ public class ReporteAlimentacionRepository : FileRepository, IReporteAlimentacio
     public async Task<List<Alimentos>> GetAlimentos()
     {
         return await ReadListJsonAsync<Alimentos>(_AlimentosVirtualPath);
+    }
+
+    public async Task AddAlimentos(Alimentos alimentos)
+    {
+        
+        List<Alimentos> elementos = await ReadJsonFileAsync<List<Alimentos>>(_AlimentosVirtualPath);
+
+        
+        if (elementos != null)
+        {
+            elementos.Add(alimentos);
+            
+            await WriteJsonFileAsync(_AlimentosVirtualPath, elementos);
+        }
     }
 }

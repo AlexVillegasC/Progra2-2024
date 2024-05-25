@@ -6,4 +6,6 @@ public interface IReporteAlimentacionRepository
     Task<Trabajadores> GetTrabajadores();
     Task<List<Animales>> GetAnimales();
     Task<List<Alimentos>> GetAlimentos();
+    Task<List<Alimentos>> AddAlimentos(Alimentos alimentos);
+    
 }
