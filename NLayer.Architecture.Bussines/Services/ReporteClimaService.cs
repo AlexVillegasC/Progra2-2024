@@ -28,6 +28,9 @@ public class ReporteClimaService : IReporteClimaService
         await _pronosticoRepo.AddTemperatures(temperature);
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 6b13ada (Clase 13)
 
     public async Task<bool> UpdateTemperature(IEnumerable<Temperature> temperature)
     {
@@ -39,6 +42,9 @@ public class ReporteClimaService : IReporteClimaService
         return await _pronosticoRepo.DeleteTemperature();
     }
 }
+<<<<<<< HEAD
 =======
  }
 >>>>>>> d6270bd (Advilleg - Post Temperatures)
+=======
+>>>>>>> 6b13ada (Clase 13)
