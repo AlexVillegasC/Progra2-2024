@@ -1,7 +1,8 @@
 ﻿using DataAccess.Layer.FileRepositories;
 using NLayer.Architecture.Bussines.Models.Alimentacion_Nutricion;
-using NLayer.Architecture.Bussines.ReporteClima;
-using System.Collections.Generic;
+using NLayer.Architecture.Bussines.ReporteAlimentacion;
+
+
 namespace NLayer.Architecture.Bussines.Services;
 
 public class ReporteAlimentacionService : IReporteAlimentacionService
@@ -13,19 +14,26 @@ public class ReporteAlimentacionService : IReporteAlimentacionService
         _reporteAliRepo = reporteAlimentacionRepository;
     }
 
-    public async Task AddAlimentos(Alimentos alimentos)
+    public async Task<Produccion> GetProduccion()
+
     {
-        await _reporteAliRepo.AddAlimentos(alimentos);
-    }
-    public async Task<ReporteAlimentacion.Produccion> GetProduccion()
-    {
-        ReporteAlimentacion.Produccion miReporte = new ReporteAlimentacion.Produccion();
-        miReporte.Trabajadores = await _reporteAliRepo.GetTrabajadores();
-        miReporte.ListaAnimales = await _reporteAliRepo.GetAnimales();
-        miReporte.ListaAlimentos = await _reporteAliRepo.GetAlimentos();
+        Produccion miReporte = new()
+        {
+            Trabajadores = await _reporteAliRepo.GetTrabajadores(),
+            ListaAnimales = await _reporteAliRepo.GetAnimales(),
+            ListaAlimentos = await _reporteAliRepo.GetAlimentos()
+        };
         miReporte.CalcularCostos();
 
         return miReporte;
+    }
+     public async Task AddAlimentos(Alimentos alimentos)
+    {
+        await _reporteAliRepo.AddAlimentos(alimentos);
+    }
+    public async Task<bool> UpdateAlimento(IEnumerable<Alimentos> alimentos)
+    {
+        return await _reporteAliRepo.UpdateAlimento(alimentos);
     }
 
 }

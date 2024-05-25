@@ -50,4 +50,19 @@ public class ReporteAlimentacionRepository : FileRepository, IReporteAlimentacio
             await WriteJsonFileAsync(_AlimentosVirtualPath, elementos);
         }
     }
+        public async Task<bool> UpdateAlimento(IEnumerable<Alimentos>alimentos)
+    {
+       
+        List<Alimentos> elementos = alimentos.ToList();
+        try
+        {
+            await WriteJsonFileAsync(_AlimentosVirtualPath, elementos);
+            return true;
+        }
+        catch (Exception)
+        {
+           
+            return false;
+
+        }
 }
