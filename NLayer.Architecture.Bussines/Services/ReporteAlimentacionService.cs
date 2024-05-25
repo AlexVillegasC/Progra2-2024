@@ -35,6 +35,10 @@ public class ReporteAlimentacionService : IReporteAlimentacionService
     {
         await _reporteAliRepo.AddTrabajadores(trabajadores);
     }
+    public async Task AddAnimals(Animales animals)
+    {
+        await _reporteAliRepo.AddAnimals(animals);
+    }
     public async Task<bool> UpdateAlimento(IEnumerable<Alimentos> alimentos)
     {
         return await _reporteAliRepo.UpdateAlimento(alimentos);
@@ -52,8 +56,5 @@ public class ReporteAlimentacionService : IReporteAlimentacionService
     {
         return await _reporteAliRepo.DeleteAnimals();
     }
-    public async Task AddAnimals(Animales animals)
-    {
-        await _reporteAliRepo.AddAnimals(animals);
-    }
+   
 }
