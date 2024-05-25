@@ -36,7 +36,7 @@ public class ReporteAlimentacionRepository : FileRepository, IReporteAlimentacio
     {
         return await ReadListJsonAsync<Alimentos>(_AlimentosVirtualPath);
     }
-     public async Task AddAlimentos(Alimentos alimentos)
+    public async Task AddAlimentos(Alimentos alimentos)
     {
         
         List<Alimentos> elementos = await ReadJsonFileAsync<List<Alimentos>>(_AlimentosVirtualPath);
@@ -47,6 +47,17 @@ public class ReporteAlimentacionRepository : FileRepository, IReporteAlimentacio
             elementos.Add(alimentos);
             
             await WriteJsonFileAsync(_AlimentosVirtualPath, elementos);
+        }
+    }
+    public async Task AddTrabajadores(Trabajadores trabajadores)
+    {
+        List<Trabajadores> elementos = await ReadJsonFileAsync<List<Trabajadores>>(_trabajadoresVirtualPath);
+
+        if (elementos != null)
+        {
+            elementos.Add(trabajadores);
+
+            await WriteJsonFileAsync(_trabajadoresVirtualPath, elementos);
         }
     }
     public async Task<bool> UpdateAlimento(IEnumerable<Alimentos>alimentos)
@@ -64,6 +75,21 @@ public class ReporteAlimentacionRepository : FileRepository, IReporteAlimentacio
              return false;
          }
       }
+    public async Task<bool> UpdateAnimales(IEnumerable<Animales> animales)
+    {
+
+        List<Animales> elementos = animales.ToList();
+        try
+        {
+            await WriteJsonFileAsync(_AnimalesVirtualPath, elementos);
+            return true;
+        }
+        catch (Exception)
+        {
+
+            return false;
+        }
+    }
 
     public async Task<bool> DeleteAlimentos()
     {
