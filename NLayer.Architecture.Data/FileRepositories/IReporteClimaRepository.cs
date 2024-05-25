@@ -13,12 +13,15 @@ public interface IReporteClimaRepository
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 6b13ada (Clase 13)
 =======
 >>>>>>> 6b13ada (Clase 13)
 =======
 >>>>>>> origin/development
+=======
+>>>>>>> 6b13ada (Clase 13)
     Task<bool> UpdateTemperature(IEnumerable<Temperature> temperature);
 
     Task<bool> DeleteTemperature();

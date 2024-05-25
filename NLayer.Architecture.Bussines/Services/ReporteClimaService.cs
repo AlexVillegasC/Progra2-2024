@@ -33,12 +33,15 @@ public class ReporteClimaService : IReporteClimaService
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 6b13ada (Clase 13)
 =======
 >>>>>>> 6b13ada (Clase 13)
 =======
 >>>>>>> origin/development
+=======
+>>>>>>> 6b13ada (Clase 13)
 
     public async Task<bool> UpdateTemperature(IEnumerable<Temperature> temperature)
     {
@@ -52,6 +55,7 @@ public class ReporteClimaService : IReporteClimaService
 }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
  }
 >>>>>>> d6270bd (Advilleg - Post Temperatures)
@@ -65,3 +69,5 @@ public class ReporteClimaService : IReporteClimaService
 =======
  }
 >>>>>>> d6270bd (Advilleg - Post Temperatures)
+=======
+>>>>>>> 6b13ada (Clase 13)
