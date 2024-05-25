@@ -14,13 +14,13 @@ public class ReporteClimaRepository : FileRepository, IReporteClimaRepository
     private string FolderPath { get; set; }
 
 
-    public ReporteClimaRepository(IConfiguration Configuration) 
+    public ReporteClimaRepository(IConfiguration Configuration)
     {
         FolderPath = $"{Configuration["Folders:Clima"]}";
         _tempetarureVirtualPath = FolderPath + _tempetarureVirtualPath;
         _windVirtualPath = FolderPath + _windVirtualPath;
         _moistureVirtualPath = FolderPath + _moistureVirtualPath;
-    }  
+    }
 
     public async Task<List<Temperature>> GetTemperatures()
     {
@@ -31,17 +31,49 @@ public class ReporteClimaRepository : FileRepository, IReporteClimaRepository
     {
         //  1. Leer elementos del JSon
         List<Temperature> elementos = await ReadJsonFileAsync<List<Temperature>>(_tempetarureVirtualPath);
-        
+
         // 2.  Agregar nuevo elemento
-        if(elementos != null) 
-        {   
+        if (elementos != null)
+        {
             elementos.Add(temperature);
             // 3. Escribir el nuevo Json
             await WriteJsonFileAsync(_tempetarureVirtualPath, elementos);
         }
     }
 
+    public async Task<bool> UpdateTemperature(IEnumerable<Temperature> temperature)
+    {
+        //  1. Leer elementos del JSon
+        List<Temperature> elementos = temperature.ToList();
 
+        try
+        {
+            await WriteJsonFileAsync(_tempetarureVirtualPath, elementos);
+            return true;
+        }
+        catch (Exception genericException)
+        {
+            // Log Exception genericException.
+            return false;
+        };
+    }
+
+    public async Task<bool> DeleteTemperature()
+    {
+        //  1. Leer elementos del JSon
+        List<Temperature> elementos = new();
+
+        try 
+        {
+            await WriteJsonFileAsync(_tempetarureVirtualPath, elementos);
+            return true;
+        }
+        catch (Exception genericException) 
+        {
+            // Log Exception genericException.
+            return false;
+        }        
+    }
 
     public async Task<List<Wind>> GetWinds()
     {
