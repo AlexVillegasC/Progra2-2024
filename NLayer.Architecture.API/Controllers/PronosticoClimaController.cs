@@ -20,4 +20,25 @@ public class PronosticoClimaController : ControllerBase
     {        
         return await _reporteClimaService.GetPronostico();
     }
+
+    [HttpPost("AddTemperature", Name = "AddTemperature")]
+    public async Task AddTemperature(Temperature temp)
+    {
+        // 1. Agrega Temperatura
+        await _reporteClimaService.AddTemperature(temp);
+        // 2. Responde
+
+    }
+
+    [HttpPut("UpdateTemperature", Name = "UpdateTemperature")]
+    public async Task<IActionResult> UpdateTemperature(IEnumerable<Temperature> updatedTemperature)
+    {
+        return await _reporteClimaService.UpdateTemperature(updatedTemperature) ? Ok() : NotFound();
+    }
+
+    [HttpDelete("DeleteTemperature", Name = "DeleteTemperature")]
+    public async Task<IActionResult> DeleteTemperature()
+    {
+        return await _reporteClimaService.DeleteTemperature() ? Ok() : NotFound();    
+    }
 }
