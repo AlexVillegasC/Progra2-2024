@@ -27,13 +27,21 @@ public class ReporteAlimentacionService : IReporteAlimentacionService
 
         return miReporte;
     }
-     public async Task AddAlimentos(Alimentos alimentos)
+    public async Task AddAlimentos(Alimentos alimentos)
     {
         await _reporteAliRepo.AddAlimentos(alimentos);
+    }
+    public async Task AddTrabajadores(Trabajadores trabajadores)
+    {
+        await _reporteAliRepo.AddTrabajadores(trabajadores);
     }
     public async Task<bool> UpdateAlimento(IEnumerable<Alimentos> alimentos)
     {
         return await _reporteAliRepo.UpdateAlimento(alimentos);
+    }
+    public async Task<bool> UpdateAnimales(IEnumerable<Animales> animales)
+    {
+        return await _reporteAliRepo.UpdateAnimales(animales);
     }
 
     public async Task<bool> DeleteAlimentos()

@@ -1,8 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
-using NLayer.Architecture.Business.Models.Alimentacion_Nutricion;
-using NLayer.Architecture.Business.ReporteAlimentacion;
-using NLayer.Architecture.Business.ReporteClima;
-using NLayer.Architecture.Business.Services;
+using NLayer.Architecture.Bussines.Models.Alimentacion_Nutricion;
+using NLayer.Architecture.Bussines.ReporteAlimentacion;
+using NLayer.Architecture.Bussines.Services;
 
 namespace NLayer.Architecture.API.Controllers
 {
@@ -31,16 +30,28 @@ namespace NLayer.Architecture.API.Controllers
             await _reporteAlimentacionService.AddAlimentos(ali);
         }
 
+        [HttpPost("AddTrabajadores", Name = "AddTrabajadores")]
+        public async Task AddTrabajadores(Trabajadores tra)
+        {
+            await _reporteAlimentacionService.AddTrabajadores(tra);
+        }
+
         [HttpPut("UpdateAlimento", Name = "UpdateAlimento")]
         public async Task<IActionResult> UpdateTemperature(IEnumerable<Alimentos> updatedAlimento)
         {
             return await _reporteAlimentacionService.UpdateAlimento(updatedAlimento) ? Ok() : NotFound();
         }
-         [HttpDelete("DeleteAlimentos", Name = "DeleteAlimentos")]
-          public async Task<IActionResult> DeleteTemperature()
-          {
-              return await _reporteAlimentacionService.DeleteAlimentos() ? Ok() : NotFound();
-          }
+        [HttpPut("UpdateAnimales", Name = "UpdateAnimales")]
+        public async Task<IActionResult> UpdateAnimales(IEnumerable<Animales> updatedAnimales)
+        {
+            return await _reporteAlimentacionService.UpdateAnimales(updatedAnimales) ? Ok() : NotFound();
+        }
+
+        [HttpDelete("DeleteAlimentos", Name = "DeleteAlimentos")]
+        public async Task<IActionResult> DeleteAlimentos()
+        {
+            return await _reporteAlimentacionService.DeleteAlimentos() ? Ok() : NotFound();
+        }
    }
 }
 
