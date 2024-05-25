@@ -42,6 +42,10 @@ builder.Services.AddTransient<ICostosHigieneServices, HigieneServices>();
 // Useful when the services have no state or hold only minimal state that is not shared.
 // state must not be shared between requests or operations.
 
+builder.Services.AddTransient<IGestorRiegoService, GestorRiegoService>();
+builder.Services.AddTransient<IGestorRiegoRepository, GestorRiegoRepository>();
+
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
