@@ -9,6 +9,6 @@ namespace NLayer.Architecture.Data.FileRepositories
         Task<List<RegistroVeterinario>> GetRegistroVeterinario();
         Task<List<Ganado>> GetRegistroGanado();
         Task<List<Registro_de_Vacunas>> GetRegistroVacunas();
-        Task<List<RegistroVeterinario>> GetRegistroVacunasVet();
+        
     }
 }

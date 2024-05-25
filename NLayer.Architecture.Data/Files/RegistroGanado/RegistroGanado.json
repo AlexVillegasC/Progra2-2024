@@ -1,16 +1,16 @@
 [
-{
-    "ID": "001",
-    "Nombre" : "Chupa-Chupa",
-    "Date": "17-05-2024",
-    "Peso" : 230,
-    "Raza" : "Brahman"
-},
-{
-    "ID": "002",
-    "Nombre" : "Toluca",
-    "Date": "17-05-2024",
-    "Peso" : 250,
-    "Raza" : "Brahman"
-}
+  {
+      "ID": "001",
+      "Nombre" : "Chupa-Chupa",
+      "Date": "17-05-2024",
+      "Peso" : 230,
+      "Raza" : "Brahman"
+  },
+  {
+      "ID": "002",
+      "Nombre" : "Toluca",
+      "Date": "17-05-2024",
+      "Peso" : 250,
+      "Raza" : "Brahman"
+  }
 ]
