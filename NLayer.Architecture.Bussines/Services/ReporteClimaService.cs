@@ -35,8 +35,13 @@ public class ReporteClimaService : IReporteClimaService
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> a88d30b (Advilleg - Post Temperatures)
+=======
+=======
+>>>>>>> 6b13ada (Clase 13)
+>>>>>>> 739f4a7 (Clase 13)
 =======
 >>>>>>> 6b13ada (Clase 13)
 =======
@@ -64,8 +69,11 @@ public class ReporteClimaService : IReporteClimaService
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 460e175 (Clase 13)
+=======
+>>>>>>> 739f4a7 (Clase 13)
 =======
  }
 >>>>>>> d6270bd (Advilleg - Post Temperatures)
@@ -82,6 +90,7 @@ public class ReporteClimaService : IReporteClimaService
 =======
  }
 >>>>>>> d6270bd (Advilleg - Post Temperatures)
+<<<<<<< HEAD
 >>>>>>> 07c077a (Advilleg - Post Temperatures)
 =======
 >>>>>>> 460e175 (Clase 13)
@@ -90,3 +99,7 @@ public class ReporteClimaService : IReporteClimaService
  }
 >>>>>>> d6270bd (Advilleg - Post Temperatures)
 >>>>>>> a88d30b (Advilleg - Post Temperatures)
+=======
+=======
+>>>>>>> 6b13ada (Clase 13)
+>>>>>>> 739f4a7 (Clase 13)

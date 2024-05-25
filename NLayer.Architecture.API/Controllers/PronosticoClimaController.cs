@@ -29,12 +29,15 @@ public class PronosticoClimaController : ControllerBase
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 07c077a (Advilleg - Post Temperatures)
 =======
 >>>>>>> 460e175 (Clase 13)
 =======
 >>>>>>> a88d30b (Advilleg - Post Temperatures)
+=======
+>>>>>>> 739f4a7 (Clase 13)
     [HttpPost("AddTemperature", Name = "AddTemperature")]
     public async Task AddTemperature(Temperature temp)
 =======
@@ -72,7 +75,14 @@ public class PronosticoClimaController : ControllerBase
     [HttpPost]
     public async Task addTemperature(Temperature temp)
 >>>>>>> d6270bd (Advilleg - Post Temperatures)
+<<<<<<< HEAD
 >>>>>>> a88d30b (Advilleg - Post Temperatures)
+=======
+=======
+    [HttpPost("AddTemperature", Name = "AddTemperature")]
+    public async Task AddTemperature(Temperature temp)
+>>>>>>> 6b13ada (Clase 13)
+>>>>>>> 739f4a7 (Clase 13)
     {
         // 1. Agrega Temperatura
         await _reporteClimaService.AddTemperature(temp);
@@ -87,8 +97,13 @@ public class PronosticoClimaController : ControllerBase
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> a88d30b (Advilleg - Post Temperatures)
+=======
+=======
+>>>>>>> 6b13ada (Clase 13)
+>>>>>>> 739f4a7 (Clase 13)
 =======
 >>>>>>> 6b13ada (Clase 13)
 =======
@@ -118,8 +133,11 @@ public class PronosticoClimaController : ControllerBase
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 460e175 (Clase 13)
+=======
+>>>>>>> 739f4a7 (Clase 13)
 =======
 >>>>>>> d6270bd (Advilleg - Post Temperatures)
 =======
@@ -135,6 +153,7 @@ public class PronosticoClimaController : ControllerBase
 =======
 =======
 >>>>>>> d6270bd (Advilleg - Post Temperatures)
+<<<<<<< HEAD
 >>>>>>> 07c077a (Advilleg - Post Temperatures)
 =======
 >>>>>>> 460e175 (Clase 13)
@@ -142,4 +161,8 @@ public class PronosticoClimaController : ControllerBase
 =======
 >>>>>>> d6270bd (Advilleg - Post Temperatures)
 >>>>>>> a88d30b (Advilleg - Post Temperatures)
+=======
+=======
+>>>>>>> 6b13ada (Clase 13)
+>>>>>>> 739f4a7 (Clase 13)
 }
