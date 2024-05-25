@@ -8,6 +8,9 @@ public interface IReporteClimaRepository
     Task AddTemperatures(Temperature temperature);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 6b13ada (Clase 13)
     Task<bool> UpdateTemperature(IEnumerable<Temperature> temperature);
 
     Task<bool> DeleteTemperature();
