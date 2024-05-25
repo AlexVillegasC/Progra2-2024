@@ -10,12 +10,16 @@ namespace Lab1.Melina_Cabalceta_504530616
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> origin/development
     public class Pikachu : Pokemon  
     {
         
 
         public Pikachu(int ataque, int vida, string nombre) : base(ataque, vida, nombre)
         {
+<<<<<<< HEAD
 =======
     public class Pikachu : Pokemon //Pikachu hereda de Pokemon 
 =======
@@ -104,6 +108,8 @@ namespace Lab1.Melina_Cabalceta_504530616
 >>>>>>> 384582b (Lab1 combate pokemon M)
 =======
 >>>>>>> a28cecb (Batalla Pokemon)
+=======
+>>>>>>> origin/development
         }
     }
 }

@@ -8,6 +8,9 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> origin/development
 ﻿namespace NLayer.Architecture.Bussines.ReporteInventario;
 
 
@@ -26,6 +29,7 @@ public class Herramientas
 
 
 } 
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 2c4ee6f (test)
@@ -183,3 +187,5 @@ public class Herramientas
 
 } 
 >>>>>>> d564e34 (Herramientas)
+=======
+>>>>>>> origin/development

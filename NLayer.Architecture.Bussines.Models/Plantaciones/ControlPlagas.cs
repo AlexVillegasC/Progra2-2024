@@ -7,12 +7,16 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> origin/development
 ﻿namespace NLayer.Architecture.Bussines.GestionPlantaciones;
 
 public class ControlPlagas
 {
     public string  FechaFum { get; set; }
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -62,11 +66,14 @@ public class ControlPlagas
 >>>>>>> 2cae53b (Clases y Archivo JSON de Plagas)
 =======
 >>>>>>> c9e0984 (final de mi parte)
+=======
+>>>>>>> origin/development
 
     public string EstadoArbol { get; set; }
 
     public string FumArbol { get; set; }
 }
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -80,3 +87,5 @@ public class ControlPlagas
 >>>>>>> 2cae53b (Clases y Archivo JSON de Plagas)
 =======
 >>>>>>> 2cae53b (Clases y Archivo JSON de Plagas)
+=======
+>>>>>>> origin/development

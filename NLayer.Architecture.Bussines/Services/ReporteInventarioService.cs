@@ -34,6 +34,9 @@ namespace NLayer.Architecture.Bussines.Services;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> origin/development
         miInventario.Mantenimiento = await _inventarioRepo.GetMantenimiento();
         miInventario.Herramientas = await _inventarioRepo.GetHerramientas();
         return miInventario;
@@ -49,12 +52,17 @@ namespace NLayer.Architecture.Bussines.Services;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     
 <<<<<<< HEAD
+=======
+    
+>>>>>>> origin/development
 
     
 
     
+<<<<<<< HEAD
 =======
         return miInventario;
        
@@ -180,6 +188,8 @@ namespace NLayer.Architecture.Bussines.Services;
 >>>>>>> b9342b3 (Creacion de los servicios de maquinaria)
 =======
 >>>>>>> 2c4ee6f (test)
+=======
+>>>>>>> origin/development
 }
    
 

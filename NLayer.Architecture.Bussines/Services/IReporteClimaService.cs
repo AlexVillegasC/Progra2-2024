@@ -9,6 +9,7 @@ public interface IReporteClimaService
     Task AddTemperature(Temperature temperature);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     Task<bool> UpdateTemperature(IEnumerable<Temperature> temperature);
     Task<bool> DeleteTemperature();
 =======
@@ -17,4 +18,8 @@ public interface IReporteClimaService
     Task<bool> UpdateTemperature(IEnumerable<Temperature> temperature);
     Task<bool> DeleteTemperature();
 >>>>>>> 6b13ada (Clase 13)
+=======
+    Task<bool> UpdateTemperature(IEnumerable<Temperature> temperature);
+    Task<bool> DeleteTemperature();
+>>>>>>> origin/development
 }

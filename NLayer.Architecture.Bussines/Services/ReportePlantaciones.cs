@@ -8,6 +8,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ﻿using DataAccess.Layer.FileRepositories;
 using NLayer.Architecture.Bussines.GestionPlantaciones;
 <<<<<<< HEAD
@@ -15,6 +16,10 @@ using NLayer.Architecture.Bussines.GestionPlantaciones;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+﻿using DataAccess.Layer.FileRepositories;
+using NLayer.Architecture.Bussines.GestionPlantaciones;
+>>>>>>> origin/development
 
 namespace NLayer.Architecture.Bussines.Services;
 
@@ -32,6 +37,7 @@ public class ReportePlantaciones : IReportePlantaciones
         GestionPlantaciones.GestionPlantaciones reporteArbol = new GestionPlantaciones.GestionPlantaciones();
         reporteArbol.Plagas = await _plantaciones.GetControlPlagas();
         reporteArbol.Abono = await _plantaciones.GetControlAbono();
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -246,5 +252,9 @@ public class ReportePlantaciones : IReportePlantaciones
 =======
         return reporteArbol;
 >>>>>>> 818cb8c (Proyecto casi finalizado)
+=======
+        reporteArbol.Arbol = await _plantaciones.GetArbolFrutal();
+        return reporteArbol;
+>>>>>>> origin/development
     }
 }

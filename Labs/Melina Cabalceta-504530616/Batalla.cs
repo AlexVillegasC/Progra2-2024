@@ -11,6 +11,9 @@ namespace Lab1.Melina_Cabalceta_504530616
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> origin/development
     public static class Batalla
     {
         public static string Pelear(Pokemon pok1, Pokemon pok2, bool ventajaAleatoria)
@@ -80,6 +83,7 @@ namespace Lab1.Melina_Cabalceta_504530616
             Console.WriteLine(resultado);
         }
     }*/
+<<<<<<< HEAD
 =======
     public class Batalla
 =======
@@ -412,4 +416,6 @@ namespace Lab1.Melina_Cabalceta_504530616
         }
     }*/
 >>>>>>> a28cecb (Batalla Pokemon)
+=======
+>>>>>>> origin/development
 }

@@ -11,6 +11,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 using System;
 =======
 ﻿using System;
@@ -68,6 +69,9 @@ namespace NLayer.Architecture.Bussines.Models.Plantaciones
 =======
 ﻿namespace NLayer.Architecture.Bussines.GestionPlantaciones;
 >>>>>>> b370f23 (Avance en las clases ReportePlantaciones)
+=======
+﻿namespace NLayer.Architecture.Bussines.GestionPlantaciones;
+>>>>>>> origin/development
 
 public class GestionPlantaciones
 {
@@ -81,6 +85,7 @@ public class GestionPlantaciones
     public ArbolFrutal Arbol { get; set; }
 
 }
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> e98558f (Merge)
 =======
@@ -165,3 +170,7 @@ public class GestionPlantaciones
 
 
 >>>>>>> c9e0984 (final de mi parte)
+=======
+
+
+>>>>>>> origin/development

@@ -7,6 +7,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> a28cecb (Batalla Pokemon)
 =======
@@ -15,6 +16,8 @@
 >>>>>>> a28cecb (Batalla Pokemon)
 =======
 >>>>>>> a28cecb (Batalla Pokemon)
+=======
+>>>>>>> origin/development
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -24,6 +27,7 @@ using System.Threading.Tasks;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 8ae0910 (Lab1 batalla pokemon)
 =======
@@ -40,11 +44,14 @@ using System.Threading.Tasks;
 >>>>>>> 8ae0910 (Lab1 batalla pokemon)
 =======
 >>>>>>> a28cecb (Batalla Pokemon)
+=======
+>>>>>>> origin/development
 
 namespace Lab1.Melina_Cabalceta_504530616
 {
     public class Pokemon
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -60,6 +67,11 @@ namespace Lab1.Melina_Cabalceta_504530616
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+       public int Ataque { get; set; } 
+
+        public int Vida { get; set; }
+>>>>>>> origin/development
         public string Nombre { get; set; }
 
 
@@ -68,6 +80,7 @@ namespace Lab1.Melina_Cabalceta_504530616
             Ataque = ataque;
             Vida = vida;
             Nombre = nombre;
+<<<<<<< HEAD
 =======
        public int Vida { get; set; } = 100;
 =======
@@ -176,6 +189,8 @@ namespace Lab1.Melina_Cabalceta_504530616
             Vida = vida;
             Nombre = nombre;
 >>>>>>> a28cecb (Batalla Pokemon)
+=======
+>>>>>>> origin/development
         }
     }
   

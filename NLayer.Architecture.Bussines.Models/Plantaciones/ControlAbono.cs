@@ -8,12 +8,16 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> origin/development
 ﻿namespace NLayer.Architecture.Bussines.GestionPlantaciones;
 
 public class ControlAbono
 {
     public string FechaApli { get; set; }
 
+<<<<<<< HEAD
 =======
 ﻿
 
@@ -90,6 +94,8 @@ public class ControlAbono
 =======
 
 >>>>>>> 01278ca (cositas)
+=======
+>>>>>>> origin/development
     public int Cantidad { get; set; }
 
     public string Tipo { get; set; }

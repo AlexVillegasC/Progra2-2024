@@ -8,6 +8,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 818cb8c (Proyecto casi finalizado)
 =======
@@ -18,6 +19,8 @@
 >>>>>>> 818cb8c (Proyecto casi finalizado)
 =======
 >>>>>>> 818cb8c (Proyecto casi finalizado)
+=======
+>>>>>>> origin/development
 ﻿using Microsoft.Extensions.Configuration;
 using NLayer.Architecture.Bussines.GestionPlantaciones;
 using NLayer.Architecture.Data;
@@ -27,6 +30,9 @@ using System.ComponentModel.Design;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> origin/development
 
 namespace DataAccess.Layer.FileRepositories;
 
@@ -72,6 +78,7 @@ public class ReportePlantacionesRepository : FileRepository, IReportePlantacione
    
 }
 
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> cbb4e73 (Carpeta y 2 clases nuevas)
@@ -349,3 +356,5 @@ public class ReportePlantacionesRepository : FileRepository, IReportePlantacione
 =======
 
 >>>>>>> 818cb8c (Proyecto casi finalizado)
+=======
+>>>>>>> origin/development

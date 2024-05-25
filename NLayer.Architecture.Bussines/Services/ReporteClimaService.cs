@@ -29,8 +29,11 @@ public class ReporteClimaService : IReporteClimaService
     }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 6b13ada (Clase 13)
+=======
+>>>>>>> origin/development
 
     public async Task<bool> UpdateTemperature(IEnumerable<Temperature> temperature)
     {

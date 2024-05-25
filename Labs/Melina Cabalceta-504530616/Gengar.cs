@@ -6,6 +6,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 384582b (Lab1 combate pokemon M)
 =======
@@ -14,6 +15,8 @@
 >>>>>>> 384582b (Lab1 combate pokemon M)
 =======
 >>>>>>> 384582b (Lab1 combate pokemon M)
+=======
+>>>>>>> origin/development
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,6 +25,9 @@ using System.Linq;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> origin/development
 namespace Lab1.Melina_Cabalceta_504530616
 {
     public class Gengar : Pokemon  
@@ -30,6 +36,7 @@ namespace Lab1.Melina_Cabalceta_504530616
         { 
         }
         
+<<<<<<< HEAD
 =======
 ﻿
 =======
@@ -98,5 +105,7 @@ namespace Lab1.Melina_Cabalceta_504530616
 =======
         
 >>>>>>> a28cecb (Batalla Pokemon)
+=======
+>>>>>>> origin/development
     }
 }

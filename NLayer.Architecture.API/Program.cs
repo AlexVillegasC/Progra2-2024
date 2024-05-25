@@ -42,6 +42,12 @@ builder.Services.AddTransient<IReporteRegistroGanadoRepository, ReporteRegistroG
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+builder.Services.AddTransient<IReporteInventarioService, ReporteInventarioService>();
+builder.Services.AddTransient<IReporteInventarioRepository, ReporteInventarioRepository>();
+
+>>>>>>> origin/development
 builder.Services.AddTransient<IReporteAlimentacionService, ReporteAlimentacionService>();
 builder.Services.AddTransient<IReporteAlimentacionRepository, ReporteAlimentacionRepository>();
 builder.Services.AddTransient<IReporteRegistroGanadoService, ReporteRegistroGanadoService>();
@@ -49,6 +55,7 @@ builder.Services.AddTransient<IReporteRegistroGanadoService, ReporteRegistroGana
 builder.Services.AddTransient<IReportePlantaciones, ReportePlantaciones>();
 builder.Services.AddTransient<IReportePlantacionesRepository,ReportePlantacionesRepository>();
 
+<<<<<<< HEAD
 builder.Services.AddTransient<IReporteInventarioService, ReporteInventarioService>();
 builder.Services.AddTransient<IReporteInventarioRepository, ReporteInventarioRepository>();
 
@@ -72,6 +79,10 @@ builder.Services.AddTransient<IReporteInventarioRepository, ReporteInventarioRep
 
 =======
 >>>>>>> 495f6f5 (Commenting for Education porpose)
+=======
+builder.Services.AddTransient<ICostosHigieneRepository, CostosHigieneRepository>();
+builder.Services.AddTransient<ICostosHigieneServices, HigieneServices>();
+>>>>>>> origin/development
 // Add Singleton
 // The same instance is used by all components requiring that service.
 
@@ -83,6 +94,7 @@ builder.Services.AddTransient<IReporteInventarioRepository, ReporteInventarioRep
 // Useful when the services have no state or hold only minimal state that is not shared.
 // state must not be shared between requests or operations.
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 builder.Services.AddTransient<ICostosHigieneRepository, CostosHigieneRepository>();
@@ -114,6 +126,8 @@ builder.Services.AddTransient<IReporteInventarioService, ReporteInventarioServic
 builder.Services.AddTransient<IReporteInventarioRepository, ReporteInventarioRepository>();
 
 >>>>>>> c6f87cd (se agregaron los servicios al program  y la ruta de los archivos json)
+=======
+>>>>>>> origin/development
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -128,12 +142,19 @@ if (app.Environment.IsDevelopment())
 // Redirects the HTTP trafict to HTTPS
 // Checks Request authorization.
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 app.UseHttpsRedirection(); 
 app.UseAuthorization(); 
 app.MapControllers(); 
 >>>>>>> 495f6f5 (Commenting for Education porpose)
+
+app.UseHttpsRedirection(); 
+app.UseAuthorization(); 
+app.MapControllers(); 
+=======
+>>>>>>> origin/development
 
 app.UseHttpsRedirection(); 
 app.UseAuthorization(); 

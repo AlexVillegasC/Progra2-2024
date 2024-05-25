@@ -8,11 +8,15 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> origin/development
 ﻿namespace NLayer.Architecture.Bussines.Services;
 
 public interface IReportePlantaciones
 {
     Task<GestionPlantaciones.GestionPlantaciones> GetReporte();
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> e98558f (Merge)
@@ -105,4 +109,6 @@ public interface IReportePlantaciones
 =======
     Task<GestionPlantaciones.GestionPlantaciones> GetReporte();
 >>>>>>> b370f23 (Avance en las clases ReportePlantaciones)
+=======
+>>>>>>> origin/development
 }

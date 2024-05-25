@@ -8,6 +8,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ﻿using NLayer.Architecture.Bussines.GestionPlantaciones;
 using NLayer.Architecture.Bussines.GestionPlantaciones;
 <<<<<<< HEAD
@@ -15,6 +16,10 @@ using NLayer.Architecture.Bussines.GestionPlantaciones;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+﻿using NLayer.Architecture.Bussines.GestionPlantaciones;
+using NLayer.Architecture.Bussines.GestionPlantaciones;
+>>>>>>> origin/development
 
 namespace DataAccess.Layer.FileRepositories;
 
@@ -30,6 +35,7 @@ public interface IReportePlantacionesRepository
     Task<ArbolFrutal> GetArbolFrutal();
 }
 
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> cbb4e73 (Carpeta y 2 clases nuevas)
@@ -172,3 +178,5 @@ public interface IReportePlantacionesRepository
 =======
 
 >>>>>>> 818cb8c (Proyecto casi finalizado)
+=======
+>>>>>>> origin/development
