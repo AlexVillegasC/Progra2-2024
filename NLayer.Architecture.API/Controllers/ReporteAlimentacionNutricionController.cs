@@ -20,4 +20,10 @@ public class ReporteAlimentacionNutricionController : ControllerBase
     {
         return await _reporteAlimentacionService.GetProduccion();
     }
+
+    [HttpDelete("DeleteAlimentos", Name = "DeleteAlimentos")]
+    public async Task<IActionResult> DeleteTemperature()
+    {
+        return await _reporteAlimentacionService.DeleteAlimentos() ? Ok() : NotFound();
+    }
 }

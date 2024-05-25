@@ -1,5 +1,6 @@
 ﻿using Microsoft.Extensions.Configuration;
 using NLayer.Architecture.Bussines.Models.Alimentacion_Nutricion;
+using NLayer.Architecture.Bussines.ReporteClima;
 using NLayer.Architecture.Data;
 using System.ComponentModel.Design;
 
@@ -34,5 +35,22 @@ public class ReporteAlimentacionRepository : FileRepository, IReporteAlimentacio
     public async Task<List<Alimentos>> GetAlimentos()
     {
         return await ReadListJsonAsync<Alimentos>(_AlimentosVirtualPath);
+    }
+
+    public async Task<bool> DeleteAlimentos()
+    {
+        //  1. Leer elementos del JSon
+        List<Temperature> elementos = new();
+
+        try
+        {
+            await WriteJsonFileAsync(_AlimentosVirtualPath, elementos);
+            return true;
+        }
+        catch (Exception genericException)
+        {
+            // Log Exception genericException.
+            return false;
+        }
     }
 }
