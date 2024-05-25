@@ -16,7 +16,7 @@ public class CultivoRepository : FileRepository, ICultivoRepository
 
     public CultivoRepository(IConfiguration Configuration)
     {
-        FolderPath = $"{Configuration["Folders:GestionCultivo"]}";
+        FolderPath = $"{Configuration["Folders:Cultivo"]}";
         _gestionCultivoVirtualPath = FolderPath + _gestionCultivoVirtualPath;
         _coeficienteCultivoVirtualPath = FolderPath + _coeficienteCultivoVirtualPath;
         _cultivoDatosVirtualPath = FolderPath + _cultivoDatosVirtualPath;
