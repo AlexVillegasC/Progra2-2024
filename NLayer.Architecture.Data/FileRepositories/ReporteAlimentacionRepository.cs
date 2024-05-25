@@ -36,21 +36,51 @@ public class ReporteAlimentacionRepository : FileRepository, IReporteAlimentacio
     {
         return await ReadListJsonAsync<Alimentos>(_AlimentosVirtualPath);
     }
+     public async Task AddAlimentos(Alimentos alimentos)
+    {
+        
+        List<Alimentos> elementos = await ReadJsonFileAsync<List<Alimentos>>(_AlimentosVirtualPath);
+
+        
+        if (elementos != null)
+        {
+            elementos.Add(alimentos);
+            
+            await WriteJsonFileAsync(_AlimentosVirtualPath, elementos);
+        }
+    }
+    public async Task<bool> UpdateAlimento(IEnumerable<Alimentos>alimentos)
+      {
+
+          List<Alimentos> elementos = alimentos.ToList();
+          try
+         {
+             await WriteJsonFileAsync(_AlimentosVirtualPath, elementos);
+             return true;
+         }
+         catch (Exception)
+         {
+             
+             return false;
+         }
+      }
 
     public async Task<bool> DeleteAlimentos()
     {
         //  1. Leer elementos del JSon
-        List<Temperature> elementos = new();
+        List<Alimentos> elementos = new();
 
-        try
-        {
-            await WriteJsonFileAsync(_AlimentosVirtualPath, elementos);
-            return true;
-        }
-        catch (Exception genericException)
-        {
-            // Log Exception genericException.
-            return false;
-        }
-    }
+          try
+          {
+              await WriteJsonFileAsync(_AlimentosVirtualPath, elementos);
+              return true;
+          }
+
+          catch (Exception genericException)
+          {
+              // Log Exception genericException.
+              return false;
+          }
+     }
+
 }
