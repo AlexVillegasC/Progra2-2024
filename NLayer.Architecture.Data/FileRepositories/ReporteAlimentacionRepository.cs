@@ -21,9 +21,9 @@ public class ReporteAlimentacionRepository : FileRepository, IReporteAlimentacio
         _AnimalesVirtualPath = FolderPath + _AnimalesVirtualPath;
         _AlimentosVirtualPath = FolderPath + _AlimentosVirtualPath;
     }
-    public async Task<Trabajadores> GetTrabajadores()
+    public async Task<List<Trabajadores>> GetTrabajadores()
     {
-        return await ReadJsonFileAsync<Trabajadores>(_trabajadoresVirtualPath);
+        return await ReadListJsonAsync<Trabajadores>(_trabajadoresVirtualPath);
     }
 
     public async Task<List<Animales>> GetAnimales()
@@ -36,51 +36,61 @@ public class ReporteAlimentacionRepository : FileRepository, IReporteAlimentacio
     {
         return await ReadListJsonAsync<Alimentos>(_AlimentosVirtualPath);
     }
-     public async Task AddAlimentos(Alimentos alimentos)
+    public async Task AddAlimentos(Alimentos alimentos)
     {
-        
+
         List<Alimentos> elementos = await ReadJsonFileAsync<List<Alimentos>>(_AlimentosVirtualPath);
 
-        
+
         if (elementos != null)
         {
             elementos.Add(alimentos);
-            
+
             await WriteJsonFileAsync(_AlimentosVirtualPath, elementos);
         }
     }
-    public async Task<bool> UpdateAlimento(IEnumerable<Alimentos>alimentos)
-      {
+    public async Task<bool> UpdateAlimento(IEnumerable<Alimentos> alimentos)
+    {
 
-          List<Alimentos> elementos = alimentos.ToList();
-          try
-         {
-             await WriteJsonFileAsync(_AlimentosVirtualPath, elementos);
-             return true;
-         }
-         catch (Exception)
-         {
-             
-             return false;
-         }
-      }
+        List<Alimentos> elementos = alimentos.ToList();
+        try
+        {
+            await WriteJsonFileAsync(_AlimentosVirtualPath, elementos);
+            return true;
+        }
+        catch (Exception)
+        {
+
+            return false;
+        }
+    }
 
     public async Task<bool> DeleteAlimentos()
     {
         //  1. Leer elementos del JSon
         List<Alimentos> elementos = new();
 
-          try
-          {
-              await WriteJsonFileAsync(_AlimentosVirtualPath, elementos);
-              return true;
-          }
+        try
+        {
+            await WriteJsonFileAsync(_AlimentosVirtualPath, elementos);
+            return true;
+        }
 
-          catch (Exception genericException)
-          {
-              // Log Exception genericException.
-              return false;
-          }
-     }
+        catch (Exception genericException)
+        {
+            // Log Exception genericException.
+            return false;
+        }
+    }
+    public async Task AddWorkers(Trabajadores trabajadores)
+    {
+        List<Trabajadores> elementos = await ReadJsonFileAsync<List<Trabajadores>>(_trabajadoresVirtualPath);
+        if (elementos != null)
+        {
+            elementos.Add(trabajadores);
+            await WriteJsonFileAsync(_trabajadoresVirtualPath, elementos);
 
+        }
+
+    }
 }

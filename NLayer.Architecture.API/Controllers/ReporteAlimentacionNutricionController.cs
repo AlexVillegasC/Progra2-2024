@@ -35,11 +35,24 @@ namespace NLayer.Architecture.API.Controllers
         {
             return await _reporteAlimentacionService.UpdateAlimento(updatedAlimento) ? Ok() : NotFound();
         }
-         [HttpDelete("DeleteAlimentos", Name = "DeleteAlimentos")]
-          public async Task<IActionResult> DeleteTemperature()
-          {
-              return await _reporteAlimentacionService.DeleteAlimentos() ? Ok() : NotFound();
-          }
-   }
+        [HttpDelete("DeleteAlimentos", Name = "DeleteAlimentos")]
+        public async Task<IActionResult> DeleteTemperature()
+        {
+            return await _reporteAlimentacionService.DeleteAlimentos() ? Ok() : NotFound();
+        }
+        [HttpPost("AddWorkers", Name = "AddWorkers")]
+        public async Task AddWorkers(Trabajadores trabajadores)
+        {
+            await _reporteAlimentacionService.AddWorkers(trabajadores);
+        }
+        [HttpDelete("DeleteAnimals", Name = "DeleteAnimals")]
+        public async Task<IActionResult> DeleteAnimals()
+        {
+            return await _reporteAlimentacionService.DeleteAnimals() ? Ok() : NotFound();
+        }
+
+
+
+    }
 }
 

@@ -19,7 +19,7 @@ public class ReporteAlimentacionService : IReporteAlimentacionService
     {
         Produccion miReporte = new()
         {
-            Trabajadores = await _reporteAliRepo.GetTrabajadores(),
+            ListaTrabajadores = await _reporteAliRepo.GetTrabajadores(),
             ListaAnimales = await _reporteAliRepo.GetAnimales(),
             ListaAlimentos = await _reporteAliRepo.GetAlimentos()
         };
@@ -39,5 +39,9 @@ public class ReporteAlimentacionService : IReporteAlimentacionService
     public async Task<bool> DeleteAlimentos()
     {
         return await _reporteAliRepo.DeleteAlimentos();
+    }
+    public async Task AddWorkers(Trabajadores trabajadores)
+    {
+        await _reporteAliRepo.AddWorkers(trabajadores);
     }
 }
