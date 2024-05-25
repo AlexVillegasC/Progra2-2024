@@ -3,6 +3,7 @@ using Microsoft.OpenApi.Models;
 using NLayer.Architecture.Bussines.Services;
 using NLayer.Architecture.Data;
 
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -14,10 +15,22 @@ builder.Services.AddSwaggerGen(c =>
     c.SwaggerDoc("v1", new OpenApiInfo { Title = "UNA.FARM.API", Version = "v1" });
 });
 
+
 builder.Services.AddTransient<IReporteClimaService, ReporteClimaService>();
 builder.Services.AddTransient<IFileRepository, FileRepository>();
 builder.Services.AddTransient<IReporteClimaRepository, ReporteClimaRepository>();
 
+builder.Services.AddTransient<IReporteInventarioService, ReporteInventarioService>();
+builder.Services.AddTransient<IReporteInventarioRepository, ReporteInventarioRepository>();
+
+builder.Services.AddTransient<IReporteAlimentacionService, ReporteAlimentacionService>();
+builder.Services.AddTransient<IReporteAlimentacionRepository, ReporteAlimentacionRepository>();
+
+builder.Services.AddTransient<IReportePlantaciones, ReportePlantaciones>();
+builder.Services.AddTransient<IReportePlantacionesRepository,ReportePlantacionesRepository>();
+
+builder.Services.AddTransient<ICostosHigieneRepository, CostosHigieneRepository>();
+builder.Services.AddTransient<ICostosHigieneServices, HigieneServices>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
