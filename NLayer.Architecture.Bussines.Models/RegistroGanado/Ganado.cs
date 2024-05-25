@@ -11,6 +11,7 @@ namespace NLayer.Architecture.Bussines.Models.RegistroGanado;
     {
         public string ID { get; set; }
         public DateOnly Date{ get; set; }
+        
 
         public string Nombre { get; set; }
         public float Peso { get; set; }
