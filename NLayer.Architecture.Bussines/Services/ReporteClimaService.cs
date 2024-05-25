@@ -15,10 +15,10 @@ public class ReporteClimaService : IReporteClimaService
 
     public async Task<ReporteClima.ReporteClima> GetPronostico()
     {
-        ReporteClima.ReporteClima miPronostico = new ReporteClima.ReporteClima();        
-        miPronostico.Temperatura = await _pronosticoRepo.GetTemperatures();        
-        miPronostico.Viento = await _pronosticoRepo.GetWinds();        
-        miPronostico.Humedad = await _pronosticoRepo.GetMoisture();        
+        ReporteClima.ReporteClima miPronostico = new ReporteClima.ReporteClima();
+        miPronostico.Temperatura = await _pronosticoRepo.GetTemperatures();
+        miPronostico.Viento = await _pronosticoRepo.GetWinds();
+        miPronostico.Humedad = await _pronosticoRepo.GetMoisture();
 
         return miPronostico;
     }

@@ -63,16 +63,16 @@ public class ReporteClimaRepository : FileRepository, IReporteClimaRepository
         //  1. Leer elementos del JSon
         List<Temperature> elementos = new();
 
-        try 
+        try
         {
             await WriteJsonFileAsync(_tempetarureVirtualPath, elementos);
             return true;
         }
-        catch (Exception genericException) 
+        catch (Exception genericException)
         {
             // Log Exception genericException.
             return false;
-        }        
+        }
     }
 
     public async Task<List<Wind>> GetWinds()

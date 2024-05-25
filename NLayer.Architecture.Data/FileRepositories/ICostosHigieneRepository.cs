@@ -1,4 +1,4 @@
-﻿using NLayer.Architecture.Bussines.Models.TheSillies;
+using NLayer.Architecture.Bussines.Models.TheSillies;
 
 namespace DataAccess.Layer.FileRepositories;
 

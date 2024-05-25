@@ -10,7 +10,7 @@ public class CostosHigieneRepository : FileRepository, ICostosHigieneRepository
     private string _HigieneVirtualPath = "CostosHigiene.json";
 
     private string _AlimenticiosVirtualPath = "CostosAlimenticios.json";
-    private string folderPath {  get; set; }
+    private string folderPath { get; set; }
 
     public CostosHigieneRepository(IConfiguration Configuration)
     {

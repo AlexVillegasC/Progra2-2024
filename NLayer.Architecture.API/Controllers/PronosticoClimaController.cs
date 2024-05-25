@@ -17,7 +17,7 @@ public class PronosticoClimaController : ControllerBase
 
     [HttpGet]
     public async Task<ReporteClima> Get()
-    {        
+    {
         return await _reporteClimaService.GetPronostico();
     }
 
@@ -39,6 +39,6 @@ public class PronosticoClimaController : ControllerBase
     [HttpDelete("DeleteTemperature", Name = "DeleteTemperature")]
     public async Task<IActionResult> DeleteTemperature()
     {
-        return await _reporteClimaService.DeleteTemperature() ? Ok() : NotFound();    
+        return await _reporteClimaService.DeleteTemperature() ? Ok() : NotFound();
     }
 }
