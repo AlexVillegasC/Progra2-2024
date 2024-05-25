@@ -6,6 +6,7 @@ namespace NLayer.Architecture.Bussines.Services;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 public class HigieneServices : ICostosHigieneServices
 =======
 public class HigieneServices
@@ -19,6 +20,9 @@ public class HigieneServices
 =======
 public class HigieneServices : ICostosHigieneServices
 >>>>>>> 0ecaee0 (Cambios de CostosAlimenticios)
+=======
+public class HigieneServices : ICostosHigieneServices
+>>>>>>> origin/development
 {
     private readonly ICostosHigieneRepository _costosHigieneRepository;
 
@@ -35,6 +39,7 @@ public class HigieneServices : ICostosHigieneServices
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         reporteHigiene.CostosAlimenticios = await _costosHigieneRepository.GetCostosAlimenticios();
 =======
 >>>>>>> 1672b8f (costos higiene)
@@ -46,6 +51,9 @@ public class HigieneServices : ICostosHigieneServices
 =======
         reporteHigiene.CostosAlimenticios = await _costosHigieneRepository.GetCostosAlimenticios();
 >>>>>>> 0ecaee0 (Cambios de CostosAlimenticios)
+=======
+        reporteHigiene.CostosAlimenticios = await _costosHigieneRepository.GetCostosAlimenticios();
+>>>>>>> origin/development
 
         return reporteHigiene;
     }

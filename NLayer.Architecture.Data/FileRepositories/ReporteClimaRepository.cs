@@ -24,6 +24,7 @@ public class ReporteClimaRepository : FileRepository, IReporteClimaRepository
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 6b13ada (Clase 13)
     }
@@ -122,6 +123,32 @@ public class ReporteClimaRepository : FileRepository, IReporteClimaRepository
     public async Task<bool> UpdateTemperature(IEnumerable<Temperature> temperature)
     {
         //  1. Leer elementos del JSon
+=======
+    }
+
+    public async Task<List<Temperature>> GetTemperatures()
+    {
+        return await ReadJsonFileAsync<List<Temperature>>(_tempetarureVirtualPath);
+    }
+
+    public async Task AddTemperatures(Temperature temperature)
+    {
+        //  1. Leer elementos del JSon
+        List<Temperature> elementos = await ReadJsonFileAsync<List<Temperature>>(_tempetarureVirtualPath);
+
+        // 2.  Agregar nuevo elemento
+        if (elementos != null)
+        {
+            elementos.Add(temperature);
+            // 3. Escribir el nuevo Json
+            await WriteJsonFileAsync(_tempetarureVirtualPath, elementos);
+        }
+    }
+
+    public async Task<bool> UpdateTemperature(IEnumerable<Temperature> temperature)
+    {
+        //  1. Leer elementos del JSon
+>>>>>>> origin/development
         List<Temperature> elementos = temperature.ToList();
 
         try
@@ -155,6 +182,7 @@ public class ReporteClimaRepository : FileRepository, IReporteClimaRepository
 
     public async Task<List<Wind>> GetWinds()
     {
+<<<<<<< HEAD
 >>>>>>> d6270bd (Advilleg - Post Temperatures)
 =======
 =======
@@ -192,6 +220,8 @@ public class ReporteClimaRepository : FileRepository, IReporteClimaRepository
     public async Task<List<Wind>> GetWinds()
     {
 >>>>>>> d6270bd (Advilleg - Post Temperatures)
+=======
+>>>>>>> origin/development
         return await ReadJsonFileAsync<List<Wind>>(_windVirtualPath);
     }
 

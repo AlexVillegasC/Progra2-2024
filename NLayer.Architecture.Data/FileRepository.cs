@@ -24,6 +24,7 @@ public class FileRepository : IFileRepository
         return JsonConvert.DeserializeObject<List<T>>(json);
     }
 
+<<<<<<< HEAD
     public async Task<List<T>> ReadJsonFileListAsync<T>(string filePath)
     {
         using StreamReader reader = new StreamReader(filePath);
@@ -38,6 +39,8 @@ public class FileRepository : IFileRepository
         return JsonConvert.DeserializeObject<List<T>>(json);
     }
 
+=======
+>>>>>>> origin/development
     public async Task WriteJsonFileAsync<T>(string filePath, T data)
     {
         string json = JsonConvert.SerializeObject(data, Newtonsoft.Json.Formatting.Indented);

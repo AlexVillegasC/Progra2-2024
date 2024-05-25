@@ -61,6 +61,14 @@ builder.Services.AddTransient<IReportePlantacionesRepository,ReportePlantaciones
 // Add Singleton
 // The same instance is used by all components requiring that service.
 
+<<<<<<< HEAD
+=======
+builder.Services.AddTransient<ICostosHigieneRepository, CostosHigieneRepository>();
+builder.Services.AddTransient<ICostosHigieneServices, HigieneServices>();
+// Add Singleton
+// The same instance is used by all components requiring that service.
+
+>>>>>>> origin/development
 // Add Scoped
 // Ideal for services that need to maintain consistent data within a request.
 // consistent read and write operations. DbContext
@@ -70,6 +78,7 @@ builder.Services.AddTransient<IReportePlantacionesRepository,ReportePlantaciones
 // state must not be shared between requests or operations.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 495f6f5 (Commenting for Education porpose)
 
 =======
@@ -90,6 +99,9 @@ builder.Services.AddTransient<ICostosHigieneServices, HigieneServices>();
 builder.Services.AddTransient<ICostosHigieneRepository, CostosHigieneRepository>();
 builder.Services.AddTransient<ICostosHigieneServices, HigieneServices>();
 >>>>>>> 0ecaee0 (Cambios de CostosAlimenticios)
+=======
+
+>>>>>>> origin/development
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
