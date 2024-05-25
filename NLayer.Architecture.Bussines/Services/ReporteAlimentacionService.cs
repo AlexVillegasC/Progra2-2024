@@ -36,4 +36,8 @@ public class ReporteAlimentacionService : IReporteAlimentacionService
         return await _reporteAliRepo.UpdateAlimento(alimentos);
     }
 
+    public async Task<bool> DeleteAlimentos()
+    {
+        return await _reporteAliRepo.DeleteAlimentos();
+    }
 }

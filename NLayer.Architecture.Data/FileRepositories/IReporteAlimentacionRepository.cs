@@ -11,5 +11,7 @@ public interface IReporteAlimentacionRepository
     Task<List<Alimentos>> GetAlimentos();
     Task AddAlimentos(Alimentos alimentos);
     Task<bool> UpdateAlimento(IEnumerable<Alimentos>alimentos);
+    Task<bool> DeleteAlimentos();
+
 
 }
