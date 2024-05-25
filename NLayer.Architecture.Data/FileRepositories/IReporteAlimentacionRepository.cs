@@ -6,7 +6,7 @@ namespace DataAccess.Layer.FileRepositories;
 
 public interface IReporteAlimentacionRepository
 {
-    Task<Trabajadores> GetTrabajadores();
+    Task<List<Trabajadores>> GetTrabajadores();
     Task<List<Animales>> GetAnimales();
     Task<List<Alimentos>> GetAlimentos();
     Task AddAlimentos(Alimentos alimentos);

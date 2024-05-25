@@ -19,7 +19,7 @@ public class ReporteAlimentacionService : IReporteAlimentacionService
     {
         Produccion miReporte = new()
         {
-            Trabajadores = await _reporteAliRepo.GetTrabajadores(),
+            ListaTrabajadores = await _reporteAliRepo.GetTrabajadores(),
             ListaAnimales = await _reporteAliRepo.GetAnimales(),
             ListaAlimentos = await _reporteAliRepo.GetAlimentos()
         };

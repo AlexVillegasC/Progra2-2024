@@ -21,9 +21,9 @@ public class ReporteAlimentacionRepository : FileRepository, IReporteAlimentacio
         _AnimalesVirtualPath = FolderPath + _AnimalesVirtualPath;
         _AlimentosVirtualPath = FolderPath + _AlimentosVirtualPath;
     }
-    public async Task<Trabajadores> GetTrabajadores()
+    public async Task<List<Trabajadores>> GetTrabajadores()
     {
-        return await ReadJsonFileAsync<Trabajadores>(_trabajadoresVirtualPath);
+        return await ReadListJsonAsync<Trabajadores>(_trabajadoresVirtualPath);
     }
 
     public async Task<List<Animales>> GetAnimales()
