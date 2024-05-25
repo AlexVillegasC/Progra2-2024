@@ -13,6 +13,6 @@ namespace NLayer.Architecture.Bussines.Models.RegistroGanado
         public string Note { get; set; }
         public bool State { get; set; }
 
-
+    // ....
     }
 }
