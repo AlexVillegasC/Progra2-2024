@@ -7,9 +7,9 @@ using NLayer.Architecture.Data;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddControllers();
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.AddControllers(); //  Controllers handle incoming HTTP requests and send responses.
+builder.Services.AddEndpointsApiExplorer(); // Generate descriptions of its HTTP endpoints
+builder.Services.AddSwaggerGen(); // Registers the Swagger generator (OpenAPI description document)
 builder.Services.AddSwaggerGen(c =>
 {
     c.SwaggerDoc("v1", new OpenApiInfo { Title = "UNA.FARM.API", Version = "v1" });
@@ -31,6 +31,17 @@ builder.Services.AddTransient<IReportePlantacionesRepository,ReportePlantaciones
 
 builder.Services.AddTransient<ICostosHigieneRepository, CostosHigieneRepository>();
 builder.Services.AddTransient<ICostosHigieneServices, HigieneServices>();
+// Add Singleton
+// The same instance is used by all components requiring that service.
+
+// Add Scoped
+// Ideal for services that need to maintain consistent data within a request.
+// consistent read and write operations. DbContext
+
+// Add Transient
+// Useful when the services have no state or hold only minimal state that is not shared.
+// state must not be shared between requests or operations.
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -40,8 +51,13 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseHttpsRedirection();
-app.UseAuthorization();
-app.MapControllers();
+// Middlewares:
+// .NET Routing
+// Redirects the HTTP trafict to HTTPS
+// Checks Request authorization.
+
+app.UseHttpsRedirection(); 
+app.UseAuthorization(); 
+app.MapControllers(); 
 
 app.Run();
