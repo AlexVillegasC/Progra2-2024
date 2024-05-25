@@ -31,6 +31,7 @@ public class ReporteClimaRepository : FileRepository, IReporteClimaRepository
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 4f0ec2d (Clase 13)
 =======
@@ -45,6 +46,10 @@ public class ReporteClimaRepository : FileRepository, IReporteClimaRepository
 =======
 >>>>>>> 5d63356 (Advilleg - Post Temperatures)
 =======
+=======
+>>>>>>> 6b13ada (Clase 13)
+>>>>>>> 26f959d (Clase 13)
+=======
 >>>>>>> 6b13ada (Clase 13)
 >>>>>>> 739f4a7 (Clase 13)
     }
@@ -403,7 +408,37 @@ public class ReporteClimaRepository : FileRepository, IReporteClimaRepository
 >>>>>>> f932598 (Squashed commit of the following:)
 =======
 =======
+=======
+>>>>>>> 6b13ada (Clase 13)
 
+        try
+        {
+            await WriteJsonFileAsync(_tempetarureVirtualPath, elementos);
+            return true;
+        }
+        catch (Exception genericException)
+        {
+            // Log Exception genericException.
+            return false;
+        };
+    }
+
+    public async Task<bool> DeleteTemperature()
+    {
+        //  1. Leer elementos del JSon
+        List<Temperature> elementos = new();
+
+        try 
+        {
+            await WriteJsonFileAsync(_tempetarureVirtualPath, elementos);
+            return true;
+        }
+        catch (Exception genericException) 
+        {
+            // Log Exception genericException.
+            return false;
+        }        
+    }
 
     public async Task<List<Wind>> GetWinds()
     {

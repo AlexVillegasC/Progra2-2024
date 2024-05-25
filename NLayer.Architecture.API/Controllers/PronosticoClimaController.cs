@@ -32,6 +32,7 @@ public class PronosticoClimaController : ControllerBase
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 07c077a (Advilleg - Post Temperatures)
 =======
@@ -44,6 +45,8 @@ public class PronosticoClimaController : ControllerBase
 >>>>>>> f932598 (Squashed commit of the following:)
 =======
 >>>>>>> 5d63356 (Advilleg - Post Temperatures)
+=======
+>>>>>>> 26f959d (Clase 13)
     [HttpPost("AddTemperature", Name = "AddTemperature")]
     public async Task AddTemperature(Temperature temp)
 =======
@@ -83,12 +86,16 @@ public class PronosticoClimaController : ControllerBase
     public async Task addTemperature(Temperature temp)
 >>>>>>> d6270bd (Advilleg - Post Temperatures)
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> a88d30b (Advilleg - Post Temperatures)
 =======
+=======
+>>>>>>> 26f959d (Clase 13)
 =======
     [HttpPost("AddTemperature", Name = "AddTemperature")]
     public async Task AddTemperature(Temperature temp)
 >>>>>>> 6b13ada (Clase 13)
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 739f4a7 (Clase 13)
 =======
@@ -100,6 +107,8 @@ public class PronosticoClimaController : ControllerBase
 =======
 >>>>>>> d6270bd (Advilleg - Post Temperatures)
 >>>>>>> 5d63356 (Advilleg - Post Temperatures)
+=======
+>>>>>>> 26f959d (Clase 13)
     {
         // 1. Agrega Temperatura
         await _reporteClimaService.AddTemperature(temp);
@@ -117,11 +126,14 @@ public class PronosticoClimaController : ControllerBase
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> a88d30b (Advilleg - Post Temperatures)
 =======
 =======
 >>>>>>> 5d63356 (Advilleg - Post Temperatures)
+=======
+>>>>>>> 26f959d (Clase 13)
 =======
 >>>>>>> 6b13ada (Clase 13)
 >>>>>>> 739f4a7 (Clase 13)
@@ -132,6 +144,7 @@ public class PronosticoClimaController : ControllerBase
 =======
 >>>>>>> origin/development
 =======
+<<<<<<< HEAD
 >>>>>>> 4f0ec2d (Clase 13)
 =======
 >>>>>>> 07c077a (Advilleg - Post Temperatures)
@@ -144,6 +157,9 @@ public class PronosticoClimaController : ControllerBase
 =======
 >>>>>>> origin/development
 >>>>>>> f932598 (Squashed commit of the following:)
+=======
+>>>>>>> 6b13ada (Clase 13)
+>>>>>>> 26f959d (Clase 13)
 
     [HttpPut("UpdateTemperature", Name = "UpdateTemperature")]
     public async Task<IActionResult> UpdateTemperature(IEnumerable<Temperature> updatedTemperature)
@@ -163,12 +179,15 @@ public class PronosticoClimaController : ControllerBase
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 460e175 (Clase 13)
 =======
 >>>>>>> 739f4a7 (Clase 13)
 =======
 >>>>>>> f932598 (Squashed commit of the following:)
+=======
+>>>>>>> 26f959d (Clase 13)
 =======
 >>>>>>> d6270bd (Advilleg - Post Temperatures)
 =======
@@ -185,6 +204,7 @@ public class PronosticoClimaController : ControllerBase
 =======
 =======
 >>>>>>> d6270bd (Advilleg - Post Temperatures)
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 07c077a (Advilleg - Post Temperatures)
 =======
@@ -205,4 +225,8 @@ public class PronosticoClimaController : ControllerBase
 =======
 >>>>>>> d6270bd (Advilleg - Post Temperatures)
 >>>>>>> 5d63356 (Advilleg - Post Temperatures)
+=======
+=======
+>>>>>>> 6b13ada (Clase 13)
+>>>>>>> 26f959d (Clase 13)
 }
