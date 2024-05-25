@@ -27,4 +27,14 @@ public class ReporteClimaService : IReporteClimaService
     {
         await _pronosticoRepo.AddTemperatures(temperature);
     }
- }
+
+    public async Task<bool> UpdateTemperature(IEnumerable<Temperature> temperature)
+    {
+        return await _pronosticoRepo.UpdateTemperature(temperature);
+    }
+
+    public async Task<bool> DeleteTemperature()
+    {
+        return await _pronosticoRepo.DeleteTemperature();
+    }
+}
