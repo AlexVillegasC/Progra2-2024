@@ -48,4 +48,12 @@ public class ReporteAlimentacionService : IReporteAlimentacionService
     {
         return await _reporteAliRepo.DeleteAlimentos();
     }
+    public async Task<bool> DeleteAnimals()
+    {
+        return await _reporteAliRepo.DeleteAnimals();
+    }
+    public async Task AddAnimals(Animales animales)
+    {
+        await _reporteAliRepo.AddAnimals(animales);
+    }
 }

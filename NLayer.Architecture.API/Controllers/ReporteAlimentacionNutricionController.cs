@@ -11,8 +11,6 @@ namespace NLayer.Architecture.API.Controllers
     {
         private readonly IReporteAlimentacionService _reporteAlimentacionService;
 
-
-
         public ReporteAlimentacionNutricionController(IReporteAlimentacionService reporteAlimentacionService)
         {
             _reporteAlimentacionService = reporteAlimentacionService;
@@ -41,17 +39,11 @@ namespace NLayer.Architecture.API.Controllers
         {
             return await _reporteAlimentacionService.UpdateAlimento(updatedAlimento) ? Ok() : NotFound();
         }
-        [HttpPut("UpdateAnimales", Name = "UpdateAnimales")]
-        public async Task<IActionResult> UpdateAnimales(IEnumerable<Animales> updatedAnimales)
-        {
-            return await _reporteAlimentacionService.UpdateAnimales(updatedAnimales) ? Ok() : NotFound();
-        }
-
         [HttpDelete("DeleteAlimentos", Name = "DeleteAlimentos")]
-        public async Task<IActionResult> DeleteAlimentos()
-        {
-            return await _reporteAlimentacionService.DeleteAlimentos() ? Ok() : NotFound();
-        }
+         public async Task<IActionResult> DeleteTemperature()
+         {
+             return await _reporteAlimentacionService.DeleteAlimentos() ? Ok() : NotFound();
+         }
    }
 }
 

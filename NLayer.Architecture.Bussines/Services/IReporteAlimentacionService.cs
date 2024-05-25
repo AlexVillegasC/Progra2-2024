@@ -16,5 +16,6 @@ public interface IReporteAlimentacionService
     Task<bool>UpdateAlimento(IEnumerable<Alimentos> alimentos);
     Task<bool> UpdateAnimales(IEnumerable<Animales> animales);
     Task<bool> DeleteAlimentos();
+    Task<bool> DeleteAnimals();
 
 }

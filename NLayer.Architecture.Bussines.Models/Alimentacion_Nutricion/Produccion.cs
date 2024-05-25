@@ -1,5 +1,4 @@
-﻿
-using NLayer.Architecture.Bussines.Models.Alimentacion_Nutricion;
+﻿using NLayer.Architecture.Bussines.Models.Alimentacion_Nutricion;
 
 namespace NLayer.Architecture.Bussines.ReporteAlimentacion;
 
@@ -13,8 +12,6 @@ public class Produccion
 
     public List<Alimentos> ListaAlimentos { get; set; }
 
-
-
     public double CostoTotalPorDia { get; set; }
     public double CostoTotalPorMes { get; set; }
     public void CalcularCostos()
@@ -23,4 +20,3 @@ public class Produccion
         CostoTotalPorMes = CostoTotalPorDia * 30;
     }
 }
-

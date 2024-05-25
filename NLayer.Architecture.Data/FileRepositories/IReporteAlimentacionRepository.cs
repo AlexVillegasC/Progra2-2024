@@ -1,6 +1,4 @@
 ﻿using NLayer.Architecture.Bussines.Models.Alimentacion_Nutricion;
-using NLayer.Architecture.Bussines.ReporteAlimentacion;
-using NLayer.Architecture.Bussines.ReporteClima;
 
 namespace DataAccess.Layer.FileRepositories;
 
@@ -14,6 +12,9 @@ public interface IReporteAlimentacionRepository
     Task<bool> UpdateAlimento(IEnumerable<Alimentos>alimentos);
     Task<bool> UpdateAnimales(IEnumerable<Animales> animales);
     Task<bool> DeleteAlimentos();
+    Task<bool> DeleteAnimals();   
+
+    
 
 
 }
