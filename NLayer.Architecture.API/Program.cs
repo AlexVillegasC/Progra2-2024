@@ -112,6 +112,14 @@ builder.Services.AddTransient<IReportePlantacionesRepository,ReportePlantaciones
 // Add Singleton
 // The same instance is used by all components requiring that service.
 
+<<<<<<< HEAD
+=======
+builder.Services.AddTransient<ICostosHigieneRepository, CostosHigieneRepository>();
+builder.Services.AddTransient<ICostosHigieneServices, HigieneServices>();
+// Add Singleton
+// The same instance is used by all components requiring that service.
+
+>>>>>>> origin/development
 // Add Scoped
 // Ideal for services that need to maintain consistent data within a request.
 // consistent read and write operations. DbContext
@@ -119,6 +127,7 @@ builder.Services.AddTransient<IReportePlantacionesRepository,ReportePlantaciones
 // Add Transient
 // Useful when the services have no state or hold only minimal state that is not shared.
 // state must not be shared between requests or operations.
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 495f6f5 (Commenting for Education porpose)
@@ -219,6 +228,7 @@ builder.Services.AddTransient<ICostosHigieneRepository, CostosHigieneRepository>
 builder.Services.AddTransient<ICostosHigieneServices, HigieneServices>();
 >>>>>>> 0ecaee0 (Cambios de CostosAlimenticios)
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 327ae84 (Cambios de CostosAlimenticios)
 =======
 
@@ -226,6 +236,11 @@ builder.Services.AddTransient<ICostosHigieneServices, HigieneServices>();
 >>>>>>> d3ba865 (Commenting for Education porpose)
 =======
 >>>>>>> 6e78fa3 (Cambios de CostosAlimenticios)
+=======
+=======
+
+>>>>>>> origin/development
+>>>>>>> f932598 (Squashed commit of the following:)
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

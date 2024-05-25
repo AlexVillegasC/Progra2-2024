@@ -27,8 +27,11 @@ public class FileRepository : IFileRepository
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 07c077a (Advilleg - Post Temperatures)
+=======
+>>>>>>> f932598 (Squashed commit of the following:)
     public async Task<List<T>> ReadJsonFileListAsync<T>(string filePath)
     {
         using StreamReader reader = new StreamReader(filePath);
@@ -52,7 +55,12 @@ public class FileRepository : IFileRepository
         return JsonConvert.DeserializeObject<List<T>>(json);
     }
 
+<<<<<<< HEAD
 >>>>>>> a88d30b (Advilleg - Post Temperatures)
+=======
+=======
+>>>>>>> origin/development
+>>>>>>> f932598 (Squashed commit of the following:)
     public async Task WriteJsonFileAsync<T>(string filePath, T data)
     {
         string json = JsonConvert.SerializeObject(data, Newtonsoft.Json.Formatting.Indented);

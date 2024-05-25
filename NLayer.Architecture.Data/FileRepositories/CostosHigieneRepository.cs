@@ -8,6 +8,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 011c04a (costos higiene)
 =======
@@ -16,6 +17,8 @@
 >>>>>>> 3fc5f46 (costos higiene)
 =======
 >>>>>>> 6e78fa3 (Cambios de CostosAlimenticios)
+=======
+>>>>>>> f932598 (Squashed commit of the following:)
 using NLayer.Architecture.Bussines.Models.TheSillies;
 =======
 using NLayer.Architecture.Bussines.Models.The_Sillies;
@@ -51,7 +54,13 @@ using NLayer.Architecture.Bussines.Models.The_Sillies;
 =======
 using NLayer.Architecture.Bussines.Models.TheSillies;
 >>>>>>> 0ecaee0 (Cambios de CostosAlimenticios)
+<<<<<<< HEAD
 >>>>>>> 6e78fa3 (Cambios de CostosAlimenticios)
+=======
+=======
+using NLayer.Architecture.Bussines.Models.TheSillies;
+>>>>>>> origin/development
+>>>>>>> f932598 (Squashed commit of the following:)
 using NLayer.Architecture.Data;
 using System.ComponentModel.Design;
 
@@ -69,6 +78,7 @@ public class CostosHigieneRepository : FileRepository, ICostosHigieneRepository
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 011c04a (costos higiene)
 =======
@@ -77,6 +87,8 @@ public class CostosHigieneRepository : FileRepository, ICostosHigieneRepository
 >>>>>>> 3fc5f46 (costos higiene)
 =======
 >>>>>>> 6e78fa3 (Cambios de CostosAlimenticios)
+=======
+>>>>>>> f932598 (Squashed commit of the following:)
 
     private string _AlimenticiosVirtualPath = "CostosAlimenticios.json";
 =======
@@ -115,7 +127,14 @@ public class CostosHigieneRepository : FileRepository, ICostosHigieneRepository
 
     private string _AlimenticiosVirtualPath = "CostosAlimenticios.json";
 >>>>>>> 0ecaee0 (Cambios de CostosAlimenticios)
+<<<<<<< HEAD
 >>>>>>> 6e78fa3 (Cambios de CostosAlimenticios)
+=======
+=======
+
+    private string _AlimenticiosVirtualPath = "CostosAlimenticios.json";
+>>>>>>> origin/development
+>>>>>>> f932598 (Squashed commit of the following:)
     private string folderPath {  get; set; }
 
     public CostosHigieneRepository(IConfiguration Configuration)
@@ -129,6 +148,7 @@ public class CostosHigieneRepository : FileRepository, ICostosHigieneRepository
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 011c04a (costos higiene)
 =======
@@ -137,6 +157,8 @@ public class CostosHigieneRepository : FileRepository, ICostosHigieneRepository
 >>>>>>> 3fc5f46 (costos higiene)
 =======
 >>>>>>> 6e78fa3 (Cambios de CostosAlimenticios)
+=======
+>>>>>>> f932598 (Squashed commit of the following:)
         folderPath = $"{Configuration["Folders:TheSillies"]}";
         _HigieneVirtualPath = folderPath + _HigieneVirtualPath;
         _AlimenticiosVirtualPath = folderPath + _AlimenticiosVirtualPath;
@@ -186,7 +208,15 @@ public class CostosHigieneRepository : FileRepository, ICostosHigieneRepository
         _HigieneVirtualPath = folderPath + _HigieneVirtualPath;
         _AlimenticiosVirtualPath = folderPath + _AlimenticiosVirtualPath;
 >>>>>>> 0ecaee0 (Cambios de CostosAlimenticios)
+<<<<<<< HEAD
 >>>>>>> 6e78fa3 (Cambios de CostosAlimenticios)
+=======
+=======
+        folderPath = $"{Configuration["Folders:TheSillies"]}";
+        _HigieneVirtualPath = folderPath + _HigieneVirtualPath;
+        _AlimenticiosVirtualPath = folderPath + _AlimenticiosVirtualPath;
+>>>>>>> origin/development
+>>>>>>> f932598 (Squashed commit of the following:)
     }
 
     public async Task<CostosHigiene> GetCostosHigiene()
@@ -202,12 +232,15 @@ public class CostosHigieneRepository : FileRepository, ICostosHigieneRepository
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 3fc5f46 (costos higiene)
 =======
 =======
 >>>>>>> 0ecaee0 (Cambios de CostosAlimenticios)
 >>>>>>> 6e78fa3 (Cambios de CostosAlimenticios)
+=======
+>>>>>>> f932598 (Squashed commit of the following:)
 =======
 >>>>>>> 0ecaee0 (Cambios de CostosAlimenticios)
 =======
@@ -219,7 +252,12 @@ public class CostosHigieneRepository : FileRepository, ICostosHigieneRepository
 =======
 =======
 >>>>>>> 0ecaee0 (Cambios de CostosAlimenticios)
+<<<<<<< HEAD
 >>>>>>> 327ae84 (Cambios de CostosAlimenticios)
+=======
+=======
+>>>>>>> origin/development
+>>>>>>> f932598 (Squashed commit of the following:)
     public async Task<CostosAlimenticios> GetCostosAlimenticios()
     {
         return await ReadJsonFileAsync<CostosAlimenticios>(_AlimenticiosVirtualPath);
@@ -230,10 +268,13 @@ public class CostosHigieneRepository : FileRepository, ICostosHigieneRepository
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 327ae84 (Cambios de CostosAlimenticios)
 =======
 >>>>>>> 6e78fa3 (Cambios de CostosAlimenticios)
+=======
+>>>>>>> f932598 (Squashed commit of the following:)
 =======
 >>>>>>> 1672b8f (costos higiene)
 =======
@@ -260,5 +301,10 @@ public class CostosHigieneRepository : FileRepository, ICostosHigieneRepository
 =======
 =======
 >>>>>>> 0ecaee0 (Cambios de CostosAlimenticios)
+<<<<<<< HEAD
 >>>>>>> 6e78fa3 (Cambios de CostosAlimenticios)
+=======
+=======
+>>>>>>> origin/development
+>>>>>>> f932598 (Squashed commit of the following:)
 }

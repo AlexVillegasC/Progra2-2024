@@ -29,6 +29,7 @@ public class ReporteClimaRepository : FileRepository, IReporteClimaRepository
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 4f0ec2d (Clase 13)
 =======
@@ -39,6 +40,8 @@ public class ReporteClimaRepository : FileRepository, IReporteClimaRepository
 >>>>>>> a88d30b (Advilleg - Post Temperatures)
 =======
 =======
+>>>>>>> f932598 (Squashed commit of the following:)
+=======
 >>>>>>> 6b13ada (Clase 13)
 >>>>>>> 739f4a7 (Clase 13)
     }
@@ -279,6 +282,32 @@ public class ReporteClimaRepository : FileRepository, IReporteClimaRepository
     public async Task<bool> UpdateTemperature(IEnumerable<Temperature> temperature)
     {
         //  1. Leer elementos del JSon
+=======
+    }
+
+    public async Task<List<Temperature>> GetTemperatures()
+    {
+        return await ReadJsonFileAsync<List<Temperature>>(_tempetarureVirtualPath);
+    }
+
+    public async Task AddTemperatures(Temperature temperature)
+    {
+        //  1. Leer elementos del JSon
+        List<Temperature> elementos = await ReadJsonFileAsync<List<Temperature>>(_tempetarureVirtualPath);
+
+        // 2.  Agregar nuevo elemento
+        if (elementos != null)
+        {
+            elementos.Add(temperature);
+            // 3. Escribir el nuevo Json
+            await WriteJsonFileAsync(_tempetarureVirtualPath, elementos);
+        }
+    }
+
+    public async Task<bool> UpdateTemperature(IEnumerable<Temperature> temperature)
+    {
+        //  1. Leer elementos del JSon
+>>>>>>> origin/development
         List<Temperature> elementos = temperature.ToList();
 
         try
@@ -312,6 +341,7 @@ public class ReporteClimaRepository : FileRepository, IReporteClimaRepository
 
     public async Task<List<Wind>> GetWinds()
     {
+<<<<<<< HEAD
 >>>>>>> d6270bd (Advilleg - Post Temperatures)
 <<<<<<< HEAD
 >>>>>>> 07c077a (Advilleg - Post Temperatures)
@@ -352,7 +382,12 @@ public class ReporteClimaRepository : FileRepository, IReporteClimaRepository
     public async Task<List<Wind>> GetWinds()
     {
 >>>>>>> d6270bd (Advilleg - Post Temperatures)
+<<<<<<< HEAD
 >>>>>>> a88d30b (Advilleg - Post Temperatures)
+=======
+=======
+>>>>>>> origin/development
+>>>>>>> f932598 (Squashed commit of the following:)
         return await ReadJsonFileAsync<List<Wind>>(_windVirtualPath);
     }
 

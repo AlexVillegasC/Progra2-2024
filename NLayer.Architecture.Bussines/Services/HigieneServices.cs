@@ -11,6 +11,7 @@ namespace NLayer.Architecture.Bussines.Services;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 011c04a (costos higiene)
 =======
@@ -19,6 +20,8 @@ namespace NLayer.Architecture.Bussines.Services;
 >>>>>>> 3fc5f46 (costos higiene)
 =======
 >>>>>>> 6e78fa3 (Cambios de CostosAlimenticios)
+=======
+>>>>>>> f932598 (Squashed commit of the following:)
 public class HigieneServices : ICostosHigieneServices
 =======
 public class HigieneServices
@@ -54,7 +57,13 @@ public class HigieneServices
 =======
 public class HigieneServices : ICostosHigieneServices
 >>>>>>> 0ecaee0 (Cambios de CostosAlimenticios)
+<<<<<<< HEAD
 >>>>>>> 6e78fa3 (Cambios de CostosAlimenticios)
+=======
+=======
+public class HigieneServices : ICostosHigieneServices
+>>>>>>> origin/development
+>>>>>>> f932598 (Squashed commit of the following:)
 {
     private readonly ICostosHigieneRepository _costosHigieneRepository;
 
@@ -76,12 +85,15 @@ public class HigieneServices : ICostosHigieneServices
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 327ae84 (Cambios de CostosAlimenticios)
 =======
 >>>>>>> 3fc5f46 (costos higiene)
 =======
 >>>>>>> 6e78fa3 (Cambios de CostosAlimenticios)
+=======
+>>>>>>> f932598 (Squashed commit of the following:)
         reporteHigiene.CostosAlimenticios = await _costosHigieneRepository.GetCostosAlimenticios();
 =======
 >>>>>>> 1672b8f (costos higiene)
@@ -114,7 +126,13 @@ public class HigieneServices : ICostosHigieneServices
 =======
         reporteHigiene.CostosAlimenticios = await _costosHigieneRepository.GetCostosAlimenticios();
 >>>>>>> 0ecaee0 (Cambios de CostosAlimenticios)
+<<<<<<< HEAD
 >>>>>>> 6e78fa3 (Cambios de CostosAlimenticios)
+=======
+=======
+        reporteHigiene.CostosAlimenticios = await _costosHigieneRepository.GetCostosAlimenticios();
+>>>>>>> origin/development
+>>>>>>> f932598 (Squashed commit of the following:)
 
         return reporteHigiene;
     }

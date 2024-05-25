@@ -8,6 +8,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 011c04a (costos higiene)
 =======
@@ -16,6 +17,8 @@
 >>>>>>> 3fc5f46 (costos higiene)
 =======
 >>>>>>> de1996d (datos json)
+=======
+>>>>>>> f932598 (Squashed commit of the following:)
   "name": "Shampoo",
   "price": 200,
   "description": "Limpieza"
@@ -67,5 +70,13 @@
   "price": 200,
   "description": "Limpieza"
 >>>>>>> cc480e9 (datos json)
+<<<<<<< HEAD
 >>>>>>> de1996d (datos json)
+=======
+=======
+  "name": "Shampoo",
+  "price": 200,
+  "description": "Limpieza"
+>>>>>>> origin/development
+>>>>>>> f932598 (Squashed commit of the following:)
 }

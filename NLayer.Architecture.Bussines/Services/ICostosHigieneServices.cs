@@ -7,6 +7,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 011c04a (costos higiene)
 =======
@@ -15,6 +16,8 @@
 >>>>>>> 3fc5f46 (costos higiene)
 =======
 >>>>>>> 6e78fa3 (Cambios de CostosAlimenticios)
+=======
+>>>>>>> f932598 (Squashed commit of the following:)
 ﻿using NLayer.Architecture.Bussines.Models.TheSillies;
 =======
 ﻿using NLayer.Architecture.Bussines.Models.The_Sillies;
@@ -50,7 +53,13 @@
 =======
 ﻿using NLayer.Architecture.Bussines.Models.TheSillies;
 >>>>>>> 0ecaee0 (Cambios de CostosAlimenticios)
+<<<<<<< HEAD
 >>>>>>> 6e78fa3 (Cambios de CostosAlimenticios)
+=======
+=======
+﻿using NLayer.Architecture.Bussines.Models.TheSillies;
+>>>>>>> origin/development
+>>>>>>> f932598 (Squashed commit of the following:)
 using System;
 using System.Collections.Generic;
 using System.Linq;

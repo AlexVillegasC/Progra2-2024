@@ -36,12 +36,15 @@ public class ReporteClimaService : IReporteClimaService
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> a88d30b (Advilleg - Post Temperatures)
 =======
 =======
 >>>>>>> 6b13ada (Clase 13)
 >>>>>>> 739f4a7 (Clase 13)
+=======
+>>>>>>> f932598 (Squashed commit of the following:)
 =======
 >>>>>>> 6b13ada (Clase 13)
 =======
@@ -53,7 +56,12 @@ public class ReporteClimaService : IReporteClimaService
 =======
 =======
 >>>>>>> 6b13ada (Clase 13)
+<<<<<<< HEAD
 >>>>>>> 460e175 (Clase 13)
+=======
+=======
+>>>>>>> origin/development
+>>>>>>> f932598 (Squashed commit of the following:)
 
     public async Task<bool> UpdateTemperature(IEnumerable<Temperature> temperature)
     {
