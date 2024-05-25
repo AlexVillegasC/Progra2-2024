@@ -5,7 +5,7 @@ using NLayer.Architecture.Bussines.Services;
 namespace NLayer.Architecture.API.Controllers;
 
 [ApiController]
-[Route("[controller]")] 
+[Route("[controller]")]
 public class ReporteAlimentacionNutricionController : ControllerBase
 {
     private readonly IReporteAlimentacionService _reporteAlimentacionService;
@@ -14,6 +14,7 @@ public class ReporteAlimentacionNutricionController : ControllerBase
     {
         _reporteAlimentacionService = reporteAlimentacionService;
     }
+
     [HttpGet]
     public async Task<Produccion> Get()
     {
