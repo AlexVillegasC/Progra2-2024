@@ -2,6 +2,7 @@
 using NLayer.Architecture.Bussines.Models.Alimentacion_Nutricion;
 using NLayer.Architecture.Bussines.ReporteAlimentacion;
 
+
 namespace NLayer.Architecture.Bussines.Services;
 
 public class ReporteAlimentacionService : IReporteAlimentacionService
@@ -12,7 +13,9 @@ public class ReporteAlimentacionService : IReporteAlimentacionService
     {
         _reporteAliRepo = reporteAlimentacionRepository;
     }
+
     public async Task<Produccion> GetProduccion()
+
     {
         Produccion miReporte = new()
         {
@@ -24,7 +27,10 @@ public class ReporteAlimentacionService : IReporteAlimentacionService
 
         return miReporte;
     }
-
+     public async Task AddAlimentos(Alimentos alimentos)
+    {
+        await _reporteAliRepo.AddAlimentos(alimentos);
+    }
     public async Task<bool> UpdateAlimento(IEnumerable<Alimentos> alimentos)
     {
         return await _reporteAliRepo.UpdateAlimento(alimentos);

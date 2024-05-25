@@ -9,5 +9,7 @@ public interface IReporteAlimentacionRepository
     Task<Trabajadores> GetTrabajadores();
     Task<List<Animales>> GetAnimales();
     Task<List<Alimentos>> GetAlimentos();
+    Task AddAlimentos(Alimentos alimentos);
     Task<bool> UpdateAlimento(IEnumerable<Alimentos>alimentos);
+
 }
