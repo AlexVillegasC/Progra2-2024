@@ -8,6 +8,6 @@ namespace NLayer.Architecture.Bussines.Models.RegistroGanado
         public string Vaccine { get; set; }
         public float Dose { get; set; }       
         public string Veterinarian { get; set; }
-
+    // ....
     }
 }

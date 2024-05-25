@@ -25,6 +25,6 @@ public class ReporteRegistroGanadoController : ControllerBase
     {
         return await _reporteGanadoService.GetRegistroGanado();
     }
-}
+}// ....
 
 

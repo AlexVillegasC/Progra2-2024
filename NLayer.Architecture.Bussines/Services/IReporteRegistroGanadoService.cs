@@ -7,3 +7,5 @@ public interface IReporteRegistroGanadoService
 {
     Task<RegistroGanado.LoteDeGanado> GetRegistroGanado();
 }
+
+// ....

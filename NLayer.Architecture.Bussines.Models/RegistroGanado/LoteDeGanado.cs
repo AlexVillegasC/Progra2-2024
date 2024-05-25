@@ -20,7 +20,7 @@ namespace NLayer.Architecture.Bussines.RegistroGanado;
 
         public List<RegistroVeterinario> ListaRegistroVet {set; get; }
 
-   
+        // ....
     }
 
 
