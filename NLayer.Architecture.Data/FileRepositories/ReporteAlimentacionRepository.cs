@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.Configuration;
 using NLayer.Architecture.Bussines.Models.Alimentacion_Nutricion;
-using NLayer.Architecture.Bussines.ReporteClima;
+
 using NLayer.Architecture.Data;
 using System.ComponentModel.Design;
 
@@ -49,6 +49,17 @@ public class ReporteAlimentacionRepository : FileRepository, IReporteAlimentacio
             await WriteJsonFileAsync(_AlimentosVirtualPath, elementos);
         }
     }
+    public async Task AddAnimals(Animales animales)
+    {
+        List<Animales> elementos = await ReadJsonFileAsync<List<Animales>>(_AnimalesVirtualPath);
+        if (elementos != null)
+        {
+            elementos.Add(animales);
+            await WriteJsonFileAsync(_AnimalesVirtualPath, elementos);
+
+        }
+
+    }
     public async Task<bool> UpdateAlimento(IEnumerable<Alimentos> alimentos)
     {
 
@@ -82,15 +93,22 @@ public class ReporteAlimentacionRepository : FileRepository, IReporteAlimentacio
             return false;
         }
     }
-    public async Task AddWorkers(Trabajadores trabajadores)
-    {
-        List<Trabajadores> elementos = await ReadJsonFileAsync<List<Trabajadores>>(_trabajadoresVirtualPath);
-        if (elementos != null)
-        {
-            elementos.Add(trabajadores);
-            await WriteJsonFileAsync(_trabajadoresVirtualPath, elementos);
 
+    public async Task<bool> DeleteAnimals()
+    {
+        List<Animales> elementos = new();
+
+        try
+        {
+            await WriteJsonFileAsync(_AnimalesVirtualPath, elementos);
+            return true;
         }
 
+        catch (Exception genericException)
+        {
+            // Log Exception genericException.
+            return false;
+        }
     }
+
 }

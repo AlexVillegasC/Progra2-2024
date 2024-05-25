@@ -11,9 +11,10 @@ public interface IReporteAlimentacionService
 
 
     Task AddAlimentos(Alimentos alimentos);
-    Task AddWorkers(Trabajadores trabajadores);
+    Task AddAnimals(Animales animales);
     Task<Produccion> GetProduccion();
     Task<bool>UpdateAlimento(IEnumerable<Alimentos> alimentos);
     Task<bool> DeleteAlimentos();
+    Task<bool> DeleteAnimals();
 
 }
