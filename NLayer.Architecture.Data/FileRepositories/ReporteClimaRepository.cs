@@ -26,10 +26,13 @@ public class ReporteClimaRepository : FileRepository, IReporteClimaRepository
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 4f0ec2d (Clase 13)
 =======
 >>>>>>> 07c077a (Advilleg - Post Temperatures)
+=======
+>>>>>>> 460e175 (Clase 13)
     }
 
     public async Task<List<Temperature>> GetTemperatures()
@@ -229,6 +232,9 @@ public class ReporteClimaRepository : FileRepository, IReporteClimaRepository
 =======
 =======
     }  
+=======
+    }
+>>>>>>> 6b13ada (Clase 13)
 
     public async Task<List<Temperature>> GetTemperatures()
     {
@@ -239,17 +245,49 @@ public class ReporteClimaRepository : FileRepository, IReporteClimaRepository
     {
         //  1. Leer elementos del JSon
         List<Temperature> elementos = await ReadJsonFileAsync<List<Temperature>>(_tempetarureVirtualPath);
-        
+
         // 2.  Agregar nuevo elemento
-        if(elementos != null) 
-        {   
+        if (elementos != null)
+        {
             elementos.Add(temperature);
             // 3. Escribir el nuevo Json
             await WriteJsonFileAsync(_tempetarureVirtualPath, elementos);
         }
     }
 
+    public async Task<bool> UpdateTemperature(IEnumerable<Temperature> temperature)
+    {
+        //  1. Leer elementos del JSon
+        List<Temperature> elementos = temperature.ToList();
 
+        try
+        {
+            await WriteJsonFileAsync(_tempetarureVirtualPath, elementos);
+            return true;
+        }
+        catch (Exception genericException)
+        {
+            // Log Exception genericException.
+            return false;
+        };
+    }
+
+    public async Task<bool> DeleteTemperature()
+    {
+        //  1. Leer elementos del JSon
+        List<Temperature> elementos = new();
+
+        try 
+        {
+            await WriteJsonFileAsync(_tempetarureVirtualPath, elementos);
+            return true;
+        }
+        catch (Exception genericException) 
+        {
+            // Log Exception genericException.
+            return false;
+        }        
+    }
 
     public async Task<List<Wind>> GetWinds()
     {

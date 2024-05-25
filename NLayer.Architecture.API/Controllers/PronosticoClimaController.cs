@@ -27,8 +27,11 @@ public class PronosticoClimaController : ControllerBase
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 07c077a (Advilleg - Post Temperatures)
+=======
+>>>>>>> 460e175 (Clase 13)
     [HttpPost("AddTemperature", Name = "AddTemperature")]
     public async Task AddTemperature(Temperature temp)
 =======
@@ -36,10 +39,14 @@ public class PronosticoClimaController : ControllerBase
     public async Task addTemperature(Temperature temp)
 >>>>>>> d6270bd (Advilleg - Post Temperatures)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 460e175 (Clase 13)
 =======
     [HttpPost("AddTemperature", Name = "AddTemperature")]
     public async Task AddTemperature(Temperature temp)
 >>>>>>> 6b13ada (Clase 13)
+<<<<<<< HEAD
 =======
     [HttpPost("AddTemperature", Name = "AddTemperature")]
     public async Task AddTemperature(Temperature temp)
@@ -54,12 +61,15 @@ public class PronosticoClimaController : ControllerBase
 >>>>>>> 4f0ec2d (Clase 13)
 =======
 >>>>>>> 07c077a (Advilleg - Post Temperatures)
+=======
+>>>>>>> 460e175 (Clase 13)
     {
         // 1. Agrega Temperatura
         await _reporteClimaService.AddTemperature(temp);
         // 2. Responde
 
     }
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -74,6 +84,10 @@ public class PronosticoClimaController : ControllerBase
 >>>>>>> 4f0ec2d (Clase 13)
 =======
 >>>>>>> 07c077a (Advilleg - Post Temperatures)
+=======
+=======
+>>>>>>> 6b13ada (Clase 13)
+>>>>>>> 460e175 (Clase 13)
 
     [HttpPut("UpdateTemperature", Name = "UpdateTemperature")]
     public async Task<IActionResult> UpdateTemperature(IEnumerable<Temperature> updatedTemperature)
@@ -90,10 +104,14 @@ public class PronosticoClimaController : ControllerBase
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 460e175 (Clase 13)
 =======
 >>>>>>> d6270bd (Advilleg - Post Temperatures)
 =======
 >>>>>>> 6b13ada (Clase 13)
+<<<<<<< HEAD
 =======
 >>>>>>> origin/development
 =======
@@ -104,4 +122,6 @@ public class PronosticoClimaController : ControllerBase
 =======
 >>>>>>> d6270bd (Advilleg - Post Temperatures)
 >>>>>>> 07c077a (Advilleg - Post Temperatures)
+=======
+>>>>>>> 460e175 (Clase 13)
 }

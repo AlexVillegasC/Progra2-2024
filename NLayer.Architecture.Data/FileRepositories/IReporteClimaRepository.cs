@@ -13,6 +13,7 @@ public interface IReporteClimaRepository
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 6b13ada (Clase 13)
 =======
@@ -21,6 +22,10 @@ public interface IReporteClimaRepository
 >>>>>>> 4f0ec2d (Clase 13)
 =======
 >>>>>>> 07c077a (Advilleg - Post Temperatures)
+=======
+=======
+>>>>>>> 6b13ada (Clase 13)
+>>>>>>> 460e175 (Clase 13)
     Task<bool> UpdateTemperature(IEnumerable<Temperature> temperature);
 
     Task<bool> DeleteTemperature();
