@@ -52,8 +52,8 @@ public class ReporteAlimentacionService : IReporteAlimentacionService
     {
         return await _reporteAliRepo.DeleteAnimals();
     }
-    public async Task AddAnimals(Animales animales)
+    public async Task AddAnimals(Animales animals)
     {
-        await _reporteAliRepo.AddAnimals(animales);
+        await _reporteAliRepo.AddAnimals(animals);
     }
 }
