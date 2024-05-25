@@ -49,6 +49,7 @@ public class ReporteAlimentacionRepository : FileRepository, IReporteAlimentacio
             await WriteJsonFileAsync(_AlimentosVirtualPath, elementos);
         }
     }
+
     public async Task AddAnimals(Animales animales)
     {
         List<Animales> elementos = await ReadJsonFileAsync<List<Animales>>(_AnimalesVirtualPath);
@@ -60,13 +61,42 @@ public class ReporteAlimentacionRepository : FileRepository, IReporteAlimentacio
         }
 
     }
-    public async Task<bool> UpdateAlimento(IEnumerable<Alimentos> alimentos)
+    public async Task AddTrabajadores(Trabajadores trabajadores)
+    {
+        List<Trabajadores> elementos = await ReadJsonFileAsync<List<Trabajadores>>(_trabajadoresVirtualPath);
+
+        if (elementos != null)
+        {
+            elementos.Add(trabajadores);
+
+            await WriteJsonFileAsync(_trabajadoresVirtualPath, elementos);
+        }
+    }
+
+
+    public async Task<bool> UpdateAlimento(IEnumerable<Alimentos>alimentos)
+      {
+
+          List<Alimentos> elementos = alimentos.ToList();
+          try
+         {
+             await WriteJsonFileAsync(_AlimentosVirtualPath, elementos);
+             return true;
+         }
+         catch (Exception)
+         {
+             
+             return false;
+         }
+      }
+    public async Task<bool> UpdateAnimales(IEnumerable<Animales> animales)
     {
 
-        List<Alimentos> elementos = alimentos.ToList();
+        List<Animales> elementos = animales.ToList();
         try
         {
-            await WriteJsonFileAsync(_AlimentosVirtualPath, elementos);
+            await WriteJsonFileAsync(_AnimalesVirtualPath, elementos);
+
             return true;
         }
         catch (Exception)
@@ -87,9 +117,9 @@ public class ReporteAlimentacionRepository : FileRepository, IReporteAlimentacio
             return true;
         }
 
-        catch (Exception genericException)
+        catch (Exception )
         {
-            // Log Exception genericException.
+           
             return false;
         }
     }
@@ -104,9 +134,9 @@ public class ReporteAlimentacionRepository : FileRepository, IReporteAlimentacio
             return true;
         }
 
-        catch (Exception genericException)
+        catch (Exception )
         {
-            // Log Exception genericException.
+            
             return false;
         }
     }

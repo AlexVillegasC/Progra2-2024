@@ -11,8 +11,6 @@ namespace NLayer.Architecture.API.Controllers
     {
         private readonly IReporteAlimentacionService _reporteAlimentacionService;
 
-
-
         public ReporteAlimentacionNutricionController(IReporteAlimentacionService reporteAlimentacionService)
         {
             _reporteAlimentacionService = reporteAlimentacionService;
@@ -30,29 +28,22 @@ namespace NLayer.Architecture.API.Controllers
             await _reporteAlimentacionService.AddAlimentos(ali);
         }
 
+        [HttpPost("AddTrabajadores", Name = "AddTrabajadores")]
+        public async Task AddTrabajadores(Trabajadores tra)
+        {
+            await _reporteAlimentacionService.AddTrabajadores(tra);
+        }
+
         [HttpPut("UpdateAlimento", Name = "UpdateAlimento")]
         public async Task<IActionResult> UpdateTemperature(IEnumerable<Alimentos> updatedAlimento)
         {
             return await _reporteAlimentacionService.UpdateAlimento(updatedAlimento) ? Ok() : NotFound();
         }
         [HttpDelete("DeleteAlimentos", Name = "DeleteAlimentos")]
-        public async Task<IActionResult> DeleteTemperature()
-        {
-            return await _reporteAlimentacionService.DeleteAlimentos() ? Ok() : NotFound();
-        }
-        [HttpPost("AddAnimals", Name = "AddAnimals")]
-        public async Task AddAnimales(Animales animales)
-        {
-            await _reporteAlimentacionService.AddAnimals(animales);
-        }
-        [HttpDelete("DeleteAnimals", Name = "DeleteAnimals")]
-        public async Task<IActionResult> DeleteAnimals()
-        {
-            return await _reporteAlimentacionService.DeleteAnimals() ? Ok() : NotFound();
-        }
-
-
-
-    }
+         public async Task<IActionResult> DeleteTemperature()
+         {
+             return await _reporteAlimentacionService.DeleteAlimentos() ? Ok() : NotFound();
+         }
+   }
 }
 
