@@ -17,6 +17,10 @@ namespace NLayer.Architecture.Bussines.Models.RegistroGanado;
         public float Peso { get; set; }
 
         public string Raza { get; set; }
+<<<<<<< HEAD
         // ....
+=======
+        //
+>>>>>>> 1dad593 (..)
     }
 
