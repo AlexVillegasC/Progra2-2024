@@ -1,4 +1,5 @@
 ﻿using DataAccess.Layer.FileRepositories;
+using NLayer.Architecture.Bussines.ReporteClima;
 
 namespace NLayer.Architecture.Bussines.Services;
 
@@ -16,7 +17,24 @@ public class ReporteClimaService : IReporteClimaService
     {
         ReporteClima.ReporteClima miPronostico = new ReporteClima.ReporteClima();        
         miPronostico.Temperatura = await _pronosticoRepo.GetTemperatures();        
+        miPronostico.Viento = await _pronosticoRepo.GetWinds();        
+        miPronostico.Humedad = await _pronosticoRepo.GetMoisture();        
 
         return miPronostico;
+    }
+
+    public async Task AddTemperature(Temperature temperature)
+    {
+        await _pronosticoRepo.AddTemperatures(temperature);
+    }
+
+    public async Task<bool> UpdateTemperature(IEnumerable<Temperature> temperature)
+    {
+        return await _pronosticoRepo.UpdateTemperature(temperature);
+    }
+
+    public async Task<bool> DeleteTemperature()
+    {
+        return await _pronosticoRepo.DeleteTemperature();
     }
 }
