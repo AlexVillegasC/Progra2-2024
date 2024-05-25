@@ -5,13 +5,16 @@ using NLayer.Architecture.Bussines.Services;
 
 namespace NLayer.Architecture.API.Controllers
 {
+    [ApiController]
+    [Route("[controller]")]
+
     public class GestorRiegoController : ControllerBase
     {
         private readonly IGestorRiegoService _gestorRiegoService;
 
         public GestorRiegoController(IGestorRiegoService gestorRiegoService)
         {
-                _gestorRiegoService  = _gestorRiegoService;
+                _gestorRiegoService  = gestorRiegoService;
         }
 
         [HttpGet]
