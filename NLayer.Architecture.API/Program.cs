@@ -29,6 +29,8 @@ builder.Services.AddTransient<IReporteAlimentacionRepository, ReporteAlimentacio
 builder.Services.AddTransient<IReportePlantaciones, ReportePlantaciones>();
 builder.Services.AddTransient<IReportePlantacionesRepository,ReportePlantacionesRepository>();
 
+builder.Services.AddTransient<ICostosHigieneRepository, CostosHigieneRepository>();
+builder.Services.AddTransient<ICostosHigieneServices, HigieneServices>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
