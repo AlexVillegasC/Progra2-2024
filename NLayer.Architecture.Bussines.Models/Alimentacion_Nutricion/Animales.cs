@@ -6,8 +6,12 @@ using System.Threading.Tasks;
 
 namespace NLayer.Architecture.Bussines.Models.Alimentacion_Nutricion;
 
-public class Trabajadores
+public class Animales
 {
-    public string Nombre { get; set; } = string.Empty;
-    public double Costo_Planilla {  get; set; }
+    public string Nombre { get; set; }
+    public int ID { get; set; }
+    public string Tipo { get; set; }
+    public double Peso { get; set; }
+
+ 
 }
