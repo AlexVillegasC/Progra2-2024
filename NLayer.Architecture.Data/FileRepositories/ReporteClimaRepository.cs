@@ -23,6 +23,9 @@ public class ReporteClimaRepository : FileRepository, IReporteClimaRepository
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 6b13ada (Clase 13)
     }
 
     public async Task<List<Temperature>> GetTemperatures()
@@ -48,6 +51,7 @@ public class ReporteClimaRepository : FileRepository, IReporteClimaRepository
     {
         //  1. Leer elementos del JSon
         List<Temperature> elementos = temperature.ToList();
+<<<<<<< HEAD
 
         try
         {
@@ -153,7 +157,37 @@ public class ReporteClimaRepository : FileRepository, IReporteClimaRepository
     {
 >>>>>>> d6270bd (Advilleg - Post Temperatures)
 =======
+=======
+>>>>>>> 6b13ada (Clase 13)
 
+        try
+        {
+            await WriteJsonFileAsync(_tempetarureVirtualPath, elementos);
+            return true;
+        }
+        catch (Exception genericException)
+        {
+            // Log Exception genericException.
+            return false;
+        };
+    }
+
+    public async Task<bool> DeleteTemperature()
+    {
+        //  1. Leer elementos del JSon
+        List<Temperature> elementos = new();
+
+        try 
+        {
+            await WriteJsonFileAsync(_tempetarureVirtualPath, elementos);
+            return true;
+        }
+        catch (Exception genericException) 
+        {
+            // Log Exception genericException.
+            return false;
+        }        
+    }
 
     public async Task<List<Wind>> GetWinds()
     {
