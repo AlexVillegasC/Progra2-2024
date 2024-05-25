@@ -1,5 +1,17 @@
-﻿{
-  "name": "Shampoo",
-  "price": 200,
-  "description": "Limpieza"
-}
+[
+  {
+    "name": "Shampoo",
+    "price": 200,
+    "description": "Aseo animal"
+  },
+  {
+    "name": "Desinfectante",
+    "price": 800,
+    "description": "Aseo"
+  },
+  {
+    "name": "string",
+    "price": 0,
+    "description": "string"
+  }
+]

@@ -1,4 +1,5 @@
 ﻿using DataAccess.Layer.FileRepositories;
+using NLayer.Architecture.Bussines.Models.TheSillies;
 
 namespace NLayer.Architecture.Bussines.Services;
 
@@ -18,5 +19,10 @@ public class HigieneServices : ICostosHigieneServices
         reporteHigiene.CostosAlimenticios = await _costosHigieneRepository.GetCostosAlimenticios();
 
         return reporteHigiene;
+    }
+
+    public async Task AddCostosHigiene (CostosHigiene costosHigiene)
+    {
+        await _costosHigieneRepository.AddCostosHigiene(costosHigiene);
     }
 }

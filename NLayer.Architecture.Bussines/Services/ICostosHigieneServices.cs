@@ -10,4 +10,6 @@ namespace NLayer.Architecture.Bussines.Services;
 public interface ICostosHigieneServices
 {
     Task<TheSillies.CostosGenerales> GetCostosGenerales();
+
+    Task AddCostosHigiene(CostosHigiene costosHigiene);
 }
