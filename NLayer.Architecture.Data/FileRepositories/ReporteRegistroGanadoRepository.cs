@@ -20,7 +20,7 @@ namespace NLayer.Architecture.Data.FileRepositories
 
         public ReporteRegistroGanadoRepository(IConfiguration Configuration)
         {
-            FolderPath = $"{Configuration["Folders::RegistroGanado"]}";
+            FolderPath = $"{Configuration["Folders:RegistroGanado"]}";
             _RegistroGanadoVirtualPath = FolderPath + _RegistroGanadoVirtualPath;
             _RegistroVacunasVirtualPath = FolderPath + _RegistroVacunasVirtualPath;
             _RegistroVeterinarioVirtualPath = FolderPath + _RegistroVeterinarioVirtualPath;
@@ -41,9 +41,6 @@ namespace NLayer.Architecture.Data.FileRepositories
             return await ReadListJsonAsync<RegistroVeterinario>(_RegistroVeterinarioVirtualPath);
         }
 
-        Task<List<RegistroVeterinario>> IReporteRegistroGanadoRepository.GetRegistroVacunasVet()
-        {
-            throw new NotImplementedException();
-        }
+    
     }
 }

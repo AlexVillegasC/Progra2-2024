@@ -20,7 +20,7 @@ public class ReporteRegistroGanadoService : IReporteRegistroGanadoService
         RegistroGanado.LoteDeGanado miRegistro = new RegistroGanado.LoteDeGanado();
         miRegistro.listaGanado = await _ReporteGanadoRepo.GetRegistroGanado();
         miRegistro.listaGanadoVacunas = await _ReporteGanadoRepo.GetRegistroVacunas();
-        miRegistro.ListaRegistroVet = await _ReporteGanadoRepo.GetRegistroVacunasVet();
+        miRegistro.ListaRegistroVet = await _ReporteGanadoRepo.GetRegistroVeterinario();
 
         return miRegistro;
     }
