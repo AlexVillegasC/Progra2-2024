@@ -1,5 +1,6 @@
 ﻿using Microsoft.Extensions.Configuration;
 using NLayer.Architecture.Bussines.Models.TheSillies;
+using NLayer.Architecture.Bussines.ReporteClima;
 using NLayer.Architecture.Data;
 using System.ComponentModel.Design;
 
@@ -23,8 +24,24 @@ public class CostosHigieneRepository : FileRepository, ICostosHigieneRepository
     {
         return await ReadJsonFileAsync<CostosHigiene>(_HigieneVirtualPath);
     }
-    public async Task<CostosAlimenticios> GetCostosAlimenticios()
+    public async Task<List<CostosAlimenticios>> GetCostosAlimenticios()
     {
-        return await ReadJsonFileAsync<CostosAlimenticios>(_AlimenticiosVirtualPath);
+        return await ReadJsonFileAsync<List<CostosAlimenticios>>(_AlimenticiosVirtualPath);
+    }
+    public async Task<bool> DeleteCostoAlimenticio()
+    {
+        //  1. Leer elementos del JSon
+        List<CostosAlimenticios> elementos = new();
+
+        try
+        {
+            await WriteJsonFileAsync(_AlimenticiosVirtualPath, elementos);
+            return true;
+        }
+        catch (Exception genericException)
+        {
+            // Log Exception genericException.
+            return false;
+        }
     }
 }
