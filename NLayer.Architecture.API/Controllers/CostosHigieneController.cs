@@ -24,4 +24,9 @@ public class CostosHigieneController : Controller
     {
         await _costosHigieneServices.AddCostosHigiene(costosHigiene);
     }
+    [HttpDelete("DeleteCostosAlimenticios", Name = "DeleteCostosAlimenticios")]
+    public async Task<IActionResult> DeleteCostosAlimenticios()
+    {
+        return await _costosHigieneServices.DeleteCostosAlimenticios() ? Ok() : NotFound();
+    }
 }

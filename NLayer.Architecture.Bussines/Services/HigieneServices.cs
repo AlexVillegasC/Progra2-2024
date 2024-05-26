@@ -25,4 +25,9 @@ public class HigieneServices : ICostosHigieneServices
     {
         await _costosHigieneRepository.AddCostosHigiene(costosHigiene);
     }
+
+    public async Task<bool> DeleteCostosAlimenticios()
+    {
+        return await _costosHigieneRepository.DeleteCostosAlimenticios();
+    }
 }

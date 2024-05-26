@@ -1,5 +1,7 @@
-﻿{
-  "name": "Paca",
-  "price": 1000,
-  "description": "Alimento"
-}
+[
+  {
+    "name": "Paca",
+    "price": 1000,
+    "description": "1000"
+  }
+]
