@@ -1,9 +1,51 @@
-﻿{
-  "Nombre": "Excavadora CAT 320D",
-  "Marca": "Caterpillar",
-  "Precio": 250000,
-  "Potencia": 103,
-  "Tamaño": 9.9,
-  "Peso": 22000,
-  "Funcionalidad": "Excavar terreno"
-}
+﻿
+//lista de objetos json
+
+[
+  {
+    "Nombre": "Excavadora",
+    "Marca": "Caterpillar",
+    "Precio": 120000.50,
+    "Potencia": 300,
+    "Tamaño": 7.5,
+    "Peso": 25000,
+    "Funcionalidad": "Excavar terrenos"
+  },
+  {
+    "Nombre": "Bulldozer",
+    "Marca": "Komatsu",
+    "Precio": 85000.75,
+    "Potencia": 250,
+    "Tamaño": 5.5,
+    "Peso": 20000,
+    "Funcionalidad": "Empujar y nivelar tierra"
+  },
+  {
+    "Nombre": "Grúa",
+    "Marca": "Liebherr",
+    "Precio": 150000.00,
+    "Potencia": 400,
+    "Tamaño": 10.0,
+    "Peso": 35000,
+    "Funcionalidad": "Elevar y mover cargas pesadas"
+  },
+  {
+    "Nombre": "Retroexcavadora",
+    "Marca": "JCB",
+    "Precio": 65000.25,
+    "Potencia": 150,
+    "Tamaño": 6.0,
+    "Peso": 18000,
+    "Funcionalidad": "Excavar y mover tierra"
+  },
+  {
+    "Nombre": "Compactadora",
+    "Marca": "Bomag",
+    "Precio": 40000.00,
+    "Potencia": 100,
+    "Tamaño": 4.0,
+    "Peso": 12000,
+    "Funcionalidad": "Compactar superficies"
+  }
+]
+//DEBEN CREAR UNA LISTA DE OBJETOS JSON EN LAS CLASES QUE LES CORRESPONDE
