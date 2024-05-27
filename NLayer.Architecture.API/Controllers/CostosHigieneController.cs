@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using NLayer.Architecture.Bussines.Models.TheSillies;
+using NLayer.Architecture.Bussines.ReporteClima;
 using NLayer.Architecture.Bussines.Services;
 using NLayer.Architecture.Bussines.TheSillies;
 
@@ -23,5 +24,23 @@ public class CostosHigieneController : Controller
     public async Task AddCostosHigiene (CostosHigiene costosHigiene)
     {
         await _costosHigieneServices.AddCostosHigiene(costosHigiene);
+    }
+
+    [HttpPost("AddCostosDeAlimentos", Name = "AddCostosDeAlimentos")]
+    public async Task AddCostosAlimentos(CostosAlimenticios costosAlimenticios)
+    {
+        await _costosHigieneServices.AddCostosAlimentos(costosAlimenticios);
+    }
+
+    [HttpPut("UpdateCostoDeAlimentos", Name = "UpdateCostoDeAlimentos")]
+    public async Task<IActionResult> UpdateCostoAlimento(IEnumerable<CostosAlimenticios> updateCostoAlimento)
+    {
+        return await _costosHigieneServices.UpdateCostoAlimento(updateCostoAlimento) ? Ok() : NotFound();
+    }
+
+    [HttpDelete("DeleteCostosAlimenticios", Name = "DeleteCostosAlimenticios")]
+    public async Task<IActionResult> DeleteCostosAlimenticios()
+    {
+        return await _costosHigieneServices.DeleteCostosAlimenticios() ? Ok() : NotFound();
     }
 }

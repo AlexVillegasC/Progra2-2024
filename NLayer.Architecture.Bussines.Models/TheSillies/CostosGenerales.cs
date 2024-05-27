@@ -10,5 +10,5 @@ namespace NLayer.Architecture.Bussines.TheSillies;
 public class CostosGenerales
 {
     public List<CostosHigiene> CostosHigiene { get; set;}
-    public CostosAlimenticios CostosAlimenticios { get; set;}
+    public List<CostosAlimenticios> CostosAlimenticios { get; set;}
 }
