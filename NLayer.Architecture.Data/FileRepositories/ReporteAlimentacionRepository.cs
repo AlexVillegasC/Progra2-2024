@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.Configuration;
 using NLayer.Architecture.Bussines.Models.Alimentacion_Nutricion;
-using NLayer.Architecture.Bussines.ReporteClima;
+
 using NLayer.Architecture.Data;
 using System.ComponentModel.Design;
 
@@ -21,9 +21,9 @@ public class ReporteAlimentacionRepository : FileRepository, IReporteAlimentacio
         _AnimalesVirtualPath = FolderPath + _AnimalesVirtualPath;
         _AlimentosVirtualPath = FolderPath + _AlimentosVirtualPath;
     }
-    public async Task<Trabajadores> GetTrabajadores()
+    public async Task<List<Trabajadores>> GetTrabajadores()
     {
-        return await ReadJsonFileAsync<Trabajadores>(_trabajadoresVirtualPath);
+        return await ReadListJsonAsync<Trabajadores>(_trabajadoresVirtualPath);
     }
 
     public async Task<List<Animales>> GetAnimales()
@@ -36,19 +36,44 @@ public class ReporteAlimentacionRepository : FileRepository, IReporteAlimentacio
     {
         return await ReadListJsonAsync<Alimentos>(_AlimentosVirtualPath);
     }
-     public async Task AddAlimentos(Alimentos alimentos)
+    public async Task AddAlimentos(Alimentos alimentos)
     {
-        
+
         List<Alimentos> elementos = await ReadJsonFileAsync<List<Alimentos>>(_AlimentosVirtualPath);
 
-        
+
         if (elementos != null)
         {
             elementos.Add(alimentos);
-            
+
             await WriteJsonFileAsync(_AlimentosVirtualPath, elementos);
         }
     }
+
+    public async Task AddAnimals(Animales animales)
+    {
+        List<Animales> elementos = await ReadJsonFileAsync<List<Animales>>(_AnimalesVirtualPath);
+        if (elementos != null)
+        {
+            elementos.Add(animales);
+            await WriteJsonFileAsync(_AnimalesVirtualPath, elementos);
+
+        }
+
+    }
+    public async Task AddTrabajadores(Trabajadores trabajadores)
+    {
+        List<Trabajadores> elementos = await ReadJsonFileAsync<List<Trabajadores>>(_trabajadoresVirtualPath);
+
+        if (elementos != null)
+        {
+            elementos.Add(trabajadores);
+
+            await WriteJsonFileAsync(_trabajadoresVirtualPath, elementos);
+        }
+    }
+
+
     public async Task<bool> UpdateAlimento(IEnumerable<Alimentos>alimentos)
       {
 
@@ -64,23 +89,56 @@ public class ReporteAlimentacionRepository : FileRepository, IReporteAlimentacio
              return false;
          }
       }
+    public async Task<bool> UpdateAnimales(IEnumerable<Animales> animales)
+    {
+
+        List<Animales> elementos = animales.ToList();
+        try
+        {
+            await WriteJsonFileAsync(_AnimalesVirtualPath, elementos);
+
+            return true;
+        }
+        catch (Exception)
+        {
+
+            return false;
+        }
+    }
 
     public async Task<bool> DeleteAlimentos()
     {
         //  1. Leer elementos del JSon
         List<Alimentos> elementos = new();
 
-          try
-          {
-              await WriteJsonFileAsync(_AlimentosVirtualPath, elementos);
-              return true;
-          }
+        try
+        {
+            await WriteJsonFileAsync(_AlimentosVirtualPath, elementos);
+            return true;
+        }
 
-          catch (Exception genericException)
-          {
-              // Log Exception genericException.
-              return false;
-          }
-     }
+        catch (Exception )
+        {
+           
+            return false;
+        }
+    }
+
+    public async Task<bool> DeleteAnimals()
+    {
+        List<Animales> elementos = new();
+
+        try
+        {
+            await WriteJsonFileAsync(_AnimalesVirtualPath, elementos);
+            return true;
+        }
+
+        catch (Exception )
+        {
+            
+            return false;
+        }
+    }
 
 }

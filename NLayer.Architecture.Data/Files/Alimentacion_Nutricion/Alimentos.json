@@ -6,13 +6,5 @@
   {
     "Nombre": "Miel",
     "Costo_Unidad": 2000.0
-  },
-  {
-    "Nombre": "string",
-    "Costo_Unidad": 0.0
-  },
-  {
-    "Nombre": "Pan",
-    "Costo_Unidad": 1290.0
   }
 ]
