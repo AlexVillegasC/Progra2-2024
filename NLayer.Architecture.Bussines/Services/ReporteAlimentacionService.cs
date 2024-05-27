@@ -15,7 +15,6 @@ public class ReporteAlimentacionService : IReporteAlimentacionService
     }
 
     public async Task<Produccion> GetProduccion()
-
     {
         Produccion miReporte = new()
         {
@@ -31,13 +30,13 @@ public class ReporteAlimentacionService : IReporteAlimentacionService
     {
         await _reporteAliRepo.AddAlimentos(alimentos);
     }
-    public async Task AddTrabajadores(Trabajadores trabajadores)
-    {
-        await _reporteAliRepo.AddTrabajadores(trabajadores);
-    }
     public async Task AddAnimals(Animales animals)
     {
         await _reporteAliRepo.AddAnimals(animals);
+    }
+    public async Task AddTrabajadores(Trabajadores trabajadores)
+    {
+        await _reporteAliRepo.AddTrabajadores(trabajadores);
     }
     public async Task<bool> UpdateAlimento(IEnumerable<Alimentos> alimentos)
     {
@@ -51,7 +50,6 @@ public class ReporteAlimentacionService : IReporteAlimentacionService
     {
         return await _reporteAliRepo.Updatetrabajadores(trabajadores);
     }
-
     public async Task<bool> DeleteAlimentos()
     {
         return await _reporteAliRepo.DeleteAlimentos();
@@ -64,5 +62,4 @@ public class ReporteAlimentacionService : IReporteAlimentacionService
     {
         return await _reporteAliRepo.DeleteTrabajadores();
     }
-
 }

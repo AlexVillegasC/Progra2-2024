@@ -1,10 +1,6 @@
 [
   {
-    "Nombre": "Juan",
-    "Costo_Planilla": 3000.0
-  },
-  {
-    "Nombre": "string",
-    "Costo_Planilla": 0.0
+    "Nombre": "Mario",
+    "Costo_Planilla": 2000.0
   }
 ]

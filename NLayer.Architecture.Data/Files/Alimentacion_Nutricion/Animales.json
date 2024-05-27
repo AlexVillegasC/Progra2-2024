@@ -1,1 +1,8 @@
-[]
+[
+  {
+    "Nombre": "Malacrianza",
+    "ID": 1,
+    "Tipo": "Monta",
+    "Peso": 650.0
+  }
+]

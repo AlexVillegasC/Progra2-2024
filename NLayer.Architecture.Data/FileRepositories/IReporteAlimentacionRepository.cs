@@ -1,7 +1,6 @@
 ﻿using NLayer.Architecture.Bussines.Models.Alimentacion_Nutricion;
 
 namespace DataAccess.Layer.FileRepositories;
-
 public interface IReporteAlimentacionRepository
 {
     Task<List<Trabajadores>> GetTrabajadores();
@@ -16,8 +15,4 @@ public interface IReporteAlimentacionRepository
     Task<bool> DeleteAlimentos();
     Task<bool> DeleteAnimals();
     Task<bool> DeleteTrabajadores();
-
-
-
-
 }
