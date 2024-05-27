@@ -1,7 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using NLayer.Architecture.Bussines.Models.TheSillies;
-using NLayer.Architecture.Bussines.ReporteClima;
 using NLayer.Architecture.Bussines.Services;
 using NLayer.Architecture.Bussines.TheSillies;
 

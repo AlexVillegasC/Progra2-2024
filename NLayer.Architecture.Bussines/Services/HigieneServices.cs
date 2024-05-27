@@ -1,6 +1,5 @@
 ﻿using DataAccess.Layer.FileRepositories;
 using NLayer.Architecture.Bussines.Models.TheSillies;
-using NLayer.Architecture.Bussines.ReporteClima;
 
 namespace NLayer.Architecture.Bussines.Services;
 
