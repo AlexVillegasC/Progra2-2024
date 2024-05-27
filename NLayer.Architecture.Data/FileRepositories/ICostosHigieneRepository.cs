@@ -8,5 +8,7 @@ public interface ICostosHigieneRepository
     Task<List<CostosAlimenticios>> GetCostosAlimenticios();
     Task AddCostosHigiene(CostosHigiene costosHigiene);
 
+    Task AddCostosAlimentos(CostosAlimenticios costosAlimenticios);
+
     Task<bool> DeleteCostosAlimenticios();
 }

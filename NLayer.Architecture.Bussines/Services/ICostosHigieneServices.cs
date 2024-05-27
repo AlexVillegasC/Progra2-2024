@@ -13,5 +13,7 @@ public interface ICostosHigieneServices
 
     Task AddCostosHigiene(CostosHigiene costosHigiene);
 
+    Task AddCostosAlimentos(CostosAlimenticios costosAlimenticios);
+
     Task<bool> DeleteCostosAlimenticios();
 }

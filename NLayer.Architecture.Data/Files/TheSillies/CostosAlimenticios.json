@@ -1,7 +1,12 @@
 [
   {
-    "name": "Paca",
+    "name": "Cesped",
+    "price": 2000,
+    "description": "Alimentos"
+  },
+  {
+    "name": "Paja",
     "price": 1000,
-    "description": "1000"
+    "description": "Alimentos"
   }
 ]

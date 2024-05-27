@@ -39,6 +39,17 @@ public class CostosHigieneRepository : FileRepository, ICostosHigieneRepository
             await WriteJsonFileAsync(_HigieneVirtualPath, elements);
         }
     }
+
+    public async Task AddCostosAlimentos(CostosAlimenticios costosAlimenticios)
+    {
+        List<CostosAlimenticios> elements = await ReadJsonFileAsync<List<CostosAlimenticios>>(_AlimenticiosVirtualPath);
+
+        if (elements != null)
+        {
+            elements.Add(costosAlimenticios);
+            await WriteJsonFileAsync(_AlimenticiosVirtualPath, elements);
+        }
+    }
     public async Task<bool> DeleteCostosAlimenticios()
     {
         //  1. Leer elementos del JSon
