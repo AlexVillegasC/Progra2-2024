@@ -6,14 +6,14 @@ using System.ComponentModel.Design;
 
 namespace DataAccess.Layer.FileRepositories;
 
-public class CostosHigieneRepository : FileRepository, ICostosHigieneRepository
+public class ReporteFinanzasRepository : FileRepository, IReporteFinanzasRepository
 {
     private string _HigieneVirtualPath = "CostosHigiene.json";
 
     private string _AlimenticiosVirtualPath = "CostosAlimenticios.json";
     private string folderPath {  get; set; }
 
-    public CostosHigieneRepository(IConfiguration Configuration)
+    public ReporteFinanzasRepository(IConfiguration Configuration)
     {
         folderPath = $"{Configuration["Folders:TheSillies"]}";
         _HigieneVirtualPath = folderPath + _HigieneVirtualPath;
@@ -24,10 +24,7 @@ public class CostosHigieneRepository : FileRepository, ICostosHigieneRepository
     {
         return await ReadJsonFileAsync<List<CostosHigiene>>(_HigieneVirtualPath);
     }
-    public async Task<List<CostosAlimenticios>> GetCostosAlimenticios()
-    {
-        return await ReadJsonFileAsync<List<CostosAlimenticios>>(_AlimenticiosVirtualPath);
-    }
+
 
     public async Task AddCostosHigiene (CostosHigiene costosHigiene)
     {
@@ -38,6 +35,39 @@ public class CostosHigieneRepository : FileRepository, ICostosHigieneRepository
             elements.Add(costosHigiene);
             await WriteJsonFileAsync(_HigieneVirtualPath, elements);
         }
+    }
+
+    public async Task<bool> UpdateCostosHigiene(IEnumerable<CostosHigiene> costoHigiene)
+    {
+        List<CostosHigiene> elements = costoHigiene.ToList();
+        try
+        {
+            await WriteJsonFileAsync(_HigieneVirtualPath, elements);
+            return true;
+        }
+        catch (Exception ex)
+        {
+            return false;
+        }
+    }
+
+    public async Task<bool> DeleteCostosHigiene()
+    {
+        List<CostosHigiene> elements = new();
+        try
+        {
+            await WriteJsonFileAsync(_HigieneVirtualPath, elements);
+            return true;
+        }
+        catch (Exception ex) 
+        { 
+            return false; 
+        }
+    }
+
+    public async Task<List<CostosAlimenticios>> GetCostosAlimenticios()
+    {
+        return await ReadJsonFileAsync<List<CostosAlimenticios>>(_AlimenticiosVirtualPath);
     }
 
     public async Task AddCostosAlimentos(CostosAlimenticios costosAlimenticios)

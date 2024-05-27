@@ -7,11 +7,15 @@ using System.Threading.Tasks;
 
 namespace NLayer.Architecture.Bussines.Services;
 
-public interface ICostosHigieneServices
+public interface IReporteFinanzasServices
 {
     Task<TheSillies.CostosGenerales> GetCostosGenerales();
 
     Task AddCostosHigiene(CostosHigiene costosHigiene);
+
+    Task<bool> UpdateCostosHigiene(IEnumerable<CostosHigiene> costosHigiene);
+
+    Task<bool> DeleteCostosHigiene();
 
     Task AddCostosAlimentos(CostosAlimenticios costosAlimenticios);
 
