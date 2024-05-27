@@ -1,5 +1,12 @@
-﻿{
-  "name": "Paca",
-  "price": 1000,
-  "description": "Alimento"
-}
+[
+  {
+    "name": "Cesped",
+    "price": 1000,
+    "description": "Alimento"
+  },
+  {
+    "name": "Manzana",
+    "price": 50,
+    "description": "Alimento"
+  }
+]
