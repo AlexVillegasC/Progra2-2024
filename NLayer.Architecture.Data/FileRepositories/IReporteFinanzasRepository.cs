@@ -2,11 +2,15 @@
 
 namespace DataAccess.Layer.FileRepositories;
 
-public interface ICostosHigieneRepository
+public interface IReporteFinanzasRepository
 {
     Task<List<CostosHigiene>> GetCostosHigiene();
     Task<List<CostosAlimenticios>> GetCostosAlimenticios();
     Task AddCostosHigiene(CostosHigiene costosHigiene);
+
+    Task <bool>UpdateCostosHigiene(IEnumerable<CostosHigiene> costoHigiene);
+
+    Task<bool> DeleteCostosHigiene();
 
     Task AddCostosAlimentos(CostosAlimenticios costosAlimenticios);
 
