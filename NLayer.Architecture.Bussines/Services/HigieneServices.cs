@@ -1,5 +1,6 @@
 ﻿using DataAccess.Layer.FileRepositories;
 using NLayer.Architecture.Bussines.Models.TheSillies;
+using NLayer.Architecture.Bussines.ReporteClima;
 
 namespace NLayer.Architecture.Bussines.Services;
 
@@ -29,6 +30,11 @@ public class HigieneServices : ICostosHigieneServices
     public async Task AddCostosAlimentos(CostosAlimenticios costosAlimenticios)
     {
         await _costosHigieneRepository.AddCostosAlimentos(costosAlimenticios);
+    }
+
+    public async Task<bool> UpdateCostoAlimento(IEnumerable<CostosAlimenticios> costoAlimento)
+    {
+        return await _costosHigieneRepository.UpdateCostoAlimento(costoAlimento);
     }
 
     public async Task<bool> DeleteCostosAlimenticios()

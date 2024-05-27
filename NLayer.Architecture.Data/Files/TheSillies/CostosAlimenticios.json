@@ -1,12 +1,12 @@
 [
   {
     "name": "Cesped",
-    "price": 2000,
-    "description": "Alimentos"
+    "price": 1000,
+    "description": "Alimento"
   },
   {
-    "name": "Paja",
-    "price": 1000,
-    "description": "Alimentos"
+    "name": "Manzana",
+    "price": 50,
+    "description": "Alimento"
   }
 ]

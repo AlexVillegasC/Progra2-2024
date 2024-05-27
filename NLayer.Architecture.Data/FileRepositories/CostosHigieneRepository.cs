@@ -50,6 +50,23 @@ public class CostosHigieneRepository : FileRepository, ICostosHigieneRepository
             await WriteJsonFileAsync(_AlimenticiosVirtualPath, elements);
         }
     }
+
+    public async Task<bool> UpdateCostoAlimento(IEnumerable<CostosAlimenticios> costoAlimento)
+    {
+        //  1. Leer elementos del JSon
+        List<CostosAlimenticios> elementos = costoAlimento.ToList();
+
+        try
+        {
+            await WriteJsonFileAsync(_AlimenticiosVirtualPath, elementos);
+            return true;
+        }
+        catch (Exception genericException)
+        {
+            // Log Exception genericException.
+            return false;
+        };
+    }
     public async Task<bool> DeleteCostosAlimenticios()
     {
         //  1. Leer elementos del JSon
