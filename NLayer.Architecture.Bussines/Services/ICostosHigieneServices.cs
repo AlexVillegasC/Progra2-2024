@@ -1,5 +1,4 @@
 ﻿using NLayer.Architecture.Bussines.Models.TheSillies;
-using NLayer.Architecture.Bussines.ReporteClima;
 using System;
 using System.Collections.Generic;
 using System.Linq;
