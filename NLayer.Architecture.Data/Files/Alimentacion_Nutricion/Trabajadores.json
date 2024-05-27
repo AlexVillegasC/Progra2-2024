@@ -1,6 +1,10 @@
 [
   {
     "Nombre": "Juan",
-    "Costo_Planilla": 3000
+    "Costo_Planilla": 3000.0
+  },
+  {
+    "Nombre": "string",
+    "Costo_Planilla": 0.0
   }
 ]

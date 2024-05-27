@@ -12,10 +12,12 @@ public interface IReporteAlimentacionRepository
     Task AddTrabajadores(Trabajadores trabajadores);
     Task<bool> UpdateAlimento(IEnumerable<Alimentos>alimentos);
     Task<bool> UpdateAnimales(IEnumerable<Animales> animales);
+    Task<bool> Updatetrabajadores(IEnumerable<Trabajadores> trabajadores);
     Task<bool> DeleteAlimentos();
-    Task<bool> DeleteAnimals();   
+    Task<bool> DeleteAnimals();
+    Task<bool> DeleteTrabajadores();
 
-    
+
 
 
 }
