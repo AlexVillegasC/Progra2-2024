@@ -16,7 +16,9 @@ public interface IReporteAlimentacionService
     Task<Produccion> GetProduccion();
     Task<bool>UpdateAlimento(IEnumerable<Alimentos> alimentos);
     Task<bool> UpdateAnimales(IEnumerable<Animales> animales);
+    Task<bool> Updatetrabajadores(IEnumerable<Trabajadores> trabajadores);
     Task<bool> DeleteAlimentos();
     Task<bool> DeleteAnimals();
+    Task<bool> DeleteTrabajadores();
 
 }

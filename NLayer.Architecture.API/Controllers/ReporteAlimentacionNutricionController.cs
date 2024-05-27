@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using NLayer.Architecture.Bussines.Models.Alimentacion_Nutricion;
 using NLayer.Architecture.Bussines.ReporteAlimentacion;
+using NLayer.Architecture.Bussines.ReporteClima;
 using NLayer.Architecture.Bussines.Services;
 
 namespace NLayer.Architecture.API.Controllers

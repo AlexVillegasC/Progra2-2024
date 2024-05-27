@@ -73,6 +73,23 @@ public class ReporteAlimentacionRepository : FileRepository, IReporteAlimentacio
         }
     }
 
+    public async Task<bool> Updatetrabajadores(IEnumerable<Trabajadores> trabajadores)
+    {
+
+        List<Trabajadores> elementos = trabajadores.ToList();
+        try
+        {
+            await WriteJsonFileAsync(_AlimentosVirtualPath, elementos);
+            return true;
+        }
+        catch (Exception)
+        {
+
+            return false;
+        }
+    }
+
+
 
     public async Task<bool> UpdateAlimento(IEnumerable<Alimentos>alimentos)
       {
@@ -137,6 +154,23 @@ public class ReporteAlimentacionRepository : FileRepository, IReporteAlimentacio
         catch (Exception )
         {
             
+            return false;
+        }
+    }
+
+    public async Task<bool> DeleteTrabajadores()
+    {
+        List<Trabajadores> elementos = new();
+
+        try
+        {
+            await WriteJsonFileAsync(_AnimalesVirtualPath, elementos);
+            return true;
+        }
+
+        catch (Exception)
+        {
+
             return false;
         }
     }
