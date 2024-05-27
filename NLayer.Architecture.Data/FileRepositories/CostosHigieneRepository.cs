@@ -19,12 +19,23 @@ public class CostosHigieneRepository : FileRepository, ICostosHigieneRepository
         _AlimenticiosVirtualPath = folderPath + _AlimenticiosVirtualPath;
     }
 
-    public async Task<CostosHigiene> GetCostosHigiene()
+    public async Task<List<CostosHigiene>> GetCostosHigiene()
     {
-        return await ReadJsonFileAsync<CostosHigiene>(_HigieneVirtualPath);
+        return await ReadJsonFileAsync<List<CostosHigiene>>(_HigieneVirtualPath);
     }
     public async Task<CostosAlimenticios> GetCostosAlimenticios()
     {
         return await ReadJsonFileAsync<CostosAlimenticios>(_AlimenticiosVirtualPath);
+    }
+
+    public async Task AddCostosHigiene (CostosHigiene costosHigiene)
+    {
+        List<CostosHigiene> elements = await ReadJsonFileAsync<List<CostosHigiene>>(_HigieneVirtualPath);
+
+        if (elements != null)
+        {
+            elements.Add(costosHigiene);
+            await WriteJsonFileAsync(_HigieneVirtualPath, elements);
+        }
     }
 }

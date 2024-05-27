@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using NLayer.Architecture.Bussines.Models.TheSillies;
 using NLayer.Architecture.Bussines.Services;
 using NLayer.Architecture.Bussines.TheSillies;
 
@@ -17,4 +18,10 @@ public class CostosHigieneController : Controller
 
     [HttpGet]
     public async Task<CostosGenerales> get() { return await _costosHigieneServices.GetCostosGenerales(); }
+
+    [HttpPost("AddCostosHigiene", Name = "AddCostosDeHigiene")]
+    public async Task AddCostosHigiene (CostosHigiene costosHigiene)
+    {
+        await _costosHigieneServices.AddCostosHigiene(costosHigiene);
+    }
 }
