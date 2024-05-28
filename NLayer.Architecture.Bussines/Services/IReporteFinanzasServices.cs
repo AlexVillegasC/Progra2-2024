@@ -22,4 +22,10 @@ public interface IReporteFinanzasServices
     Task<bool> UpdateCostoAlimento(IEnumerable<CostosAlimenticios> costoAlimento);
 
     Task<bool> DeleteCostosAlimenticios();
+
+    Task AddCostosMedicina(CostosMedicina costosMedicina);
+
+    Task<bool> UpdateCostosMedicina(IEnumerable<CostosMedicina> costosMedicina);
+
+    Task<bool> DeleteCostosMedicina();
 }

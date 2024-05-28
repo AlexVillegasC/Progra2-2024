@@ -11,13 +11,16 @@ public class ReporteFinanzasRepository : FileRepository, IReporteFinanzasReposit
     private string _HigieneVirtualPath = "CostosHigiene.json";
 
     private string _AlimenticiosVirtualPath = "CostosAlimenticios.json";
-    private string folderPath {  get; set; }
+
+    private string _MedicinaVirtualPath = "CostosMedicina.json";
+    private string folderPath { get; set; }
 
     public ReporteFinanzasRepository(IConfiguration Configuration)
     {
         folderPath = $"{Configuration["Folders:TheSillies"]}";
         _HigieneVirtualPath = folderPath + _HigieneVirtualPath;
         _AlimenticiosVirtualPath = folderPath + _AlimenticiosVirtualPath;
+        _MedicinaVirtualPath = folderPath + _MedicinaVirtualPath;
     }
 
     public async Task<List<CostosHigiene>> GetCostosHigiene()
@@ -25,8 +28,7 @@ public class ReporteFinanzasRepository : FileRepository, IReporteFinanzasReposit
         return await ReadJsonFileAsync<List<CostosHigiene>>(_HigieneVirtualPath);
     }
 
-
-    public async Task AddCostosHigiene (CostosHigiene costosHigiene)
+    public async Task AddCostosHigiene(CostosHigiene costosHigiene)
     {
         List<CostosHigiene> elements = await ReadJsonFileAsync<List<CostosHigiene>>(_HigieneVirtualPath);
 
@@ -59,9 +61,9 @@ public class ReporteFinanzasRepository : FileRepository, IReporteFinanzasReposit
             await WriteJsonFileAsync(_HigieneVirtualPath, elements);
             return true;
         }
-        catch (Exception ex) 
-        { 
-            return false; 
+        catch (Exception ex)
+        {
+            return false;
         }
     }
 
@@ -97,6 +99,7 @@ public class ReporteFinanzasRepository : FileRepository, IReporteFinanzasReposit
             return false;
         };
     }
+
     public async Task<bool> DeleteCostosAlimenticios()
     {
         //  1. Leer elementos del JSon
@@ -105,6 +108,56 @@ public class ReporteFinanzasRepository : FileRepository, IReporteFinanzasReposit
         try
         {
             await WriteJsonFileAsync(_AlimenticiosVirtualPath, elementos);
+            return true;
+        }
+        catch (Exception genericException)
+        {
+            // Log Exception genericException.
+            return false;
+        }
+    }
+
+    public async Task<List<CostosMedicina>> GetCostosMedicina()
+    {
+        return await ReadJsonFileAsync<List<CostosMedicina>>(_MedicinaVirtualPath);
+    }
+
+    public async Task AddCostosMedicina(CostosMedicina costosMedicina)
+    {
+        List<CostosMedicina> elements = await ReadJsonFileAsync<List<CostosMedicina>>(_MedicinaVirtualPath);
+
+        if (elements != null)
+        {
+            elements.Add(costosMedicina);
+            await WriteJsonFileAsync(_MedicinaVirtualPath, elements);
+        }
+    }
+
+    public async Task<bool> UpdateCostoMedicina(IEnumerable<CostosMedicina> costoMedicina)
+    {
+        //  1. Leer elementos del JSon
+        List<CostosMedicina> elementos = costoMedicina.ToList();
+
+        try
+        {
+            await WriteJsonFileAsync(_MedicinaVirtualPath, elementos);
+            return true;
+        }
+        catch (Exception genericException)
+        {
+            // Log Exception genericException.
+            return false;
+        };
+    }
+
+    public async Task<bool> DeleteCostosMedicina()
+    {
+        //  1. Leer elementos del JSon
+        List<CostosMedicina> elementos = new();
+
+        try
+        {
+            await WriteJsonFileAsync(_MedicinaVirtualPath, elementos);
             return true;
         }
         catch (Exception genericException)
