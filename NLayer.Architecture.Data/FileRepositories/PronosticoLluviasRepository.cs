@@ -9,8 +9,8 @@ namespace NLayer.Architecture.Data.FileRepositories;
 public class PronosticoLluviasRepository : FileRepository, IPronosticoLluviasRepository
 {
     private string _lluviaLargoPlazoVirtualPath = "lluviaLargoPlazo.json";
-    private string _lluviaLargoCortoPlazoVirtualPath = "lluviaCortoPlazo.json";
-    private string _lluviaCortoPlazoVirtualPath;
+    private string _lluviaCortoPlazoVirtualPath = "lluviaCortoPlazo.json";
+    private string _lluviaMedianoPlazoVirtualPath = "lluviaMedianoPlazo.json";
 
     private string FolderPath { get; set; }
 
@@ -18,7 +18,8 @@ public class PronosticoLluviasRepository : FileRepository, IPronosticoLluviasRep
     {
         FolderPath = $"{configuration["Folders:MonitoreoClimatico"]}";
         _lluviaLargoPlazoVirtualPath = FolderPath + _lluviaLargoPlazoVirtualPath;
-        _lluviaLargoCortoPlazoVirtualPath = FolderPath + _lluviaLargoCortoPlazoVirtualPath;
+        _lluviaCortoPlazoVirtualPath = FolderPath + _lluviaCortoPlazoVirtualPath;
+        _lluviaMedianoPlazoVirtualPath = FolderPath + _lluviaMedianoPlazoVirtualPath;
     }
     public async Task<LluviaLargoPlazo> GetLluviaLargoPlazos()
     {
@@ -28,5 +29,10 @@ public class PronosticoLluviasRepository : FileRepository, IPronosticoLluviasRep
     public async Task<LluviaCortoPlazo> GetLluviaCortoPlazos()
     {
         return await ReadJsonFileAsync<LluviaCortoPlazo>(_lluviaCortoPlazoVirtualPath);
+    }
+
+    public async Task<LluviaMedianoPlazo> GetLluviaMedianoPlazos()
+    {
+        return await ReadJsonFileAsync<LluviaMedianoPlazo>(_lluviaMedianoPlazoVirtualPath);
     }
 }
