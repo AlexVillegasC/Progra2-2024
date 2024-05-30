@@ -18,6 +18,7 @@ public class ReporteFinanzasServices : IReporteFinanzasServices
         TheSillies.CostosGenerales reporteHigiene = new TheSillies.CostosGenerales();
         reporteHigiene.CostosHigiene = await _FinanzasRepository.GetCostosHigiene();
         reporteHigiene.CostosAlimenticios = await _FinanzasRepository.GetCostosAlimenticios();
+        reporteHigiene.CostosMedicina = await _FinanzasRepository.GetCostosMedicina();
 
         return reporteHigiene;
     }
@@ -50,5 +51,18 @@ public class ReporteFinanzasServices : IReporteFinanzasServices
     public async Task<bool> DeleteCostosAlimenticios()
     {
         return await _FinanzasRepository.DeleteCostosAlimenticios();
+    }
+
+    public async Task AddCostosMedicina(CostosMedicina costosMedicina)
+    {
+        await _FinanzasRepository.AddCostosMedicina(costosMedicina);
+    }
+    public async Task<bool> UpdateCostosMedicina(IEnumerable<CostosMedicina> costoMedicina)
+    {
+        return await _FinanzasRepository.UpdateCostoMedicina(costoMedicina);
+    }
+    public async Task<bool> DeleteCostosMedicina()
+    {
+        return await _FinanzasRepository.DeleteCostosMedicina();
     }
 }

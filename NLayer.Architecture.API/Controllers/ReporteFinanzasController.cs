@@ -54,4 +54,22 @@ public class ReporteFinanzasController : Controller
     {
         return await _costosFinanzasServices.DeleteCostosAlimenticios() ? Ok() : NotFound();
     }
+
+    [HttpPost("AddCostosMedicina", Name = "AddCostosDeMedicina")]
+    public async Task AddCostosMedicina(CostosMedicina costosMedicina)
+    {
+        await _costosFinanzasServices.AddCostosMedicina(costosMedicina);
+    }
+
+    [HttpPut("UpdateCostosMedicina", Name = "UpdateCostosMedicina")]
+    public async Task<IActionResult> UpdateCostosMedicina(IEnumerable<CostosMedicina> updateCostosMedicina)
+    {
+        return await _costosFinanzasServices.UpdateCostosMedicina(updateCostosMedicina) ? Ok() : NotFound();
+    }
+
+    [HttpDelete("DeleteCostosMedicina", Name = "DeleteCostosMedicina")]
+    public async Task<IActionResult> DeleteCostosMedicina()
+    {
+        return await _costosFinanzasServices.DeleteCostosMedicina() ? Ok() : NotFound();
+    }
 }
