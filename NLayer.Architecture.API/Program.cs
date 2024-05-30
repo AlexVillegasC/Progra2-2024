@@ -2,6 +2,7 @@ using DataAccess.Layer.FileRepositories;
 using Microsoft.OpenApi.Models;
 using NLayer.Architecture.Bussines.Services;
 using NLayer.Architecture.Data;
+using NLayer.Architecture.Data.FileRepositories;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -31,6 +32,10 @@ builder.Services.AddTransient<IReportePlantacionesRepository,ReportePlantaciones
 
 builder.Services.AddTransient<ICostosHigieneRepository, CostosHigieneRepository>();
 builder.Services.AddTransient<ICostosHigieneServices, HigieneServices>();
+
+builder.Services.AddTransient<IPronosticoLluviasServices, PronosticoLluviasService>();
+builder.Services.AddTransient<IPronosticoLluviasRepository, PronosticoLluviasRepository>();
+
 // Add Singleton
 // The same instance is used by all components requiring that service.
 
