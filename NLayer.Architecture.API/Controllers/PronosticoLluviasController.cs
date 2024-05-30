@@ -18,7 +18,7 @@ public class PronosticoLluviasController : ControllerBase
         [HttpGet]
         public async Task<PronosticoLluvias> Get()
         {
-            return await _pronosticoLluviasService.GetPronostico();
+            return await _pronosticoLluviasService.GetPronosticos();
         }
     }
 

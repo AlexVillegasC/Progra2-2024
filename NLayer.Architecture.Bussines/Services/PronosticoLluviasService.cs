@@ -16,14 +16,15 @@ public class PronosticoLluviasService : IPronosticoLluviasServices
         _pronosticoLluviaRepo = pronosticoLluviaRepo;
     }
 
-    public async Task<PronosticoLluvias.PronosticoLluvias> GetPronostico()
+      public async Task<PronosticoLluvias.PronosticoLluvias> GetPronosticos()
     {
         PronosticoLluvias.PronosticoLluvias miPronostico = new PronosticoLluvias.PronosticoLluvias();
+        miPronostico.LluviaCortoPlazo = await _pronosticoLluviaRepo.GetLluviaCortoPlazos();
         miPronostico.LluviaLargoPlazo = await _pronosticoLluviaRepo.GetLluviaLargoPlazos();
-
 
         return miPronostico;
     }
+  
 }
 
 
