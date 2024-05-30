@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-using NLayer.Architecture.Bussines.ReporteInventario;
+using NLayer.Architecture.Bussines.ReporteInventarioRecursos;
 using NLayer.Architecture.Bussines.Services;
 
 namespace NLayer.Architecture.API.Controllers;
@@ -9,15 +9,15 @@ namespace NLayer.Architecture.API.Controllers;
 [Route("[controller]")]
 public class InventarioRecursos : ControllerBase
 {
-    private readonly IReporteInventarioService _reporteInventarioService;
+    private readonly IReporteInventarioRecursosServices _reporteInventarioRecursosService;
 
-    public InventarioRecursos(IReporteInventarioService reporteInventarioService)
+    public InventarioRecursos(IReporteInventarioRecursosServices reporteInventarioRecursosService)
     {
-        _reporteInventarioService = reporteInventarioService;
+        _reporteInventarioRecursosService = reporteInventarioRecursosService;
     }
     [HttpGet]
-    public async Task<ReporteInventario> Get()
+    public async Task<ReporteInventarioRecursos> Get()
     {
-        return await _reporteInventarioService.GetInventario();
+        return await _reporteInventarioRecursosService.GetInventario();
     }
 }
