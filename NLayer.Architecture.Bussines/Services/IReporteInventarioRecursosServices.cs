@@ -10,5 +10,5 @@ namespace NLayer.Architecture.Bussines.Services;
 public interface IReporteInventarioRecursosServices
 {
 
-    Task<ReporteInventario.ReporteInventario> GetInventario();
+    Task<ReporteInventarioRecursos.ReporteInventarioRecursos> GetInventario();
 }

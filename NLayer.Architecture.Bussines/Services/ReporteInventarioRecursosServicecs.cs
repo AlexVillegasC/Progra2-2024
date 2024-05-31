@@ -1,31 +1,27 @@
-﻿
+﻿using NLayer.Architecture.Bussines.ReporteInventarioRecursos;
 using DataAccess.Layer.FileRepositories;
 
 namespace NLayer.Architecture.Bussines.Services;
 
-public class ReporteInventarioRecursosService : IReporteInventarioService
+public class ReporteInventarioRecursosService : IReporteInventarioRecursosServices
 {
-    //es un campo solo de lectura
-    private readonly IReporteInventarioRepository _inventarioRepo;
+    
+    private readonly IReporteInventarioRecursosRepository _inventarioRecursos;
 
-    //constructor de la clase
-    public ReporteInventarioRecursosService(IReporteInventarioRepository inventarioRepo)
+    public ReporteInventarioRecursosService(IReporteInventarioRepository inventarioRecursos)
     {
-        _inventarioRepo = inventarioRepo;
+        _inventarioRecursos = (IReporteInventarioRecursosRepository?)inventarioRecursos;
     }
 
-    //implementacion del metodo
-    public async Task<ReporteInventario.ReporteInventario> GetInventario()
+  
+    public async Task<ReporteInventarioRecursos.ReporteInventarioRecursos> GetInventario()
     {
-        // Se crea una nueva instancia de Reporteinventario para almacenar el inventario
-        ReporteInventario.ReporteInventario miInventario = new ReporteInventario.ReporteInventario();
+    
+        ReporteInventarioRecursos.ReporteInventarioRecursos miInventario = new ReporteInventarioRecursos.ReporteInventarioRecursos();
 
-        // Se obtienen las maquinaria relacionadas con el inventario agricola
-        // utilizando el repositorio proporcionado (_inventarioRepo).
-        // Como este método es asincrónico, se usa 'await' para esperar su finalización.
-        miInventario.Semillas = await _inventarioRepo.GetSemillas();
-        miInventario.Pesticidas = await _inventarioRepo.GetPesticidas();
-        miInventario.Fertilizantes = await _inventarioRepo.GetFertilizantes();
+    
+        miInventario.Pesticidas = await _inventarioRecursos.GetPesticidas();
+        miInventario.Fertilizantes = await _inventarioRecursos.GetFertilizantes();
         return miInventario;
 
 

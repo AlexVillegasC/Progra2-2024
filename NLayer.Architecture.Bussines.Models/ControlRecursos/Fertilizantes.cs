@@ -1,6 +1,6 @@
 ﻿namespace NLayer.Architecture.Bussines.ReporteInventarioRecursos;
 
-public class Fertlizantes
+public class Fertilizantes
 {
     public string Marca { get; set; }
 

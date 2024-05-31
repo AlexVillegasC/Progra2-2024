@@ -1,7 +1,7 @@
 ﻿namespace NLayer.Architecture.Bussines.ReporteInventarioRecursos;
 public class ReporteInventarioRecursos
 {
-    public Fertlizantes Fertlizantes { get; set; }
+    public Fertilizantes Fertilizantes { get; set; }
 
     public Pesticidas Pesticidas { get; set; }
 
