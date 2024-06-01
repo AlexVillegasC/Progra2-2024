@@ -7,10 +7,11 @@ public class GestionPlantaciones
     public ControlPlagas Plagas { get; set;}
 
 
-    public ControlAbono Abono { get; set; }
+    public List<ControlAbono>Abono { get; set; }
 
     public ArbolFrutal Arbol { get; set; }
 
 }
 
 
+ 
