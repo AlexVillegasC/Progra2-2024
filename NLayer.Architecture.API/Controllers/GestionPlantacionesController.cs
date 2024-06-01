@@ -23,5 +23,22 @@ public class GestionPlantacionesController : ControllerBase
         return await _reportePlantaciones.GetReporte();
     }
 
+    [HttpPost("AddPlaga", Name = "AddPlaga")]
+    public async Task AddPlaga(ControlPlagas plag)
+    {
+        await _reportePlantaciones.AddPlaga(plag);
+    }
+
+    [HttpPut("UpdatePlaga", Name = "UpdatePlaga")]
+    public async Task<IActionResult> UpdatePlaga(IEnumerable<ControlPlagas> updatePlaga)
+    {
+        return await _reportePlantaciones.UpdatePlaga(updatePlaga) ? Ok() : NotFound();
+    }
+
+    [HttpDelete("DeletePlaga", Name = "DeletePlaga")]
+    public async Task<IActionResult> DeletePlaga()
+    {
+        return await _reportePlantaciones.DeletePlaga() ? Ok() : NotFound();
+    }
 
 }

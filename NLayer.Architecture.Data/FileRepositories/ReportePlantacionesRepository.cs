@@ -8,7 +8,6 @@ namespace DataAccess.Layer.FileRepositories;
 public class ReportePlantacionesRepository : FileRepository, IReportePlantacionesRepository
 {
     private string _PlagasVirtualPath = "controlplagas.json";
-    //Ponen sus partes igual
     private string _AbonoVirtualPath = "ControlAbono.json";
     private string _ArbolVirtualPath = "ArbolFrutal.json";
 
@@ -20,18 +19,61 @@ public class ReportePlantacionesRepository : FileRepository, IReportePlantacione
         FolderPath = $"{Configuration["Folders:Plantaciones"]}";
 
         _PlagasVirtualPath = FolderPath + _PlagasVirtualPath;
-        //Escriben lo mismo aqui con sus partes
         _AbonoVirtualPath = FolderPath + _AbonoVirtualPath;
         _ArbolVirtualPath = FolderPath + _ArbolVirtualPath;
 
     }
-
-    public async Task<ControlPlagas> GetControlPlagas()
+    //-------------------------------------------------------------------------//
+    public async Task<List<ControlPlagas>> GetControlPlagas()
     {
-        return await ReadJsonFileAsync<ControlPlagas>(_PlagasVirtualPath);
+        return await ReadJsonFileAsync<List<ControlPlagas>>(_PlagasVirtualPath);
     }
 
-    public async Task<ControlAbono> GetControlAbono() //mostrar los datos 
+    public async Task AddPlaga(ControlPlagas plagas)
+    {
+        List<ControlPlagas> control = await ReadJsonFileAsync<List<ControlPlagas>>(_PlagasVirtualPath);
+
+        if (control != null)
+        {
+            control.Add(plagas);
+            await WriteJsonFileAsync(_PlagasVirtualPath, control);
+        }
+    }
+
+    public async Task<bool> UpdatePlaga(IEnumerable<ControlPlagas> plagas)
+    {
+        List<ControlPlagas> control = plagas.ToList();
+
+        try
+        {
+            await WriteJsonFileAsync(_PlagasVirtualPath, control);
+            return true;
+        }
+        catch (Exception genericException)
+        {
+            return false;
+        }
+    }
+
+    public async Task<bool> DeletePlaga()
+    {
+        List<ControlPlagas> control = new();
+
+        try
+        {
+            await WriteJsonFileAsync(_PlagasVirtualPath, control);
+            return true;
+        }
+        catch (Exception genericException)
+        {
+            return false;
+        }
+    }
+    //---------------------------------------------------------------//
+
+
+
+    public async Task<ControlAbono> GetControlAbono() //Mostrar los datos 
     {
         return await ReadJsonFileAsync<ControlAbono>(_AbonoVirtualPath);
     }
@@ -41,7 +83,7 @@ public class ReportePlantacionesRepository : FileRepository, IReportePlantacione
         return await ReadJsonFileAsync<ArbolFrutal>(_ArbolVirtualPath);
     }
 
-    //Creen la misma clase igual que la de arriba 
+ 
 
 
    
