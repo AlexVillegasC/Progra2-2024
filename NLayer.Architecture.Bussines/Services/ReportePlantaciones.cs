@@ -18,59 +18,28 @@ public class ReportePlantaciones : IReportePlantaciones
         reporteArbol.Plagas = await _plantaciones.GetControlPlagas();
         reporteArbol.Abono = await _plantaciones.GetControlAbono();
         reporteArbol.Arbol = await _plantaciones.GetArbolFrutal();
+
         return reporteArbol;
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-   public async Task AddPlaga(ControlPlagas plagas)  //POST PLAGAS
+    public async Task AddControlAbono(ControlAbono abono)
     {
-        await _plantaciones.AddPlaga(plagas);
+        await _plantaciones.AddControlAbono(abono);
     }
 
-    public async Task<bool> UpdatePlaga(IEnumerable<ControlPlagas> plagas) //PUT PLAGAS
+
+    public async Task<bool> UpdateControlAbono(IEnumerable<ControlAbono> abono)
     {
-        return await _plantaciones.UpdatePlaga(plagas);
+        return await _plantaciones.UpdateControlAbono(abono);
     }
 
-    public async Task<bool> DeletePlaga()  //DELETE PLAGAS
+    public async Task<bool> DeleteControlAbono()
     {
-        return await _plantaciones.DeletePlaga();
+        return await _plantaciones.DeleteControlAbono();
+    }
+
+    public Task<List<ControlAbono>> GetControlAbono()// se agrago cuando toque la interfaz preguntar el porq 
+    {
+        throw new NotImplementedException();
     }
 }

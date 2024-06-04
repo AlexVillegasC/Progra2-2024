@@ -33,8 +33,13 @@ public interface IReportePlantacionesRepository
     Task<bool> DeletePlaga(); //DELETE PLAGAS
 
 
+    Task<List<ControlAbono>> GetControlAbono();
+    Task<bool> UpdateControlAbono(IEnumerable<ControlAbono> abono);
+    Task AddControlAbono(ControlAbono abono);
+    Task<bool> DeleteControlAbono();
+  
 
-    Task<ControlAbono> GetControlAbono();
+
     Task<ArbolFrutal> GetArbolFrutal();
 }
 

@@ -1,5 +1,7 @@
 ﻿using Microsoft.Extensions.Configuration;
 using NLayer.Architecture.Bussines.GestionPlantaciones;
+using NLayer.Architecture.Bussines.Models.Alimentacion_Nutricion;
+using NLayer.Architecture.Bussines.ReporteClima;
 using NLayer.Architecture.Data;
 using System.ComponentModel.Design;
 
@@ -138,18 +140,64 @@ public class ReportePlantacionesRepository : FileRepository, IReportePlantacione
 
 
 
-    public async Task<ControlAbono> GetControlAbono() //Mostrar los datos 
-    {
-        return await ReadJsonFileAsync<ControlAbono>(_AbonoVirtualPath);
-    }
-
     public async Task<ArbolFrutal> GetArbolFrutal()
     {
         return await ReadJsonFileAsync<ArbolFrutal>(_ArbolVirtualPath);
     }
 
- 
+  
+    //-----------------------------------------------------------------------------------//
 
+    public async Task<List<ControlAbono>> GetControlAbono() //mostrar los datos 
+    {
+        return await ReadJsonFileAsync<List<ControlAbono>>(_AbonoVirtualPath);
+    }
+
+
+    public async Task AddControlAbono(ControlAbono abono)
+    {
+        List<ControlAbono> ab = await ReadJsonFileAsync<List<ControlAbono>>(_AbonoVirtualPath);
+        if (ab != null)
+        {
+            ab.Add(abono);
+            await WriteJsonFileAsync(_AbonoVirtualPath, ab);
+        }
+    }
+
+
+    public async Task<bool> UpdateControlAbono(IEnumerable<ControlAbono> abono)
+    {
+        
+        List<ControlAbono> ab = abono.ToList();
+
+        try
+        {
+            await WriteJsonFileAsync(_AbonoVirtualPath, ab);
+            return true;
+        }
+        catch (Exception genericException)
+        {
+          
+            return false;
+        };
+    }
+
+    public async Task<bool> DeleteControlAbono() 
+    {
+
+        List<ControlAbono> ab= new();
+
+        try
+        {
+            await WriteJsonFileAsync(_AbonoVirtualPath, ab);
+            return true;
+        }
+        catch (Exception genericException)
+        {
+            return false;
+        }
+    }
+ 
 
    
 }

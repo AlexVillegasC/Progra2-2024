@@ -58,22 +58,25 @@ public class GestionPlantacionesController : ControllerBase
         return await _reportePlantaciones.GetReporte();
     }
 
-    [HttpPost("AddPlaga", Name = "AddPlaga")]
-    public async Task AddPlaga(ControlPlagas plag)
+    [HttpPost("AddTControlAbono", Name = "AddAbono")]
+    public async Task AddControlaAbono(ControlAbono abo)
     {
-        await _reportePlantaciones.AddPlaga(plag);
+        // 1. Agrega Temperatura
+        await _reportePlantaciones.AddControlAbono(abo);
+        // 2. Responde
+
     }
 
-    [HttpPut("UpdatePlaga", Name = "UpdatePlaga")]
-    public async Task<IActionResult> UpdatePlaga(IEnumerable<ControlPlagas> updatePlaga)
+
+    [HttpPut("UpdateControlAbono", Name = "UpdateControlAbono")]
+    public async Task<IActionResult> UpdateControlAbono(IEnumerable<ControlAbono> updatedControlAbono)
     {
-        return await _reportePlantaciones.UpdatePlaga(updatePlaga) ? Ok() : NotFound();
+        return await _reportePlantaciones.UpdateControlAbono(updatedControlAbono) ? Ok() : NotFound();
     }
 
-    [HttpDelete("DeletePlaga", Name = "DeletePlaga")]
-    public async Task<IActionResult> DeletePlaga()
+    [HttpDelete("DeleteControlAbono", Name = "DeleteAbono")]
+    public async Task<IActionResult> DeleteControlAbono()
     {
-        return await _reportePlantaciones.DeletePlaga() ? Ok() : NotFound();
+        return await _reportePlantaciones.DeleteControlAbono() ? Ok() : NotFound();
     }
-
 }
