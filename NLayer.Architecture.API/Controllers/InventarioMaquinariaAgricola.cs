@@ -39,6 +39,48 @@ public class InventarioMaquinariaAgricola : ControllerBase
     {
         return await _reporteInventarioService.DeleteMaquinaria() ? Ok() : NotFound();
     }
+
+
+
+
+   
+
+
+
+    [HttpPost("AddMantenimiento", Name = "AddMantenimiento")]
+
+    public async Task AddMantenimiento(Mantenimiento mantenimiento)
+    {
+
+      await _reporteInventarioService.AddMantenimiento(mantenimiento);
+
+    }
+
+
+    [HttpPut("UpdateMantenimiento", Name = "UpdateMantenimiento")]
+
+    public async Task<IActionResult> UpdateMantenimiento(IEnumerable<Mantenimiento> updateMantenimiento)
+    { 
+
+    return await _reporteInventarioService.UpdateMantenimiento(updateMantenimiento) ? Ok() : NotFound();
+    
+    }
+
+
+    [HttpDelete("DeleteMantenimiento", Name = "DeleteMantenimiento")]
+
+    public async Task<IActionResult> DeleteMantenimiento()
+    { 
+    
+    return await _reporteInventarioService.DeleteMantenimiento() ? Ok() : NotFound();
+
+    }
+
+
+
+
+
+
 }
 
 /*

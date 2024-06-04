@@ -24,7 +24,16 @@ public interface IReporteInventarioRepository
 
     Task<Herramientas> GetHerramientas();
 
-    Task<Mantenimiento> GetMantenimiento();
+   
+
+
+    Task<List<Mantenimiento>> GetMantenimiento();
+
+    Task AddMantenimiento(Mantenimiento mantenimiento);
+
+    Task<bool> UpdateMantenimiento(IEnumerable<Mantenimiento> mantenimiento);
+
+    Task <bool> DeleteMantenimiento();
 }
 
 

@@ -91,12 +91,82 @@ public class ReporteInventarioRepository : FileRepository, IReporteInventarioRep
         return await ReadJsonFileAsync<Herramientas>(HerramientasVirtualPath); 
     }
 
-    
 
-    public  async Task<Mantenimiento> GetMantenimiento()
-    {
-        return await ReadJsonFileAsync<Mantenimiento>(MantenimientoVirtualPath);
+
+
+
+
+
+
+
+    public async Task<List<Mantenimiento>> GetMantenimiento()
+    { 
+    
+    
+        return await ReadJsonFileAsync<List<Mantenimiento>>(MantenimientoVirtualPath);
+    
+    
     }
+
+
+    public async Task AddMantenimiento(Mantenimiento mantenimiento)
+    {
+        List<Mantenimiento> elemento = await ReadJsonFileAsync<List<Mantenimiento>>(MantenimientoVirtualPath);
+
+        if (elemento != null)
+        { 
+        
+        elemento.Add(mantenimiento);
+
+            await WriteJsonFileAsync(MantenimientoVirtualPath, elemento);
+        }
+    }
+
+
+
+    public async Task<bool> UpdateMantenimiento(IEnumerable<Mantenimiento> mantenimiento)
+    {
+
+        List<Mantenimiento> elementos = mantenimiento.ToList();
+
+
+        try
+        {
+
+            await WriteJsonFileAsync(MantenimientoVirtualPath, elementos);
+            return true;
+        }
+        catch (Exception genericException)
+        {
+            return false;
+        }
+
+    }
+
+
+
+
+    public async Task<bool> DeleteMantenimiento()
+    {
+        
+        List<Mantenimiento> elementos = new();
+
+        try
+        {
+ 
+            await WriteJsonFileAsync(MantenimientoVirtualPath, elementos);
+            return true;
+
+        }
+        catch (Exception genericException)
+        {
+            return false;
+        }
+
+    }
+
+
+
 }
 
 
