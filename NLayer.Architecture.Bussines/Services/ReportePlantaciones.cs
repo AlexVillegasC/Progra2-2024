@@ -22,11 +22,11 @@ public class ReportePlantaciones : IReportePlantaciones
         return reporteArbol;
     }
 
+    //-------------ABONO--------------------------------//
     public async Task AddControlAbono(ControlAbono abono)
     {
         await _plantaciones.AddControlAbono(abono);
     }
-
 
     public async Task<bool> UpdateControlAbono(IEnumerable<ControlAbono> abono)
     {
@@ -38,8 +38,30 @@ public class ReportePlantaciones : IReportePlantaciones
         return await _plantaciones.DeleteControlAbono();
     }
 
-    public Task<List<ControlAbono>> GetControlAbono()// se agrago cuando toque la interfaz preguntar el porq 
+    public Task<List<ControlAbono>> GetControlAbono() 
     {
         throw new NotImplementedException();
     }
+
+    //-------------ABONO----------------------------------//
+
+
+    //-------------PLAGAS----------------------------------//
+
+    public async Task AddPlaga(ControlPlagas plagas)  //POST PLAGAS
+    {
+        await _plantaciones.AddPlaga(plagas);
+    }
+
+    public async Task<bool> UpdatePlaga(IEnumerable<ControlPlagas> plagas) //PUT PLAGAS
+    {
+        return await _plantaciones.UpdatePlaga(plagas);
+    }
+
+    public async Task<bool> DeletePlaga()  //DELETE PLAGAS
+    {
+        return await _plantaciones.DeletePlaga();
+    }
+
+    //-------------PLAGAS----------------------------------//
 }

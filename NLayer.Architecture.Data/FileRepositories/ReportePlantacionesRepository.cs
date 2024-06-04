@@ -26,71 +26,7 @@ public class ReportePlantacionesRepository : FileRepository, IReportePlantacione
 
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    //-------------------------------------------------------------------------//
+    //--------------------------------PLAGAS-----------------------------------------//
     public async Task<List<ControlPlagas>> GetControlPlagas()
     {
         return await ReadJsonFileAsync<List<ControlPlagas>>(_PlagasVirtualPath);
@@ -136,17 +72,10 @@ public class ReportePlantacionesRepository : FileRepository, IReportePlantacione
             return false;
         }
     }
-    //---------------------------------------------------------------//
-
-
-
-    public async Task<ArbolFrutal> GetArbolFrutal()
-    {
-        return await ReadJsonFileAsync<ArbolFrutal>(_ArbolVirtualPath);
-    }
+    //--------------------------PLAGAS-------------------------------------//
 
   
-    //-----------------------------------------------------------------------------------//
+    //-------------------------------ABONO----------------------------------------------------//
 
     public async Task<List<ControlAbono>> GetControlAbono() //mostrar los datos 
     {
@@ -197,8 +126,14 @@ public class ReportePlantacionesRepository : FileRepository, IReportePlantacione
             return false;
         }
     }
- 
 
-   
+    //-------------ABONO------------------------------------------------//
+
+
+    public async Task<ArbolFrutal> GetArbolFrutal()
+    {
+        return await ReadJsonFileAsync<ArbolFrutal>(_ArbolVirtualPath);
+    }
+
 }
 
