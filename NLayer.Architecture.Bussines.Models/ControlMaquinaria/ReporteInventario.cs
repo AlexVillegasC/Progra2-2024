@@ -6,6 +6,8 @@ public class ReporteInventario
 {
     public string Nombre { get; set; } = "Mi Reporte del inventario de maquinaria agricola";
 
+    public DateOnly Date => DateOnly.FromDateTime(DateTime.Now);
+
     public List<Maquinaria> Maquinaria { get; set; }
 
     public List<Mantenimiento> Mantenimiento { get; set; }
