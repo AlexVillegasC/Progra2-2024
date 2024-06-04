@@ -17,6 +17,41 @@ public class GestionPlantacionesController : ControllerBase
     }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     [HttpGet]
     public async Task<GestionPlantaciones> Get()
     {

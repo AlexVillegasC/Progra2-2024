@@ -6,6 +6,27 @@ namespace DataAccess.Layer.FileRepositories;
 public interface IReportePlantacionesRepository
 {
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     Task<List<ControlPlagas>> GetControlPlagas();  //GET PLAGAS
     Task AddPlaga(ControlPlagas plagas);  //POST PLAGAS
     Task<bool> UpdatePlaga(IEnumerable<ControlPlagas> plagas);  //PUT PLAGAS

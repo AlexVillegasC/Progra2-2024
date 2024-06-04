@@ -21,6 +21,44 @@ public class ReportePlantaciones : IReportePlantaciones
         return reporteArbol;
     }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
    public async Task AddPlaga(ControlPlagas plagas)  //POST PLAGAS
     {
         await _plantaciones.AddPlaga(plagas);
