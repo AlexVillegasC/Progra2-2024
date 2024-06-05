@@ -1,5 +1,7 @@
-{
-  "Speed": 15,
-  "Degree": 120,
-  "Direction": "SE"
-}
+[
+  {
+    "Speed": 15,
+    "Degree": 120,
+    "Direction": "SE"
+  }
+]
