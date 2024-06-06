@@ -86,26 +86,69 @@ public class ReporteInventarioRepository : FileRepository, IReporteInventarioRep
     }
 
 
-    public async Task<Herramientas> GetHerramientas()
+    
+
+
+    public async Task<List<Herramientas>> GetHerramientas()
     {
-        return await ReadJsonFileAsync<Herramientas>(HerramientasVirtualPath); 
+        return await ReadJsonFileAsync<List<Herramientas>>(HerramientasVirtualPath); 
     }
 
 
+    public async Task AddHerramientas(Herramientas herramientas)
+    {
+        List<Herramientas> elemento = await ReadJsonFileAsync<List<Herramientas>>(HerramientasVirtualPath);
+
+        if(elemento != null)
+        {
+        elemento.Add(herramientas);
+
+            await WriteJsonFileAsync(HerramientasVirtualPath, elemento);
+        }
+    }
 
 
+    public async Task<bool> UpdateHerramientas(IEnumerable<Herramientas> herramientas)
+    {
+        List<Herramientas> elementos= herramientas.ToList();
+
+        try
+        {
+            await WriteJsonFileAsync(HerramientasVirtualPath, elementos);
+            return true;
+        }
+        catch(Exception genericException)
+        {
+            return false;
+        }
+            
+    } 
 
 
+    public async Task<bool> DeleteHerramientas()
+    {
+        List<Herramientas> elementos = new();
+
+        try
+        {
+            await WriteJsonFileAsync(HerramientasVirtualPath, elementos);
+            return true;
+        }
+        catch(Exception genericException)
+        {
+            return false;
+        }
+
+
+    }
+
+   
 
 
 
     public async Task<List<Mantenimiento>> GetMantenimiento()
-    { 
-    
-    
+    {   
         return await ReadJsonFileAsync<List<Mantenimiento>>(MantenimientoVirtualPath);
-    
-    
     }
 
 
@@ -121,9 +164,6 @@ public class ReporteInventarioRepository : FileRepository, IReporteInventarioRep
             await WriteJsonFileAsync(MantenimientoVirtualPath, elemento);
         }
     }
-
-
-
     public async Task<bool> UpdateMantenimiento(IEnumerable<Mantenimiento> mantenimiento)
     {
 

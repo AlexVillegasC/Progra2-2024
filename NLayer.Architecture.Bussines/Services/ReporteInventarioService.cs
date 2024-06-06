@@ -2,7 +2,9 @@
 using DataAccess.Layer.FileRepositories;
 using NLayer.Architecture.Bussines.ReporteClima;
 using NLayer.Architecture.Bussines.ReporteInventario;
+using System.ComponentModel;
 using System.Formats.Asn1;
+using System.Runtime.InteropServices;
 
 namespace NLayer.Architecture.Bussines.Services;
 
@@ -28,7 +30,7 @@ namespace NLayer.Architecture.Bussines.Services;
         // Como este método es asincrónico, se usa 'await' para esperar su finalización.
         miInventario.Maquinaria = await _inventarioRepo.GetMaquinaria();
         miInventario.Mantenimiento = await _inventarioRepo.GetMantenimiento();
-        //miInventario.Herramientas = await _inventarioRepo.GetHerramientas();
+        miInventario.Herramientas = await _inventarioRepo.GetHerramientas();
 
         return miInventario;
     }
@@ -79,11 +81,25 @@ namespace NLayer.Architecture.Bussines.Services;
     }
 
 
+    public async Task AddHerramientas(Herramientas herramientas)
+    {
+        await _inventarioRepo.AddHerramientas(herramientas);
+    }
 
+    public async Task<bool> UpdateHerramientas(IEnumerable<Herramientas> herramientas)
+    {
+
+        return await _inventarioRepo.UpdateHerramientas(herramientas);
+
+    }
+
+
+    public async Task<bool> DeleteHerramientas() 
+    {
+        return await _inventarioRepo.DeleteHerramientas();
+    }
 
 }
 
-//ELIMINAN "//" donde dice miInventario.Mantenimiento = await _inventarioRepo.GetMantenimiento();
-//Y crean lo que les corresponde que lo de los metodos
 
 
