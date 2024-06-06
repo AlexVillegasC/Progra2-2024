@@ -41,7 +41,7 @@ public class InventarioMaquinariaAgricola : ControllerBase
     }
 
 
-
+    
 
    
 
@@ -77,8 +77,27 @@ public class InventarioMaquinariaAgricola : ControllerBase
     }
 
 
+    [HttpPost("AddHerramientas", Name = "AddHerramientas")]
+
+    public async Task AddHerramientas(Herramientas herramientas)
+    {
+        await _reporteInventarioService.AddHerramientas(herramientas);
+    }
 
 
+    [HttpPut("UpDateHerramientas",Name ="UpdateHerramientas")]
+    
+    public async Task<IActionResult> UpdateHerramientas(IEnumerable<Herramientas> updateHerramientas)
+    {
+        return await _reporteInventarioService.UpdateHerramientas(updateHerramientas) ? Ok() : NotFound();
+    }
+
+
+    [HttpDelete("DeleteHerramientas", Name= "DeleteHerramientas")]
+    public async Task<IActionResult> DeleteHerramientas()
+    {
+       return await _reporteInventarioService.DeleteHerramientas()? Ok() : NotFound();
+    }
 
 
 }

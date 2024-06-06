@@ -1,14 +1,11 @@
-﻿
-//lista de objetos json
-
 [
   {
     "Nombre": "Excavadora",
     "Marca": "Caterpillar",
-    "Precio": 120000.50,
+    "Precio": 120000.5,
     "Potencia": 300,
     "Tamaño": 7.5,
-    "Peso": 25000,
+    "Peso": 25000.0,
     "Funcionalidad": "Excavar terrenos"
   },
   {
@@ -17,16 +14,16 @@
     "Precio": 85000.75,
     "Potencia": 250,
     "Tamaño": 5.5,
-    "Peso": 20000,
+    "Peso": 20000.0,
     "Funcionalidad": "Empujar y nivelar tierra"
   },
   {
     "Nombre": "Grúa",
     "Marca": "Liebherr",
-    "Precio": 150000.00,
+    "Precio": 150000.0,
     "Potencia": 400,
     "Tamaño": 10.0,
-    "Peso": 35000,
+    "Peso": 35000.0,
     "Funcionalidad": "Elevar y mover cargas pesadas"
   },
   {
@@ -35,17 +32,25 @@
     "Precio": 65000.25,
     "Potencia": 150,
     "Tamaño": 6.0,
-    "Peso": 18000,
+    "Peso": 18000.0,
     "Funcionalidad": "Excavar y mover tierra"
   },
   {
     "Nombre": "Compactadora",
     "Marca": "Bomag",
-    "Precio": 40000.00,
+    "Precio": 40000.0,
     "Potencia": 100,
     "Tamaño": 4.0,
-    "Peso": 12000,
+    "Peso": 12000.0,
     "Funcionalidad": "Compactar superficies"
+  },
+  {
+    "Nombre": "weewe",
+    "Marca": "string",
+    "Precio": 0.0,
+    "Potencia": 0,
+    "Tamaño": 0.0,
+    "Peso": 0.0,
+    "Funcionalidad": "string"
   }
 ]
-//DEBEN CREAR UNA LISTA DE OBJETOS JSON EN LAS CLASES QUE LES CORRESPONDE

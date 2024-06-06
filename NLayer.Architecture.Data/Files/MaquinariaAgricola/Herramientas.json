@@ -1,8 +1,37 @@
-{
-  "Marca": "John Deere",
-  "Tipo_de_maquina": "Rastra 670",
-  "Precio": 17896368,
-  "Material": "Hierro",
-  "Funcionalidad":"Arar la tierra"
-   
-}
+[
+  {
+    "Marca": "John Deere",
+    "Tipo_de_maquina": "Rastra 670",
+    "Precio": 17896368.0,
+    "Material": "Hierro",
+    "Funcionalidad": "Arar la tierra"
+  },
+  {
+    "Marca": "John Deere",
+    "Tipo_de_maquina": "Sembradora",
+    "Precio": 200000.0,
+    "Material": "Plastico fuerte y hierro",
+    "Funcionalidad": "Sembrar semillas"
+  },
+  {
+    "Marca": "New Holland",
+    "Tipo_de_maquina": "Rociador",
+    "Precio": 121821.0,
+    "Material": "Aluminio",
+    "Funcionalidad": "Irrigar cultivos"
+  },
+  {
+    "Marca": "Kuhn",
+    "Tipo_de_maquina": "Cosechadora",
+    "Precio": 300000.0,
+    "Material": "Acero",
+    "Funcionalidad": "Recoger cultivos"
+  },
+  {
+    "Marca": "JCB",
+    "Tipo_de_maquina": "Trituradora",
+    "Precio": 600000.0,
+    "Material": "Hierro",
+    "Funcionalidad": "Desmenudar restos de vegetacion"
+  }
+]

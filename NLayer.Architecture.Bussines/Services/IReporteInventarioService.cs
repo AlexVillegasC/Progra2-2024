@@ -15,11 +15,6 @@ public interface IReporteInventarioService
     Task<bool> DeleteMaquinaria();
 
 
-
-
-
-
-
     Task AddMantenimiento(Mantenimiento mantenimiento);
 
     Task<bool> UpdateMantenimiento(IEnumerable<Mantenimiento> mantenimiento);
@@ -27,9 +22,11 @@ public interface IReporteInventarioService
     Task<bool> DeleteMantenimiento();
 
 
+    Task AddHerramientas(Herramientas herramientas);
 
 
+    Task<bool> UpdateHerramientas(IEnumerable<Herramientas>herramientas);
+
+    Task<bool> DeleteHerramientas();
 
 }
-
-//ACA HACEN LO MISMO CON SUS CLASES.

@@ -22,11 +22,7 @@ public interface IReporteInventarioRepository
     // Devuelve true si la eliminación fue exitosa, de lo contrario, false.
     Task<bool> DeleteMaquinaria();
 
-    Task<Herramientas> GetHerramientas();
-
-   
-
-
+ 
     Task<List<Mantenimiento>> GetMantenimiento();
 
     Task AddMantenimiento(Mantenimiento mantenimiento);
@@ -34,7 +30,13 @@ public interface IReporteInventarioRepository
     Task<bool> UpdateMantenimiento(IEnumerable<Mantenimiento> mantenimiento);
 
     Task <bool> DeleteMantenimiento();
+
+
+    Task<List<Herramientas>> GetHerramientas();
+
+    Task AddHerramientas(Herramientas herramientas);
+
+    Task<bool> UpdateHerramientas(IEnumerable<Herramientas> herramientas);
+
+    Task<bool> DeleteHerramientas();
 }
-
-
-//ACA HACEN LO MISMO PERO EN SUS CLASES
