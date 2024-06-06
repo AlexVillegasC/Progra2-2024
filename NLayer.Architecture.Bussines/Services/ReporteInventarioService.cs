@@ -1,10 +1,7 @@
 ﻿
 using DataAccess.Layer.FileRepositories;
-using NLayer.Architecture.Bussines.ReporteClima;
 using NLayer.Architecture.Bussines.ReporteInventario;
-using System.ComponentModel;
-using System.Formats.Asn1;
-using System.Runtime.InteropServices;
+
 
 namespace NLayer.Architecture.Bussines.Services;
 

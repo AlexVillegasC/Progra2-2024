@@ -1,8 +1,7 @@
 ﻿using NLayer.Architecture.Data;
 using Microsoft.Extensions.Configuration;
 using NLayer.Architecture.Bussines.ReporteInventario;
-using NLayer.Architecture.Bussines.ReporteClima;
-using System.Security.AccessControl;
+
 
 
 namespace DataAccess.Layer.FileRepositories;
@@ -209,8 +208,6 @@ public class ReporteInventarioRepository : FileRepository, IReporteInventarioRep
 
 }
 
-
-//ACA DEBEN IMPLEMENTAR LOS METODOS DE LA CLASE QUE LES CORRESPONDE.
 
 /*FolderPath = $"{Configuration["Folders:Clima"]}";: En esta línea, se está utilizando la configuración proporcionada
  * para acceder a la ruta de la carpeta donde se almacenan los archivos */
