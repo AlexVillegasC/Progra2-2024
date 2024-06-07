@@ -26,18 +26,56 @@ public class ReportePlantacionesRepository : FileRepository, IReportePlantacione
 
     }
 
-    public async Task<ControlPlagas> GetControlPlagas()
+    //--------------------------------PLAGAS-----------------------------------------//
+    public async Task<List<ControlPlagas>> GetControlPlagas()
     {
-        return await ReadJsonFileAsync<ControlPlagas>(_PlagasVirtualPath);
+        return await ReadJsonFileAsync<List<ControlPlagas>>(_PlagasVirtualPath);
     }
 
-    public async Task<ArbolFrutal> GetArbolFrutal()
+    public async Task AddPlaga(ControlPlagas plagas)
     {
-        return await ReadJsonFileAsync<ArbolFrutal>(_ArbolVirtualPath);
+        List<ControlPlagas> control = await ReadJsonFileAsync<List<ControlPlagas>>(_PlagasVirtualPath);
+
+        if (control != null)
+        {
+            control.Add(plagas);
+            await WriteJsonFileAsync(_PlagasVirtualPath, control);
+        }
     }
+
+    public async Task<bool> UpdatePlaga(IEnumerable<ControlPlagas> plagas)
+    {
+        List<ControlPlagas> control = plagas.ToList();
+
+        try
+        {
+            await WriteJsonFileAsync(_PlagasVirtualPath, control);
+            return true;
+        }
+        catch (Exception genericException)
+        {
+            return false;
+        }
+    }
+
+    public async Task<bool> DeletePlaga()
+    {
+        List<ControlPlagas> control = new();
+
+        try
+        {
+            await WriteJsonFileAsync(_PlagasVirtualPath, control);
+            return true;
+        }
+        catch (Exception genericException)
+        {
+            return false;
+        }
+    }
+    //--------------------------PLAGAS-------------------------------------//
 
   
-    //-----------------------------------------------------------------------------------//
+    //-------------------------------ABONO----------------------------------------------------//
 
     public async Task<List<ControlAbono>> GetControlAbono() //mostrar los datos 
     {
@@ -88,8 +126,14 @@ public class ReportePlantacionesRepository : FileRepository, IReportePlantacione
             return false;
         }
     }
- 
 
-   
+    //-------------ABONO------------------------------------------------//
+
+
+    public async Task<ArbolFrutal> GetArbolFrutal()
+    {
+        return await ReadJsonFileAsync<ArbolFrutal>(_ArbolVirtualPath);
+    }
+
 }
 
