@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Configuration;
 using NLayer.Architecture.Bussines.Models.RegistroGanado;
+using NLayer.Architecture.Bussines.ReporteClima;
 using NLayer.Architecture.Data;
 
 namespace NLayer.Architecture.Data.FileRepositories
@@ -41,6 +42,43 @@ namespace NLayer.Architecture.Data.FileRepositories
             return await ReadListJsonAsync<RegistroVeterinario>(_RegistroVeterinarioVirtualPath);
         }
 
-    
+        public async Task AddGanado (Ganado ganado)
+        {
+            List <Ganado> elementos = await ReadJsonFileAsync<List<Ganado>>(_RegistroGanadoVirtualPath);
+
+            if (elementos != null)
+            {
+                elementos.Add(ganado);
+                await WriteJsonFileAsync(_RegistroGanadoVirtualPath, elementos);
+            }
+        }
+        public async Task<bool> UpdateGanado(IEnumerable<Ganado> ganado)
+        {
+            List<Ganado> elementos = ganado.ToList();
+
+            try
+            {
+                await WriteJsonFileAsync(_RegistroGanadoVirtualPath, elementos);
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
+        public async Task<bool> DeleteGanado()
+        {
+            List <Ganado> elementos = new();
+
+            try
+            {
+                await WriteJsonFileAsync(_RegistroGanadoVirtualPath, elementos);
+                return true;
+            }    
+            catch(Exception genericException){
+                return false;
+            }
+        }
     }
 }
