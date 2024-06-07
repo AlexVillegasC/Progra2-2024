@@ -1,16 +1,44 @@
 [
   {
-      "ID": "001",
-      "Nombre" : "Chupa-Chupa",
-      "Date": "17-05-2024",
-      "Peso" : 230,
-      "Raza" : "Brahman"
+    "ID": "string",
+    "Date": "string",
+    "Nombre": "string",
+    "Peso": 0.0,
+    "Raza": "string"
   },
   {
-      "ID": "002",
-      "Nombre" : "Toluca",
-      "Date": "17-05-2024",
-      "Peso" : 250,
-      "Raza" : "Brahman"
+    "ID": "string",
+    "Date": "string",
+    "Nombre": "string",
+    "Peso": 0.0,
+    "Raza": "string"
+  },
+  {
+    "ID": "string",
+    "Date": "string",
+    "Nombre": "string",
+    "Peso": 0.0,
+    "Raza": "string"
+  },
+  {
+    "ID": "string",
+    "Date": "string",
+    "Nombre": "string",
+    "Peso": 0.0,
+    "Raza": "string"
+  },
+  {
+    "ID": "string",
+    "Date": "string",
+    "Nombre": "string",
+    "Peso": 0.0,
+    "Raza": "string"
+  },
+  {
+    "ID": "string",
+    "Date": "string",
+    "Nombre": "string",
+    "Peso": 0.0,
+    "Raza": "string"
   }
 ]

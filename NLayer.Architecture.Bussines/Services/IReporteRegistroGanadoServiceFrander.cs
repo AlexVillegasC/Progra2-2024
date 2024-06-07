@@ -6,4 +6,10 @@ namespace NLayer.Architecture.Bussines.Services;
 public interface IReporteRegistroGanadoService 
 {
     Task<RegistroGanado.LoteDeGanado> GetRegistroGanado();
+
+    Task AddGanado (Ganado ganado);
+
+    Task <bool> UpdateGanado (IEnumerable<Ganado> ganado);
+
+    Task <bool> DeleteGanado ();
 }
