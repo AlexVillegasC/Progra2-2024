@@ -9,6 +9,9 @@ namespace NLayer.Architecture.Bussines.PronosticoLluvias;
     public DateOnly Date => DateOnly.FromDateTime(DateTime.Now);
 
     public LluviaCortoPlazo LluviaCortoPlazo { get; set; }
+
+    public LluviaMedianoPlazo LluviaMedianoPlazo { get; set; }
+
     public LluviaLargoPlazo LluviaLargoPlazo { get; set; }
 }
 

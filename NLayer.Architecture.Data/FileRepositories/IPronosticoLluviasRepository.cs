@@ -6,7 +6,9 @@ namespace NLayer.Architecture.Data.FileRepositories;
 public interface IPronosticoLluviasRepository
 {
     Task<LluviaCortoPlazo> GetLluviaCortoPlazos();
-    
+
+    Task<LluviaMedianoPlazo> GetLluviaMedianoPlazos();
+
     Task<LluviaLargoPlazo> GetLluviaLargoPlazos();
 
 }

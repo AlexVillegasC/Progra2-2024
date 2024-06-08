@@ -20,6 +20,7 @@ public class PronosticoLluviasService : IPronosticoLluviasServices
     {
         PronosticoLluvias.PronosticoLluvias miPronostico = new PronosticoLluvias.PronosticoLluvias();
         miPronostico.LluviaCortoPlazo = await _pronosticoLluviaRepo.GetLluviaCortoPlazos();
+        miPronostico.LluviaMedianoPlazo = await _pronosticoLluviaRepo.GetLluviaMedianoPlazos();
         miPronostico.LluviaLargoPlazo = await _pronosticoLluviaRepo.GetLluviaLargoPlazos();
 
         return miPronostico;
