@@ -8,4 +8,5 @@ public class GestionCultivo
     public Reservorio Reservorio { get; set; }
     public CoeficienteCultivo CoeficienteCultivo { get; set; }
     public double Eto { get; set; }
+    // Prueba
 }
