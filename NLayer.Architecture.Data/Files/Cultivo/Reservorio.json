@@ -1,9 +1,20 @@
-{
-  "volumeTotal": 6700.0,
-  "volumenActual": 5548.0,
-  "largo": 40.0,
-  "ancho": 40.0,
-  "profundidad": 4.2,
-  "evaporacionEstanque": 1152.0,
-  "areaSuperficial": 1600.0
-}
+[
+  {
+    "VolumeTotal": 10000.0,
+    "VolumenActual": 8000.0,
+    "Largo": 50.0,
+    "Ancho": 30.0,
+    "Profundidad": 10.0,
+    "EvaporacionEstanque": 1.0,
+    "AreaSuperficial": 1500.0
+  },
+  {
+    "VolumeTotal": 20000.0,
+    "VolumenActual": 15000.0,
+    "Largo": 60.0,
+    "Ancho": 40.0,
+    "Profundidad": 12.0,
+    "EvaporacionEstanque": 1.5,
+    "AreaSuperficial": 2400.0
+  }
+]
