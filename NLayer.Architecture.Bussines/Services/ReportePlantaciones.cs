@@ -64,4 +64,22 @@ public class ReportePlantaciones : IReportePlantaciones
     }
 
     //-------------PLAGAS----------------------------------//
+
+
+    //-------------ARBOL----------------------------------//
+   / public async Task AddArbolFrutal(ArbolFrutal arbolFrutal)
+    {
+        await _plantaciones.AddArbolFrutal(arbolFrutal);
+    }
+
+    public async Task<bool> UpdateArbolFrutal(IEnumerable<ArbolFrutal> arbolFrutal)
+    {
+        return await _plantaciones.UpdateArbolFrutal(arbolFrutal);
+    }
+
+    public async Task<bool> DeleteArbolFrutal()
+    {
+        return await _plantaciones.DeleteArbolFrutal();
+    }
+    //-------------ARBOL----------------------------------//
 }

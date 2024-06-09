@@ -25,7 +25,7 @@ public interface IReportePlantacionesRepository
     //-------------ARBOL----------------------------------//
     Task<List<ArbolFrutal>> GetArbolFrutal();
     Task<bool> UpdateArbolFrutal(IEnumerable<ArbolFrutal> arbol);
-    Task<bool> DeleteArbolFrutal(ArbolFrutal arbol);
+    Task<bool> DeleteArbolFrutal();
     Task AddArbolFrutal(ArbolFrutal arbol);
     //-------------ARBOL----------------------------------//
 }
