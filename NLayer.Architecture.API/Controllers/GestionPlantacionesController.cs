@@ -70,4 +70,29 @@ public class GestionPlantacionesController : ControllerBase
     }
 
     //-------------PLAGAS----------------------------------//
+
+
+    //-------------ARBOL----------------------------------//
+
+    [HttpPost("ArbolFrutal", Name = "AddArbolFrutal")]
+    public async Task addArbolFrutal(ArbolFrutal arb)
+    {
+        await _reportePlantaciones.AddArbolFrutal(arb);
+    }
+
+    [HttpPut("UpdateArbolFrutal", Name = "UpdateArbolFrutal")]
+    public async Task<IActionResult> UpdateArbolFrutal(IEnumerable<ArbolFrutal> updateArbolFrutal)
+    {
+        return await _reportePlantaciones.UpdateArbolFrutal(updateArbolFrutal) ? Ok() : NotFound();
+    }
+
+    [HttpDelete("DeleteArbolFrutal", Name = "DeleteArbolFrutal")]
+    public async Task<IActionResult> DeleteArbolFrutal()
+    {
+        return await _reportePlantaciones.DeleteArbolFrutal() ? Ok() : NotFound();
+    }
+
+    //-------------ARBOL----------------------------------//
+
+
 }
