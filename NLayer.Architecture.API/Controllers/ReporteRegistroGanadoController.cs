@@ -19,14 +19,14 @@ public class ReporteRegistroGanadoController : ControllerBase
         _reporteGanadoService = reporteGanadoService;
     }
 
-    [HttpGet]
+    [HttpGet("Get-Frander")]
 
     public async Task<LoteDeGanado> Get()
     {
         return await _reporteGanadoService.GetRegistroGanado();
     }
 
-     [HttpPost("AddGanado", Name = "AddGanado")]
+     [HttpPost("AddGanado - Frander ")]
         public async Task<IActionResult> AddGanado([FromBody] Ganado ganado)
         {
             if (ganado == null)
@@ -37,7 +37,7 @@ public class ReporteRegistroGanadoController : ControllerBase
             await _reporteGanadoService.AddGanado(ganado);
             return Ok();
         }
-        [HttpPut("UpdateGanado", Name = "UpdateGanado")]
+        [HttpPut("UpdateGanado - Frander")]
         public async Task<IActionResult> UpdateGanado([FromBody] IEnumerable<Ganado> updatedGanado)
         {
             if (updatedGanado == null)
@@ -49,7 +49,7 @@ public class ReporteRegistroGanadoController : ControllerBase
             return result ? Ok() : NotFound();
         }
 
-        [HttpDelete("DeleteGanado", Name = "DeleteGanado")]
+        [HttpDelete("DeleteGanado - Frander")]
         public async Task<IActionResult> DeleteTemperature()
         {
         return await _reporteGanadoService.DeleteGanado() ? Ok() : NotFound();    
