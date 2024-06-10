@@ -32,11 +32,6 @@ namespace NLayer.Architecture.Data.FileRepositories
             return await ReadListJsonAsync<Ganado>(_RegistroGanadoVirtualPath);
         }
 
-        public async Task<List<RegistroVeterinario>> GetRegistroVeterinario()
-        {
-            return await ReadListJsonAsync<RegistroVeterinario>(_RegistroVeterinarioVirtualPath);
-        }
-
         public async Task AddGanado (Ganado ganado)
         {
             List<Ganado> elementos = await ReadJsonFileAsync<List<Ganado>>(_RegistroGanadoVirtualPath);
@@ -67,6 +62,47 @@ namespace NLayer.Architecture.Data.FileRepositories
                 return true;
             }
             catch(Exception)
+            {
+                return false;
+            }
+        }
+
+        public async Task<List<RegistroVeterinario>> GetRegistroVeterinario()
+        {
+            return await ReadListJsonAsync<RegistroVeterinario>(_RegistroVeterinarioVirtualPath);
+        }
+
+        public async Task AddRegistroVeterinario(RegistroVeterinario registroVeterinario)
+        {
+            List<RegistroVeterinario> elementos = await ReadJsonFileAsync<List<RegistroVeterinario>>(_RegistroVeterinarioVirtualPath);
+            if (elementos != null)
+            {
+                elementos.Add(registroVeterinario);
+                await WriteJsonFileAsync(_RegistroVeterinarioVirtualPath, elementos);
+            }
+        }
+        public async Task<bool> UpdateRegistroVeterinario(IEnumerable<RegistroVeterinario> registroVeterinario)
+        {
+            List<RegistroVeterinario> elementos = registroVeterinario.ToList();
+            try
+            {
+                await WriteJsonFileAsync(_RegistroVeterinarioVirtualPath, elementos);
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+        }
+        public async Task<bool> DeleteRegistroVeterinario()
+        {
+            List<RegistroVeterinario> elementos = new();
+            try
+            {
+                await WriteJsonFileAsync(_RegistroVeterinarioVirtualPath, elementos);
+                return true;
+            }
+            catch (Exception)
             {
                 return false;
             }
