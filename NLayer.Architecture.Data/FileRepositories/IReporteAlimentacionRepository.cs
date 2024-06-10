@@ -8,8 +8,6 @@ public interface IReporteAlimentacionRepository
     Task<List<Animales>> GetAnimales();
     Task<List<Alimentos>> GetAlimentos();
 
-    Task AddGanado (Ganado ganado);
-    Task <bool> UpdateGanado (IEnumerable<Ganado> ganado);
-    Task <bool> DeleteGanado (); 
+
 
 }
