@@ -10,9 +10,8 @@ namespace NLayer.Architecture.Data.FileRepositories
         Task<List<Registro_de_Vacunas>> GetRegistroVacunas();
         
         Task AddGanado (Ganado ganado);
-
         Task <bool> DeleteGanado ();
-
         Task <bool> UpdateGanado(IEnumerable<Ganado> ganado);
-     }
+
+    }
 }
