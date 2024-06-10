@@ -107,7 +107,6 @@ namespace NLayer.Architecture.Data.FileRepositories
                 return false;
             }
         }
-
         public async Task<List<Registro_de_Vacunas>> GetRegistroVacunas()
         {
             return await ReadListJsonAsync<Registro_de_Vacunas>(_RegistroVacunasVirtualPath);
