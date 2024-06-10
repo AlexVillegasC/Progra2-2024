@@ -1,5 +1,7 @@
 [
   {
+<<<<<<< HEAD
+=======
     "ID": "001",
     "Date": "12/05/2024",
     "Nombre": "",
@@ -7,6 +9,7 @@
     "Raza": "Angus"
   },
   {
+>>>>>>> origin/proyecto1/RegistroGanado-BrandonNunez
     "ID": "string",
     "Date": "string",
     "Nombre": "string",

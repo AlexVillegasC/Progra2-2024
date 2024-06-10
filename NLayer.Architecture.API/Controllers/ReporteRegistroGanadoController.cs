@@ -11,12 +11,12 @@ using Microsoft.AspNetCore.Mvc;
 [ApiController]
 [Route("[controller]")]
 
-public class ReporteRegistroController : ControllerBase
+public class ReporteRegistroGanadoController : ControllerBase
 {
     private readonly  IReporteRegistroGanadoService _reporteGanadoService;
 
 
-    public ReporteRegistroController(IReporteRegistroGanadoService reporteGanadoService)
+    public ReporteRegistroGanadoController(IReporteRegistroGanadoService reporteGanadoService)
     {
         _reporteGanadoService = reporteGanadoService;
     }
@@ -45,6 +45,25 @@ public class ReporteRegistroController : ControllerBase
     {
         return await _reporteGanadoService.DeleteGanado() ?  Ok() : NotFound();
     }
+    
+    [HttpPost("AddRegistroVeterinario - Ariana ")]
+    public async Task AddRegistroVeterinario(RegistroVeterinario registroVeterinario)
+    {
+        await _reporteGanadoService.AddRegistroVeterinario(registroVeterinario);
+    }
+
+    [HttpPut("UpdateRegistroVeterinario - Ariana ")]
+    public async Task<IActionResult> UpdateRegistroVeterinario(RegistroVeterinario registroVeterinario)
+    {
+        return await _reporteGanadoService.UpdateRegistroVeterinario((IEnumerable<RegistroVeterinario>)registroVeterinario) ? Ok() : NotFound();
+    }
+
+    [HttpDelete("DeleteRegistroVeterinario - Ariana")]
+    public async Task<IActionResult> DeleteRegistroVeterinario()
+    {
+        return await _reporteGanadoService.DeleteRegistroVeterinario() ? Ok() : NotFound();
+    }
+
     //Agregar
     [HttpPost("AddRegistroVacunas - Brandon ")]
     public async Task AddRegistroVacunas(Registro_de_Vacunas registro_De_Vacunas)
