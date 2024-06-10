@@ -26,11 +26,52 @@ public class ReporteInventarioRecursosService : IReporteInventarioRecursosServic
 
 
     }
+    public async Task AddFertlizantes(Fertilizantes fertilizantes)
+    {
+        await _inventarioRepo.AddFertilizantes(fertilizantes);
+    }
+
+    public async Task<bool> UpdateFertilizantes(IEnumerable<Fertilizantes> fertilizantes)
+    {
+        return await _inventarioRepo.UpdateFertilizantes(fertilizantes);
+    }
+
+    public async Task<bool> DeleteFertilizantes()
+    {
+        return await _inventarioRepo.DeleteFertilizantes();
+    }
 
 
 
 
 
+
+
+    public async Task AddPesticidas(Pesticidas pesticidas)
+    {
+
+        await _inventarioRepo.AddPesticidas(pesticidas);
+
+    }
+
+
+
+    public async Task<bool> UpdatePesticidas(IEnumerable<Pesticidas> pesticidas)
+    {
+
+        return await _inventarioRepo.UpdatePesticidas(pesticidas);
+
+    }
+
+
+
+    public async Task<bool> DeletePesticidas()
+    {
+
+        return await _inventarioRepo.DeletePesticidas();
+    }
+
+}
 
 }
 

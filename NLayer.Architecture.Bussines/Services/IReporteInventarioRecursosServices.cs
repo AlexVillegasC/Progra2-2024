@@ -11,4 +11,18 @@ public interface IReporteInventarioRecursosServices
 {
 
     Task<ReporteInventarioRecursos.ReporteInventarioRecursos> GetInventario();
+
+    Task AddFertilizantes(Fertilizantes fertilizantes);
+
+    Task<bool> UpdateFertilizantes(IEnumerable<Fertilizantes> fertilizantes);
+
+    Task<bool> DeleteFertilizantes();
+
+
+    Task AddPesticidas(Pesticidas pesticidas);
+
+    Task<bool> UpdatePesticidas(IEnumerable<Pesticidas> pesticidas);
+
+    Task<bool> DeletePesticidas();
+
 }
