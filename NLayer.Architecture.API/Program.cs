@@ -3,7 +3,6 @@ using Microsoft.OpenApi.Models;
 using NLayer.Architecture.Bussines.Services;
 using NLayer.Architecture.Data;
 using NLayer.Architecture.Data.FileRepositories;
-using static System.Runtime.InteropServices.JavaScript.JSType;
 
 
 var builder = WebApplication.CreateBuilder(args);
