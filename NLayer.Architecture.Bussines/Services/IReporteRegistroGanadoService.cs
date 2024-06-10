@@ -12,4 +12,5 @@ public interface IReporteRegistroGanadoService
     Task <bool> UpdateGanado (IEnumerable<Ganado> ganado);
 
     Task <bool> DeleteGanado ();
+
 }

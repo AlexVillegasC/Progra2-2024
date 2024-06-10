@@ -4,6 +4,8 @@ using NLayer.Architecture.Bussines.Models.RegistroGanado;
 using NLayer.Architecture.Bussines.RegistroGanado;
 using NLayer.Architecture.Bussines;
 namespace NLayer.Architecture.API.Controllers;
+
+using System.Security.Cryptography.X509Certificates;
 using Microsoft.AspNetCore.Mvc;
 
 [ApiController]
@@ -19,7 +21,7 @@ public class ReporteRegistroGanadoController : ControllerBase
         _reporteGanadoService = reporteGanadoService;
     }
 
-    [HttpGet("Get-Frander")]
+    [HttpGet("Get")]
 
     public async Task<LoteDeGanado> Get()
     {
@@ -27,33 +29,22 @@ public class ReporteRegistroGanadoController : ControllerBase
     }
 
      [HttpPost("AddGanado - Frander ")]
-        public async Task<IActionResult> AddGanado([FromBody] Ganado ganado)
-        {
-            if (ganado == null)
-            {
-                return BadRequest();
-            }
+    public async Task AddGanado (Ganado ganado)
+    {
+        await _reporteGanadoService.AddGanado(ganado);
+    }
+     
+     [HttpPut("UpdateGanado - Frander ")]
+    public async Task<IActionResult> UpdateGanado (Ganado ganado)
+    {
+        return await _reporteGanadoService.UpdateGanado((IEnumerable<Ganado>)ganado) ? Ok() : NotFound();
+    }
 
-            await _reporteGanadoService.AddGanado(ganado);
-            return Ok();
-        }
-        [HttpPut("UpdateGanado - Frander")]
-        public async Task<IActionResult> UpdateGanado([FromBody] IEnumerable<Ganado> updatedGanado)
-        {
-            if (updatedGanado == null)
-            {
-                return BadRequest();
-            }
-
-            bool result = await _reporteGanadoService.UpdateGanado(updatedGanado);
-            return result ? Ok() : NotFound();
-        }
-
-        [HttpDelete("DeleteGanado - Frander")]
-        public async Task<IActionResult> DeleteTemperature()
-        {
-        return await _reporteGanadoService.DeleteGanado() ? Ok() : NotFound();    
-        }
+    [HttpDelete("DeleteGanado - Frander")]
+    public async Task<IActionResult> DeleteGanado ()
+    {
+        return await _reporteGanadoService.DeleteGanado() ?  Ok() : NotFound();
+    }
 
 }
 

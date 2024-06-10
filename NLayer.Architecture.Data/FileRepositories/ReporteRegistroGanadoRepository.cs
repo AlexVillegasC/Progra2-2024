@@ -44,39 +44,35 @@ namespace NLayer.Architecture.Data.FileRepositories
 
         public async Task AddGanado (Ganado ganado)
         {
-            List <Ganado> elementos = await ReadJsonFileAsync<List<Ganado>>(_RegistroGanadoVirtualPath);
-
+            List<Ganado> elementos = await ReadJsonFileAsync<List<Ganado>>(_RegistroGanadoVirtualPath);
             if (elementos != null)
             {
                 elementos.Add(ganado);
                 await WriteJsonFileAsync(_RegistroGanadoVirtualPath, elementos);
             }
         }
-        public async Task<bool> UpdateGanado(IEnumerable<Ganado> ganado)
-        {
-            List<Ganado> elementos = ganado.ToList();
 
-            try
-            {
+        public async Task <bool> UpdateGanado (IEnumerable<Ganado> ganado)
+        {
+            List <Ganado> elementos = ganado.ToList();
+            try{
                 await WriteJsonFileAsync(_RegistroGanadoVirtualPath, elementos);
                 return true;
             }
-            catch
+            catch (Exception)
             {
                 return false;
             }
         }
-
-        public async Task<bool> DeleteGanado()
+        public async Task <bool> DeleteGanado ()
         {
-            List <Ganado> elementos = new();
-
-            try
-            {
+            List<Ganado> elementos = new();
+            try{
                 await WriteJsonFileAsync(_RegistroGanadoVirtualPath, elementos);
                 return true;
-            }    
-            catch(Exception genericException){
+            }
+            catch(Exception)
+            {
                 return false;
             }
         }
