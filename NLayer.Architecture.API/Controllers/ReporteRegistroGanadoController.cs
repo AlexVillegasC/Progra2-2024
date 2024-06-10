@@ -11,12 +11,12 @@ using Microsoft.AspNetCore.Mvc;
 [ApiController]
 [Route("[controller]")]
 
-public class ReporteRegistroController : ControllerBase
+public class ReporteRegistroGanadoController : ControllerBase
 {
     private readonly  IReporteRegistroGanadoService _reporteGanadoService;
 
 
-    public ReporteRegistroController(IReporteRegistroGanadoService reporteGanadoService)
+    public ReporteRegistroGanadoController(IReporteRegistroGanadoService reporteGanadoService)
     {
         _reporteGanadoService = reporteGanadoService;
     }
