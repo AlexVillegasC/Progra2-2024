@@ -27,11 +27,6 @@ namespace NLayer.Architecture.Data.FileRepositories
             _RegistroVeterinarioVirtualPath = FolderPath + _RegistroVeterinarioVirtualPath;
         }
 
-        public async Task<List<Registro_de_Vacunas>> GetRegistroVacunas()
-        {
-            return await ReadListJsonAsync<Registro_de_Vacunas>(_RegistroVacunasVirtualPath);
-        }
-
         public async Task<List<Ganado>> GetRegistroGanado()
         {
             return await ReadListJsonAsync<Ganado>(_RegistroGanadoVirtualPath);
@@ -44,41 +39,79 @@ namespace NLayer.Architecture.Data.FileRepositories
 
         public async Task AddGanado (Ganado ganado)
         {
-            List <Ganado> elementos = await ReadJsonFileAsync<List<Ganado>>(_RegistroGanadoVirtualPath);
-
+            List<Ganado> elementos = await ReadJsonFileAsync<List<Ganado>>(_RegistroGanadoVirtualPath);
             if (elementos != null)
             {
                 elementos.Add(ganado);
                 await WriteJsonFileAsync(_RegistroGanadoVirtualPath, elementos);
             }
         }
-        public async Task<bool> UpdateGanado(IEnumerable<Ganado> ganado)
-        {
-            List<Ganado> elementos = ganado.ToList();
 
-            try
-            {
+        public async Task <bool> UpdateGanado (IEnumerable<Ganado> ganado)
+        {
+            List <Ganado> elementos = ganado.ToList();
+            try{
                 await WriteJsonFileAsync(_RegistroGanadoVirtualPath, elementos);
                 return true;
             }
-            catch
+            catch (Exception)
+            {
+                return false;
+            }
+        }
+        public async Task <bool> DeleteGanado ()
+        {
+            List<Ganado> elementos = new();
+            try{
+                await WriteJsonFileAsync(_RegistroGanadoVirtualPath, elementos);
+                return true;
+            }
+            catch(Exception)
             {
                 return false;
             }
         }
 
-        public async Task<bool> DeleteGanado()
+        public async Task<List<Registro_de_Vacunas>> GetRegistroVacunas()
         {
-            List <Ganado> elementos = new();
+            return await ReadListJsonAsync<Registro_de_Vacunas>(_RegistroVacunasVirtualPath);
+        }
 
+        public async Task AddRegistroVacunas(Registro_de_Vacunas registro_De_Vacunas)
+        {
+            List<Registro_de_Vacunas> elementos = await ReadJsonFileAsync<List<Registro_de_Vacunas>>(_RegistroVacunasVirtualPath);
+            if (elementos != null)
+            {
+                elementos.Add(registro_De_Vacunas);
+                await WriteJsonFileAsync(_RegistroVacunasVirtualPath, elementos);
+            }
+        }
+        public async Task<bool> UpdateVacunas(IEnumerable<Registro_de_Vacunas> registro_De_Vacunas)
+        {
+            List<Registro_de_Vacunas> elementos = registro_De_Vacunas.ToList();
             try
             {
-                await WriteJsonFileAsync(_RegistroGanadoVirtualPath, elementos);
+                await WriteJsonFileAsync(_RegistroVacunasVirtualPath, elementos);
                 return true;
-            }    
-            catch(Exception genericException){
+            }
+            catch (Exception)
+            {
                 return false;
             }
         }
+        public async Task<bool> DeleteVacunas()
+        {
+            List<Registro_de_Vacunas> elementos = new();
+            try
+            {
+                await WriteJsonFileAsync(_RegistroVacunasVirtualPath, elementos);
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+        }
+
     }
 }
