@@ -12,6 +12,11 @@ namespace NLayer.Architecture.Data.FileRepositories
         Task AddGanado (Ganado ganado);
         Task <bool> DeleteGanado ();
         Task <bool> UpdateGanado(IEnumerable<Ganado> ganado);
+        Task AddRegistroVacunas(Registro_de_Vacunas registro_De_Vacunas);
+        Task<bool> UpdateVacunas(IEnumerable<Registro_de_Vacunas> registro_De_Vacunas);
+        Task<bool> DeleteVacunas();
+
+        //Metodos y clases 
 
     }
 }

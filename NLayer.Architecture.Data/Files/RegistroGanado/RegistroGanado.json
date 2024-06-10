@@ -1,38 +1,10 @@
 [
   {
-    "ID": "string",
-    "Date": "string",
-    "Nombre": "string",
-    "Peso": 0.0,
-    "Raza": "string"
-  },
-  {
-    "ID": "string",
-    "Date": "string",
-    "Nombre": "string",
-    "Peso": 0.0,
-    "Raza": "string"
-  },
-  {
-    "ID": "string",
-    "Date": "string",
-    "Nombre": "string",
-    "Peso": 0.0,
-    "Raza": "string"
-  },
-  {
-    "ID": "string",
-    "Date": "string",
-    "Nombre": "string",
-    "Peso": 0.0,
-    "Raza": "string"
-  },
-  {
-    "ID": "string",
-    "Date": "string",
-    "Nombre": "string",
-    "Peso": 0.0,
-    "Raza": "string"
+    "ID": "001",
+    "Date": "12/05/2024",
+    "Nombre": "",
+    "Peso": 23.7,
+    "Raza": "Angus"
   },
   {
     "ID": "string",
@@ -41,4 +13,5 @@
     "Peso": 0.0,
     "Raza": "string"
   }
+ 
 ]

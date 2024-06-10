@@ -41,4 +41,19 @@ public class ReporteRegistroGanadoService : IReporteRegistroGanadoService
         {
             return await _reporteGanadoRepo.DeleteGanado();
         }
-    }
+    //Agregar 
+        public async Task AddRegistroVacunas(Registro_de_Vacunas registro_De_Vacunas)
+        {
+            await _reporteGanadoRepo.AddRegistroVacunas(registro_De_Vacunas);
+        }
+
+        public async Task<bool> UpdateVacunas(IEnumerable<Registro_de_Vacunas> registro_De_Vacunas)
+        {
+            return await _reporteGanadoRepo.UpdateVacunas(registro_De_Vacunas);
+        }
+
+        public async Task<bool> DeleteVacunas()
+        {
+            return await _reporteGanadoRepo.DeleteVacunas();
+        }
+}

@@ -13,4 +13,10 @@ public interface IReporteRegistroGanadoService
 
     Task <bool> DeleteGanado ();
 
+    Task AddRegistroVacunas(Registro_de_Vacunas registro_De_Vacunas);
+
+    Task<bool> UpdateVacunas(IEnumerable<Registro_de_Vacunas> registro_De_Vacunas);
+
+    Task<bool> DeleteVacunas();
+
 }
