@@ -23,8 +23,10 @@ public class PronosticoLluviasService : IPronosticoLluviasServices
       public async Task<PronosticoLluvias.PronosticoLluvias> GetPronosticos()
     {
         PronosticoLluvias.PronosticoLluvias miPronostico = new PronosticoLluvias.PronosticoLluvias();
+
         //miPronostico.LluviaCortoPlazo = await _pronosticoLluviaRepo.GetLluviaCortoPlazos();
         //miPronostico.LluviaMedianoPlazo = await _pronosticoLluviaRepo.GetLluviaMedianoPlazos();
+
         miPronostico.LluviaLargoPlazo = await _pronosticoLluviaRepo.GetLluviaLargoPlazos();
 
         return miPronostico;
@@ -50,6 +52,7 @@ public class PronosticoLluviasService : IPronosticoLluviasServices
     {
         return await _pronosticoLluviaRepo.DeleteLluviaLargoPlazo();
     }
+
 
 }
 

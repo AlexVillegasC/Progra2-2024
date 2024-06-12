@@ -8,9 +8,12 @@ namespace NLayer.Architecture.Data.FileRepositories;
 
 public class PronosticoLluviasRepository : FileRepository, IPronosticoLluviasRepository
 {
+
     private string _lluviaLargoPlazoVirtualPath = "C:\\Users\\waynm\\Desktop\\Programacion II\\NLayer.Architecture.Data\\Files\\MonitoreoClimatico\\lluviaLargoPlazo.json";
    // private string _lluviaCortoPlazoVirtualPath = "lluviaCortoPlazo.json";
     //private string _lluviaMedianoPlazoVirtualPath = "lluviaMedianoPlazo.json";
+
+    
 
     private string FolderPath { get; set; }
 
@@ -18,6 +21,7 @@ public class PronosticoLluviasRepository : FileRepository, IPronosticoLluviasRep
     {
         FolderPath = $"{configuration["Files:MonitoreoClimatico"]}";
         _lluviaLargoPlazoVirtualPath = FolderPath + _lluviaLargoPlazoVirtualPath;
+
  
 
        //_lluviaCortoPlazoVirtualPath = FolderPath + _lluviaCortoPlazoVirtualPath;
@@ -52,6 +56,7 @@ public class PronosticoLluviasRepository : FileRepository, IPronosticoLluviasRep
         {
             return false;
         }
+
     }
 
     public async Task<bool> DeleteLluviaLargoPlazo()
@@ -81,5 +86,7 @@ public class PronosticoLluviasRepository : FileRepository, IPronosticoLluviasRep
     {
         return await ReadJsonFileAsync<LluviaMedianoPlazo>(_lluviaMedianoPlazoVirtualPath);
     }
+
     */
+
 }

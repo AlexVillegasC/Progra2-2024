@@ -14,5 +14,7 @@ namespace NLayer.Architecture.Bussines.Services;
        
         Task<bool>DeleteLluviaLargoPlazo();
 
+
+
     }
 

@@ -14,4 +14,5 @@ public interface IPronosticoLluviasRepository
     Task<bool> UpdateLluviaLargoPlazo(IEnumerable<LluviaLargoPlazo> _lluviaLargoPlazos);
     Task<bool> DeleteLluviaLargoPlazo();
 
+
 }
