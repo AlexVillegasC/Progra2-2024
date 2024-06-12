@@ -1,11 +1,9 @@
-﻿{
-  "Id": "001",
-  "Pronosticold": 15
-  "Detail": "mm ultimos 4 dias"
-},
-{
-  "Id": "001",
-  "Pronosticold": 15,
-  "Detail": "mm ultimos 4 dias"
-}
+
+[
+  {
+    "Id": "010",
+    "Pronosticold": "0400",
+    "Detail": "Prubaa"
+  }
 ]
+
