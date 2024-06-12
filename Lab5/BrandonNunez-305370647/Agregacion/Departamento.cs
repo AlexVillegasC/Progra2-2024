@@ -1,4 +1,6 @@
 ﻿
+using Lab5.BrandonNunez_305370647.Agregacion;
+
 namespace Lab5.BrandonNunez_305370647.Agregacion
 {
     public class Departamento
@@ -28,3 +30,13 @@ namespace Lab5.BrandonNunez_305370647.Agregacion
         }
     }
 }
+
+
+//using lab5.brandonnunez_305370647.agregacion;
+//public class program { public static void Main(string[] args) {
+
+//        Departamento nuevodepartamento = new Departamento("Gerentes");
+//        Console.WriteLine($"Administrar: {nuevodepartamento.MostrarInformacion}");
+//    }
+
+//}

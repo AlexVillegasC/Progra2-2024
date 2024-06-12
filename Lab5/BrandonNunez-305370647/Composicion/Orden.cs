@@ -1,4 +1,6 @@
 ﻿
+using Lab5.BrandonNunez_305370647.Composicion;
+
 namespace Lab5.BrandonNunez_305370647.Composicion
 {
     public class Orden
@@ -36,3 +38,13 @@ namespace Lab5.BrandonNunez_305370647.Composicion
         }
     }
 }
+
+//using lab5.brandonnunez_305370647.Composicion;
+//public class program
+//{
+//    public static void Main(string[] args)
+//    {
+//        Orden nuevaorden = new Orden();
+//        Console.WriteLine($"Lista: {nuevaorden.ImprimirOrden}");
+//    }
+//}

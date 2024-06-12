@@ -1,4 +1,6 @@
 ﻿
+using Lab4.BrandonNunez_305370647.Opciones_Viajes;
+
 namespace Lab4.BrandonNunez_305370647
 {
     public class ContainerTrips<T>
@@ -17,6 +19,11 @@ namespace Lab4.BrandonNunez_305370647
             {
                 Console.WriteLine(elemento.ToString());
             }
+        }
+
+        internal void AddElement(MontainTrip montainTrip)
+        {
+            throw new NotImplementedException();
         }
     }
 }
