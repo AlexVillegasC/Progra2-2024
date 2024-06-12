@@ -14,5 +14,12 @@ namespace DataAccess.Layer.FileRepositories
         Task<Cultivo> GetCultivo();
 
         Task<HumedadSuelo> GetMoisture();
+
+        Task<bool> DeleteTemperatures();
+
+        Task<bool> DeleteCultivo();
+
+        Task<bool> DeleteMoisture();
+
     }
 }
