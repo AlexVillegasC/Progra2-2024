@@ -24,6 +24,8 @@ public class PronosticoLluviasRepository : FileRepository, IPronosticoLluviasRep
         //_lluviaCortoPlazoVirtualPath = FolderPath + _lluviaCortoPlazoVirtualPath;
         _lluviaMedianoPlazoVirtualPath = FolderPath + _lluviaMedianoPlazoVirtualPath;
 
+
+
     }
     public async Task<List<LluviaLargoPlazo>> GetLluviaLargoPlazos()
     {
@@ -81,52 +83,53 @@ public class PronosticoLluviasRepository : FileRepository, IPronosticoLluviasRep
     }
     */
     public async Task<List<LluviaMedianoPlazo>>GetLluviaMedianoPlazos()
-    {
-        return await ReadJsonFileAsync<List<LluviaMedianoPlazo>>(_lluviaMedianoPlazoVirtualPath);
+   {
+       return await ReadJsonFileAsync<List<LluviaMedianoPlazo>>(_lluviaMedianoPlazoVirtualPath);
+   }
+
+   public async Task AddLluviaMedianoPlazo(LluviaMedianoPlazo lluviaMedianoPlazo)
+   {
+       List<LluviaMedianoPlazo> elementos = await ReadJsonFileAsync<List<LluviaMedianoPlazo>>(_lluviaMedianoPlazoVirtualPath);
+       if (elementos != null)
+       {
+           elementos.Add(lluviaMedianoPlazo);
+           await WriteJsonFileAsync(_lluviaMedianoPlazoVirtualPath, elementos);
+       }
+   }
+
+   public async Task<bool> UpdateLluviaMedianoPlazo(IEnumerable<LluviaMedianoPlazo> lluviaMedianoPlazos)
+   {
+       List<LluviaMedianoPlazo> elementos = lluviaMedianoPlazos.ToList();
+
+       try
+       {
+           await WriteJsonFileAsync(_lluviaMedianoPlazoVirtualPath, elementos);
+           return true;
+       }
+
+       catch (Exception genericException)
+
+       {
+           return false;
+       }
+   }
+
+   public async Task<bool> DeleteLluviaMedianoPlazo()
+   {
+       List<LluviaLargoPlazo> elementos = new();
+
+       try
+       {
+           await WriteJsonFileAsync(_lluviaMedianoPlazoVirtualPath, elementos);
+           return true;
+       }
+
+       catch (Exception generincException)
+
+       {
+           return false;
+       }
     }
+}
 
-    public async Task AddLluviaMedianoPlazo(LluviaMedianoPlazo lluviaMedianoPlazo)
-    {
-        List<LluviaMedianoPlazo> elementos = await ReadJsonFileAsync<List<LluviaMedianoPlazo>>(_lluviaMedianoPlazoVirtualPath);
-        if (elementos != null)
-        {
-            elementos.Add(lluviaMedianoPlazo);
-            await WriteJsonFileAsync(_lluviaMedianoPlazoVirtualPath, elementos);
-        }
-    }
-
-    public async Task<bool> UpdateLluviaMedianoPlazo(IEnumerable<LluviaMedianoPlazo> lluviaMedianoPlazos)
-    {
-        List<LluviaMedianoPlazo> elementos = lluviaMedianoPlazos.ToList();
-
-        try
-        {
-            await WriteJsonFileAsync(_lluviaMedianoPlazoVirtualPath, elementos);
-            return true;
-        }
-
-        catch (Exception genericException)
-
-        {
-            return false;
-        }
-    }
-
-    public async Task<bool> DeleteLluviaMedianoPlazo()
-    {
-        List<LluviaLargoPlazo> elementos = new();
-
-        try
-        {
-            await WriteJsonFileAsync(_lluviaMedianoPlazoVirtualPath, elementos);
-            return true;
-        }
-
-        catch (Exception generincException)
-
-        {
-            return false;
-        }
-     }
- }
-
+ 
