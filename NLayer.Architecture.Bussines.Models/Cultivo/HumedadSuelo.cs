@@ -3,7 +3,7 @@
 public class HumedadSuelo
 {
     public float nivelHumedad { get; set; }
-    public DateOnly fechaActual { get; set; }
+    public DateTime fechaActual { get; set; }
     public string Ubicacion { get; set; }
 
 
