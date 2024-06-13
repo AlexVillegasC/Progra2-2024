@@ -26,6 +26,8 @@ namespace NLayer.Architecture.Bussines.Services
             _humedadadSueloVirtualPath = FolderPath + _humedadadSueloVirtualPath;
 
         }
+
+        //   - GET
         public async Task<Temperatura> GetTemperatures()
         {
             return await ReadJsonFileAsync<Temperatura>(_tempetaruraVirtualPath);
@@ -41,6 +43,59 @@ namespace NLayer.Architecture.Bussines.Services
             return await ReadJsonFileAsync<HumedadSuelo>(_humedadadSueloVirtualPath);
         }
 
+        //   - PUT
+        
+        public async Task<bool> UpdateTemperatures(Temperatura temperatura)
+        {
+
+
+            try
+            {
+                await WriteJsonFileAsync(_tempetaruraVirtualPath, temperatura);
+                return true;
+            }
+            catch (Exception genericException)
+            {
+                return false;
+            };
+        }
+
+        public async Task<bool> UpdateMoisture(HumedadSuelo humedad)
+        {
+
+
+            try
+            {
+                await WriteJsonFileAsync(_humedadadSueloVirtualPath, humedad);
+                return true;
+            }
+            catch (Exception genericException)
+            {
+                return false;
+            };
+        }
+
+        public async Task<bool> UpdateCultivo(Cultivo cultivo)
+        {
+
+
+            try
+            {
+
+                await WriteJsonFileAsync(_cultivo, cultivo);
+
+                return true;
+            }
+            catch (Exception genericException)
+            {
+                return false;
+            };
+        }
+
+
+
+
+        //   - DELETE
         public async Task<bool> DeleteTemperatures()
         {
             List<Temperatura> empty = new();
