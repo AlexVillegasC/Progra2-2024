@@ -5,6 +5,7 @@ namespace NLayer.Architecture.Bussines.Services;
 
     public interface IPronosticoLluviasServices
     {
+
         Task<PronosticoLluvias.PronosticoLluvias> GetPronosticos();
 
        Task GetLluviaCortoPlazos(LluviaCortoPlazo lluviaCortoPlazo);
@@ -13,6 +14,23 @@ namespace NLayer.Architecture.Bussines.Services;
        Task<bool> UpdateLluviaCortoPlazo(IEnumerable<LluviaCortoPlazo> lluviaCortoPlazos);
 
        Task<bool> DeleteLluviaCortoPlazo();
-    }
+
+    Task GetLluviaMedianoPlazos(LluviaMedianoPlazo lluviaMedianoPlazo);
+    Task AddLluviaMedianoPlazo(LluviaMedianoPlazo lluviaMedianoPlazo);
+
+    Task<bool> UpdateLluviaMedianoPlazo(IEnumerable<LluviaMedianoPlazo> lluviaMedianoPlazos);
+
+    Task<bool> DeleteLluviaMedianoPlazo();
+
+    Task GetLluviaLargoPlazos(LluviaLargoPlazo lluviaLargoPlazo);
+        Task AddLluviaLargoPlazo(LluviaLargoPlazo lluviaLargoPlazo);
+
+        Task<bool>UpdateLluviaLargoPlazo(IEnumerable<LluviaLargoPlazo>lluviaLargoPlazos);
+       
+        Task<bool>DeleteLluviaLargoPlazo();
+
+
+}
+
 
 
