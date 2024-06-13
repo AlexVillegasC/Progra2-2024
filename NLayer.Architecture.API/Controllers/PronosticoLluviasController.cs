@@ -29,7 +29,8 @@ public class PronosticoLluviasController : ControllerBase
         }
     }
 
-    [HttpPost ("AddLluviaMedianoPlazo", Name = "AddLluviaMedianoPlazo")]
+
+    [HttpPost("AddLluviaMedianoPlazo", Name = "AddLluviaMedianoPlazo")]
     public async Task AddLluviaMedianoPlazo(LluviaMedianoPlazo lluviaMedianoPlazo)
     {
         await _pronosticoLluviasService.AddLluviaMedianoPlazo(lluviaMedianoPlazo);
@@ -38,15 +39,16 @@ public class PronosticoLluviasController : ControllerBase
     [HttpPut("UpdateLluviaMedianoPlazo", Name = "UpdateLluviaMedianoPlazo")]
     public async Task<IActionResult> UpdateLluviaMedianoPlazo(IEnumerable<LluviaMedianoPlazo> updateLluviaMedianoPlazo)
     {
-        return await _pronosticoLluviasService.UpdateLluviaMedianoPlazo(updateLluviaMedianoPlazo)? Ok() : NotFound();
+        return await _pronosticoLluviasService.UpdateLluviaMedianoPlazo(updateLluviaMedianoPlazo) ? Ok() : NotFound();
     }
 
     [HttpDelete("DeleteLluviaMedianoPlazo", Name = "DeleteLluviaMedianoPlazo")]
-    public async Task<IActionResult> DeleteLluviaMedianoPlazo ()
+    public async Task<IActionResult> DeleteLluviaMedianoPlazo()
     {
-        return await _pronosticoLluviasService.DeleteLluviaMedianoPlazo() ? Ok() : NotFound();    }
+        return await _pronosticoLluviasService.DeleteLluviaMedianoPlazo() ? Ok() : NotFound();
+    }
 
-
+    
 
     [HttpPost ("AddLluviaLargoPlazo", Name = "AddLluviaLargoPlazo")]
     public async Task AddLluviaLargoPlazo(LluviaLargoPlazo lluviaLargoPlazo)

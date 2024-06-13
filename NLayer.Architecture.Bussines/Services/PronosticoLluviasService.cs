@@ -35,7 +35,7 @@ public class PronosticoLluviasService : IPronosticoLluviasServices
     {
         await _pronosticoLluviaRepo.GetLluviaMedianoPlazos();
     }
-    
+
     public async Task AddLluviaMedianoPlazo(LluviaMedianoPlazo lluviaMedianoPlazo)
     {
         await _pronosticoLluviaRepo.AddLluviaMedianoPlazo(lluviaMedianoPlazo);
