@@ -41,5 +41,59 @@ namespace NLayer.Architecture.Bussines.Services
             return await ReadJsonFileAsync<HumedadSuelo>(_humedadadSueloVirtualPath);
         }
 
+        public async Task<bool> DeleteTemperatures()
+        {
+            List<Temperatura> empty = new();
+
+            try
+            {
+                await WriteJsonFileAsync(_tempetaruraVirtualPath, empty);
+                return true;
+
+            }catch (Exception ex)
+            {
+                return false;
+            }
+
+        }
+
+        public async Task<bool> DeleteCultivo()
+        {
+            List<Cultivo> empty = new();
+
+            try
+            {
+                await WriteJsonFileAsync(_cultivo, empty);
+                return true;
+
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+
+        }
+
+
+        public async Task<bool> DeleteMoisture()
+        {
+            List<HumedadSuelo> empty = new();
+
+            try
+            {
+                await WriteJsonFileAsync(_humedadadSueloVirtualPath, empty);
+                return true;
+
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+
+        }
     }
-}
+
+      
+
+    }
+

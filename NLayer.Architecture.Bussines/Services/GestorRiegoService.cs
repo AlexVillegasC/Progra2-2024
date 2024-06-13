@@ -23,5 +23,23 @@ namespace NLayer.Architecture.Bussines.Services
 
             return miEstadoRiego;
         }
+
+        public async Task<bool> DeleteTemperatura()
+        {
+            return await _estadoRiegoRepo.DeleteTemperatures();
+        }
+
+        public async Task<bool> DeleteMoisture()
+        {
+            return await _estadoRiegoRepo.DeleteMoisture();
+
+        }
+
+        public async Task<bool> DeleteCultivo()
+        {
+            return await _estadoRiegoRepo.DeleteCultivo();
+        }
+
+
     }
 }
