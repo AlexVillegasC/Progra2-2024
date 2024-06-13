@@ -22,4 +22,3 @@ public class Pokemon
         return this.Vida > 0;
     }
 }
-//Hola
