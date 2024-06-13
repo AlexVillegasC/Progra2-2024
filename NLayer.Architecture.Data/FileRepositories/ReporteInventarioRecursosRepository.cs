@@ -47,15 +47,13 @@ public async Task AddFertilizantes(Fertilizantes fertilizantes)
 }
 
 
-// Método para actualizar la lista de maquinarias en el archivo JSON
+
 public async Task<bool> UpdateFertilizantes(IEnumerable<Fertilizantes> fertilizantes)
 {
-    // Convierte la colección de maquinarias en una lista
     List<Fertilizantes> elementos = fertilizantes.ToList();
 
     try
     {
-        // Intenta escribir esta lista en el archivo JSON utilizando el método WriteJsonFileAsync
         await WriteJsonFileAsync(FertilizantesVirtualPath, elementos);
         return true;
     }
