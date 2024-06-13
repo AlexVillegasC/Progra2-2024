@@ -13,4 +13,3 @@ public class Pikachu : Pokemon
         this.Ataque = ataque;
     }
 }
-// hola
