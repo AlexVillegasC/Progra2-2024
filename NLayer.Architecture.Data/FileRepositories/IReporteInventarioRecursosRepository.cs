@@ -1,5 +1,8 @@
-﻿using NLayer.Architecture.Bussines.ReporteInventario;
+﻿using NLayer.Architecture.Bussines.ReporteClima;
 using NLayer.Architecture.Bussines.ReporteInventarioRecursos;
+using System.Collections;
+using System.Data.SqlTypes;
+
 
 namespace DataAccess.Layer.FileRepositories;
 

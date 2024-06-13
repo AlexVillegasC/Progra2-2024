@@ -1,6 +1,14 @@
-﻿{
-  "Marca": "DISAGRO",
-  "Nombre": "Root Out",
-  "Precio": 12175,
-  "Cantidad_galones": 1,
-}
+﻿[
+  {
+    "Marca": "DISAGRO",
+    "Nombre": "Root Out",
+    "Precio": 12175,
+    "Cantidad_galones": 1
+  },
+  {
+    "Marca": "Adama",
+    "Nombre": "Bralic",
+    "Precio": 3456,
+    "Cantidad_galones": 2
+  }
+]

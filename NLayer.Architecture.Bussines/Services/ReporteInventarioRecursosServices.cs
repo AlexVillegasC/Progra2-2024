@@ -1,14 +1,19 @@
 ﻿using NLayer.Architecture.Bussines.ReporteInventarioRecursos;
 using DataAccess.Layer.FileRepositories;
+using DataAccess.Layer.FileRepositories;
+using System.ComponentModel;
+using System.Formats.Asn1;
+using System.Runtime.InteropServices;
+
 
 namespace NLayer.Architecture.Bussines.Services;
 
-public class ReporteInventarioRecursosService : IReporteInventarioRecursosServices
+public class ReporteInventarioRecursosServices : IReporteInventarioRecursosServices
 {
     
     private readonly IReporteInventarioRecursosRepository _inventarioRecursos;
 
-    public ReporteInventarioRecursosService(IReporteInventarioRepository inventarioRecursos)
+    public ReporteInventarioRecursosServices(IReporteInventarioRepository inventarioRecursos)
     {
         _inventarioRecursos = (IReporteInventarioRecursosRepository?)inventarioRecursos;
     }
@@ -23,22 +28,22 @@ public class ReporteInventarioRecursosService : IReporteInventarioRecursosServic
         miInventario.Pesticidas = await _inventarioRecursos.GetPesticidas();
         miInventario.Fertilizantes = await _inventarioRecursos.GetFertilizantes();
         return miInventario;
-
+            
 
     }
     public async Task AddFertlizantes(Fertilizantes fertilizantes)
     {
-        await _inventarioRepo.AddFertilizantes(fertilizantes);
+        await _inventarioRecursos.AddFertilizantes(fertilizantes);
     }
 
     public async Task<bool> UpdateFertilizantes(IEnumerable<Fertilizantes> fertilizantes)
     {
-        return await _inventarioRepo.UpdateFertilizantes(fertilizantes);
+        return await _inventarioRecursos.UpdateFertilizantes(fertilizantes);
     }
 
     public async Task<bool> DeleteFertilizantes()
     {
-        return await _inventarioRepo.DeleteFertilizantes();
+        return await _inventarioRecursos.DeleteFertilizantes();
     }
 
 
@@ -50,7 +55,7 @@ public class ReporteInventarioRecursosService : IReporteInventarioRecursosServic
     public async Task AddPesticidas(Pesticidas pesticidas)
     {
 
-        await _inventarioRepo.AddPesticidas(pesticidas);
+        await _inventarioRecursos.AddPesticidas(pesticidas);
 
     }
 
@@ -59,7 +64,7 @@ public class ReporteInventarioRecursosService : IReporteInventarioRecursosServic
     public async Task<bool> UpdatePesticidas(IEnumerable<Pesticidas> pesticidas)
     {
 
-        return await _inventarioRepo.UpdatePesticidas(pesticidas);
+        return await _inventarioRecursos.UpdatePesticidas(pesticidas);
 
     }
 
@@ -68,7 +73,7 @@ public class ReporteInventarioRecursosService : IReporteInventarioRecursosServic
     public async Task<bool> DeletePesticidas()
     {
 
-        return await _inventarioRepo.DeletePesticidas();
+        return await _inventarioRecursos.DeletePesticidas();
     }
 
 }

@@ -1,7 +1,7 @@
 ﻿using NLayer.Architecture.Data;
 using Microsoft.Extensions.Configuration;
 using NLayer.Architecture.Bussines.ReporteInventarioRecursos;
-using NLayer.Architecture.Bussines.ReporteInventario;
+using NLayer.Architecture.Bussines.ReporteClima;
 
 
 namespace DataAccess.Layer.FileRepositories;
