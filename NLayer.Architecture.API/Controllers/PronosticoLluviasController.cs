@@ -5,18 +5,18 @@ using NLayer.Architecture.Bussines.Services;
 
 namespace NLayer.Architecture.API.Controllers;
 
- [ApiController]
- [Route("[controller]")]
+[ApiController]
+[Route("[controller]")]
 public class PronosticoLluviasController : ControllerBase
-{ 
-        private readonly IPronosticoLluviasServices _pronosticoLluviasService;
+{
+    private readonly IPronosticoLluviasServices _pronosticoLluviasService;
 
-        public PronosticoLluviasController(IPronosticoLluviasServices pronosticoLluviasService)
-        {
-            _pronosticoLluviasService = pronosticoLluviasService;
-        }
+    public PronosticoLluviasController(IPronosticoLluviasServices pronosticoLluviasService)
+    {
+        _pronosticoLluviasService = pronosticoLluviasService;
+    }
 
-     [HttpGet]
+    [HttpGet]
     public async Task<PronosticoLluvias> Get()
     {
         try
@@ -25,20 +25,27 @@ public class PronosticoLluviasController : ControllerBase
         }
         catch (Exception ex)
         {
-            // Captura la excepción y registra el error.
-            // Aquí puedes usar un sistema de logging para registrar el error, por ejemplo:
-            // _logger.LogError(ex, "An error occurred while getting the forecast.");
-
-            // Lanzar una excepción más específica o devolver un valor por defecto
-            // dependiendo de cómo prefieras manejar el error en tu aplicación.
-
-            // Ejemplo de lanzar una nueva excepción:
             throw new ApplicationException("Se produjo un error al obtener el pronóstico de lluvias.", ex);
-
-            // Ejemplo de devolver un valor por defecto:
-            // return new PronosticoLluvias(); // Suponiendo que tenga un constructor por defecto.
         }
     }
+
+    [HttpPost ("AddLluviaMedianoPlazo", Name = "AddLluviaMedianoPlazo")]
+    public async Task AddLluviaMedianoPlazo(LluviaMedianoPlazo lluviaMedianoPlazo)
+    {
+        await _pronosticoLluviasService.AddLluviaMedianoPlazo(lluviaMedianoPlazo);
+    }
+
+    [HttpPut("UpdateLluviaMedianoPlazo", Name = "UpdateLluviaMedianoPlazo")]
+    public async Task<IActionResult> UpdateLluviaMedianoPlazo(IEnumerable<LluviaMedianoPlazo> updateLluviaMedianoPlazo)
+    {
+        return await _pronosticoLluviasService.UpdateLluviaMedianoPlazo(updateLluviaMedianoPlazo)? Ok() : NotFound();
+    }
+
+    [HttpDelete("DeleteLluviaMedianoPlazo", Name = "DeleteLluviaMedianoPlazo")]
+    public async Task<IActionResult> DeleteLluviaMedianoPlazo ()
+    {
+        return await _pronosticoLluviasService.DeleteLluviaMedianoPlazo() ? Ok() : NotFound();    }
+
 
 
     [HttpPost ("AddLluviaLargoPlazo", Name = "AddLluviaLargoPlazo")]
