@@ -29,4 +29,54 @@ public class PronosticoLluviasRepository : FileRepository, IPronosticoLluviasRep
     {
         return await ReadJsonFileAsync<LluviaCortoPlazo>(_lluviaCortoPlazoVirtualPath);
     }
+
+    public async Task<List<LluviaCortoPlazo>> GetLluviaCortoPlazo()
+    {
+        return await ReadJsonFileAsync<List<LluviaCortoPlazo>>(_lluviaCortoPlazoVirtualPath);
+    }
+
+    public async Task AddLluviaCortoPlazo(LluviaCortoPlazo lluviaCortoPlazo)
+    {
+        List<LluviaCortoPlazo> elementos = await ReadJsonFileAsync<List<LluviaCortoPlazo>>(_lluviaCortoPlazoVirtualPath);
+        if (elementos != null)
+        {
+            elementos.Add(lluviaCortoPlazo);
+            await WriteJsonFileAsync(_lluviaCortoPlazoVirtualPath, elementos);
+        }
+    }
+
+    public async Task<bool> UpdateLluviaCortoPlazo(IEnumerable<LluviaCortoPlazo> lluviaCortoPlazos)
+    {
+        List<LluviaCortoPlazo> elementos = lluviaCortoPlazos.ToList();
+
+        try
+        {
+            await WriteJsonFileAsync(_lluviaCortoPlazoVirtualPath, elementos);
+            return true;
+        }
+
+        catch (Exception genericException)
+
+        {
+            return false;
+        }
+    }
+
+    public async Task<bool> DeleteLluviaCortoPlazo()
+    {
+        List<LluviaCortoPlazo> elementos = new();
+
+        try
+        {
+            await WriteJsonFileAsync(_lluviaCortoPlazoVirtualPath, elementos);
+            return true;
+        }
+
+        catch (Exception generincException)
+
+        {
+            return false;
+        }
+    }
 }
+

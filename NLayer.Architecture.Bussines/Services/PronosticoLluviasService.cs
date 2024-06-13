@@ -24,7 +24,26 @@ public class PronosticoLluviasService : IPronosticoLluviasServices
 
         return miPronostico;
     }
-  
+
+   public async Task GetLluviaCortoPlazos(LluviaCortoPlazo lluviaCortoPlazo)
+    {
+        await _pronosticoLluviaRepo.GetLluviaCortoPlazos();
+    }
+
+    public async Task AddLluviaCortoPlazo(LluviaCortoPlazo lluviaCortoPlazo)
+    {
+        await _pronosticoLluviaRepo.AddLluviaCortoPlazo(lluviaCortoPlazo);
+    }
+
+    public async Task<bool> UpdateLluviaCortoPlazo(IEnumerable<LluviaCortoPlazo> lluviaCortoPlazo)
+    {
+        return await _pronosticoLluviaRepo.UpdateLluviaCortoPlazo(lluviaCortoPlazo);
+    }
+
+    public async Task<bool> DeleteLluviaCortoPlazo()
+    {
+        return await _pronosticoLluviaRepo.DeleteLluviaCortoPlazo();
+    }
 }
 
 
