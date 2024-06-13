@@ -18,4 +18,8 @@ public interface IPronosticoLluviasRepository
     Task<bool> DeleteLluviaLargoPlazo();
 
 
+    Task<List<LluviaCortoPlazo>> GetLluviaCortoPlazos();
+    Task AddLluviaCortoPlazo(LluviaCortoPlazo _lluviaCortoPlazo);
+    Task<bool> UpdateLluviaCortoPlazo(IEnumerable<LluviaCortoPlazo> lluviaCortoPlazos);
+    Task<bool> DeleteLluviaCortoPlazo();
 }
