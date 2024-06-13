@@ -1,12 +1,23 @@
-﻿using NLayer.Architecture.Bussines.ReporteInventarioRecursos;
+﻿using NLayer.Architecture.Bussines.ReporteInventario;
+using NLayer.Architecture.Bussines.ReporteInventarioRecursos;
 
 namespace DataAccess.Layer.FileRepositories;
 
 public interface IReporteInventarioRecursosRepository
 {
-    Task<Pesticidas> GetPesticidas();
+    Task<List<Fertilizantes>> GetFertilizantes();
+    Task AddFertilizantes(Fertilizantes fertilizantes);
 
-    Task<Fertilizantes> GetFertilizantes();
+    Task<bool> UpdateFertilizantes(IEnumerable<Fertilizantes> fertilizantes);
 
+    Task<bool> DeleteFertilizantes();
+
+
+    Task<List<Pesticidas>> GetPesticidas();
+
+    Task AddPesticidas(Pesticidas pesticidas);
+
+    Task<bool> UpdatePesticidas(IEnumerable<Pesticidas> pesticidas);
+
+    Task<bool> DeletePesticidas();
 }
-
