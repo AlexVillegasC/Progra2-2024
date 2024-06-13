@@ -18,4 +18,3 @@ public class Pikachu : Pokemon
         return "impact trueno";
     }
 }
-//hi

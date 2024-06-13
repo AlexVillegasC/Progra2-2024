@@ -21,4 +21,3 @@ public abstract class Pokemon{
 
     public abstract string AtaqueEspecial();
 }
-//hi

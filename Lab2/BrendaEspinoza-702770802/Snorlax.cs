@@ -18,4 +18,3 @@ public class Snorlax : Pokemon
        return "Snorlax golpe cuerpo";
     }
 }
-//hi
