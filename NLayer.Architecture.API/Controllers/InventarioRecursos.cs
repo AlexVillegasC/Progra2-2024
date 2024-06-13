@@ -9,52 +9,52 @@ namespace NLayer.Architecture.API.Controllers;
 [Route("[controller]")]
 public class InventarioRecursos : ControllerBase
 {
-    private readonly IReporteInventarioRecursosServices _reporteInventarioRecursosService;
+    private readonly IReporteInventarioRecursosServices _reporteInventarioRecursosServices;
 
     public InventarioRecursos(IReporteInventarioRecursosServices reporteInventarioRecursosService)
     {
-        _reporteInventarioRecursosService = reporteInventarioRecursosService;
+        _reporteInventarioRecursosServices = reporteInventarioRecursosService;
     }
     [HttpGet]
     public async Task<ReporteInventarioRecursos> Get()
     {
-        return await _reporteInventarioRecursosService.GetInventario();
+        return await _reporteInventarioRecursosServices.GetInventario();
     }
 
     [HttpPost("AddFertilizantes", Name = "AddFertilizantes")]
     public async Task AddFertilizantes(Fertilizantes fertilizantes)
     {
-        await _reporteInventarioRecursosService.AddFertilizantes(fertilizantes);
+        await _reporteInventarioRecursosServices.AddFertilizantes(fertilizantes);
     }
 
     [HttpPut("UpdateFertilizantes", Name = "UpdateFertilizantes")]
     public async Task<IActionResult> UpdateFertilizantes(IEnumerable<Fertilizantes> updatedFertilizantes)
     {
-        return await _reporteInventarioRecursosService.UpdateFertilizantes(updatedFertilizantes) ? Ok() : NotFound();
+        return await _reporteInventarioRecursosServices.UpdateFertilizantes(updatedFertilizantes) ? Ok() : NotFound();
     }
 
     [HttpDelete("DeleteFertilizantes", Name = "DeleteFertilizantes")]
     public async Task<IActionResult> DeleteFertilizantes()
     {
-        return await _reporteInventarioRecursosService.DeleteFertilizantes() ? Ok() : NotFound();
+        return await _reporteInventarioRecursosServices.DeleteFertilizantes() ? Ok() : NotFound();
     }
 
     [HttpPost("AddPesticidas", Name = "AddPesticidas")]
     public async Task AddPesticidas(Pesticidas pesticidas)
     {
-        await _reporteInventarioRecursosService.AddPesticidas(pesticidas);
+        await _reporteInventarioRecursosServices.AddPesticidas(pesticidas);
     }
 
     [HttpPut("UpdatePesticidas", Name = "UpdatePesticidas")]
     public async Task<IActionResult> UpdatePesticidas(IEnumerable<Pesticidas> updatedPesticidas)
     {
-        return await _reporteInventarioRecursosService.UpdatePesticidas(updatedPesticidass) ? Ok() : NotFound();
+        return await _reporteInventarioRecursosServices.UpdatePesticidas(updatedPesticidas) ? Ok() : NotFound();
     }
 
     [HttpDelete("DeletePesticidas", Name = "DeletePesticidas")]
     public async Task<IActionResult> DeletePesticidas()
     {
-        return await _reporteInventarioRecursosService.DeletePesticidas() ? Ok() : NotFound();
+        return await _reporteInventarioRecursosServices.DeletePesticidas() ? Ok() : NotFound();
     }
 
 }

@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using NLayer.Architecture.Bussines.ReporteInventarioRecursos;
+
 
 
 namespace NLayer.Architecture.Bussines.Services;
