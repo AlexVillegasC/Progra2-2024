@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\NLayer.Architecture.Bussines.Models\NLayer.Architecture.Bussines.Models.csproj" />
     <ProjectReference Include="..\NLayer.Architecture.Data\NLayer.Architecture.Data.csproj" />
   </ItemGroup>
 
