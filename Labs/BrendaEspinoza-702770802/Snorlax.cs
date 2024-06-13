@@ -13,4 +13,3 @@ public class Snorlax : Pokemon
         this.Ataque = ataque;
     }
 }
-// Hola
