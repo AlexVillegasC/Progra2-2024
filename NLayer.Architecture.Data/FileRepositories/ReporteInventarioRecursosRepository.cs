@@ -1,6 +1,7 @@
 ﻿using NLayer.Architecture.Data;
 using Microsoft.Extensions.Configuration;
 using NLayer.Architecture.Bussines.ReporteInventarioRecursos;
+using NLayer.Architecture.Bussines.ReporteInventario;
 
 
 namespace DataAccess.Layer.FileRepositories;
@@ -31,4 +32,112 @@ public class ReporteInventarioRecursosRepository : FileRepository, IReporteInven
     {
         return await ReadJsonFileAsync<Pesticidas>(PesticidasVirtualPath);
     }
+}
+
+public async Task AddFertilizantes(Fertilizantes fertilizantes)
+{
+    List<Fertilizantes> elemento = await ReadJsonFileAsync<List<Fertilizantes>>(FertilizantesVirtualPath);
+
+    if (elemento != null)
+    {
+        elemento.Add(fertilizantes);
+
+        await WriteJsonFileAsync(FertilizantesVirtualPath, elemento);
+    }
+}
+
+
+// Método para actualizar la lista de maquinarias en el archivo JSON
+public async Task<bool> UpdateFertilizantes(IEnumerable<Fertilizantes> fertilizantes)
+{
+    // Convierte la colección de maquinarias en una lista
+    List<Fertilizantes> elementos = fertilizantes.ToList();
+
+    try
+    {
+        // Intenta escribir esta lista en el archivo JSON utilizando el método WriteJsonFileAsync
+        await WriteJsonFileAsync(FertilizantesVirtualPath, elementos);
+        return true;
+    }
+    catch (Exception genericException)
+    {
+        return false;
+    }
+}
+
+public async Task<bool> DeleteFertilizantes()
+{
+    List<Fertilizantes> elementos = new();
+
+    try
+    {
+     
+        await WriteJsonFileAsync(FertilizantesVirtualPath, elementos);
+        return true;
+
+    }
+    catch (Exception genericException)
+    {
+        return false;
+    }
+
+}
+
+
+
+
+
+public async Task<List<Pesticidas>> GetPesticidas()
+{
+    return await ReadJsonFileAsync<List<Pesticidas>>(PesticidasVirtualPath);
+}
+
+
+public async Task AddPesticidas(Pesticidas pesticidas)
+{
+    List<Pesticidas> elemento = await ReadJsonFileAsync<List<Pesticidas>>(PesticidasVirtualPath);
+
+    if (elemento != null)
+    {
+        elemento.Add(pesticidas);
+
+        await WriteJsonFileAsync(PesticidasVirtualPath, elemento);
+    }
+}
+
+
+public async Task<bool> UpdatePesticidas(IEnumerable<Pesticidas> pesticidas)
+{
+    List<Pesticidas> elementos = pesticidas.ToList();
+
+    try
+    {
+        await WriteJsonFileAsync(PesticidasVirtualPath, elementos);
+        return true;
+    }
+    catch (Exception genericException)
+    {
+        return false;
+    }
+
+}
+
+
+public async Task<bool> DeletePesticidas()
+{
+    List<Pesticidas> elementos = new();
+
+    try
+    {
+        await WriteJsonFileAsync(PesticidasVirtualPath, elementos);
+        return true;
+    }
+    catch (Exception genericException)
+    {
+        return false;
+    }
+
+
+}
+
 }
