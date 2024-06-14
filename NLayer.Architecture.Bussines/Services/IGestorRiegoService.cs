@@ -9,6 +9,15 @@ namespace NLayer.Architecture.Bussines.Services
         //   - GET
         Task<GestorRiego.GestorRiego> GetEstadoRiego();
 
+        //POST
+
+        Task AddTemperatura(Temperatura temperatura);
+
+        Task AddCultivo(Cultivo cultivo);
+
+        Task AddHumedadSuelo(HumedadSuelo humedadSuelo);
+
+
         //   - PUT
         Task<bool> UpdateTemperatures(Temperatura _tempetaruraVirtualPath);
 

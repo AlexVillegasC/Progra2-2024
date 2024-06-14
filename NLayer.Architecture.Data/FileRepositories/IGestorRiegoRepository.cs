@@ -16,6 +16,16 @@ namespace DataAccess.Layer.FileRepositories
         Task<HumedadSuelo> GetMoisture();
 
 
+        //POST
+
+        Task AddTemperatura(Temperatura temperatura);
+
+        Task AddCultivo(Cultivo cultivo);
+
+        Task AddHumedadSuelo(HumedadSuelo humedadSuelo);
+
+
+
         //   - PUT
 
         Task<bool> UpdateTemperatures(Temperatura _tempetaruraVirtualPath);

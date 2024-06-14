@@ -24,9 +24,36 @@ namespace NLayer.Architecture.API.Controllers
             return await _gestorRiegoService.GetEstadoRiego();
         }
 
+        //POST
+
+        [HttpPost("AddTemperatura", Name = "AddTemperatura")]
+        public async Task AddTemperatura(Temperatura temperatura)
+        {
+            
+            await _gestorRiegoService.AddTemperatura(temperatura);
+
+        }
+
+        [HttpPost("AddCultivo", Name = "AddCultivo")]
+        public async Task AddCultivo(Cultivo cultivo)
+        {
+           
+            await _gestorRiegoService.AddCultivo(cultivo);   
+
+        }
+
+        [HttpPost("AddHumedadSuelo", Name = "HumedadSuelo")]
+        public async Task AddHumedadSuelo(HumedadSuelo humedadSuelo)
+        {
+            
+            await _gestorRiegoService.AddHumedadSuelo(humedadSuelo);
+ 
+        }
+
+
         //   - PUT
 
-        
+
 
         [HttpPut("UpdateTemperatura", Name = "UpdateTemperatura")]
         public async Task<IActionResult> UpdateTemperatures(Temperatura updateTemperatura)
