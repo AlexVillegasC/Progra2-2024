@@ -4,9 +4,14 @@ namespace DataAccess.Layer.FileRepositories;
 
 public interface IReporteClimaRepository
 {
-    Task<Temperature> GetTemperatures();
+    Task<List<Temperature>> GetTemperatures();
+    Task AddTemperatures(Temperature temperature);
 
-    Task<Wind> GetWinds();
+    Task<bool> UpdateTemperature(IEnumerable<Temperature> temperature);
 
-    Task<Moisture> GetMoisture();
+    Task<bool> DeleteTemperature();
+
+    Task<List<Wind>> GetWinds();
+
+    Task<List<Moisture>> GetMoisture();
 }

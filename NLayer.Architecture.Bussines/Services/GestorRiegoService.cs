@@ -1,4 +1,5 @@
 ﻿using DataAccess.Layer.FileRepositories;
+using NLayer.Architecture.Bussines.GestorRiego;
 
 
 namespace NLayer.Architecture.Bussines.Services
@@ -23,5 +24,39 @@ namespace NLayer.Architecture.Bussines.Services
 
             return miEstadoRiego;
         }
+
+
+
+        public async Task AddTemperatura(Temperatura temperatura)
+        {
+            await _estadoRiegoRepo.AddTemperatura(temperatura);
+        }
+
+        public async Task AddHumedadSuelo(HumedadSuelo humedadSuelo)
+        {
+            await _estadoRiegoRepo.AddHumedadSuelo(humedadSuelo);
+        }
+
+        public async Task AddCultivo(Cultivo cultivo)
+        {
+            await _estadoRiegoRepo.AddCultivo(cultivo);
+        }
+
+        /* public async Task AddEstadoRiego(Cultivo cultivo, HumedadSuelo humedadSuelo, Temperatura temperatura)
+         {
+             await _estadoRiegoRepo.AddTemperatura(temperatura);
+             await _estadoRiegoRepo.AddHumedadSuelo(humedadSuelo);
+             await _estadoRiegoRepo.AddCultivo(cultivo);
+         }
+
+         */
+
+
+        /*public async Task AddRiego(Cultivo cultivo, HumedadSuelo humedadSuelo, Temperatura temperatura)
+        {
+            await _estadoRiegoRepo.AddRiego(temperatura, cultivo, humedadSuelo);
+ 
+        }
+        */
     }
 }

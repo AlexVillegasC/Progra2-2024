@@ -1,7 +1,6 @@
-﻿{
-  "Nombre": "Frutas",
-  "TipoCultivo": "Alimenticio",
-  "FechaPlantacion": "10-5-2024",
-  "FrecuenciaRiego": "2 veces al dia"
-
+{
+  "Nombre": "string",
+  "tipoCultivo": "Ornamentales",
+  "fechaPlantacion": "2024-06-11T06:52:10.02Z",
+  "frecuenciaRiego": "string"
 }

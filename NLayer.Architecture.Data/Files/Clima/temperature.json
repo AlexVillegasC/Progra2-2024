@@ -1,5 +1,52 @@
-{
-  "Date": "2023-04-24",
-  "TemperatureC": 20,
-  "Summary": "Sunny"
-}
+[
+  {
+    "Date": "2023-04-24T00:00:00",
+    "TemperatureC": 20,
+    "Summary": "Sunny"
+  },
+  {
+    "Date": "2023-04-24T00:00:00",
+    "TemperatureC": 20,
+    "Summary": "Sunny"
+  },
+  {
+    "Date": "2024-05-04T16:37:17.313Z",
+    "TemperatureC": 0,
+    "Summary": "string"
+  },
+  {
+    "Date": "2024-05-04T16:37:17.313Z",
+    "TemperatureC": 0,
+    "Summary": "string"
+  },
+  {
+    "Date": "2024-05-04T16:37:17.313Z",
+    "TemperatureC": 0,
+    "Summary": "string"
+  },
+  {
+    "Date": "2024-05-04T16:37:17.313Z",
+    "TemperatureC": 0,
+    "Summary": "string"
+  },
+  {
+    "Date": "2024-05-04T16:37:17.313Z",
+    "TemperatureC": 0,
+    "Summary": "string"
+  },
+  {
+    "Date": "2024-06-09T03:54:53.515Z",
+    "TemperatureC": 0,
+    "Summary": "string"
+  },
+  {
+    "Date": "2024-06-10T21:04:13.549Z",
+    "TemperatureC": 0,
+    "Summary": "string"
+  },
+  {
+    "Date": "2024-06-10T23:11:27.596Z",
+    "TemperatureC": 0,
+    "Summary": "string"
+  }
+]
