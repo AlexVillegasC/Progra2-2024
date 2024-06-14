@@ -1,6 +1,12 @@
-﻿{
-  "nivelHumedad": 50,
-  "date": "2023-05-25",
-  "ubicacion": "Nicoya"
-
-}
+[
+  {
+    "nivelHumedad": 10.0,
+    "fechaActual": "2024-06-14T05:44:41.179Z",
+    "Ubicacion": "Santa Cruz"
+  },
+  {
+    "nivelHumedad": 5.0,
+    "fechaActual": "2024-06-14T05:45:31.684Z",
+    "Ubicacion": "Nicoya"
+  }
+]
