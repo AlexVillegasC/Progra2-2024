@@ -6,7 +6,7 @@ namespace NLayer.Architecture.Bussines.Services
 {
     public interface IReporteInventarioRecursosServices
     {
-        Task<ReporteInventarioRecursos> GetInventario();
+        Task<ReporteInventarioRecursosServices> GetInventario();
         Task AddFertilizantes(Fertilizantes fertilizantes);
         Task<bool> UpdateFertilizantes(IEnumerable<Fertilizantes> fertilizantes);
         Task<bool> DeleteFertilizantes();

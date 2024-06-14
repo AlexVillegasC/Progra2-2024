@@ -2,6 +2,7 @@
 using DataAccess.Layer.FileRepositories;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using NLayer.Architecture.Bussines.ReporteInventarioRecursos;
 
 namespace NLayer.Architecture.Bussines.Services
 {
@@ -14,14 +15,19 @@ namespace NLayer.Architecture.Bussines.Services
             _inventarioRecursos = inventarioRecursos;
         }
 
-        public async Task<ReporteInventarioRecursos> GetInventario()
+        public async Task<ReporteInventarioRecursosServices> GetInventario()
         {
-            ReporteInventarioRecursos miInventario = new ReporteInventarioRecursos
+            ReporteInventarioRecursosServices miInventario = await GetMiInventario();
+            return miInventario;
+        }
+
+        private async Task<ReporteInventarioRecursosServices> GetMiInventario()
+        {
+            return new ReporteInventarioRecursos()
             {
                 Pesticidas = await _inventarioRecursos.GetPesticidas(),
                 Fertilizantes = await _inventarioRecursos.GetFertilizantes()
             };
-            return miInventario;
         }
 
         public async Task AddFertilizantes(Fertilizantes fertilizantes)
@@ -58,5 +64,6 @@ namespace NLayer.Architecture.Bussines.Services
         {
             throw new NotImplementedException();
         }
- 
 
+    }
+}

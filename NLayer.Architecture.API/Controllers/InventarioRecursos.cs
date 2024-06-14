@@ -1,5 +1,4 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-
 using NLayer.Architecture.Bussines.ReporteInventarioRecursos;
 using NLayer.Architecture.Bussines.Services;
 
