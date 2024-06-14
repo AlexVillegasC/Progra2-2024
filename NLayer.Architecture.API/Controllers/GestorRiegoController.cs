@@ -17,12 +17,14 @@ namespace NLayer.Architecture.API.Controllers
                 _gestorRiegoService  = gestorRiegoService;
         }
 
+        //  - GET
         [HttpGet]
         public async Task<GestorRiego> Get()
         {
             return await _gestorRiegoService.GetEstadoRiego();
         }
 
+<<<<<<< HEAD
 
         [HttpPost("AddTemperatura", Name = "AddTemperatura")]
         public async Task AddTemperatura(Temperatura temperatura)
@@ -74,6 +76,55 @@ namespace NLayer.Architecture.API.Controllers
              return CreatedAtAction(nameof(AddGestorRiego), gestorRiego);
          }
         */
+=======
+        //   - PUT
+
+        
+
+        [HttpPut("UpdateTemperatura", Name = "UpdateTemperatura")]
+        public async Task<IActionResult> UpdateTemperatures(Temperatura updateTemperatura)
+        {
+            return await _gestorRiegoService.UpdateTemperatures(updateTemperatura) ? Ok() : NotFound();
+        }
+
+
+
+        [HttpPut("UpdateMoisture", Name = "UpdateHumedadSuelo")]
+        public async Task<IActionResult> UpdateHumedadSuelo(HumedadSuelo updateMoisture)
+        {
+            return await _gestorRiegoService.UpdateMoisture(updateMoisture) ? Ok() : NotFound();
+        }
+
+        [HttpPut("UpdateCultivo", Name = "UpdateCultivo")]
+        public async Task<IActionResult> UpdateCultivo(Cultivo updateCultivo)
+        {
+            return await _gestorRiegoService.UpdateCultivo(updateCultivo) ? Ok() : NotFound();
+        }
+
+
+
+
+        //   - DELETE
+        [HttpDelete("DeleteRemperatura",Name ="DeleteTemperatura")]
+        public async Task<bool> DeleteTemperatura()
+        {
+            return await _gestorRiegoService.DeleteTemperatura();
+        }
+
+        [HttpDelete("DeleteMoisture",Name ="DeleteMoisture")]
+        public async Task<bool> DeleteMoisture()
+        {
+            return await _gestorRiegoService.DeleteMoisture();
+        }
+
+        [HttpDelete("DeleteCultivo",Name ="DeleteCultivo")]
+        public async Task<bool> DeleteCultivo()
+        {
+            return await _gestorRiegoService.DeleteCultivo();
+        }
+
+
+>>>>>>> origin/proyecto1/GestorRiego
 
     }
 }

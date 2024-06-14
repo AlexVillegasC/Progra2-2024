@@ -15,6 +15,7 @@ namespace NLayer.Architecture.Bussines.Services
             _estadoRiegoRepo = estadoRiegoRepo;
         }
 
+        //   - GET
         public async Task<GestorRiego.GestorRiego> GetEstadoRiego()
         {
             GestorRiego.GestorRiego miEstadoRiego = new GestorRiego.GestorRiego();
@@ -24,6 +25,7 @@ namespace NLayer.Architecture.Bussines.Services
 
             return miEstadoRiego;
         }
+<<<<<<< HEAD
 
 
 
@@ -58,5 +60,44 @@ namespace NLayer.Architecture.Bussines.Services
  
         }
         */
+=======
+        //   - PUT
+        public async Task<bool> UpdateTemperatures(Temperatura _tempetaruraVirtualPath)
+        {
+            return await _estadoRiegoRepo.UpdateTemperatures(_tempetaruraVirtualPath);
+        }
+
+
+        public async Task<bool> UpdateMoisture(HumedadSuelo _humedadadSueloVirtualPath)
+        {
+            return await _estadoRiegoRepo.UpdateMoisture(_humedadadSueloVirtualPath);
+        }
+
+        public async Task<bool> UpdateCultivo(Cultivo _cultivo)
+        {
+            return await _estadoRiegoRepo.UpdateCultivo(_cultivo);
+        }
+
+
+
+        //   - DELETE
+        public async Task<bool> DeleteTemperatura()
+        {
+            return await _estadoRiegoRepo.DeleteTemperatures();
+        }
+
+        public async Task<bool> DeleteMoisture()
+        {
+            return await _estadoRiegoRepo.DeleteMoisture();
+
+        }
+
+        public async Task<bool> DeleteCultivo()
+        {
+            return await _estadoRiegoRepo.DeleteCultivo();
+        }
+
+
+>>>>>>> origin/proyecto1/GestorRiego
     }
 }
