@@ -50,10 +50,6 @@ public class PronosticoLluviasController : ControllerBase
     }
 }
 
-
-
-
-
     [HttpPost("AddLluviaMedianoPlazo", Name = "AddLluviaMedianoPlazo")]
     public async Task AddLluviaMedianoPlazo(LluviaMedianoPlazo lluviaMedianoPlazo)
     {

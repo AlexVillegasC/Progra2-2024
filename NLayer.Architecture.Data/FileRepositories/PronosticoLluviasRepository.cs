@@ -22,9 +22,6 @@ public class PronosticoLluviasRepository : FileRepository, IPronosticoLluviasRep
         _lluviaLargoPlazoVirtualPath = FolderPath + _lluviaLargoPlazoVirtualPath;
         _lluviaCortoPlazoVirtualPath = FolderPath + _lluviaCortoPlazoVirtualPath;
         _lluviaMedianoPlazoVirtualPath = FolderPath + _lluviaMedianoPlazoVirtualPath;
-
-
-
     }
     public async Task<List<LluviaLargoPlazo>> GetLluviaLargoPlazos()
     {
@@ -55,7 +52,6 @@ public class PronosticoLluviasRepository : FileRepository, IPronosticoLluviasRep
         {
             return false;
         }
-
     }
 
     public async Task<bool> DeleteLluviaLargoPlazo()
@@ -74,10 +70,6 @@ public class PronosticoLluviasRepository : FileRepository, IPronosticoLluviasRep
         }
 
     }
-
-
-
-
     public async Task<List<LluviaCortoPlazo>> GetLluviaCortoPlazo()
     {
         return await ReadJsonFileAsync<List<LluviaCortoPlazo>>(_lluviaCortoPlazoVirtualPath);

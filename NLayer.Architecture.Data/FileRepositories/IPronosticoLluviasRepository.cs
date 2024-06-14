@@ -5,7 +5,7 @@ namespace NLayer.Architecture.Data.FileRepositories;
 
 public interface IPronosticoLluviasRepository
 {
-    //Task<LluviaCortoPlazo> GetLluviaCortoPlazos();
+    //Task<LluviaCortoPlazo> GetLluviaCortoPlazos();  
 
     Task<List<LluviaMedianoPlazo>> GetLluviaMedianoPlazos();
     Task AddLluviaMedianoPlazo(LluviaMedianoPlazo _lluviaMedianoPlazo);
@@ -16,7 +16,6 @@ public interface IPronosticoLluviasRepository
     Task AddLluviaLargoPlazo(LluviaLargoPlazo _lluviaLargoPlazos);
     Task<bool> UpdateLluviaLargoPlazo(IEnumerable<LluviaLargoPlazo> _lluviaLargoPlazos);
     Task<bool> DeleteLluviaLargoPlazo();
-
 
     Task<List<LluviaCortoPlazo>> GetLluviaCortoPlazos();
     Task AddLluviaCortoPlazo(LluviaCortoPlazo _lluviaCortoPlazo);
