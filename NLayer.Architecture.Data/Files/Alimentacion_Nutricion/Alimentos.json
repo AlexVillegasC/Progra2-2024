@@ -1,12 +1,6 @@
 [
   {
     "Nombre": "Concentrado",
-    "Costo_Unidad": 1000
-
-  },
-  {
-    "Nombre": "Miel",
-    "Costo_Unidad": 2000
-
+    "Costo_Unidad": 3000.0
   }
 ]
