@@ -25,6 +25,24 @@ namespace NLayer.Architecture.Bussines.Services
 
             return miEstadoRiego;
         }
+
+        //POST
+
+        public async Task AddTemperatura(Temperatura temperatura)
+        {
+            await _estadoRiegoRepo.AddTemperatura(temperatura);
+        }
+
+        public async Task AddHumedadSuelo(HumedadSuelo humedadSuelo)
+        {
+            await _estadoRiegoRepo.AddHumedadSuelo(humedadSuelo);
+        }
+
+        public async Task AddCultivo(Cultivo cultivo)
+        {
+            await _estadoRiegoRepo.AddCultivo(cultivo);
+        }
+
         //   - PUT
         public async Task<bool> UpdateTemperatures(Temperatura _tempetaruraVirtualPath)
         {

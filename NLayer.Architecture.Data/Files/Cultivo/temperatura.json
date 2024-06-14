@@ -1,8 +1,14 @@
-﻿{
-  "valor": 20,
-  "unidad": "Kelvin",
-  "Date": "2023-04-24",
-  "ubicacion": "Guanacaste"
-}
-
-
+[
+  {
+    "Valor": 45,
+    "Unidad": "C",
+    "fechaActual": "2024-06-14T05:42:30.479Z",
+    "Ubicacion": "Liberia"
+  },
+  {
+    "Valor": 20,
+    "Unidad": "K",
+    "fechaActual": "2024-06-14T05:43:43.716Z",
+    "Ubicacion": "Nosara"
+  }
+]

@@ -2,6 +2,7 @@
 using DataAccess.Layer.FileRepositories;
 using NLayer.Architecture.Bussines.GestorRiego;
 using NLayer.Architecture.Data;
+using Newtonsoft.Json;
 
 namespace NLayer.Architecture.Bussines.Services
 
@@ -43,8 +44,109 @@ namespace NLayer.Architecture.Bussines.Services
             return await ReadJsonFileAsync<HumedadSuelo>(_humedadadSueloVirtualPath);
         }
 
+
+        //POST
+
+        public async Task AddTemperatura(Temperatura temperatura)
+        {
+            if (temperatura != null)
+            {
+                List<Temperatura> temperaturasExistentes = new List<Temperatura>();
+
+                if (File.Exists(_tempetaruraVirtualPath))
+                {
+                    string json = await File.ReadAllTextAsync(_tempetaruraVirtualPath);
+                    if (!string.IsNullOrEmpty(json))
+                    {
+                        try
+                        {
+                            temperaturasExistentes = JsonConvert.DeserializeObject<List<Temperatura>>(json);
+                        }
+                        catch (JsonSerializationException)
+                        {
+
+
+                            temperaturasExistentes = new List<Temperatura>();
+                        }
+                    }
+                }
+
+
+                temperaturasExistentes.Add(temperatura);
+
+                string updatedJson = JsonConvert.SerializeObject(temperaturasExistentes, Formatting.Indented);
+                await File.WriteAllTextAsync(_tempetaruraVirtualPath, updatedJson);
+            }
+        }
+
+        public async Task AddCultivo(Cultivo cultivo)
+        {
+            if (cultivo != null)
+            {
+                List<Cultivo> cultivoExistentes = new List<Cultivo>();
+
+                if (File.Exists(_cultivo))
+                {
+                    string json = await File.ReadAllTextAsync(_cultivo);
+                    if (!string.IsNullOrEmpty(json))
+                    {
+                        try
+                        {
+                            cultivoExistentes = JsonConvert.DeserializeObject<List<Cultivo>>(json);
+                        }
+                        catch (JsonSerializationException)
+                        {
+
+
+                            cultivoExistentes = new List<Cultivo>();
+                        }
+                    }
+                }
+
+
+                cultivoExistentes.Add(cultivo);
+
+                string updatedJson = JsonConvert.SerializeObject(cultivoExistentes, Formatting.Indented);
+                await File.WriteAllTextAsync(_cultivo, updatedJson);
+            }
+        }
+
+
+        public async Task AddHumedadSuelo(HumedadSuelo humedadSuelo)
+        {
+            if (humedadSuelo != null)
+            {
+                List<HumedadSuelo> humedadSueloExistentes = new List<HumedadSuelo>();
+
+                if (File.Exists(_humedadadSueloVirtualPath))
+                {
+                    string json = await File.ReadAllTextAsync(_humedadadSueloVirtualPath);
+                    if (!string.IsNullOrEmpty(json))
+                    {
+                        try
+                        {
+                            humedadSueloExistentes = JsonConvert.DeserializeObject<List<HumedadSuelo>>(json);
+                        }
+                        catch (JsonSerializationException)
+                        {
+
+
+                            humedadSueloExistentes = new List<HumedadSuelo>();
+                        }
+                    }
+                }
+
+
+                humedadSueloExistentes.Add(humedadSuelo);
+
+                string updatedJson = JsonConvert.SerializeObject(humedadSueloExistentes, Formatting.Indented);
+                await File.WriteAllTextAsync(_humedadadSueloVirtualPath, updatedJson);
+            }
+        }
+
+
         //   - PUT
-        
+
         public async Task<bool> UpdateTemperatures(Temperatura temperatura)
         {
 
