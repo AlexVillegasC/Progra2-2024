@@ -1,82 +1,62 @@
 ﻿using NLayer.Architecture.Bussines.ReporteInventarioRecursos;
 using DataAccess.Layer.FileRepositories;
-using DataAccess.Layer.FileRepositories;
-using System.ComponentModel;
-using System.Formats.Asn1;
-using System.Runtime.InteropServices;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
-
-namespace NLayer.Architecture.Bussines.Services;
-
-public class ReporteInventarioRecursosServices : IReporteInventarioRecursosServices
+namespace NLayer.Architecture.Bussines.Services
 {
-    
-    private readonly IReporteInventarioRecursosRepository _inventarioRecursos;
-
-    public ReporteInventarioRecursosServices(IReporteInventarioRepository inventarioRecursos)
+    public class ReporteInventarioRecursosServices : IReporteInventarioRecursosServices
     {
-        _inventarioRecursos = (IReporteInventarioRecursosRepository?)inventarioRecursos;
-    }
+        private readonly IReporteInventarioRecursosRepository _inventarioRecursos;
 
-  
-    public async Task<ReporteInventarioRecursos.ReporteInventarioRecursos> GetInventario()
-    {
-    
-        ReporteInventarioRecursos.ReporteInventarioRecursos miInventario = new ReporteInventarioRecursos.ReporteInventarioRecursos();
+        public ReporteInventarioRecursosServices(IReporteInventarioRecursosRepository inventarioRecursos)
+        {
+            _inventarioRecursos = inventarioRecursos;
+        }
 
-    
-        miInventario.Pesticidas = await _inventarioRecursos.GetPesticidas();
-        miInventario.Fertilizantes = await _inventarioRecursos.GetFertilizantes();
-        return miInventario;
-            
+        public async Task<ReporteInventarioRecursos> GetInventario()
+        {
+            ReporteInventarioRecursos miInventario = new ReporteInventarioRecursos
+            {
+                Pesticidas = await _inventarioRecursos.GetPesticidas(),
+                Fertilizantes = await _inventarioRecursos.GetFertilizantes()
+            };
+            return miInventario;
+        }
 
-    }
-    public async Task AddFertlizantes(Fertilizantes fertilizantes)
-    {
-        await _inventarioRecursos.AddFertilizantes(fertilizantes);
-    }
+        public async Task AddFertilizantes(Fertilizantes fertilizantes)
+        {
+            await _inventarioRecursos.AddFertilizantes(fertilizantes);
+        }
 
-    public async Task<bool> UpdateFertilizantes(IEnumerable<Fertilizantes> fertilizantes)
-    {
-        return await _inventarioRecursos.UpdateFertilizantes(fertilizantes);
-    }
+        public async Task<bool> UpdateFertilizantes(IEnumerable<Fertilizantes> fertilizantes)
+        {
+            return await _inventarioRecursos.UpdateFertilizantes(fertilizantes);
+        }
 
-    public async Task<bool> DeleteFertilizantes()
-    {
-        return await _inventarioRecursos.DeleteFertilizantes();
-    }
+        public async Task<bool> DeleteFertilizantes()
+        {
+            return await _inventarioRecursos.DeleteFertilizantes();
+        }
 
+        public async Task AddPesticidas(Pesticidas pesticidas)
+        {
+            await _inventarioRecursos.AddPesticidas(pesticidas);
+        }
 
+        public async Task<bool> UpdatePesticidas(IEnumerable<Pesticidas> pesticidas)
+        {
+            return await _inventarioRecursos.UpdatePesticidas(pesticidas);
+        }
 
+        public async Task<bool> DeletePesticidas()
+        {
+            return await _inventarioRecursos.DeletePesticidas();
+        }
 
-
-
-
-    public async Task AddPesticidas(Pesticidas pesticidas)
-    {
-
-        await _inventarioRecursos.AddPesticidas(pesticidas);
-
-    }
-
-
-
-    public async Task<bool> UpdatePesticidas(IEnumerable<Pesticidas> pesticidas)
-    {
-
-        return await _inventarioRecursos.UpdatePesticidas(pesticidas);
-
-    }
-
-
-
-    public async Task<bool> DeletePesticidas()
-    {
-
-        return await _inventarioRecursos.DeletePesticidas();
-    }
-
-}
-
-}
+        Task<ReporteInventarioRecursos.ReporteInventarioRecursos> IReporteInventarioRecursosServices.GetInventario()
+        {
+            throw new NotImplementedException();
+        }
+ 
 
