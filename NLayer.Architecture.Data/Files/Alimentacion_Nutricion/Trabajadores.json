@@ -1,4 +1,6 @@
-{
-  "Nombre" :  "Juan",
-  "Costo_Planilla": 3000
-}
+[
+  {
+    "Nombre": "Mario",
+    "Costo_Planilla": 2000.0
+  }
+]
