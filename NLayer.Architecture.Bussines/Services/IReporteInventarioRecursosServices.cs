@@ -1,17 +1,22 @@
-﻿using System.Collections.Generic;
-using System.Threading.Tasks;
-using NLayer.Architecture.Bussines.ReporteInventarioRecursos;
+﻿using NLayer.Architecture.Bussines.ReporteInventarioRecursos;
 
-namespace NLayer.Architecture.Bussines.Services
+public interface IReporteInventarioRecursosServices
 {
-    public interface IReporteInventarioRecursosServices
-    {
-        Task<ReporteInventarioRecursosServices> GetInventario();
-        Task AddFertilizantes(Fertilizantes fertilizantes);
-        Task<bool> UpdateFertilizantes(IEnumerable<Fertilizantes> fertilizantes);
-        Task<bool> DeleteFertilizantes();
-        Task AddPesticidas(Pesticidas pesticidas);
-        Task<bool> UpdatePesticidas(IEnumerable<Pesticidas> pesticidas);
-        Task<bool> DeletePesticidas();
-    }
+    Task<ReporteInventarioRecursosBase> Inventario { get; }
+
+    Task<ReporteInventarioRecursos.ReporteInventarioRecursos> GetInventario();
+
+    Task AddFertilizantes(Fertilizantes fertilizantes);
+
+    Task<bool> UpdateFertilizantes(IEnumerable<Fertilizantes> fertilizantes);
+
+    Task<bool> DeleteFertilizantes();
+
+
+    Task AddPesticidas(Pesticidas pesticidas);
+
+    Task<bool> UpdatePesticidas(IEnumerable<Pesticidas> pesticidas);
+
+    Task<bool> DeletePesticidas();
+
 }

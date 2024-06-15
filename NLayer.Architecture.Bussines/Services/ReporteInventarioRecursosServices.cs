@@ -2,7 +2,6 @@
 using DataAccess.Layer.FileRepositories;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using NLayer.Architecture.Bussines.ReporteInventarioRecursos;
 
 namespace NLayer.Architecture.Bussines.Services
 {
@@ -15,15 +14,15 @@ namespace NLayer.Architecture.Bussines.Services
             _inventarioRecursos = inventarioRecursos;
         }
 
-        public async Task<ReporteInventarioRecursosServices> GetInventario()
+        public async Task<ReporteInventarioRecursosBase> GetInventario()
         {
-            ReporteInventarioRecursosServices miInventario = await GetMiInventario();
+            ReporteInventarioRecursosBase miInventario = await GetMiInventario();
             return miInventario;
         }
 
-        private async Task<ReporteInventarioRecursosServices> GetMiInventario()
+        private async Task<ReporteInventarioRecursosBase> GetMiInventario()
         {
-            return new ReporteInventarioRecursos()
+            return new ReporteInventarioRecursosBase()
             {
                 Pesticidas = await _inventarioRecursos.GetPesticidas(),
                 Fertilizantes = await _inventarioRecursos.GetFertilizantes()
@@ -60,10 +59,36 @@ namespace NLayer.Architecture.Bussines.Services
             return await _inventarioRecursos.DeletePesticidas();
         }
 
-        Task<ReporteInventarioRecursos.ReporteInventarioRecursos> IReporteInventarioRecursosServices.GetInventario()
+        Task<ReporteInventarioRecursosBase> IReporteInventarioRecursosServices.Inventario => throw new NotImplementedException();
+
+        Task IReporteInventarioRecursosServices.AddFertilizantes(Fertilizantes fertilizantes)
         {
             throw new NotImplementedException();
         }
 
+        Task<bool> IReporteInventarioRecursosServices.UpdateFertilizantes(IEnumerable<Fertilizantes> fertilizantes)
+        {
+            throw new NotImplementedException();
+        }
+
+        Task<bool> IReporteInventarioRecursosServices.DeleteFertilizantes()
+        {
+            throw new NotImplementedException();
+        }
+
+        Task IReporteInventarioRecursosServices.AddPesticidas(Pesticidas pesticidas)
+        {
+            throw new NotImplementedException();
+        }
+
+        Task<bool> IReporteInventarioRecursosServices.UpdatePesticidas(IEnumerable<Pesticidas> pesticidas)
+        {
+            throw new NotImplementedException();
+        }
+
+        Task<bool> IReporteInventarioRecursosServices.DeletePesticidas()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
