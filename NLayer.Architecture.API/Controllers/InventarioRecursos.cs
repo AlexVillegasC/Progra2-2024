@@ -15,7 +15,7 @@ public class InventarioRecursos : ControllerBase
         _reporteInventarioRecursosServices = reporteInventarioRecursosService;
     }
     [HttpGet]
-    public async Task<ReporteInventarioRecursos> Get()
+    public async Task<ReporteInventarioRecursosBase> Get()
     {
         return await _reporteInventarioRecursosServices.GetInventario();
     }

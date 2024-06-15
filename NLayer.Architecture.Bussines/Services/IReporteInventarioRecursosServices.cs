@@ -4,7 +4,7 @@ public interface IReporteInventarioRecursosServices
 {
     Task<ReporteInventarioRecursosBase> Inventario { get; }
 
-    Task<ReporteInventarioRecursos.ReporteInventarioRecursos> GetInventario();
+    Task<ReporteInventarioRecursosBase> GetInventario();
 
     Task AddFertilizantes(Fertilizantes fertilizantes);
 
