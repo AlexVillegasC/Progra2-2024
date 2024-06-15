@@ -130,6 +130,8 @@ public class ReportePlantacionesRepository : FileRepository, IReportePlantacione
     //-------------ABONO------------------------------------------------//
 
 
+
+    //-------------ARBOL------------------------------------------------//
     public async Task<ArbolFrutal> GetArbolFrutal()
     {
         return await ReadJsonFileAsync<ArbolFrutal>(_ArbolVirtualPath);
@@ -183,5 +185,8 @@ public class ReportePlantacionesRepository : FileRepository, IReportePlantacione
     {
         throw new NotImplementedException();
     }
+    //-------------ARBOL------------------------------------------------//
+
+
 }
 
