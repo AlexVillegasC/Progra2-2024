@@ -2,6 +2,7 @@
 using NLayer.Architecture.Bussines.GestorRiego;
 using NLayer.Architecture.Bussines.ReporteClima;
 using NLayer.Architecture.Bussines.Services;
+using NLayer.Architecture.Bussines.Models;
 
 namespace NLayer.Architecture.API.Controllers
 {
@@ -24,8 +25,10 @@ namespace NLayer.Architecture.API.Controllers
             return await _gestorRiegoService.GetEstadoRiego();
         }
 
-        //POST
 
+
+
+        //POST
         [HttpPost("AddTemperatura", Name = "AddTemperatura")]
         public async Task AddTemperatura(Temperatura temperatura)
         {
@@ -51,28 +54,27 @@ namespace NLayer.Architecture.API.Controllers
         }
 
 
+
+
         //   - PUT
-
-
-
         [HttpPut("UpdateTemperatura", Name = "UpdateTemperatura")]
-        public async Task<IActionResult> UpdateTemperatures(Temperatura updateTemperatura)
+        public async Task<IActionResult> UpdateTemperatures(int id, Temperatura updateTemperatura)
         {
-            return await _gestorRiegoService.UpdateTemperatures(updateTemperatura) ? Ok() : NotFound();
+            return await _gestorRiegoService.UpdateTemperatures(id, updateTemperatura) ? Ok() : NotFound();
         }
 
 
 
-        [HttpPut("UpdateMoisture", Name = "UpdateHumedadSuelo")]
-        public async Task<IActionResult> UpdateHumedadSuelo(HumedadSuelo updateMoisture)
+        [HttpPut("UpdateHumedadSuelo", Name = "UpdateHumedadSuelo")]
+        public async Task<IActionResult> UpdateHumedadSuelo(int id, HumedadSuelo updateMoisture)
         {
-            return await _gestorRiegoService.UpdateMoisture(updateMoisture) ? Ok() : NotFound();
+            return await _gestorRiegoService.UpdateMoisture(id, updateMoisture) ? Ok() : NotFound();
         }
 
         [HttpPut("UpdateCultivo", Name = "UpdateCultivo")]
-        public async Task<IActionResult> UpdateCultivo(Cultivo updateCultivo)
+        public async Task<IActionResult> UpdateCultivo(int id, Cultivo updateCultivo)
         {
-            return await _gestorRiegoService.UpdateCultivo(updateCultivo) ? Ok() : NotFound();
+            return await _gestorRiegoService.UpdateCultivo(id, updateCultivo) ? Ok() : NotFound();
         }
 
 
