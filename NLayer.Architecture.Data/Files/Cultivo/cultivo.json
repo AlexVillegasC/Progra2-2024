@@ -1,0 +1,23 @@
+[
+  {
+    "id": 112,
+    "Nombre": "kjhgf",
+    "tipoCultivo": "nii",
+    "fechaPlantacion": "2024-06-15T04:21:49.624Z",
+    "frecuenciaRiego": "desc"
+  },
+  {
+    "id": 889,
+    "Nombre": "melon",
+    "tipoCultivo": "frutal",
+    "fechaPlantacion": "2024-06-15T04:29:49.42Z",
+    "frecuenciaRiego": "poca"
+  },
+  {
+    "id": 8,
+    "Nombre": "string",
+    "tipoCultivo": "string",
+    "fechaPlantacion": "2024-06-15T06:33:01.628Z",
+    "frecuenciaRiego": "string"
+  }
+]

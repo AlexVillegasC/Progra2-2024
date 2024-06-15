@@ -2,7 +2,6 @@ using DataAccess.Layer.FileRepositories;
 using Microsoft.OpenApi.Models;
 using NLayer.Architecture.Bussines.Services;
 using NLayer.Architecture.Data;
-using NLayer.Architecture.Data.FileRepositories;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -20,24 +19,18 @@ builder.Services.AddSwaggerGen(c =>
 builder.Services.AddTransient<IReporteClimaService, ReporteClimaService>();
 builder.Services.AddTransient<IFileRepository, FileRepository>();
 builder.Services.AddTransient<IReporteClimaRepository, ReporteClimaRepository>();
-builder.Services.AddTransient<IReporteRegistroGanadoRepository, ReporteRegistroGanadoRepository>();
 
 builder.Services.AddTransient<IReporteInventarioService, ReporteInventarioService>();
 builder.Services.AddTransient<IReporteInventarioRepository, ReporteInventarioRepository>();
 
 builder.Services.AddTransient<IReporteAlimentacionService, ReporteAlimentacionService>();
 builder.Services.AddTransient<IReporteAlimentacionRepository, ReporteAlimentacionRepository>();
-builder.Services.AddTransient<IReporteRegistroGanadoService, ReporteRegistroGanadoService>();
 
 builder.Services.AddTransient<IReportePlantaciones, ReportePlantaciones>();
 builder.Services.AddTransient<IReportePlantacionesRepository,ReportePlantacionesRepository>();
 
 builder.Services.AddTransient<ICostosHigieneRepository, CostosHigieneRepository>();
 builder.Services.AddTransient<ICostosHigieneServices, HigieneServices>();
-
-builder.Services.AddTransient<IPronosticoLluviasServices, PronosticoLluviasService>();
-builder.Services.AddTransient<IPronosticoLluviasRepository, PronosticoLluviasRepository>();
-
 // Add Singleton
 // The same instance is used by all components requiring that service.
 
@@ -48,6 +41,10 @@ builder.Services.AddTransient<IPronosticoLluviasRepository, PronosticoLluviasRep
 // Add Transient
 // Useful when the services have no state or hold only minimal state that is not shared.
 // state must not be shared between requests or operations.
+
+builder.Services.AddTransient<IGestorRiegoService, GestorRiegoService>();
+builder.Services.AddTransient<IGestorRiegoRepository, GestorRiegoRepository>();
+
 
 var app = builder.Build();
 

@@ -1,0 +1,30 @@
+[
+  {
+    "id": 123,
+    "Valor": 11,
+    "Unidad": "fharenhei",
+    "fechaActual": "2024-06-15T03:49:09.367Z",
+    "Ubicacion": "Marte"
+  },
+  {
+    "id": 333,
+    "Valor": 1,
+    "Unidad": "boo",
+    "fechaActual": "2024-06-15T03:55:19.295Z",
+    "Ubicacion": "here"
+  },
+  {
+    "id": 9,
+    "Valor": 9,
+    "Unidad": "string",
+    "fechaActual": "2024-06-15T06:26:47.374Z",
+    "Ubicacion": "lol"
+  },
+  {
+    "id": 59,
+    "Valor": 0,
+    "Unidad": "string",
+    "fechaActual": "2024-06-15T07:26:32.308Z",
+    "Ubicacion": "string"
+  }
+]
