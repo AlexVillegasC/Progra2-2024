@@ -7,7 +7,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="ArianaHernandez-504520730\Composición\" />
+    <Compile Remove="ArianaHernandez-504520730\Composición\**" />
+    <EmbeddedResource Remove="ArianaHernandez-504520730\Composición\**" />
+    <None Remove="ArianaHernandez-504520730\Composición\**" />
   </ItemGroup>
 
 </Project>
