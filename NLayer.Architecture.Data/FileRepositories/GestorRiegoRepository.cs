@@ -234,7 +234,7 @@ namespace NLayer.Architecture.Bussines.Services
                     listaHumedad = new List<HumedadSuelo>();
                 }
 
-                var indice = listaHumedad.FindIndex(h => h.id == humedadSuelo.id);
+                var indice = listaHumedad.FindIndex(h => h.id == id);
                 if (indice != -1)
                 {
                     listaHumedad[indice] = humedadSuelo;
@@ -269,7 +269,7 @@ namespace NLayer.Architecture.Bussines.Services
                     listaCultivos = new List<Cultivo>();
                 }
 
-                var indice = listaCultivos.FindIndex(c => c.id == cultivo.id);
+                var indice = listaCultivos.FindIndex(c => c.id == id);
                 if (indice != -1)
                 {
                     listaCultivos[indice] = cultivo;

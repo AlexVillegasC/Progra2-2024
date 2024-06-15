@@ -14,10 +14,10 @@
     "frecuenciaRiego": "poca"
   },
   {
-    "id": 8,
-    "Nombre": "string",
-    "tipoCultivo": "string",
-    "fechaPlantacion": "2024-06-15T06:33:01.628Z",
-    "frecuenciaRiego": "string"
+    "id": 221,
+    "Nombre": "Yuca",
+    "tipoCultivo": "tuberculo",
+    "fechaPlantacion": "2024-06-15T20:10:37.208Z",
+    "frecuenciaRiego": "moderada"
   }
 ]
