@@ -2,9 +2,9 @@
 
 public class DamaNegra : Ajedrez
 {
-    public DamaNegra(string movimiento)  : base(movimiento)
+    public DamaNegra(string movimiento) : base(movimiento)
     {
-       
+
     }
 
     public override void Mover()

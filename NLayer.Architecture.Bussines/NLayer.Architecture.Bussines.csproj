@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\NLayer.Architecture.Bussines.Models\NLayer.Architecture.Bussines.Models.csproj" />
+    <ProjectReference Include="..\NLayer.Architecture.Data\NLayer.Architecture.Data.csproj" />
+  </ItemGroup>
+
+</Project>

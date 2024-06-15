@@ -1,0 +1,9 @@
+﻿{
+  "Nombre": "Excavadora CAT 320D",
+  "Marca": "Caterpillar",
+  "Precio": 250000,
+  "Potencia": 103,
+  "Tamaño": 9.9,
+  "Peso": 22000,
+  "Funcionalidad": "Excavar terreno"
+}

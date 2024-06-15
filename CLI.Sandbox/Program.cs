@@ -1,12 +1,25 @@
-﻿
+﻿//using System;
 
 
-//using Lab4.AlexVillegas_503990937.Productos;
-//using Lab4.AlexVillegas_503990937;
+//// Usar solo para pruebas!
+Console.WriteLine("Hello World!");
 
-//ContenedorAlexV<Muebles> miContenedorDeWish = new Lab4.AlexVillegas_503990937.ContenedorAlexV<Muebles>();
-//Muebles sillon = new Muebles("Sillon");
-//Muebles mesa = new Muebles("Mesa");
-//miContenedorDeWish.Agregar(sillon);
-//miContenedorDeWish.Agregar(mesa);
-//miContenedorDeWish.MostrarElementos();
+//namespace Lab2.ArianaHernandez_504520730
+//{
+//    class Program
+//    {
+//        static void Main(string[] args)
+//        {
+//            Pokemon pikachu = new Pikachu(55, 35, "Pikachu", 5);
+//            Pokemon charizard = new Charizard(84, 78, "Charizard", 36);
+
+//            pikachu.Presentacion();
+//            pikachu.MovimientoEspecial();
+
+//            Console.WriteLine();
+
+//            charizard.Presentacion();
+//            charizard.MovimientoEspecial();
+//        }
+//    }
+//}
