@@ -19,10 +19,22 @@ namespace NLayer.Architecture.API.Controllers
         }
 
         //  - GET
-        [HttpGet]
-        public async Task<GestorRiego> Get()
+        [HttpGet("GetTemperatura", Name = "GetTemperatura")]
+        public async Task<List<Temperatura>> Get()
         {
-            return await _gestorRiegoService.GetEstadoRiego();
+            return await _gestorRiegoService.GetTemperatures();
+        }
+
+        [HttpGet("GetMoistures", Name = "GetMoistures")]
+        public async Task<List<HumedadSuelo>> GetMoistur()
+        {
+            return await _gestorRiegoService.GetMoistures();
+        }
+
+        [HttpGet("GetCultivo", Name = "GetCultivo")]
+        public async Task<List<Cultivo>> GetCultiv()
+        {
+            return await _gestorRiegoService.GetCultivos();
         }
 
 

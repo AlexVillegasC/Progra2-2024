@@ -9,11 +9,11 @@ namespace DataAccess.Layer.FileRepositories
     public interface IGestorRiegoRepository
     {
         //   - GET
-        Task<Temperatura> GetTemperatures();
+        Task <List<Temperatura>> GetTemperatures();
 
-        Task<Cultivo> GetCultivo();
+        Task<List<Cultivo>> GetCultivo();
 
-        Task<HumedadSuelo> GetMoisture();
+        Task<List<HumedadSuelo>> GetMoisture();
 
 
         //POST

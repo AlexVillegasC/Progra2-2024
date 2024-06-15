@@ -16,14 +16,19 @@ namespace NLayer.Architecture.Bussines.Services
         }
 
         //   - GET
-        public async Task<GestorRiego.GestorRiego> GetEstadoRiego()
+       public async Task <List<Temperatura>> GetTemperatures()
         {
-            GestorRiego.GestorRiego miEstadoRiego = new GestorRiego.GestorRiego();
-            miEstadoRiego._Temperatura = await _estadoRiegoRepo.GetTemperatures();
-            miEstadoRiego._HumedadSuelo = await _estadoRiegoRepo.GetMoisture();
-            miEstadoRiego._Cultivo = await _estadoRiegoRepo.GetCultivo();
+            return await _estadoRiegoRepo.GetTemperatures();
+        }
 
-            return miEstadoRiego;
+        public async Task<List<Cultivo>> GetCultivos()
+        {
+            return await _estadoRiegoRepo.GetCultivo();
+        }
+
+        public async Task<List<HumedadSuelo>> GetMoistures()
+        {
+            return await _estadoRiegoRepo.GetMoisture();
         }
 
         //POST
