@@ -1,12 +1,12 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+//using System;
+//using System.Collections.Generic;
+//using System.Linq;
+//using System.Threading.Tasks;
 
-namespace Lab3.frander-504440503
-{
-    public interface Isembrar
-    {
+//namespace Lab3.frander-504440503
+//{
+//    public interface Isembrar
+//    {
         
-    }
-}
+//    }
+//}

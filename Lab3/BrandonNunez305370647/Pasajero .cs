@@ -5,7 +5,7 @@ namespace Lab3.BrandonNunez305370647
     {
 
         public string Nombre { get; set; } = nombre;
-        public string Destino { get; set; } = string.Empty
+        public string Destino { get; set; } = string.Empty;
 
         public void ReservarHotel()
         {
