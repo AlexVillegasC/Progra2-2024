@@ -31,20 +31,50 @@ namespace NLayer.Architecture.Bussines.Services
         }
 
         //   - GET
-        public async Task<Temperatura> GetTemperatures()
+        public async Task<List<Temperatura>> GetTemperatures()
         {
-            return await ReadJsonFileAsync<Temperatura>(_tempetaruraVirtualPath);
+            try
+            {
+                var temperaturas = await ReadJsonFileAsync<List<Temperatura>>(_tempetaruraVirtualPath);
+                return temperaturas ?? new List<Temperatura>();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error al leer las temperaturas: {ex.Message}");
+                return new List<Temperatura>();
+            }
         }
 
-        public async Task<Cultivo> GetCultivo()
+        public async Task<List<HumedadSuelo>> GetMoisture()
         {
-            return await ReadJsonFileAsync<Cultivo>(_cultivo);
+            try
+            {
+                var humedadSuelo = await ReadJsonFileAsync<List<HumedadSuelo>>(_humedadadSueloVirtualPath);
+                return humedadSuelo ?? new List<HumedadSuelo>();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error al leer la humedad del suelo: {ex.Message}");
+                return new List<HumedadSuelo>();
+            }
         }
 
-        public async Task<HumedadSuelo> GetMoisture()
+        public async Task<List<Cultivo>> GetCultivo()
         {
-            return await ReadJsonFileAsync<HumedadSuelo>(_humedadadSueloVirtualPath);
+            try
+            {
+                var cultivos = await ReadJsonFileAsync<List<Cultivo>>(_cultivo);
+                return cultivos ?? new List<Cultivo>();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error al leer los cultivos: {ex.Message}");
+                return new List<Cultivo>();
+            }
         }
+
+
+
 
 
         //POST
