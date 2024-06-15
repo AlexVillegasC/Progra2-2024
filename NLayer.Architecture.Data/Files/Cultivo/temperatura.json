@@ -1,14 +1,16 @@
 [
   {
-    "Valor": 45,
-    "Unidad": "C",
-    "fechaActual": "2024-06-14T05:42:30.479Z",
-    "Ubicacion": "Liberia"
+    "id": 123,
+    "Valor": 11,
+    "Unidad": "fharenhei",
+    "fechaActual": "2024-06-15T03:49:09.367Z",
+    "Ubicacion": "Marte"
   },
   {
-    "Valor": 20,
-    "Unidad": "K",
-    "fechaActual": "2024-06-14T05:43:43.716Z",
-    "Ubicacion": "Nosara"
+    "id": 333,
+    "Valor": 1,
+    "Unidad": "boo",
+    "fechaActual": "2024-06-15T03:55:19.295Z",
+    "Ubicacion": "here"
   }
 ]

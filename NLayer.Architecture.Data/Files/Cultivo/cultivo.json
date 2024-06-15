@@ -1,14 +1,16 @@
 [
   {
-    "Nombre": "Frutas",
-    "tipoCultivo": "Alimenticio",
-    "fechaPlantacion": "2024-10-05T00:00:00",
-    "frecuenciaRiego": "2 veces al dia"
+    "id": 112,
+    "Nombre": "kjhgf",
+    "tipoCultivo": "nii",
+    "fechaPlantacion": "2024-06-15T04:21:49.624Z",
+    "frecuenciaRiego": "desc"
   },
   {
-    "Nombre": "Oranamentales",
-    "tipoCultivo": "string",
-    "fechaPlantacion": "2024-06-14T05:47:19.099Z",
-    "frecuenciaRiego": "1 vez al día"
+    "id": 889,
+    "Nombre": "melon",
+    "tipoCultivo": "frutal",
+    "fechaPlantacion": "2024-06-15T04:29:49.42Z",
+    "frecuenciaRiego": "poca"
   }
 ]

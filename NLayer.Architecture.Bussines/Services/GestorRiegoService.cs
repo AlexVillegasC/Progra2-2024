@@ -43,21 +43,23 @@ namespace NLayer.Architecture.Bussines.Services
             await _estadoRiegoRepo.AddCultivo(cultivo);
         }
 
+
+
         //   - PUT
-        public async Task<bool> UpdateTemperatures(Temperatura _tempetaruraVirtualPath)
+        public async Task<bool> UpdateTemperatures(int id, Temperatura _tempetaruraVirtualPath)
         {
-            return await _estadoRiegoRepo.UpdateTemperatures(_tempetaruraVirtualPath);
+            return await _estadoRiegoRepo.UpdateTemperatures(id, _tempetaruraVirtualPath);
         }
 
 
-        public async Task<bool> UpdateMoisture(HumedadSuelo _humedadadSueloVirtualPath)
+        public async Task<bool> UpdateMoisture(int id, HumedadSuelo _humedadadSueloVirtualPath)
         {
-            return await _estadoRiegoRepo.UpdateMoisture(_humedadadSueloVirtualPath);
+            return await _estadoRiegoRepo.UpdateMoisture(id, _humedadadSueloVirtualPath);
         }
 
-        public async Task<bool> UpdateCultivo(Cultivo _cultivo)
+        public async Task<bool> UpdateCultivo(int id, Cultivo _cultivo)
         {
-            return await _estadoRiegoRepo.UpdateCultivo(_cultivo);
+            return await _estadoRiegoRepo.UpdateCultivo(id, _cultivo);
         }
 
 

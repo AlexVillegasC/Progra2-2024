@@ -1,5 +1,10 @@
 [
   {
+    "id": 754,
+    "nivelHumedad": 25.0,
+    "fechaActual": "2024-06-15T04:36:23.559Z",
+    "Ubicacion": "Liberia"
+
     "nivelHumedad": 10.0,
     "fechaActual": "2024-06-14T05:44:41.179Z",
     "Ubicacion": "Santa Cruz"

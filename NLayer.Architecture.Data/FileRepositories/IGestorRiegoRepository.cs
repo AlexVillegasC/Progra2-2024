@@ -28,11 +28,11 @@ namespace DataAccess.Layer.FileRepositories
 
         //   - PUT
 
-        Task<bool> UpdateTemperatures(Temperatura _tempetaruraVirtualPath);
+        Task<bool> UpdateTemperatures(int id, Temperatura _temperaturaVirtualPath);
 
-        Task<bool> UpdateMoisture(HumedadSuelo _humedadadSueloVirtualPath);
+        Task<bool> UpdateMoisture(int id, HumedadSuelo _humedadadSueloVirtualPath);
 
-        Task<bool> UpdateCultivo(Cultivo _cultivo);
+        Task<bool> UpdateCultivo(int id, Cultivo _cultivo);
 
         //   - DELETE
         Task<bool> DeleteTemperatures();

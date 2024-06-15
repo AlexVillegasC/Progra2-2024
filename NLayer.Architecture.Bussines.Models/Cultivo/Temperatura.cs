@@ -3,6 +3,7 @@
 
 public class Temperatura
 {
+    public int id {  get; set; }
     public int Valor { get; set; }
     public string Unidad { get; set; }
     public DateTime fechaActual { get; set; }
