@@ -1,8 +1,16 @@
-﻿{
-  "valor": 20,
-  "unidad": "Kelvin",
-  "Date": "2023-04-24",
-  "ubicacion": "Guanacaste"
-}
-
-
+[
+  {
+    "id": 123,
+    "Valor": 11,
+    "Unidad": "fharenhei",
+    "fechaActual": "2024-06-15T03:49:09.367Z",
+    "Ubicacion": "Marte"
+  },
+  {
+    "id": 333,
+    "Valor": 1,
+    "Unidad": "boo",
+    "fechaActual": "2024-06-15T03:55:19.295Z",
+    "Ubicacion": "here"
+  }
+]

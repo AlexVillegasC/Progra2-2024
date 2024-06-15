@@ -2,6 +2,9 @@
 using DataAccess.Layer.FileRepositories;
 using NLayer.Architecture.Bussines.GestorRiego;
 using NLayer.Architecture.Data;
+using Newtonsoft.Json;
+using NLayer.Architecture.Bussines.ReporteClima;
+using NLayer.Architecture.Bussines.Models;
 
 namespace NLayer.Architecture.Bussines.Services
 
@@ -43,55 +46,217 @@ namespace NLayer.Architecture.Bussines.Services
             return await ReadJsonFileAsync<HumedadSuelo>(_humedadadSueloVirtualPath);
         }
 
+
+        //POST
+
+        public async Task AddTemperatura(Temperatura temperatura)
+        {
+            if (temperatura != null)
+            {
+                List<Temperatura> temperaturasExistentes = new List<Temperatura>();
+
+                if (File.Exists(_tempetaruraVirtualPath))
+                {
+                    string json = await File.ReadAllTextAsync(_tempetaruraVirtualPath);
+                    if (!string.IsNullOrEmpty(json))
+                    {
+                        try
+                        {
+                            temperaturasExistentes = JsonConvert.DeserializeObject<List<Temperatura>>(json);
+                        }
+                        catch (JsonSerializationException)
+                        {
+
+
+                            temperaturasExistentes = new List<Temperatura>();
+                        }
+                    }
+                }
+
+
+                temperaturasExistentes.Add(temperatura);
+
+                string updatedJson = JsonConvert.SerializeObject(temperaturasExistentes, Formatting.Indented);
+                await File.WriteAllTextAsync(_tempetaruraVirtualPath, updatedJson);
+            }
+        }
+
+        public async Task AddCultivo(Cultivo cultivo)
+        {
+            if (cultivo != null)
+            {
+                List<Cultivo> cultivoExistentes = new List<Cultivo>();
+
+                if (File.Exists(_cultivo))
+                {
+                    string json = await File.ReadAllTextAsync(_cultivo);
+                    if (!string.IsNullOrEmpty(json))
+                    {
+                        try
+                        {
+                            cultivoExistentes = JsonConvert.DeserializeObject<List<Cultivo>>(json);
+                        }
+                        catch (JsonSerializationException)
+                        {
+
+
+                            cultivoExistentes = new List<Cultivo>();
+                        }
+                    }
+                }
+
+
+                cultivoExistentes.Add(cultivo);
+
+                string updatedJson = JsonConvert.SerializeObject(cultivoExistentes, Formatting.Indented);
+                await File.WriteAllTextAsync(_cultivo, updatedJson);
+            }
+        }
+
+
+        public async Task AddHumedadSuelo(HumedadSuelo humedadSuelo)
+        {
+            if (humedadSuelo != null)
+            {
+                List<HumedadSuelo> humedadSueloExistentes = new List<HumedadSuelo>();
+
+                if (File.Exists(_humedadadSueloVirtualPath))
+                {
+                    string json = await File.ReadAllTextAsync(_humedadadSueloVirtualPath);
+                    if (!string.IsNullOrEmpty(json))
+                    {
+                        try
+                        {
+                            humedadSueloExistentes = JsonConvert.DeserializeObject<List<HumedadSuelo>>(json);
+                        }
+                        catch (JsonSerializationException)
+                        {
+
+
+                            humedadSueloExistentes = new List<HumedadSuelo>();
+                        }
+                    }
+                }
+
+
+                humedadSueloExistentes.Add(humedadSuelo);
+
+                string updatedJson = JsonConvert.SerializeObject(humedadSueloExistentes, Formatting.Indented);
+                await File.WriteAllTextAsync(_humedadadSueloVirtualPath, updatedJson);
+            }
+        }
+
+
+       
         //   - PUT
+        public async Task<bool> UpdateTemperatures(int id, Temperatura updatedTemperatura)
+        {
+            if (updatedTemperatura == null)
+            {
+                return false;
+            }
+
+            try
+            {
+                var listaTemperaturas = await ReadJsonFileListAsync<Temperatura>(_tempetaruraVirtualPath);
+                if (listaTemperaturas == null)
+                {
+                    listaTemperaturas = new List<Temperatura>();
+                }
+
+                var indice = listaTemperaturas.FindIndex(t => t.id == id);
+                if (indice != -1)
+                {
+                    listaTemperaturas[indice] = updatedTemperatura;
+                }
+                else
+                {
+                    return false;
+                }
+
+                await WriteJsonFileAsync(_tempetaruraVirtualPath, listaTemperaturas);
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+        }
+
+
+
+
+
+
         
-        public async Task<bool> UpdateTemperatures(Temperatura temperatura)
+        public async Task<bool> UpdateMoisture(int id, HumedadSuelo humedadSuelo)
         {
-
+            if (humedadSuelo == null)
+            {
+                return false;
+            }
 
             try
             {
-                await WriteJsonFileAsync(_tempetaruraVirtualPath, temperatura);
+                var listaHumedad = await ReadJsonFileListAsync<HumedadSuelo>(_humedadadSueloVirtualPath);
+                if (listaHumedad == null)
+                {
+                    listaHumedad = new List<HumedadSuelo>();
+                }
+
+                var indice = listaHumedad.FindIndex(h => h.id == humedadSuelo.id);
+                if (indice != -1)
+                {
+                    listaHumedad[indice] = humedadSuelo;
+                }
+                else
+                {
+                    return false;
+                }
+
+                await WriteJsonFileAsync(_humedadadSueloVirtualPath, listaHumedad);
                 return true;
             }
-            catch (Exception genericException)
+            catch (Exception)
             {
                 return false;
-            };
+            }
         }
 
-        public async Task<bool> UpdateMoisture(HumedadSuelo humedad)
+       
+        public async Task<bool> UpdateCultivo(int id, Cultivo cultivo)
         {
-
+            if (cultivo == null)
+            {
+                return false;
+            }
 
             try
             {
-                await WriteJsonFileAsync(_humedadadSueloVirtualPath, humedad);
-                return true;
+                var listaCultivos = await ReadJsonFileListAsync<Cultivo>(_cultivo);
+                if (listaCultivos == null)
+                {
+                    listaCultivos = new List<Cultivo>();
+                }
+
+                var indice = listaCultivos.FindIndex(c => c.id == cultivo.id);
+                if (indice != -1)
+                {
+                    listaCultivos[indice] = cultivo;
+                }
+                  else
+                  {
+                    return false;
+                  }
+
+                await WriteJsonFileAsync(_cultivo, listaCultivos);
+                   return true;
             }
-            catch (Exception genericException)
+            catch (Exception)
             {
                 return false;
-            };
-        }
-
-        public async Task<bool> UpdateCultivo(Cultivo cultivo)
-        {
-
-
-            try
-            {
-
-                await WriteJsonFileAsync(_cultivo, cultivo);
-
-                return true;
             }
-            catch (Exception genericException)
-            {
-                return false;
-            };
         }
-
 
 
 

@@ -1,6 +1,8 @@
-﻿{
-  "nivelHumedad": 50,
-  "date": "2023-05-25",
-  "ubicacion": "Nicoya"
-
-}
+[
+  {
+    "id": 754,
+    "nivelHumedad": 25.0,
+    "fechaActual": "2024-06-15T04:36:23.559Z",
+    "Ubicacion": "Liberia"
+  }
+]
