@@ -1,0 +1,20 @@
+[
+  {
+<<<<<<< HEAD
+=======
+    "ID": "001",
+    "Date": "12/05/2024",
+    "Nombre": "",
+    "Peso": 23.7,
+    "Raza": "Angus"
+  },
+  {
+>>>>>>> origin/proyecto1/RegistroGanado-BrandonNunez
+    "ID": "string",
+    "Date": "string",
+    "Nombre": "string",
+    "Peso": 0.0,
+    "Raza": "string"
+  }
+ 
+]
