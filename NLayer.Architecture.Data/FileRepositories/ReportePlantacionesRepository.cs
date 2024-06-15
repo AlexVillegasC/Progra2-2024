@@ -135,5 +135,53 @@ public class ReportePlantacionesRepository : FileRepository, IReportePlantacione
         return await ReadJsonFileAsync<ArbolFrutal>(_ArbolVirtualPath);
     }
 
+    public async Task AddArbolFrutal(ArbolFrutal arbol)
+    {
+
+        List<ArbolFrutal> frutal = await ReadJsonFileAsync<List<ArbolFrutal>>(_ArbolVirtualPath);
+
+        if(frutal != null)
+        {
+            frutal.Add(arbol);
+            await WriteJsonFileAsync(_ArbolVirtualPath, frutal);
+        
+        }
+
+    }
+
+    public async Task<bool> UpdateArbolFrutal(IEnumerable<ArbolFrutal> arbol)
+    {
+        List<ArbolFrutal> frutal = arbol.ToList();
+
+        try
+        {
+            await WriteJsonFileAsync(_ArbolVirtualPath, frutal);
+            return true;
+        }
+        catch(Exception genericException) 
+        { 
+            return false;
+        };
+    }
+
+    public async Task<bool> DeleteArbolFrutal()
+    {
+        List<ArbolFrutal> frutal = new();
+
+        try
+        {
+            await WriteJsonFileAsync(_ArbolVirtualPath, frutal);
+            return true;
+        }
+        catch (Exception genericException)
+        {
+            return false;
+        };
+    }
+
+    Task<List<ArbolFrutal>> IReportePlantacionesRepository.GetArbolFrutal()
+    {
+        throw new NotImplementedException();
+    }
 }
 

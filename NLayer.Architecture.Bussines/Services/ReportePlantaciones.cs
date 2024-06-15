@@ -67,19 +67,25 @@ public class ReportePlantaciones : IReportePlantaciones
 
 
     //-------------ARBOL----------------------------------//
-   / public async Task AddArbolFrutal(ArbolFrutal arbolFrutal)
+    public async Task AddArbolFrutal(ArbolFrutal arbol)
     {
-        await _plantaciones.AddArbolFrutal(arbolFrutal);
+        await _plantaciones.AddArbolFrutal(arbol);
     }
 
-    public async Task<bool> UpdateArbolFrutal(IEnumerable<ArbolFrutal> arbolFrutal)
+    public async Task<bool> UpdateArbolFrutal(IEnumerable<ArbolFrutal> arbol)
     {
-        return await _plantaciones.UpdateArbolFrutal(arbolFrutal);
+        return await _plantaciones.UpdateArbolFrutal(arbol);
     }
 
     public async Task<bool> DeleteArbolFrutal()
     {
         return await _plantaciones.DeleteArbolFrutal();
     }
+
+    public Task<List<ArbolFrutal>> GetArbolFrutal()
+    {
+        throw new NotImplementedException();
+    }
     //-------------ARBOL----------------------------------//
+
 }

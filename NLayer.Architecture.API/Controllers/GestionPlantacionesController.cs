@@ -72,6 +72,9 @@ public class GestionPlantacionesController : ControllerBase
     //-------------PLAGAS----------------------------------//
 
 
+
+
+
     //-------------ARBOL----------------------------------//
 
     [HttpPost("ArbolFrutal", Name = "AddArbolFrutal")]
@@ -93,6 +96,5 @@ public class GestionPlantacionesController : ControllerBase
     }
 
     //-------------ARBOL----------------------------------//
-
 
 }
