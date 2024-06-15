@@ -7,8 +7,9 @@ namespace NLayer.Architecture.Bussines.Services
     public interface IGestorRiegoService
     {
         //   - GET
-        Task<GestorRiego.GestorRiego> GetEstadoRiego();
-
+        Task<List<Temperatura>> GetTemperatures();
+        Task<List<HumedadSuelo>> GetMoistures();
+        Task<List<Cultivo>> GetCultivos();
 
 
         //POST

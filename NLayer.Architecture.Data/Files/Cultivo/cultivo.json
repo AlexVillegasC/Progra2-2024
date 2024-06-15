@@ -12,5 +12,12 @@
     "tipoCultivo": "frutal",
     "fechaPlantacion": "2024-06-15T04:29:49.42Z",
     "frecuenciaRiego": "poca"
+  },
+  {
+    "id": 8,
+    "Nombre": "string",
+    "tipoCultivo": "string",
+    "fechaPlantacion": "2024-06-15T06:33:01.628Z",
+    "frecuenciaRiego": "string"
   }
 ]
