@@ -32,8 +32,9 @@ builder.Services.AddTransient<IReporteRegistroGanadoService, ReporteRegistroGana
 builder.Services.AddTransient<IReportePlantaciones, ReportePlantaciones>();
 builder.Services.AddTransient<IReportePlantacionesRepository,ReportePlantacionesRepository>();
 
-builder.Services.AddTransient<ICostosHigieneRepository, CostosHigieneRepository>();
-builder.Services.AddTransient<ICostosHigieneServices, HigieneServices>();
+
+builder.Services.AddTransient<IReporteFinanzasRepository, ReporteFinanzasRepository>();
+builder.Services.AddTransient<IReporteFinanzasServices, ReporteFinanzasServices>();
 
 builder.Services.AddTransient<IPronosticoLluviasServices, PronosticoLluviasService>();
 builder.Services.AddTransient<IPronosticoLluviasRepository, PronosticoLluviasRepository>();

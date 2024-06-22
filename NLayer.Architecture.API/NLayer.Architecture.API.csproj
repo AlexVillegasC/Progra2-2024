@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\NLayer.Architecture.Bussines\NLayer.Architecture.Bussines.csproj" />
+    <ProjectReference Include="..\NLayer.Architecture.Data\NLayer.Architecture.Data.csproj" />
   </ItemGroup>
 
 </Project>

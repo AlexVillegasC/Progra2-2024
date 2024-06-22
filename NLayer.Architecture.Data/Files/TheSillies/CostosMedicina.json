@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Desparacitante",
+    "price": 500,
+    "description": "Cuidado animal"
+  },
+  {
+    "name": "Tranquilizante",
+    "price": 1000,
+    "description": "Relajante animal"
+  },
+  {
+    "name": "string",
+    "price": 0,
+    "description": "string"
+  },
+  {
+    "name": "xd",
+    "price": 300,
+    "description": "string"
+  }
+]
