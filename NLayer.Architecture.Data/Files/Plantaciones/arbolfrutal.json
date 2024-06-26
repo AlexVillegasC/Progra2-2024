@@ -1,5 +1,12 @@
-﻿{
-  "FechaRecolecta": "5/9/2024",
-  "TotalSembrados": "Se sembraron 365 arboles frutales en este semestre",
-  "FrutasRecolectadas": "Se recolectaron 786 frutas en este semestre"
-}
+[
+  {
+    "FechaRecolecta": "24/05/2024",
+    "TotalSembrados": "50",
+    "FrutasRecolectadas": "560"
+  },
+  {
+    "FechaRecolecta": "24/05/2024",
+    "TotalSembrados": "50",
+    "FrutasRecolectadas": "560"
+  }
+]
