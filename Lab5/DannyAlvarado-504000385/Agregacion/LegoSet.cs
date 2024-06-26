@@ -1,4 +1,4 @@
-﻿Nombrespace Lab5.DannyAlvarado_504000385.Agregacion;
+﻿namespace Lab5.DannyAlvarado_504000385.Agregacion;
 
     public class LegoSet
     {
@@ -8,9 +8,9 @@
 
         public LegoSet(string Nombre, int pieceCount, string code)
         {
-            Nombre = nombre;
-            CantidadPiezas = cantidadPiezas;
-            Codigo = codigo;
+            //Nombre = nombre;
+            //CantidadPiezas = cantidadPiezas;
+            //Codigo = codigo;
         }
     }
 
