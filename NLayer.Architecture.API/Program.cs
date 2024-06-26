@@ -31,6 +31,13 @@ builder.Services.AddTransient<IReportePlantacionesRepository,ReportePlantaciones
 
 builder.Services.AddTransient<ICostosHigieneRepository, CostosHigieneRepository>();
 builder.Services.AddTransient<ICostosHigieneServices, HigieneServices>();
+
+builder.Services.AddTransient<IReporteFinanzasRepository, ReporteFinanzasRepository>();
+builder.Services.AddTransient<IReporteFinanzasServices, ReporteFinanzasServices>();
+
+builder.Services.AddTransient<IPronosticoLluviasServices, PronosticoLluviasService>();
+builder.Services.AddTransient<IPronosticoLluviasRepository, PronosticoLluviasRepository>();
+
 // Add Singleton
 // The same instance is used by all components requiring that service.
 
