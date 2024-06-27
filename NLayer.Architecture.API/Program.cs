@@ -29,19 +29,25 @@ builder.Services.AddTransient<IReporteAlimentacionRepository, ReporteAlimentacio
 builder.Services.AddTransient<IReportePlantaciones, ReportePlantaciones>();
 builder.Services.AddTransient<IReportePlantacionesRepository,ReportePlantacionesRepository>();
 
-builder.Services.AddTransient<ICostosHigieneRepository, CostosHigieneRepository>();
-builder.Services.AddTransient<ICostosHigieneServices, HigieneServices>();
+//builder.Services.AddTransient<ICostosHigieneRepository, CostosHigieneRepository>();
+//builder.Services.AddTransient<ICostosHigieneServices, HigieneServices>();
 
 builder.Services.AddTransient<IReporteFinanzasRepository, ReporteFinanzasRepository>();
 builder.Services.AddTransient<IReporteFinanzasServices, ReporteFinanzasServices>();
 
 builder.Services.AddTransient<IPronosticoLluviasServices, PronosticoLluviasService>();
-builder.Services.AddTransient<IPronosticoLluviasRepository, PronosticoLluviasRepository>();
+//builder.Services.AddTransient<IPronosticoLluviasRepository, PronosticoLluviasRepository>();
 
 
 builder.Services.AddTransient<ICultivoService, CultivoService>();
 builder.Services.AddTransient<ICultivoRepository, CultivoRepository>();
 
+
+//builder.Services.AddTransient<ICostosHigieneRepository, CostosHigieneRepository>();
+//builder.Services.AddTransient<ICostosHigieneServices, HigieneServices>();
+
+builder.Services.AddTransient<ICultivoService, CultivoService>();
+builder.Services.AddTransient<ICultivoRepository, CultivoRepository>();
 
 builder.Services.AddTransient<IReporteInventarioRecursosServices, ReporteInventarioRecursosServices>();
 builder.Services.AddTransient<IReporteInventarioRecursosRepository, ReporteInventarioRecursosRepository>();
