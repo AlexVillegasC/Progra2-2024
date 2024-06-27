@@ -1,3 +1,29 @@
-{
-  "eto": 7.0
-}
+[
+  {
+    "Nombre": "Gestion de Cultivos 1",
+    "CultivoDatos": {
+      "Nombre": "Maíz",
+      "EtapaDesarrollo": "Crecimiento",
+      "FechaSiembra": "2023-04-01T00:00:00",
+      "FechaCosecha": "2023-09-01T00:00:00",
+      "CicloVegetativo": 150,
+      "UsoConsuntivo": 500.5,
+      "AreaCultivada": 100.0,
+      "RendimientoPotencial": 10.0
+    },
+    "Reservorio": {
+      "VolumeTotal": 10000.0,
+      "VolumenActual": 8000.0,
+      "Largo": 50.0,
+      "Ancho": 30.0,
+      "Profundidad": 10.0,
+      "EvaporacionEstanque": 1.0,
+      "AreaSuperficial": 1500.0
+    },
+    "CoeficienteCultivo": {
+      "ValorKc": 1.2,
+      "EtapaDesarrollo": "Crecimiento"
+    },
+    "Eto": 5.0
+  }
+]
