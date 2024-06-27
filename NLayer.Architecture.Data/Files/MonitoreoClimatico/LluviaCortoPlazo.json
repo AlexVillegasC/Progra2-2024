@@ -1,0 +1,21 @@
+
+﻿[
+  {
+    "Id": "001",
+    "Pronosticold": "15 mm",
+    "Detail": [
+      {
+        "Hora": "Ahora",
+        "Pronostico": "15 mm de lluvia"
+      },
+      {
+        "Hora": "Próximas 24 horas",
+        "Probabilidad": "20% de lluvia"
+      },
+      {
+        "Hora": "Próximas 48 horas",
+        "Probabilidad": "30% de lluvia"
+      }
+    ]
+  }
+]
