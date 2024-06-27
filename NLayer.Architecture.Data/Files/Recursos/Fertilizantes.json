@@ -1,0 +1,15 @@
+[
+  {
+    "Marca": "Abonos BIORMIN",
+    "Tipo_de_Fertilizante": "Inorganico",
+    "Precio": 16825,
+    "Cantidad_sacos": 1
+  },
+  {
+    "Marca": "PLAGRON",
+    "Tipo_de_Fertilizante": "Organico",
+    "Precio": 12345,
+    "Cantidad_de_sacos": 2
+
+  }
+]

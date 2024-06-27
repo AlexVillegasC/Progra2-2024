@@ -1,0 +1,22 @@
+[
+  {
+    "Nombre": "Maíz",
+    "EtapaDesarrollo": "Crecimiento",
+    "FechaSiembra": "2023-04-01T00:00:00",
+    "FechaCosecha": "2023-09-01T00:00:00",
+    "CicloVegetativo": 150,
+    "UsoConsuntivo": 500.5,
+    "AreaCultivada": 100.0,
+    "RendimientoPotencial": 10.0
+  },
+  {
+    "Nombre": "Trigo",
+    "EtapaDesarrollo": "Germinación",
+    "FechaSiembra": "2023-03-15T00:00:00",
+    "FechaCosecha": "2023-07-30T00:00:00",
+    "CicloVegetativo": 130,
+    "UsoConsuntivo": 300.3,
+    "AreaCultivada": 150.0,
+    "RendimientoPotencial": 8.5
+  }
+]

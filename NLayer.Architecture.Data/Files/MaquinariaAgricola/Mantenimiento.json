@@ -1,7 +1,37 @@
-﻿{
-  "Nombre": "Juan Perez",
-  "Id": 1,
-  "Direccion": "san martin, nicoya",
-  "Telefono": 987654321,
-  "Correo": "juan.perez@gmail.com"
-}
+﻿[
+  {
+    "Nombre": "Juan Perez",
+    "Id": 1,
+    "Direccion": "Turrialba",
+    "Telefono": 5551234,
+    "Correo": "juan.perez@gmail.com"
+  },
+  {
+    "Nombre": "Maria Gomez",
+    "Id": 2,
+    "Direccion": "Alajuela",
+    "Telefono": 5555678,
+    "Correo": "maria.gomez@gmail.com"
+  },
+  {
+    "Nombre": "Carlos Ruiz",
+    "Id": 3,
+    "Direccion": "Bagaces",
+    "Telefono": 5559101,
+    "Correo": "carlos.ruiz@gmail.com"
+  },
+  {
+    "Nombre": "Laura Torres",
+    "Id": 4,
+    "Direccion": "Nicoya",
+    "Telefono": 5551122,
+    "Correo": "laura.torres@gmail.com"
+  },
+  {
+    "Nombre": "Luis Fernandez",
+    "Id": 5,
+    "Direccion": "Jicaral",
+    "Telefono": 5553344,
+    "Correo": "luis.fernandez@gmail.com"
+  }
+]

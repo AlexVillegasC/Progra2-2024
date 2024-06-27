@@ -1,9 +1,56 @@
-﻿{
-  "Nombre": "Excavadora CAT 320D",
-  "Marca": "Caterpillar",
-  "Precio": 250000,
-  "Potencia": 103,
-  "Tamaño": 9.9,
-  "Peso": 22000,
-  "Funcionalidad": "Excavar terreno"
-}
+[
+  {
+    "Nombre": "Excavadora",
+    "Marca": "Caterpillar",
+    "Precio": 120000.5,
+    "Potencia": 300,
+    "Tamaño": 7.5,
+    "Peso": 25000.0,
+    "Funcionalidad": "Excavar terrenos"
+  },
+  {
+    "Nombre": "Bulldozer",
+    "Marca": "Komatsu",
+    "Precio": 85000.75,
+    "Potencia": 250,
+    "Tamaño": 5.5,
+    "Peso": 20000.0,
+    "Funcionalidad": "Empujar y nivelar tierra"
+  },
+  {
+    "Nombre": "Grúa",
+    "Marca": "Liebherr",
+    "Precio": 150000.0,
+    "Potencia": 400,
+    "Tamaño": 10.0,
+    "Peso": 35000.0,
+    "Funcionalidad": "Elevar y mover cargas pesadas"
+  },
+  {
+    "Nombre": "Retroexcavadora",
+    "Marca": "JCB",
+    "Precio": 65000.25,
+    "Potencia": 150,
+    "Tamaño": 6.0,
+    "Peso": 18000.0,
+    "Funcionalidad": "Excavar y mover tierra"
+  },
+  {
+    "Nombre": "Compactadora",
+    "Marca": "Bomag",
+    "Precio": 40000.0,
+    "Potencia": 100,
+    "Tamaño": 4.0,
+    "Peso": 12000.0,
+    "Funcionalidad": "Compactar superficies"
+  },
+  {
+    "Nombre": "weewe",
+    "Marca": "string",
+    "Precio": 0.0,
+    "Potencia": 0,
+    "Tamaño": 0.0,
+    "Peso": 0.0,
+    "Funcionalidad": "string"
+  }
+]

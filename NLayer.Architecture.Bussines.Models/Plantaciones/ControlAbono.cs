@@ -1,4 +1,5 @@
-﻿namespace NLayer.Architecture.Bussines.GestionPlantaciones;
+﻿
+namespace NLayer.Architecture.Bussines.GestionPlantaciones;
 
 public class ControlAbono
 {
@@ -8,5 +9,8 @@ public class ControlAbono
 
     public string Tipo { get; set; }
 
-
+    public static implicit operator ControlAbono(List<ControlAbono> v)
+    {
+        throw new NotImplementedException();
+    }
 }

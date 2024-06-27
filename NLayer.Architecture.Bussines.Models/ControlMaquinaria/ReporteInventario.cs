@@ -1,11 +1,17 @@
 ﻿
+using NLayer.Architecture.Bussines.ReporteClima;
+
 namespace NLayer.Architecture.Bussines.ReporteInventario;
 public class ReporteInventario
 {
-    public Maquinaria Maquinaria { get; set; }
+    public string Nombre { get; set; } = "Mi Reporte del inventario de maquinaria agricola";
 
-    public Mantenimiento Mantenimiento { get; set; }
+    public DateOnly Date => DateOnly.FromDateTime(DateTime.Now);
 
-    public Herramientas Herramientas { get; set; }
+    public List<Maquinaria> Maquinaria { get; set; }
+
+    public List<Mantenimiento> Mantenimiento { get; set; }
+
+    public List<Herramientas> Herramientas { get; set; }
 }
 //using es la direccion de una carpeta.
