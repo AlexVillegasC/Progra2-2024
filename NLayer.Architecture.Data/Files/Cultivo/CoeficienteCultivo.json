@@ -1,4 +1,10 @@
-{
-  "valorKc": 0.7,
-  "etapaDesarrollo": "Germinación"
-}
+[
+  {
+    "ValorKc": 1.2,
+    "EtapaDesarrollo": "Crecimiento"
+  },
+  {
+    "ValorKc": 0.9,
+    "EtapaDesarrollo": "Maduración"
+  }
+]
